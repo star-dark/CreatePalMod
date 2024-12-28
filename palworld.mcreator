@@ -49,7 +49,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/Test3Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
