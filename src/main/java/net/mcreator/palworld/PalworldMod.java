@@ -19,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.palworld.network.PalworldModVariables;
+import net.mcreator.palworld.init.PalworldModMenus;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -39,6 +40,8 @@ public class PalworldMod {
 		modEventBus.addListener(this::registerNetworking);
 
 		PalworldModVariables.ATTACHMENT_TYPES.register(modEventBus);
+
+		PalworldModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

@@ -1,5 +1,68 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "UserGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "user_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/world/inventory/UserGUIMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "OpenQuestGUIOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_quest_gui_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/OpenQuestGUIOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "OpenQuestGUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_quest_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/network/OpenQuestGUIMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    }
+  ],
   "variable_elements": [
     {
       "name": "job_production",
@@ -12,13 +75,118 @@
       "type": "string",
       "scope": "player_lifetime",
       "value": "\"\""
+    },
+    {
+      "name": "quest_buffer",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "MainQuestContents",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "SubQuestContents",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "MainQuestGoal",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SubQuestGoal",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MainQuestProgress",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SubQuestProgress",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "IsMainQuestExist",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "IsSubQuestExist",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MainQuestRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "SubQuestRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "MainRewardRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "SubRewardRequest",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "my_money",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RewardMoneyBuffer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "MainQuestRewardMoney",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SubQuestRewardMoney",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
+      "key.palworld.open_quest_gui": "Open Quest GUI"
+    }
   },
   "foldersRoot": {
     "name": "~",

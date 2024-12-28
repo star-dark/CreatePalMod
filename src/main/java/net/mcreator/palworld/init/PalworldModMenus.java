@@ -1,0 +1,20 @@
+
+/*
+ *	MCreator note: This file will be REGENERATED on each build.
+ */
+package net.mcreator.palworld.init;
+
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
+
+import net.minecraft.world.inventory.MenuType;
+import net.minecraft.core.registries.Registries;
+
+import net.mcreator.palworld.world.inventory.UserGUIMenu;
+import net.mcreator.palworld.PalworldMod;
+
+public class PalworldModMenus {
+	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, PalworldMod.MODID);
+	public static final DeferredHolder<MenuType<?>, MenuType<UserGUIMenu>> USER_GUI = REGISTRY.register("user_gui", () -> IMenuTypeExtension.create(UserGUIMenu::new));
+}
