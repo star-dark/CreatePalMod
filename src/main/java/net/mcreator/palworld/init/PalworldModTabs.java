@@ -32,6 +32,30 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.MINER_PICK_LV_30.get());
 			tabData.accept(PalworldModItems.MINER_PICK_LV_15.get());
 			tabData.accept(PalworldModItems.MINER_PICK_LV_1.get());
+			tabData.accept(PalworldModItems.FISH_ROD_LV_1.get());
+			tabData.accept(PalworldModItems.FISH_ROD_LV_15.get());
+			tabData.accept(PalworldModItems.FISH_ROD_LV_30.get());
+
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+
+			tabData.accept(PalworldModItems.FISH_ANGLER.get());
+			tabData.accept(PalworldModItems.FISH_ARAPAIMA.get());
+			tabData.accept(PalworldModItems.FISH_BASS.get());
+			tabData.accept(PalworldModItems.FISH_BLUE_GILL.get());
+			tabData.accept(PalworldModItems.FISH_CARP.get());
+			tabData.accept(PalworldModItems.FISH_CATFISH.get());
+			tabData.accept(PalworldModItems.FISH_ELECTRIC_EEL.get());
+			tabData.accept(PalworldModItems.FISH_HAILBUT.get());
+			tabData.accept(PalworldModItems.FISH_HERRING.get());
+			tabData.accept(PalworldModItems.FISH_MUSKELLUNGE.get());
+			tabData.accept(PalworldModItems.FISH_PERCH.get());
+			tabData.accept(PalworldModItems.FISH_POLLOCK.get());
+			tabData.accept(PalworldModItems.FISH_TAMBAQUI.get());
+			tabData.accept(PalworldModItems.FISH_TUNA.get());
+			tabData.accept(PalworldModItems.FISH_RAINBOW_TROUT.get());
+			tabData.accept(PalworldModItems.FISH_RED_BELLIED_PIRANHA.get());
+			tabData.accept(PalworldModItems.FISH_RED_GROUPER.get());
+			tabData.accept(PalworldModItems.FISH_SYNODONTIS.get());
 
 		}
 	}

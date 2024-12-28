@@ -562,6 +562,335 @@
         ]
       },
       "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "FishAngler",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_angler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_angler.json",
+          "src/main/java/net/mcreator/palworld/item/FishAnglerItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishArapaima",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_arapaima",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishArapaimaItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_arapaima.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishBass",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_bass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishBassItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_bass.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishBlueGill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_blue_gill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishBlueGillItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_blue_gill.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishCarp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_carp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_carp.json",
+          "src/main/java/net/mcreator/palworld/item/FishCarpItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishCatfish",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_catfish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishCatfishItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_catfish.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishElectricEel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_electric_eel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishElectricEelItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_electric_eel.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishHailbut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_hailbut",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_hailbut.json",
+          "src/main/java/net/mcreator/palworld/item/FishHailbutItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishHerring",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_herring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_herring.json",
+          "src/main/java/net/mcreator/palworld/item/FishHerringItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishMuskellunge",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_muskellunge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_muskellunge.json",
+          "src/main/java/net/mcreator/palworld/item/FishMuskellungeItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishPerch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_perch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_perch.json",
+          "src/main/java/net/mcreator/palworld/item/FishPerchItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishPollock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_pollock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishPollockItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_pollock.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishTambaqui",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_tambaqui",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_tambaqui.json",
+          "src/main/java/net/mcreator/palworld/item/FishTambaquiItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishTuna",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_tuna",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_tuna.json",
+          "src/main/java/net/mcreator/palworld/item/FishTunaItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_1.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv1Item.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv15",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_15.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv15Item.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv30",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_30",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_30.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv30Item.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRainbowTrout",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rainbow_trout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishRainbowTroutItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_rainbow_trout.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRedBelliedPiranha",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_red_bellied_piranha",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_red_bellied_piranha.json",
+          "src/main/java/net/mcreator/palworld/item/FishRedBelliedPiranhaItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRedGrouper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_red_grouper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishRedGrouperItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_red_grouper.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishSynodontis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_synodontis",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_synodontis.json",
+          "src/main/java/net/mcreator/palworld/item/FishSynodontisItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FishRodEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Fisher"
     }
   ],
   "variable_elements": [
@@ -682,7 +1011,12 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:FishRodLv1"
+    ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:FishRodLv30",
+      "~CUSTOM:FishRodLv15",
       "~CUSTOM:MinerPickLv1",
       "~CUSTOM:MinerPickLv15",
       "~CUSTOM:MinerPickLv30"
@@ -690,7 +1024,29 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.palworld.fish_rod_lv_1": "Fish Rod Lv 1",
+      "item.palworld.fish_electric_eel": "Fish Electric Eel",
+      "item.palworld.fish_angler": "Fish Angler",
+      "item.palworld.fish_blue_gill": "Fish Blue Gill",
+      "item.palworld.fish_pollock": "Fish Pollock",
+      "item.palworld.fish_tuna": "Fish Tuna",
+      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
+      "item.palworld.fish_catfish": "Fish Catfish",
+      "item.palworld.fish_rod_lv_15": "Fish Rod Lv 1 5",
+      "item.palworld.fish_arapaima": "Fish Arapaima",
+      "item.palworld.fish_muskellunge": "Fish Muskellunge",
+      "item.palworld.fish_synodontis": "Fish Synodontis",
+      "item.palworld.fish_hailbut": "Fish Hailbut",
+      "item.palworld.fish_perch": "Fish Perch",
+      "item.palworld.fish_rod_lv_30": "Fish Rod Lv 3 0",
+      "item.palworld.fish_carp": "Fish Carp",
+      "item.palworld.fish_red_grouper": "Fish Red Grouper",
+      "item.palworld.fish_rainbow_trout": "Fish Rainbow Trout",
+      "item.palworld.fish_herring": "Fish Herring",
+      "item.palworld.fish_tambaqui": "Fish Tambaqui",
+      "item.palworld.fish_bass": "Fish Bass"
+    }
   },
   "foldersRoot": {
     "name": "~",
