@@ -27,6 +27,12 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISHER_JOB_NPC_SPAWN_EGG.get());
 			tabData.accept(PalworldModItems.MINER_JOB_NPC_SPAWN_EGG.get());
 
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+
+			tabData.accept(PalworldModItems.MINER_PICK_LV_1.get());
+			tabData.accept(PalworldModItems.MINER_PICK_LV_15.get());
+			tabData.accept(PalworldModItems.MINER_PICK_LV_30.get());
+
 		}
 	}
 }

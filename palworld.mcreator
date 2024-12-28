@@ -353,6 +353,185 @@
         ]
       },
       "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "OreCoal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_coal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreCoalItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_coal.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreCopper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/ore_copper.json",
+          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreDiamond",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_diamond",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/ore_diamond.json",
+          "src/main/java/net/mcreator/palworld/item/OreDiamondItem.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreEmerald",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_emerald",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreEmeraldItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_emerald.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreGold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreGoldItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_gold.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreIron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/ore_iron.json",
+          "src/main/java/net/mcreator/palworld/item/OreIronItem.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreLapisLazuli",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_lapis_lazuli",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/ore_lapis_lazuli.json",
+          "src/main/java/net/mcreator/palworld/item/OreLapisLazuliItem.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MinerPickEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickLv1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv1Item.java",
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_1.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickLv15",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_15.json",
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv15Item.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickLv30",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_30",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv30Item.java",
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_30.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
     }
   ],
   "variable_elements": [
@@ -370,21 +549,37 @@
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:MinerPickLv30",
+      "~CUSTOM:MinerPickLv15",
+      "~CUSTOM:MinerPickLv1"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
-      "entity.palworld.farmer_job_npc": "Farmer Job NPC",
-      "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
+      "item.palworld.ore_coal": "Ore Coal",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
+      "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
       "item.palworld.farmer_dregs": "Farmer Dregs",
+      "item.palworld.ore_gold": "Ore Gold",
+      "gui.palworld.job_npc_gui.button_surag": "수락",
+      "gui.palworld.job_npc_gui.button_geojeol": "거절",
+      "item.palworld.ore_diamond": "Ore Diamond",
+      "item.palworld.miner_pick_lv_30": "Miner Pick Lv 3 0",
+      "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
+      "item.palworld.miner_pick_lv_1": "Miner Pick Lv 1",
+      "entity.palworld.farmer_job_npc": "Farmer Job NPC",
+      "item.palworld.ore_copper": "Ore Copper",
+      "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
+      "item.palworld.ore_iron": "Ore Iron",
       "item.palworld.farmer_root": "Farmer Root",
       "item.palworld.farmer_spore": "Farmer Spore",
+      "item.palworld.ore_lapis_lazuli": "Ore Lapis Lazuli",
       "entity.palworld.fisher_job_npc": "Fisher Job NPC",
-      "entity.palworld.miner_job_npc": "Miner Job NPC",
-      "gui.palworld.job_npc_gui.button_surag": "수락",
-      "gui.palworld.job_npc_gui.button_geojeol": "거절"
+      "entity.palworld.miner_job_npc": "Miner Job NPC"
     }
   },
   "foldersRoot": {
