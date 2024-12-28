@@ -38,6 +38,19 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Test3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/Test3Procedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
