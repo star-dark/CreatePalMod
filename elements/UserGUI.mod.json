@@ -11,6 +11,32 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_quest_tap",
+          "image": "quest_tap.png",
+          "hoveredImage": "quest_tap_on.png",
+          "onClick": {
+            "name": "OpenQuestTap"
+          },
+          "x": 153,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_money_tap",
+          "image": "money_tap.png",
+          "hoveredImage": "money_tapon.png",
+          "onClick": {
+            "name": "OpenMoneyTap"
+          },
+          "x": 236,
+          "y": 107
+        }
+      },
+      {
         "type": "label",
         "data": {
           "name": "label_kweseuteu",
@@ -21,102 +47,23 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 205,
-          "y": 59
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_quest_tap",
-          "image": "quest_tap.png",
-          "hoveredImage": "quest_tap_on.png",
-          "x": 128,
-          "y": 22
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_money_tap",
-          "image": "money_tap.png",
-          "hoveredImage": "money_tapon.png",
           "x": 161,
-          "y": 22
+          "y": 141
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_proc_main_quest",
+          "name": "label_don",
           "text": {
-            "fixedValue": "",
-            "name": "MainQuest"
+            "fixedValue": "돈"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsMainQuestExist"
-          },
-          "x": 150,
-          "y": 87
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_sub_quest",
-          "text": {
-            "fixedValue": "",
-            "name": "SubQuest"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "displayCondition": {
-            "name": "IsSubQuestExist"
-          },
-          "x": 149,
-          "y": 135
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_wanryo",
-          "text": {
-            "fixedValue": "완료✅"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "displayCondition": {
-            "name": "IsMainQuestComplete"
-          },
-          "x": 265,
-          "y": 87
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_wanryo1",
-          "text": {
-            "fixedValue": "완료✅"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "displayCondition": {
-            "name": "IsSubQuestComplete"
-          },
-          "x": 265,
-          "y": 136
+          "x": 250,
+          "y": 140
         }
       }
     ],

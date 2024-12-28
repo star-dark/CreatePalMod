@@ -1,5 +1,7 @@
 package net.mcreator.palworld.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -11,12 +13,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.palworld.world.inventory.UserGUIMenu;
-import net.mcreator.palworld.procedures.SubQuestProcedure;
-import net.mcreator.palworld.procedures.MainQuestProcedure;
-import net.mcreator.palworld.procedures.IsSubQuestExistProcedure;
-import net.mcreator.palworld.procedures.IsSubQuestCompleteProcedure;
-import net.mcreator.palworld.procedures.IsMainQuestExistProcedure;
-import net.mcreator.palworld.procedures.IsMainQuestCompleteProcedure;
+import net.mcreator.palworld.network.UserGUIButtonMessage;
 
 import java.util.HashMap;
 
@@ -70,26 +67,19 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_kweseuteu"), 79, 10, -12829636, false);
-		if (IsMainQuestExistProcedure.execute(entity))
-			guiGraphics.drawString(this.font,
-
-					MainQuestProcedure.execute(entity), 24, 38, -12829636, false);
-		if (IsSubQuestExistProcedure.execute(entity))
-			guiGraphics.drawString(this.font,
-
-					SubQuestProcedure.execute(entity), 23, 86, -12829636, false);
-		if (IsMainQuestCompleteProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_wanryo"), 139, 38, -12829636, false);
-		if (IsSubQuestCompleteProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_wanryo1"), 139, 87, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_kweseuteu"), 35, 92, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_don"), 124, 91, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_quest_tap = new ImageButton(this.leftPos + 2, this.topPos + -27, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/quest_tap.png"), ResourceLocation.parse("palworld:textures/screens/quest_tap_on.png")),
+		imagebutton_quest_tap = new ImageButton(this.leftPos + 27, this.topPos + 58, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/quest_tap.png"), ResourceLocation.parse("palworld:textures/screens/quest_tap_on.png")),
 				e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new UserGUIButtonMessage(0, x, y, z));
+						UserGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
 				}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
@@ -98,8 +88,12 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 		};
 		guistate.put("button:imagebutton_quest_tap", imagebutton_quest_tap);
 		this.addRenderableWidget(imagebutton_quest_tap);
-		imagebutton_money_tap = new ImageButton(this.leftPos + 35, this.topPos + -27, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/money_tap.png"), ResourceLocation.parse("palworld:textures/screens/money_tapon.png")),
+		imagebutton_money_tap = new ImageButton(this.leftPos + 110, this.topPos + 58, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/money_tap.png"), ResourceLocation.parse("palworld:textures/screens/money_tapon.png")),
 				e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new UserGUIButtonMessage(1, x, y, z));
+						UserGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+					}
 				}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
