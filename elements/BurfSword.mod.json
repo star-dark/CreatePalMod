@@ -2,13 +2,13 @@
   "_fv": 69,
   "_type": "tool",
   "definition": {
-    "toolType": "Pickaxe",
+    "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "extreme_pickaxe",
+    "texture": "sword_beestinger",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Miner Pick Lv 3 0",
+    "name": "Burf Sword",
     "specialInformation": {
       "fixedValue": []
     },
@@ -17,22 +17,22 @@
         "value": "TOOLS"
       }
     ],
-    "efficiency": 9.0,
+    "efficiency": 8.0,
     "attackSpeed": 1.0,
-    "enchantability": 10,
+    "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 100000,
+    "usageCount": 100,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [],
     "immuneToFire": false,
-    "blockDropsTier": "NETHERITE",
+    "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onBlockDestroyedWithTool": {
-      "name": "MinerPickEffect"
+    "damageOnCrafting": true,
+    "onRightClickedOnBlock": {
+      "name": "BurfSwordEffect"
     }
   }
 }

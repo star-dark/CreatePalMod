@@ -20,7 +20,7 @@ public class PalworldModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(PalworldModMenus.USER_GUI.get(), UserGUIScreen::new);
 		event.register(PalworldModMenus.JOB_NPC_GUI.get(), JobNpcGuiScreen::new);
-		event.register(PalworldModMenus.QUEST_TAP.get(), QuestTapScreen::new);
 		event.register(PalworldModMenus.MONEY_TAP.get(), MoneyTapScreen::new);
+		event.register(PalworldModMenus.QUEST_TAP.get(), QuestTapScreen::new);
 	}
 }

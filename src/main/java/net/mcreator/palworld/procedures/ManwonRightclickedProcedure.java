@@ -1,11 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.palworld.network.PalworldModVariables;
-import net.mcreator.palworld.init.PalworldModItems;
+import net.neoforged.bus.api.Event;
 
 public class ManwonRightclickedProcedure {
 	public static void execute(Entity entity) {
@@ -17,7 +12,7 @@ public class ManwonRightclickedProcedure {
 			_vars.syncPlayerVariables(entity);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PalworldModItems.MANWON.get());
+			ItemStack _stktoremove = new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 	}

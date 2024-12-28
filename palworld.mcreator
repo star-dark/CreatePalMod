@@ -44,7 +44,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/world/inventory/UserGUIMenu.java",
-          "src/main/java/net/mcreator/palworld/network/UserGUIButtonMessage.java",
           "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java"
         ]
       },
@@ -1046,6 +1045,79 @@
       "path": "~/JobItem/Fisher"
     },
     {
+      "name": "OpenMoneyTap",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "open_money_tap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/OpenMoneyTapProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "ChunwonRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chunwon_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ChunwonRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/MoneyItem"
+    },
+    {
+      "name": "GetOchunwonFromUser",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_ochunwon_from_user",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/GetOchunwonFromUserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Money"
+    },
+    {
       "name": "ManwonRightclicked",
       "type": "procedure",
       "compiles": true,
@@ -1065,18 +1137,33 @@
       "path": "~/MoneyItem"
     },
     {
-      "name": "Manwon",
+      "name": "Chunwon",
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "manwon",
+      "registry_name": "chunwon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/ManwonItem.java",
-          "src/main/resources/assets/palworld/models/item/manwon.json"
+          "src/main/java/net/mcreator/palworld/item/ChunwonItem.java",
+          "src/main/resources/assets/palworld/models/item/chunwon.json"
         ]
       },
       "path": "~/MoneyItem"
+    },
+    {
+      "name": "MoneyTap",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_tap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/gui/MoneyTapScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/MoneyTapMenu.java",
+          "src/main/java/net/mcreator/palworld/network/MoneyTapButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Money"
     },
     {
       "name": "Ochunwon",
@@ -1112,28 +1199,15 @@
       "path": "~/MoneyItem"
     },
     {
-      "name": "Chunwon",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chunwon",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/ChunwonItem.java",
-          "src/main/resources/assets/palworld/models/item/chunwon.json"
-        ]
-      },
-      "path": "~/MoneyItem"
-    },
-    {
-      "name": "ChunwonRightclicked",
+      "name": "BringMyMoney",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chunwon_rightclicked",
+      "registry_name": "bring_my_money",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/ChunwonRightclickedProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/BringMyMoneyProcedure.java"
         ],
         "dependencies": [
           {
@@ -1142,21 +1216,21 @@
           }
         ]
       },
-      "path": "~/MoneyItem"
+      "path": "~/GUI/Money"
     },
     {
-      "name": "QuestTap",
-      "type": "gui",
+      "name": "Manwon",
+      "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "quest_tap",
+      "registry_name": "manwon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/QuestTapScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/QuestTapMenu.java"
+          "src/main/java/net/mcreator/palworld/item/ManwonItem.java",
+          "src/main/resources/assets/palworld/models/item/manwon.json"
         ]
       },
-      "path": "~/GUI/User_Quest"
+      "path": "~/MoneyItem"
     },
     {
       "name": "OpenQuestTap",
@@ -1194,76 +1268,6 @@
       "path": "~/GUI"
     },
     {
-      "name": "OpenMoneyTap",
-      "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "open_money_tap",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/OpenMoneyTapProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "MoneyTap",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "money_tap",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/MoneyTapScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/MoneyTapMenu.java",
-          "src/main/java/net/mcreator/palworld/network/MoneyTapButtonMessage.java"
-        ]
-      },
-      "path": "~/GUI/Money"
-    },
-    {
-      "name": "BringMyMoney",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bring_my_money",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BringMyMoneyProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Money"
-    },
-    {
       "name": "GetManwonFromUser",
       "type": "procedure",
       "compiles": true,
@@ -1283,23 +1287,18 @@
       "path": "~/GUI/Money"
     },
     {
-      "name": "GetOchunwonFromUser",
-      "type": "procedure",
+      "name": "QuestTap",
+      "type": "gui",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "get_ochunwon_from_user",
+      "registry_name": "quest_tap",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/GetOchunwonFromUserProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/java/net/mcreator/palworld/client/gui/QuestTapScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/QuestTapMenu.java"
         ]
       },
-      "path": "~/GUI/Money"
+      "path": "~/GUI/User_Quest"
     },
     {
       "name": "GetChunwonFromUser",
@@ -1319,6 +1318,76 @@
         ]
       },
       "path": "~/GUI/Money"
+    },
+    {
+      "name": "BurfSwordEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burf_sword_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BurfSwordEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "ClearVariable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_variable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ClearVariableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ClearWand"
+    },
+    {
+      "name": "BurfSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burf_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/burf_sword.json",
+          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "MagicWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/magic_wand.json",
+          "src/main/java/net/mcreator/palworld/item/MagicWandItem.java"
+        ]
+      },
+      "path": "~/ClearWand"
     }
   ],
   "variable_elements": [
@@ -1440,14 +1509,17 @@
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:FishRodLv30",
+      "~CUSTOM:FishRodLv15",
       "~CUSTOM:FishRodLv1"
     ],
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:FishRodLv30",
-      "~CUSTOM:FishRodLv15",
       "~CUSTOM:MinerPickLv1",
       "~CUSTOM:MinerPickLv15",
       "~CUSTOM:MinerPickLv30"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:BurfSword"
     ]
   },
   "tab_element_order": {},
@@ -1516,6 +1588,18 @@
     "name": "~",
     "children": [
       {
+        "name": "ClearWand",
+        "children": []
+      },
+      {
+        "name": "Sword",
+        "children": []
+      },
+      {
+        "name": "MoneyItem",
+        "children": []
+      },
+      {
         "name": "JobItem",
         "children": [
           {
@@ -1547,10 +1631,6 @@
       },
       {
         "name": "JobNPC",
-        "children": []
-      },
-      {
-        "name": "MoneyItem",
         "children": []
       }
     ]

@@ -22,6 +22,7 @@ import net.mcreator.palworld.item.MinerPickLv30Item;
 import net.mcreator.palworld.item.MinerPickLv1Item;
 import net.mcreator.palworld.item.MinerPickLv15Item;
 import net.mcreator.palworld.item.ManwonItem;
+import net.mcreator.palworld.item.MagicWandItem;
 import net.mcreator.palworld.item.FishTunaItem;
 import net.mcreator.palworld.item.FishTambaquiItem;
 import net.mcreator.palworld.item.FishSynodontisItem;
@@ -47,6 +48,7 @@ import net.mcreator.palworld.item.FarmerSporeItem;
 import net.mcreator.palworld.item.FarmerRootItem;
 import net.mcreator.palworld.item.FarmerDregsItem;
 import net.mcreator.palworld.item.ChunwonItem;
+import net.mcreator.palworld.item.BurfSwordItem;
 import net.mcreator.palworld.PalworldMod;
 
 public class PalworldModItems {
@@ -88,9 +90,11 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> FISH_MUSKELLUNGE = REGISTRY.register("fish_muskellunge", FishMuskellungeItem::new);
 	public static final DeferredItem<Item> FISH_RED_GROUPER = REGISTRY.register("fish_red_grouper", FishRedGrouperItem::new);
 	public static final DeferredItem<Item> FISH_HERRING = REGISTRY.register("fish_herring", FishHerringItem::new);
-	public static final DeferredItem<Item> MANWON = REGISTRY.register("manwon", ManwonItem::new);
-	public static final DeferredItem<Item> OCHUNWON = REGISTRY.register("ochunwon", OchunwonItem::new);
 	public static final DeferredItem<Item> CHUNWON = REGISTRY.register("chunwon", ChunwonItem::new);
+	public static final DeferredItem<Item> OCHUNWON = REGISTRY.register("ochunwon", OchunwonItem::new);
+	public static final DeferredItem<Item> MANWON = REGISTRY.register("manwon", ManwonItem::new);
+	public static final DeferredItem<Item> BURF_SWORD = REGISTRY.register("burf_sword", BurfSwordItem::new);
+	public static final DeferredItem<Item> MAGIC_WAND = REGISTRY.register("magic_wand", MagicWandItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

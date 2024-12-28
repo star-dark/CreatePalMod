@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "tool",
   "definition": {
-    "toolType": "Pickaxe",
+    "toolType": "Fishing rod",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "fishingroduncast",

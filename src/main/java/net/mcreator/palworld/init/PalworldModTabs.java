@@ -29,9 +29,9 @@ public class PalworldModTabs {
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
-			tabData.accept(PalworldModItems.MANWON.get());
-			tabData.accept(PalworldModItems.OCHUNWON.get());
 			tabData.accept(PalworldModItems.CHUNWON.get());
+			tabData.accept(PalworldModItems.OCHUNWON.get());
+			tabData.accept(PalworldModItems.MANWON.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 
@@ -41,6 +41,8 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISH_ROD_LV_15.get());
 			tabData.accept(PalworldModItems.FISH_ROD_LV_1.get());
 			tabData.accept(PalworldModItems.FISH_ROD_LV_30.get());
+			tabData.accept(PalworldModItems.BURF_SWORD.get());
+			tabData.accept(PalworldModItems.MAGIC_WAND.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

@@ -1,21 +1,19 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
+import net.neoforged.bus.api.Event;
 
-import net.mcreator.palworld.network.PalworldModVariables;
-import net.mcreator.palworld.init.PalworldModItems;
-
+@EventBusSubscriber
 public class FishRodEffectProcedure {
+	@SubscribeEvent
+	public static void onPlayerFishItem(ItemFishedEvent event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+	}
+
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double RandomNumber = 0;

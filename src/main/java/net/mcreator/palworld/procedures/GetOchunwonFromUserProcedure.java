@@ -1,14 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.neoforge.items.ItemHandlerHelper;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.palworld.network.PalworldModVariables;
-import net.mcreator.palworld.init.PalworldModItems;
+import net.neoforged.bus.api.Event;
 
 public class GetOchunwonFromUserProcedure {
 	public static void execute(Entity entity) {
@@ -16,7 +8,7 @@ public class GetOchunwonFromUserProcedure {
 			return;
 		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).my_money > 5000) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PalworldModItems.OCHUNWON.get()).copy();
+				ItemStack _setstack = new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
