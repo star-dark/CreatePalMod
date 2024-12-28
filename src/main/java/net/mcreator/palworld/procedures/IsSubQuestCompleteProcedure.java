@@ -1,8 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.palworld.network.PalworldModVariables;
+import net.neoforged.bus.api.Event;
 
 public class IsSubQuestCompleteProcedure {
 	public static boolean execute(Entity entity) {

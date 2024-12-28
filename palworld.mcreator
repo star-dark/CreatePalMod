@@ -38,7 +38,7 @@
     {
       "name": "UserGUI",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "user_gui",
       "metadata": {
@@ -104,7 +104,7 @@
     {
       "name": "FarmerJobNPC",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "farmer_job_npc",
       "metadata": {
@@ -299,7 +299,7 @@
     {
       "name": "MinerJobNPC",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "miner_job_npc",
       "metadata": {
@@ -357,7 +357,7 @@
     {
       "name": "JobNpcGui",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "job_npc_gui",
       "metadata": {
@@ -508,7 +508,7 @@
     {
       "name": "FisherJobNPC",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fisher_job_npc",
       "metadata": {
@@ -564,46 +564,6 @@
       "path": "~/JobItem/Miner"
     },
     {
-      "name": "MainQuest",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "main_quest",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/MainQuestProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/User_Quest"
-    },
-    {
-      "name": "IsMainQuestExist",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "is_main_quest_exist",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/IsMainQuestExistProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/User_Quest"
-    },
-    {
       "name": "SubQuest",
       "type": "procedure",
       "compiles": true,
@@ -644,6 +604,46 @@
       "path": "~/GUI/User_Quest"
     },
     {
+      "name": "IsSubQuestComplete",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_sub_quest_complete",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsSubQuestCompleteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
+    },
+    {
+      "name": "IsMainQuestExist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_main_quest_exist",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsMainQuestExistProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
+    },
+    {
       "name": "IsMainQuestComplete",
       "type": "procedure",
       "compiles": true,
@@ -664,15 +664,15 @@
       "path": "~/GUI/User_Quest"
     },
     {
-      "name": "IsSubQuestComplete",
+      "name": "MainQuest",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "is_sub_quest_complete",
+      "registry_name": "main_quest",
       "metadata": {
-        "return_type": "logic",
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/IsSubQuestCompleteProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/MainQuestProcedure.java"
         ],
         "dependencies": [
           {
@@ -682,6 +682,335 @@
         ]
       },
       "path": "~/GUI/User_Quest"
+    },
+    {
+      "name": "FishBass",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_bass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishBassItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_bass.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishPollock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_pollock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishPollockItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_pollock.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishCarp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_carp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishCarpItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_carp.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishTambaqui",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_tambaqui",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_tambaqui.json",
+          "src/main/java/net/mcreator/palworld/item/FishTambaquiItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishBlueGill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_blue_gill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishBlueGillItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_blue_gill.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishPerch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_perch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_perch.json",
+          "src/main/java/net/mcreator/palworld/item/FishPerchItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishAngler",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_angler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishAnglerItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_angler.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishArapaima",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_arapaima",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishArapaimaItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_arapaima.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FishRodEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishCatfish",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_catfish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishCatfishItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_catfish.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishHailbut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_hailbut",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_hailbut.json",
+          "src/main/java/net/mcreator/palworld/item/FishHailbutItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishSynodontis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_synodontis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishSynodontisItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_synodontis.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRedBelliedPiranha",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_red_bellied_piranha",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishRedBelliedPiranhaItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_red_bellied_piranha.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRainbowTrout",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rainbow_trout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishRainbowTroutItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_rainbow_trout.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishTuna",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_tuna",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_tuna.json",
+          "src/main/java/net/mcreator/palworld/item/FishTunaItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv15",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_15.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv15Item.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishElectricEel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_electric_eel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_electric_eel.json",
+          "src/main/java/net/mcreator/palworld/item/FishElectricEelItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishRodLv1Item.java",
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_1.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRodLv30",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_rod_lv_30",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishRodLv30Item.java",
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_30.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishMuskellunge",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_muskellunge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_muskellunge.json",
+          "src/main/java/net/mcreator/palworld/item/FishMuskellungeItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishRedGrouper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_red_grouper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FishRedGrouperItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_red_grouper.json"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "FishHerring",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_herring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/fish_herring.json",
+          "src/main/java/net/mcreator/palworld/item/FishHerringItem.java"
+        ]
+      },
+      "path": "~/JobItem/Fisher"
     }
   ],
   "variable_elements": [
@@ -802,7 +1131,12 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:FishRodLv1"
+    ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:FishRodLv30",
+      "~CUSTOM:FishRodLv15",
       "~CUSTOM:MinerPickLv1",
       "~CUSTOM:MinerPickLv15",
       "~CUSTOM:MinerPickLv30"
@@ -827,11 +1161,11 @@
             "children": []
           },
           {
-            "name": "Miner",
+            "name": "Fisher",
             "children": []
           },
           {
-            "name": "Fisher",
+            "name": "Miner",
             "children": []
           }
         ]
