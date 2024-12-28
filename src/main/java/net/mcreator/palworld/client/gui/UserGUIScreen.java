@@ -74,7 +74,7 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_quest_tap = new ImageButton(this.leftPos + 27, this.topPos + 58, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/quest_tap.png"), ResourceLocation.parse("palworld:textures/screens/quest_tap_on.png")),
+		imagebutton_quest_tap = new ImageButton(this.leftPos + 28, this.topPos + 58, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/quest_tap.png"), ResourceLocation.parse("palworld:textures/screens/quest_tap_on.png")),
 				e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new UserGUIButtonMessage(0, x, y, z));

@@ -33,7 +33,7 @@
           }
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/UserGUI"
     },
     {
       "name": "UserGUI",
@@ -44,10 +44,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/world/inventory/UserGUIMenu.java",
+          "src/main/java/net/mcreator/palworld/network/UserGUIButtonMessage.java",
           "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/UserGUI"
     },
     {
       "name": "OpenQuestGUI",
@@ -60,7 +61,7 @@
           "src/main/java/net/mcreator/palworld/network/OpenQuestGUIMessage.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/UserGUI"
     },
     {
       "name": "MinerPickEffect",
@@ -404,7 +405,7 @@
     {
       "name": "JobNpcClick",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "job_npc_click",
       "metadata": {
@@ -613,7 +614,7 @@
           }
         ]
       },
-      "path": "~/GUI/User_Quest"
+      "path": "~/GUI/User_Quest/Contents"
     },
     {
       "name": "IsSubQuestExist",
@@ -633,7 +634,7 @@
           }
         ]
       },
-      "path": "~/GUI/User_Quest"
+      "path": "~/GUI/User_Quest/Condition"
     },
     {
       "name": "IsSubQuestComplete",
@@ -653,7 +654,7 @@
           }
         ]
       },
-      "path": "~/GUI/User_Quest"
+      "path": "~/GUI/User_Quest/Condition"
     },
     {
       "name": "IsMainQuestExist",
@@ -673,7 +674,7 @@
           }
         ]
       },
-      "path": "~/GUI/User_Quest"
+      "path": "~/GUI/User_Quest/Condition"
     },
     {
       "name": "IsMainQuestComplete",
@@ -693,7 +694,7 @@
           }
         ]
       },
-      "path": "~/GUI/User_Quest"
+      "path": "~/GUI/User_Quest/Condition"
     },
     {
       "name": "MainQuest",
@@ -713,7 +714,7 @@
           }
         ]
       },
-      "path": "~/GUI/User_Quest"
+      "path": "~/GUI/User_Quest/Contents"
     },
     {
       "name": "FishBass",
@@ -1047,7 +1048,7 @@
     {
       "name": "OpenMoneyTap",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "open_money_tap",
       "metadata": {
@@ -1077,7 +1078,7 @@
           }
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/UserGUI"
     },
     {
       "name": "ChunwonRightclicked",
@@ -1265,7 +1266,7 @@
           }
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/UserGUI"
     },
     {
       "name": "GetManwonFromUser",
@@ -1388,6 +1389,364 @@
         ]
       },
       "path": "~/ClearWand"
+    },
+    {
+      "name": "CurrentMoney",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_money",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/screens/CurrentMoneyOverlay.java"
+        ]
+      },
+      "path": "~/GUI/UserGUI"
+    },
+    {
+      "name": "IsNotMainQuestComplete",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_not_main_quest_complete",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsNotMainQuestCompleteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/AppearCondition"
+    },
+    {
+      "name": "BringQuestContents",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bring_quest_contents",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BringQuestContentsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/BringContents"
+    },
+    {
+      "name": "BringQuestReward",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bring_quest_reward",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BringQuestRewardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/BringContents"
+    },
+    {
+      "name": "AcceptApear",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_apear",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AcceptApearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/AppearCondition"
+    },
+    {
+      "name": "QuestProvideGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_provide_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/gui/QuestProvideGUIScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/QuestProvideGUIMenu.java",
+          "src/main/java/net/mcreator/palworld/network/QuestProvideGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Npc_Quest"
+    },
+    {
+      "name": "King",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/entity/KingEntity.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/king_biome_modifier.json",
+          "src/main/java/net/mcreator/palworld/client/renderer/KingRenderer.java",
+          "src/main/resources/assets/palworld/models/item/king_spawn_egg.json"
+        ]
+      },
+      "path": "~/QuestNPC"
+    },
+    {
+      "name": "Kingentitiemauseuukeulrigeulhaesseulddae",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingentitiemauseuukeulrigeulhaesseulddae",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KingentitiemauseuukeulrigeulhaesseulddaeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/QuestNPC"
+    },
+    {
+      "name": "AcceptButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_button_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AcceptButtonPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/ButtonPressed"
+    },
+    {
+      "name": "RejectButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reject_button_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RejectButtonPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/ButtonPressed"
+    },
+    {
+      "name": "QuestTapCloseButtonAppear",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_tap_close_button_appear",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/QuestTapCloseButtonAppearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/AppearCondition"
+    },
+    {
+      "name": "ClosedButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "closed_button_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ClosedButtonPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/ButtonPressed"
+    },
+    {
+      "name": "RewardButtonAppear",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reward_button_appear",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RewardButtonAppearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/AppearCondition"
+    },
+    {
+      "name": "RewardButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reward_button_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RewardButtonPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest/ButtonPressed"
+    },
+    {
+      "name": "MainProgress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_progress",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MainProgressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest/Contents"
+    },
+    {
+      "name": "SubProgress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sub_progress",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SubProgressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest/Contents"
+    },
+    {
+      "name": "Pigentitigajugeosseulddae",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pigentitigajugeosseulddae",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PigentitigajugeosseulddaeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/QuestEntity"
+    },
+    {
+      "name": "Pig",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/renderer/PigRenderer.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/pig_biome_modifier.json",
+          "src/main/resources/assets/palworld/models/item/pig_spawn_egg.json",
+          "src/main/java/net/mcreator/palworld/entity/PigEntity.java"
+        ]
+      },
+      "path": "~/QuestEntity"
     }
   ],
   "variable_elements": [
@@ -1510,8 +1869,8 @@
   "tag_elements": {
     "ITEMS:minecraft:enchantable/fishing": [
       "~CUSTOM:FishRodLv30",
-      "~CUSTOM:FishRodLv15",
-      "~CUSTOM:FishRodLv1"
+      "~CUSTOM:FishRodLv1",
+      "~CUSTOM:FishRodLv15"
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:MinerPickLv1",
@@ -1533,6 +1892,7 @@
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
       "gui.palworld.money_tap.button_1000": "1000",
       "gui.palworld.money_tap.button_5000": "5000",
+      "entity.palworld.pig": "Pig",
       "item.palworld.fish_rainbow_trout": "Fish Rainbow Trout",
       "item.palworld.fish_herring": "Fish Herring",
       "gui.palworld.money_tap.label_inculganeunggeumaeg": "인출가능금액 :",
@@ -1541,24 +1901,30 @@
       "item.palworld.ore_emerald": "Ore Emerald",
       "item.palworld.ore_coal": "Ore Coal",
       "item.palworld.fish_tuna": "Fish Tuna",
+      "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
       "gui.palworld.user_gui.label_don": "돈",
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
       "item.palworld.miner_pick_lv_1": "Miner Pick Lv 1",
+      "entity.palworld.king": "King",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
       "item.palworld.manwon": "만원",
       "item.palworld.fish_perch": "Fish Perch",
+      "item.palworld.burf_sword": "Burf Sword",
       "item.palworld.ore_lapis_lazuli": "Ore Lapis Lazuli",
       "item.palworld.farmer_root": "Farmer Root",
       "item.palworld.fish_bass": "Fish Bass",
       "gui.palworld.quest_tap.label_kweseuteu": "퀘스트",
+      "item.palworld.pig_spawn_egg": "Pig Spawn Egg",
       "entity.palworld.fisher_job_npc": "Fisher Job NPC",
+      "gui.palworld.quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_blue_gill": "Fish Blue Gill",
       "item.palworld.fish_catfish": "Fish Catfish",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
       "item.palworld.ochunwon": "오천원",
+      "item.palworld.magic_wand": "Magic Wand",
       "item.palworld.fish_arapaima": "Fish Arapaima",
       "gui.palworld.job_npc_gui.button_geojeol": "거절",
       "item.palworld.ore_diamond": "Ore Diamond",
@@ -1568,12 +1934,16 @@
       "item.palworld.fish_red_grouper": "Fish Red Grouper",
       "gui.palworld.user_gui.label_wanryo": "완료✅",
       "item.palworld.fish_tambaqui": "Fish Tambaqui",
+      "gui.palworld.quest_provide_gui.button_dadgi": "닫기",
       "gui.palworld.money_tap.button_10000": "10000",
+      "item.palworld.king_spawn_egg": "King Spawn Egg",
       "entity.palworld.miner_job_npc": "Miner Job NPC",
       "item.palworld.fish_rod_lv_1": "Fish Rod Lv 1",
       "gui.palworld.quest_tap.label_wanryo": "완료✅",
       "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
       "item.palworld.fish_pollock": "Fish Pollock",
+      "gui.palworld.quest_provide_gui.label_bosang": "보상  :",
+      "gui.palworld.quest_provide_gui.button_surag": "수락",
       "item.palworld.ore_gold": "Ore Gold",
       "gui.palworld.job_npc_gui.button_surag": "수락",
       "item.palworld.fish_synodontis": "Fish Synodontis",
@@ -1621,16 +1991,54 @@
         "children": [
           {
             "name": "User_Quest",
-            "children": []
+            "children": [
+              {
+                "name": "Contents",
+                "children": []
+              },
+              {
+                "name": "Condition",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Money",
+            "children": []
+          },
+          {
+            "name": "Npc_Quest",
+            "children": [
+              {
+                "name": "AppearCondition",
+                "children": []
+              },
+              {
+                "name": "ButtonPressed",
+                "children": []
+              },
+              {
+                "name": "BringContents",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "UserGUI",
             "children": []
           }
         ]
       },
       {
         "name": "JobNPC",
+        "children": []
+      },
+      {
+        "name": "QuestNPC",
+        "children": []
+      },
+      {
+        "name": "QuestEntity",
         "children": []
       }
     ]

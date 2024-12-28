@@ -1,0 +1,45 @@
+{
+  "_fv": 69,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "money2.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_bring_my_money",
+          "text": {
+            "fixedValue": "",
+            "name": "BringMyMoney"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 33,
+          "y": 11
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
