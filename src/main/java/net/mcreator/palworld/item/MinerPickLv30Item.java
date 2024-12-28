@@ -36,7 +36,7 @@ public class MinerPickLv30Item extends PickaxeItem {
 
 		@Override
 		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_WOODEN_TOOL;
+			return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
 		}
 
 		@Override

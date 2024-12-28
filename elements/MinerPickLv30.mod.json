@@ -27,7 +27,7 @@
     },
     "repairItems": [],
     "immuneToFire": false,
-    "blockDropsTier": "WOOD",
+    "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
