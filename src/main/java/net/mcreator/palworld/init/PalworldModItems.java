@@ -45,6 +45,7 @@ import net.mcreator.palworld.item.FishAnglerItem;
 import net.mcreator.palworld.item.FarmerSporeItem;
 import net.mcreator.palworld.item.FarmerRootItem;
 import net.mcreator.palworld.item.FarmerDregsItem;
+import net.mcreator.palworld.item.BurfSwordItem;
 import net.mcreator.palworld.PalworldMod;
 
 public class PalworldModItems {
@@ -87,6 +88,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> FISH_RED_GROUPER = REGISTRY.register("fish_red_grouper", FishRedGrouperItem::new);
 	public static final DeferredItem<Item> FISH_HERRING = REGISTRY.register("fish_herring", FishHerringItem::new);
 	public static final DeferredItem<Item> MAGIC_WAND = REGISTRY.register("magic_wand", MagicWandItem::new);
+	public static final DeferredItem<Item> BURF_SWORD = REGISTRY.register("burf_sword", BurfSwordItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
