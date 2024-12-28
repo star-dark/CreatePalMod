@@ -1,5 +1,13 @@
 {
   "gui.palworld.user_gui.label_wanryo1": "완료✅",
+  "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
+  "entity.palworld.farmer_job_npc": "Farmer Job NPC",
+  "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
   "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
-  "gui.palworld.user_gui.label_wanryo": "완료✅"
+  "gui.palworld.user_gui.label_wanryo": "완료✅",
+  "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
+  "entity.palworld.fisher_job_npc": "Fisher Job NPC",
+  "entity.palworld.miner_job_npc": "Miner Job NPC",
+  "gui.palworld.job_npc_gui.button_surag": "수락",
+  "gui.palworld.job_npc_gui.button_geojeol": "거절"
 }

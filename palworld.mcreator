@@ -104,15 +104,15 @@
     {
       "name": "FarmerJobNPC",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "farmer_job_npc",
       "metadata": {
         "files": [
-          "src/main/resources/data/palworld/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json",
+          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java",
           "src/main/resources/assets/palworld/models/item/farmer_job_npc_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java",
-          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java"
+          "src/main/resources/data/palworld/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json",
+          "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java"
         ]
       },
       "path": "~/JobNPC"
@@ -299,15 +299,15 @@
     {
       "name": "MinerJobNPC",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "miner_job_npc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java",
-          "src/main/resources/assets/palworld/models/item/miner_job_npc_spawn_egg.json",
           "src/main/java/net/mcreator/palworld/entity/MinerJobNPCEntity.java",
-          "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json"
+          "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json",
+          "src/main/resources/assets/palworld/models/item/miner_job_npc_spawn_egg.json",
+          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java"
         ]
       },
       "path": "~/JobNPC"
@@ -357,14 +357,14 @@
     {
       "name": "JobNpcGui",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "job_npc_gui",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/world/inventory/JobNpcGuiMenu.java",
-          "src/main/java/net/mcreator/palworld/network/JobNpcGuiButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java",
+          "src/main/java/net/mcreator/palworld/network/JobNpcGuiButtonMessage.java"
         ]
       },
       "path": "~/JobNPC"
@@ -508,14 +508,14 @@
     {
       "name": "FisherJobNPC",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "fisher_job_npc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/entity/FisherJobNPCEntity.java",
-          "src/main/resources/data/palworld/neoforge/biome_modifier/fisher_job_npc_biome_modifier.json",
           "src/main/java/net/mcreator/palworld/client/renderer/FisherJobNPCRenderer.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/fisher_job_npc_biome_modifier.json",
+          "src/main/java/net/mcreator/palworld/entity/FisherJobNPCEntity.java",
           "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json"
         ]
       },
@@ -1146,8 +1146,16 @@
   "language_map": {
     "en_us": {
       "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
+      "entity.palworld.farmer_job_npc": "Farmer Job NPC",
+      "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
-      "gui.palworld.user_gui.label_wanryo": "완료✅"
+      "gui.palworld.user_gui.label_wanryo": "완료✅",
+      "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
+      "entity.palworld.fisher_job_npc": "Fisher Job NPC",
+      "entity.palworld.miner_job_npc": "Miner Job NPC",
+      "gui.palworld.job_npc_gui.button_surag": "수락",
+      "gui.palworld.job_npc_gui.button_geojeol": "거절"
     }
   },
   "foldersRoot": {
