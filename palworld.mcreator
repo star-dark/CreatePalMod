@@ -51,6 +51,19 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Test4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/Test4Procedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
