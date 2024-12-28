@@ -9,7 +9,21 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "GUI",
+        "children": [
+          {
+            "name": "User_Quest",
+            "children": []
+          },
+          {
+            "name": "Money",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "palworld",
