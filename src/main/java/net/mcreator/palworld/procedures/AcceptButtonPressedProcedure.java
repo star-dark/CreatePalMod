@@ -76,5 +76,7 @@ public class AcceptButtonPressedProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }

@@ -62,11 +62,11 @@ public class KingentitiemauseuukeulrigeulhaesseulddaeProcedure {
 				_vars.syncPlayerVariables(sourceentity);
 			}
 		} else {
-			if (IsMainQuestCompleteProcedure.execute(entity)) {
+			if (sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES).MainQuestGoal == sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES).MainQuestProgress) {
 				{
-					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					PalworldModVariables.PlayerVariables _vars = sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES);
 					_vars.MainRewardRequest = true;
-					_vars.syncPlayerVariables(entity);
+					_vars.syncPlayerVariables(sourceentity);
 				}
 			}
 		}

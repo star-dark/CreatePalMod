@@ -1,5 +1,6 @@
 package net.mcreator.palworld.procedures;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.palworld.network.PalworldModVariables;
@@ -31,5 +32,7 @@ public class RejectButtonPressedProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }
