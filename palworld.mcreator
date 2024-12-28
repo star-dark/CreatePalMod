@@ -272,6 +272,87 @@
         ]
       },
       "path": "~/JobNPC"
+    },
+    {
+      "name": "FarmerDregs",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_dregs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FarmerDregsItem.java",
+          "src/main/resources/assets/palworld/models/item/farmer_dregs.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerRoot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/farmer_root.json",
+          "src/main/java/net/mcreator/palworld/item/FarmerRootItem.java"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerSpore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_spore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FarmerSporeItem.java",
+          "src/main/resources/assets/palworld/models/item/farmer_spore.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerHoeEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_hoe_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FarmerHoeEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Farmer"
     }
   ],
   "variable_elements": [
@@ -297,6 +378,9 @@
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
+      "item.palworld.farmer_dregs": "Farmer Dregs",
+      "item.palworld.farmer_root": "Farmer Root",
+      "item.palworld.farmer_spore": "Farmer Spore",
       "entity.palworld.fisher_job_npc": "Fisher Job NPC",
       "entity.palworld.miner_job_npc": "Miner Job NPC",
       "gui.palworld.job_npc_gui.button_surag": "수락",
@@ -322,6 +406,23 @@
       {
         "name": "JobNPC",
         "children": []
+      },
+      {
+        "name": "JobItem",
+        "children": [
+          {
+            "name": "Farmer",
+            "children": []
+          },
+          {
+            "name": "Miner",
+            "children": []
+          },
+          {
+            "name": "Fisher",
+            "children": []
+          }
+        ]
       }
     ]
   },
