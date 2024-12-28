@@ -23,7 +23,16 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/Test1Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
       }
     },
     {
