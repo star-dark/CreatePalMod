@@ -51,7 +51,7 @@
     {
       "name": "Test3",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "test_3",
       "metadata": {
@@ -69,7 +69,7 @@
     {
       "name": "Fdsfsdfs",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fdsfsdfs",
       "metadata": {
