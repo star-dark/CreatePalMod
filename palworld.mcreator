@@ -25,6 +25,19 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Test2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/Test2Procedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
