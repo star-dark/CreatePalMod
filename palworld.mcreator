@@ -404,7 +404,7 @@
     {
       "name": "JobNpcClick",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "job_npc_click",
       "metadata": {
@@ -1043,6 +1043,39 @@
         ]
       },
       "path": "~/JobItem/Fisher"
+    },
+    {
+      "name": "MagicWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/MagicWandItem.java",
+          "src/main/resources/assets/palworld/models/item/magic_wand.json"
+        ]
+      },
+      "path": "~/ClearWand"
+    },
+    {
+      "name": "ClearVariable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_variable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ClearVariableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ClearWand"
     }
   ],
   "variable_elements": [
@@ -1164,11 +1197,11 @@
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:FishRodLv30",
+      "~CUSTOM:FishRodLv15",
       "~CUSTOM:FishRodLv1"
     ],
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:FishRodLv30",
-      "~CUSTOM:FishRodLv15",
       "~CUSTOM:MinerPickLv1",
       "~CUSTOM:MinerPickLv15",
       "~CUSTOM:MinerPickLv30"
@@ -1183,6 +1216,7 @@
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
       "item.palworld.farmer_dregs": "Farmer Dregs",
+      "item.palworld.magic_wand": "Magic Wand",
       "item.palworld.fish_rod_lv_15": "Fish Rod Lv 1 5",
       "item.palworld.fish_arapaima": "Fish Arapaima",
       "key.palworld.open_quest_gui": "Open Quest GUI",
@@ -1260,6 +1294,10 @@
       },
       {
         "name": "JobNPC",
+        "children": []
+      },
+      {
+        "name": "ClearWand",
         "children": []
       }
     ]

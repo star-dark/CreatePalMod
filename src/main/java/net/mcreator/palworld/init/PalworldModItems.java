@@ -20,6 +20,7 @@ import net.mcreator.palworld.item.OreCoalItem;
 import net.mcreator.palworld.item.MinerPickLv30Item;
 import net.mcreator.palworld.item.MinerPickLv1Item;
 import net.mcreator.palworld.item.MinerPickLv15Item;
+import net.mcreator.palworld.item.MagicWandItem;
 import net.mcreator.palworld.item.FishTunaItem;
 import net.mcreator.palworld.item.FishTambaquiItem;
 import net.mcreator.palworld.item.FishSynodontisItem;
@@ -85,6 +86,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> FISH_MUSKELLUNGE = REGISTRY.register("fish_muskellunge", FishMuskellungeItem::new);
 	public static final DeferredItem<Item> FISH_RED_GROUPER = REGISTRY.register("fish_red_grouper", FishRedGrouperItem::new);
 	public static final DeferredItem<Item> FISH_HERRING = REGISTRY.register("fish_herring", FishHerringItem::new);
+	public static final DeferredItem<Item> MAGIC_WAND = REGISTRY.register("magic_wand", MagicWandItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
