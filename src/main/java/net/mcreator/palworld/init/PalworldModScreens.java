@@ -10,11 +10,13 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.palworld.client.gui.UserGUIScreen;
+import net.mcreator.palworld.client.gui.JobNpcGuiScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PalworldModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(PalworldModMenus.USER_GUI.get(), UserGUIScreen::new);
+		event.register(PalworldModMenus.JOB_NPC_GUI.get(), JobNpcGuiScreen::new);
 	}
 }

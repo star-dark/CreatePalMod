@@ -61,24 +61,24 @@ public class PalworldModVariables {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
 			clone.job_production = original.job_production;
-			clone.MainQuestContents = original.MainQuestContents;
-			clone.SubQuestContents = original.SubQuestContents;
 			clone.MainQuestGoal = original.MainQuestGoal;
-			clone.SubQuestGoal = original.SubQuestGoal;
 			clone.MainQuestProgress = original.MainQuestProgress;
-			clone.SubQuestProgress = original.SubQuestProgress;
-			clone.IsMainQuestExist = original.IsMainQuestExist;
 			clone.IsSubQuestExist = original.IsSubQuestExist;
+			clone.SubQuestProgress = original.SubQuestProgress;
 			clone.my_money = original.my_money;
+			clone.MainQuestContents = original.MainQuestContents;
+			clone.SubQuestGoal = original.SubQuestGoal;
 			clone.MainQuestRewardMoney = original.MainQuestRewardMoney;
+			clone.IsMainQuestExist = original.IsMainQuestExist;
 			clone.SubQuestRewardMoney = original.SubQuestRewardMoney;
+			clone.SubQuestContents = original.SubQuestContents;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
+				clone.SubRewardRequest = original.SubRewardRequest;
 				clone.quest_buffer = original.quest_buffer;
-				clone.MainQuestRequest = original.MainQuestRequest;
 				clone.SubQuestRequest = original.SubQuestRequest;
 				clone.MainRewardRequest = original.MainRewardRequest;
-				clone.SubRewardRequest = original.SubRewardRequest;
+				clone.MainQuestRequest = original.MainQuestRequest;
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -88,46 +88,46 @@ public class PalworldModVariables {
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public String job_production = "\"\"";
 		public String talk_with = "\"\"";
-		public String quest_buffer = "\"\"";
-		public String MainQuestContents = "\"\"";
-		public String SubQuestContents = "\"\"";
 		public double MainQuestGoal = 0;
-		public double SubQuestGoal = 0;
 		public double MainQuestProgress = 0;
-		public double SubQuestProgress = 0;
-		public boolean IsMainQuestExist = false;
+		public boolean SubRewardRequest = false;
 		public boolean IsSubQuestExist = false;
-		public boolean MainQuestRequest = false;
+		public String quest_buffer = "\"\"";
+		public double SubQuestProgress = 0;
 		public boolean SubQuestRequest = false;
 		public boolean MainRewardRequest = false;
-		public boolean SubRewardRequest = false;
+		public boolean MainQuestRequest = false;
 		public double my_money = 0;
-		public double RewardMoneyBuffer = 0;
+		public String MainQuestContents = "\"\"";
+		public double SubQuestGoal = 0;
 		public double MainQuestRewardMoney = 0;
+		public boolean IsMainQuestExist = false;
+		public double RewardMoneyBuffer = 0;
 		public double SubQuestRewardMoney = 0;
+		public String SubQuestContents = "\"\"";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("job_production", job_production);
 			nbt.putString("talk_with", talk_with);
-			nbt.putString("quest_buffer", quest_buffer);
-			nbt.putString("MainQuestContents", MainQuestContents);
-			nbt.putString("SubQuestContents", SubQuestContents);
 			nbt.putDouble("MainQuestGoal", MainQuestGoal);
-			nbt.putDouble("SubQuestGoal", SubQuestGoal);
 			nbt.putDouble("MainQuestProgress", MainQuestProgress);
-			nbt.putDouble("SubQuestProgress", SubQuestProgress);
-			nbt.putBoolean("IsMainQuestExist", IsMainQuestExist);
+			nbt.putBoolean("SubRewardRequest", SubRewardRequest);
 			nbt.putBoolean("IsSubQuestExist", IsSubQuestExist);
-			nbt.putBoolean("MainQuestRequest", MainQuestRequest);
+			nbt.putString("quest_buffer", quest_buffer);
+			nbt.putDouble("SubQuestProgress", SubQuestProgress);
 			nbt.putBoolean("SubQuestRequest", SubQuestRequest);
 			nbt.putBoolean("MainRewardRequest", MainRewardRequest);
-			nbt.putBoolean("SubRewardRequest", SubRewardRequest);
+			nbt.putBoolean("MainQuestRequest", MainQuestRequest);
 			nbt.putDouble("my_money", my_money);
-			nbt.putDouble("RewardMoneyBuffer", RewardMoneyBuffer);
+			nbt.putString("MainQuestContents", MainQuestContents);
+			nbt.putDouble("SubQuestGoal", SubQuestGoal);
 			nbt.putDouble("MainQuestRewardMoney", MainQuestRewardMoney);
+			nbt.putBoolean("IsMainQuestExist", IsMainQuestExist);
+			nbt.putDouble("RewardMoneyBuffer", RewardMoneyBuffer);
 			nbt.putDouble("SubQuestRewardMoney", SubQuestRewardMoney);
+			nbt.putString("SubQuestContents", SubQuestContents);
 			return nbt;
 		}
 
@@ -135,23 +135,23 @@ public class PalworldModVariables {
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
 			job_production = nbt.getString("job_production");
 			talk_with = nbt.getString("talk_with");
-			quest_buffer = nbt.getString("quest_buffer");
-			MainQuestContents = nbt.getString("MainQuestContents");
-			SubQuestContents = nbt.getString("SubQuestContents");
 			MainQuestGoal = nbt.getDouble("MainQuestGoal");
-			SubQuestGoal = nbt.getDouble("SubQuestGoal");
 			MainQuestProgress = nbt.getDouble("MainQuestProgress");
-			SubQuestProgress = nbt.getDouble("SubQuestProgress");
-			IsMainQuestExist = nbt.getBoolean("IsMainQuestExist");
+			SubRewardRequest = nbt.getBoolean("SubRewardRequest");
 			IsSubQuestExist = nbt.getBoolean("IsSubQuestExist");
-			MainQuestRequest = nbt.getBoolean("MainQuestRequest");
+			quest_buffer = nbt.getString("quest_buffer");
+			SubQuestProgress = nbt.getDouble("SubQuestProgress");
 			SubQuestRequest = nbt.getBoolean("SubQuestRequest");
 			MainRewardRequest = nbt.getBoolean("MainRewardRequest");
-			SubRewardRequest = nbt.getBoolean("SubRewardRequest");
+			MainQuestRequest = nbt.getBoolean("MainQuestRequest");
 			my_money = nbt.getDouble("my_money");
-			RewardMoneyBuffer = nbt.getDouble("RewardMoneyBuffer");
+			MainQuestContents = nbt.getString("MainQuestContents");
+			SubQuestGoal = nbt.getDouble("SubQuestGoal");
 			MainQuestRewardMoney = nbt.getDouble("MainQuestRewardMoney");
+			IsMainQuestExist = nbt.getBoolean("IsMainQuestExist");
+			RewardMoneyBuffer = nbt.getDouble("RewardMoneyBuffer");
 			SubQuestRewardMoney = nbt.getDouble("SubQuestRewardMoney");
+			SubQuestContents = nbt.getString("SubQuestContents");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

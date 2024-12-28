@@ -19,7 +19,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.palworld.network.PalworldModVariables;
+import net.mcreator.palworld.init.PalworldModTabs;
 import net.mcreator.palworld.init.PalworldModMenus;
+import net.mcreator.palworld.init.PalworldModItems;
+import net.mcreator.palworld.init.PalworldModEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -39,6 +42,9 @@ public class PalworldMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 
+		PalworldModItems.REGISTRY.register(modEventBus);
+		PalworldModEntities.REGISTRY.register(modEventBus);
+		PalworldModTabs.REGISTRY.register(modEventBus);
 		PalworldModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		PalworldModMenus.REGISTRY.register(modEventBus);

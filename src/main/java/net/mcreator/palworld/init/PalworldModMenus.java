@@ -12,9 +12,11 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.palworld.world.inventory.UserGUIMenu;
+import net.mcreator.palworld.world.inventory.JobNpcGuiMenu;
 import net.mcreator.palworld.PalworldMod;
 
 public class PalworldModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, PalworldMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<UserGUIMenu>> USER_GUI = REGISTRY.register("user_gui", () -> IMenuTypeExtension.create(UserGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<JobNpcGuiMenu>> JOB_NPC_GUI = REGISTRY.register("job_npc_gui", () -> IMenuTypeExtension.create(JobNpcGuiMenu::new));
 }

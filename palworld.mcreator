@@ -1,20 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "UserGUI",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "user_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/UserGUIMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
       "name": "OpenQuestGUIOnKeyPressed",
       "type": "procedure",
       "compiles": true,
@@ -50,6 +36,20 @@
       "path": "~/GUI"
     },
     {
+      "name": "UserGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "user_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/world/inventory/UserGUIMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
       "name": "OpenQuestGUI",
       "type": "keybind",
       "compiles": true,
@@ -61,6 +61,507 @@
         ]
       },
       "path": "~/GUI"
+    },
+    {
+      "name": "MinerPickEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MinerPickEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "FarmerJobNPC",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/palworld/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json",
+          "src/main/resources/assets/palworld/models/item/farmer_job_npc_spawn_egg.json",
+          "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java",
+          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "FarmerDregs",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_dregs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/farmer_dregs.json",
+          "src/main/java/net/mcreator/palworld/item/FarmerDregsItem.java"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "OreGold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreGoldItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_gold.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "JobGetSuccess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_get_success",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JobGetSuccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "MinerTalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_talk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MinerTalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "OreEmerald",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_emerald",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreEmeraldItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_emerald.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "FarmerRoot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_root",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FarmerRootItem.java",
+          "src/main/resources/assets/palworld/models/item/farmer_root.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "FarmerTalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_talk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FarmerTalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobGuiClose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_gui_close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JobGuiCloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "FarmerHoeEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_hoe_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FarmerHoeEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "MinerJobNPC",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java",
+          "src/main/resources/assets/palworld/models/item/miner_job_npc_spawn_egg.json",
+          "src/main/java/net/mcreator/palworld/entity/MinerJobNPCEntity.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "OreLapisLazuli",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_lapis_lazuli",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/ore_lapis_lazuli.json",
+          "src/main/java/net/mcreator/palworld/item/OreLapisLazuliItem.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "OreCopper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_copper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_copper.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MinerPickLv30",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_30",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_30.json",
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv30Item.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "JobNpcGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/world/inventory/JobNpcGuiMenu.java",
+          "src/main/java/net/mcreator/palworld/network/JobNpcGuiButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobNpcClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JobNpcClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "OreDiamond",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_diamond",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreDiamondItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_diamond.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "FisherTalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fisher_talk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FisherTalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "OreIron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreIronItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_iron.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "JobNpcGuiText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_gui_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JobNpcGuiTextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "MinerPickLv15",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_15.json",
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv15Item.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "FisherJobNPC",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fisher_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/entity/FisherJobNPCEntity.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/fisher_job_npc_biome_modifier.json",
+          "src/main/java/net/mcreator/palworld/client/renderer/FisherJobNPCRenderer.java",
+          "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "MinerPickLv1",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_pick_lv_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_1.json",
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv1Item.java"
+        ]
+      },
+      "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "FarmerSpore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmer_spore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/FarmerSporeItem.java",
+          "src/main/resources/assets/palworld/models/item/farmer_spore.json"
+        ]
+      },
+      "path": "~/JobItem/Farmer"
+    },
+    {
+      "name": "OreCoal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_coal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/OreCoalItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_coal.json"
+        ]
+      },
+      "path": "~/JobItem/Miner"
     }
   ],
   "variable_elements": [
@@ -77,31 +578,7 @@
       "value": "\"\""
     },
     {
-      "name": "quest_buffer",
-      "type": "string",
-      "scope": "player_lifetime",
-      "value": "\"\""
-    },
-    {
-      "name": "MainQuestContents",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
-    },
-    {
-      "name": "SubQuestContents",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
-    },
-    {
       "name": "MainQuestGoal",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "SubQuestGoal",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -113,15 +590,9 @@
       "value": "0"
     },
     {
-      "name": "SubQuestProgress",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "IsMainQuestExist",
+      "name": "SubRewardRequest",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
@@ -131,10 +602,16 @@
       "value": "false"
     },
     {
-      "name": "MainQuestRequest",
-      "type": "logic",
+      "name": "quest_buffer",
+      "type": "string",
       "scope": "player_lifetime",
-      "value": "false"
+      "value": "\"\""
+    },
+    {
+      "name": "SubQuestProgress",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     },
     {
       "name": "SubQuestRequest",
@@ -149,7 +626,7 @@
       "value": "false"
     },
     {
-      "name": "SubRewardRequest",
+      "name": "MainQuestRequest",
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
@@ -161,9 +638,15 @@
       "value": "0"
     },
     {
-      "name": "RewardMoneyBuffer",
+      "name": "MainQuestContents",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "SubQuestGoal",
       "type": "number",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -173,24 +656,62 @@
       "value": "0"
     },
     {
+      "name": "IsMainQuestExist",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RewardMoneyBuffer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
       "name": "SubQuestRewardMoney",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "SubQuestContents",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:MinerPickLv1",
+      "~CUSTOM:MinerPickLv15",
+      "~CUSTOM:MinerPickLv30"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {
-      "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
-      "key.palworld.open_quest_gui": "Open Quest GUI"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "JobItem",
+        "children": [
+          {
+            "name": "Farmer",
+            "children": []
+          },
+          {
+            "name": "Miner",
+            "children": []
+          },
+          {
+            "name": "Fisher",
+            "children": []
+          }
+        ]
+      },
       {
         "name": "GUI",
         "children": [
@@ -203,6 +724,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "JobNPC",
+        "children": []
       }
     ]
   },

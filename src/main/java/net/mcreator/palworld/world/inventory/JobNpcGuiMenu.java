@@ -3,7 +3,7 @@ package net.mcreator.palworld.world.inventory;
 
 import net.mcreator.palworld.PalworldMod;
 
-public class UserGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class JobNpcGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -16,8 +16,8 @@ public class UserGUIMenu extends AbstractContainerMenu implements Supplier<Map<I
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public UserGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(PalworldModMenus.USER_GUI.get(), id);
+	public JobNpcGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(PalworldModMenus.JOB_NPC_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
