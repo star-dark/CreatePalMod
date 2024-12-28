@@ -1,8 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.client.gui.components.EditBox;
-
-import java.util.HashMap;
+import net.neoforged.bus.api.Event;
 
 public class Test3Procedure {
 	public static void execute(HashMap guistate) {
