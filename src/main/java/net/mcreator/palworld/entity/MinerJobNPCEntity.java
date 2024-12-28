@@ -152,7 +152,7 @@ public class MinerJobNPCEntity extends Monster {
 		Entity entity = this;
 		Level world = this.level();
 
-		MinerTalkProcedure.execute(entity, sourceentity);
+		MinerTalkProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
 	}
 

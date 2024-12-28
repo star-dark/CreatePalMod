@@ -1,6 +1,18 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.palworld.network.PalworldModVariables;
+import net.mcreator.palworld.init.PalworldModItems;
 
 public class FishRodEffectProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -40,7 +52,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_TUNA.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -52,7 +64,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_RAINBOW_TROUT.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -88,7 +100,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_RED_BELLIED_PIRANHA.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -100,7 +112,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_ELECTRIC_EEL.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -112,7 +124,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_MUSKELLUNGE.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -141,7 +153,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_HAILBUT.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -177,7 +189,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_CATFISH.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -199,7 +211,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_HERRING.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -223,7 +235,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_RED_GROUPER.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -235,7 +247,7 @@ public class FishRodEffectProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.DELETED_MOD_ELEMENT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PalworldModItems.FISH_SYNODONTIS.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}

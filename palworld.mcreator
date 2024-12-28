@@ -104,7 +104,7 @@
     {
       "name": "FarmerJobNPC",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "farmer_job_npc",
       "metadata": {
@@ -125,8 +125,8 @@
       "registry_name": "farmer_dregs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/farmer_dregs.json",
-          "src/main/java/net/mcreator/palworld/item/FarmerDregsItem.java"
+          "src/main/java/net/mcreator/palworld/item/FarmerDregsItem.java",
+          "src/main/resources/assets/palworld/models/item/farmer_dregs.json"
         ]
       },
       "path": "~/JobItem/Farmer"
@@ -182,6 +182,22 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -209,8 +225,8 @@
       "registry_name": "farmer_root",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FarmerRootItem.java",
-          "src/main/resources/assets/palworld/models/item/farmer_root.json"
+          "src/main/resources/assets/palworld/models/item/farmer_root.json",
+          "src/main/java/net/mcreator/palworld/item/FarmerRootItem.java"
         ]
       },
       "path": "~/JobItem/Farmer"
@@ -233,6 +249,22 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -299,7 +331,7 @@
     {
       "name": "MinerJobNPC",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "miner_job_npc",
       "metadata": {
@@ -334,8 +366,8 @@
       "registry_name": "ore_copper",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java",
-          "src/main/resources/assets/palworld/models/item/ore_copper.json"
+          "src/main/resources/assets/palworld/models/item/ore_copper.json",
+          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -348,8 +380,8 @@
       "registry_name": "miner_pick_lv_30",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/miner_pick_lv_30.json",
-          "src/main/java/net/mcreator/palworld/item/MinerPickLv30Item.java"
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv30Item.java",
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_30.json"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -357,7 +389,7 @@
     {
       "name": "JobNpcGui",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "job_npc_gui",
       "metadata": {
@@ -372,7 +404,7 @@
     {
       "name": "JobNpcClick",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "job_npc_click",
       "metadata": {
@@ -412,8 +444,8 @@
       "registry_name": "ore_diamond",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/OreDiamondItem.java",
-          "src/main/resources/assets/palworld/models/item/ore_diamond.json"
+          "src/main/resources/assets/palworld/models/item/ore_diamond.json",
+          "src/main/java/net/mcreator/palworld/item/OreDiamondItem.java"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -465,8 +497,8 @@
       "registry_name": "ore_iron",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/OreIronItem.java",
-          "src/main/resources/assets/palworld/models/item/ore_iron.json"
+          "src/main/resources/assets/palworld/models/item/ore_iron.json",
+          "src/main/java/net/mcreator/palworld/item/OreIronItem.java"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -508,7 +540,7 @@
     {
       "name": "FisherJobNPC",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fisher_job_npc",
       "metadata": {
@@ -529,8 +561,8 @@
       "registry_name": "miner_pick_lv_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/miner_pick_lv_1.json",
-          "src/main/java/net/mcreator/palworld/item/MinerPickLv1Item.java"
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv1Item.java",
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_1.json"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -719,8 +751,8 @@
       "registry_name": "fish_carp",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishCarpItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_carp.json"
+          "src/main/resources/assets/palworld/models/item/fish_carp.json",
+          "src/main/java/net/mcreator/palworld/item/FishCarpItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -775,8 +807,8 @@
       "registry_name": "fish_angler",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishAnglerItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_angler.json"
+          "src/main/resources/assets/palworld/models/item/fish_angler.json",
+          "src/main/java/net/mcreator/palworld/item/FishAnglerItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -866,8 +898,8 @@
       "registry_name": "fish_synodontis",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishSynodontisItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_synodontis.json"
+          "src/main/resources/assets/palworld/models/item/fish_synodontis.json",
+          "src/main/java/net/mcreator/palworld/item/FishSynodontisItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -880,8 +912,8 @@
       "registry_name": "fish_red_bellied_piranha",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishRedBelliedPiranhaItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_red_bellied_piranha.json"
+          "src/main/resources/assets/palworld/models/item/fish_red_bellied_piranha.json",
+          "src/main/java/net/mcreator/palworld/item/FishRedBelliedPiranhaItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -936,8 +968,8 @@
       "registry_name": "fish_electric_eel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/fish_electric_eel.json",
-          "src/main/java/net/mcreator/palworld/item/FishElectricEelItem.java"
+          "src/main/java/net/mcreator/palworld/item/FishElectricEelItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_electric_eel.json"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -950,8 +982,8 @@
       "registry_name": "fish_rod_lv_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishRodLv1Item.java",
-          "src/main/resources/assets/palworld/models/item/fish_rod_lv_1.json"
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_1.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv1Item.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -964,8 +996,8 @@
       "registry_name": "fish_rod_lv_30",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishRodLv30Item.java",
-          "src/main/resources/assets/palworld/models/item/fish_rod_lv_30.json"
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_30.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv30Item.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -1145,17 +1177,52 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "item.palworld.fish_angler": "Fish Angler",
+      "item.palworld.fish_blue_gill": "Fish Blue Gill",
+      "item.palworld.fish_catfish": "Fish Catfish",
+      "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
+      "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
+      "item.palworld.farmer_dregs": "Farmer Dregs",
+      "item.palworld.fish_rod_lv_15": "Fish Rod Lv 1 5",
+      "item.palworld.fish_arapaima": "Fish Arapaima",
+      "key.palworld.open_quest_gui": "Open Quest GUI",
+      "gui.palworld.job_npc_gui.button_geojeol": "거절",
+      "item.palworld.miner_pick_lv_30": "Miner Pick Lv 3 0",
+      "item.palworld.ore_diamond": "Ore Diamond",
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
+      "item.palworld.fish_hailbut": "Fish Hailbut",
+      "item.palworld.ore_copper": "Ore Copper",
+      "item.palworld.fish_rod_lv_30": "Fish Rod Lv 3 0",
+      "item.palworld.fish_red_grouper": "Fish Red Grouper",
+      "gui.palworld.user_gui.label_wanryo": "완료✅",
+      "item.palworld.fish_rainbow_trout": "Fish Rainbow Trout",
+      "item.palworld.fish_tambaqui": "Fish Tambaqui",
+      "item.palworld.fish_herring": "Fish Herring",
+      "entity.palworld.miner_job_npc": "Miner Job NPC",
+      "item.palworld.fish_rod_lv_1": "Fish Rod Lv 1",
+      "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "item.palworld.fish_electric_eel": "Fish Electric Eel",
+      "item.palworld.ore_emerald": "Ore Emerald",
+      "item.palworld.ore_coal": "Ore Coal",
+      "item.palworld.fish_pollock": "Fish Pollock",
+      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
+      "item.palworld.fish_tuna": "Fish Tuna",
+      "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
+      "item.palworld.ore_gold": "Ore Gold",
+      "gui.palworld.job_npc_gui.button_surag": "수락",
+      "item.palworld.fish_synodontis": "Fish Synodontis",
+      "item.palworld.fish_muskellunge": "Fish Muskellunge",
+      "item.palworld.miner_pick_lv_1": "Miner Pick Lv 1",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
-      "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
-      "gui.palworld.user_gui.label_wanryo": "완료✅",
-      "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
-      "entity.palworld.fisher_job_npc": "Fisher Job NPC",
-      "entity.palworld.miner_job_npc": "Miner Job NPC",
-      "gui.palworld.job_npc_gui.button_surag": "수락",
-      "gui.palworld.job_npc_gui.button_geojeol": "거절"
+      "item.palworld.ore_iron": "Ore Iron",
+      "item.palworld.fish_perch": "Fish Perch",
+      "item.palworld.fish_carp": "Fish Carp",
+      "item.palworld.farmer_root": "Farmer Root",
+      "item.palworld.ore_lapis_lazuli": "Ore Lapis Lazuli",
+      "item.palworld.farmer_spore": "Farmer Spore",
+      "item.palworld.fish_bass": "Fish Bass",
+      "entity.palworld.fisher_job_npc": "Fisher Job NPC"
     }
   },
   "foldersRoot": {
