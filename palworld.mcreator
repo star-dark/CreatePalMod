@@ -15,6 +15,38 @@
         ]
       },
       "path": "~/JobNPC"
+    },
+    {
+      "name": "FisherJobNPC",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fisher_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/renderer/FisherJobNPCRenderer.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/fisher_job_npc_biome_modifier.json",
+          "src/main/java/net/mcreator/palworld/entity/FisherJobNPCEntity.java",
+          "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "MinerJobNPC",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_job_npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/entity/MinerJobNPCEntity.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json",
+          "src/main/resources/assets/palworld/models/item/miner_job_npc_spawn_egg.json",
+          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java"
+        ]
+      },
+      "path": "~/JobNPC"
     }
   ],
   "variable_elements": [
@@ -36,8 +68,12 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
-      "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg"
+      "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
+      "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
+      "entity.palworld.fisher_job_npc": "Fisher Job NPC",
+      "entity.palworld.miner_job_npc": "Miner Job NPC"
     }
   },
   "foldersRoot": {

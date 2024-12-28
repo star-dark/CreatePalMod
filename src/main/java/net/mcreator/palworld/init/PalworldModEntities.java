@@ -16,6 +16,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.palworld.entity.MinerJobNPCEntity;
+import net.mcreator.palworld.entity.FisherJobNPCEntity;
 import net.mcreator.palworld.entity.FarmerJobNPCEntity;
 import net.mcreator.palworld.PalworldMod;
 
@@ -24,6 +26,10 @@ public class PalworldModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, PalworldMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<FarmerJobNPCEntity>> FARMER_JOB_NPC = register("farmer_job_npc",
 			EntityType.Builder.<FarmerJobNPCEntity>of(FarmerJobNPCEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<FisherJobNPCEntity>> FISHER_JOB_NPC = register("fisher_job_npc",
+			EntityType.Builder.<FisherJobNPCEntity>of(FisherJobNPCEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<MinerJobNPCEntity>> MINER_JOB_NPC = register("miner_job_npc",
+			EntityType.Builder.<MinerJobNPCEntity>of(MinerJobNPCEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -34,10 +40,14 @@ public class PalworldModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		FarmerJobNPCEntity.init(event);
+		FisherJobNPCEntity.init(event);
+		MinerJobNPCEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(FARMER_JOB_NPC.get(), FarmerJobNPCEntity.createAttributes().build());
+		event.put(FISHER_JOB_NPC.get(), FisherJobNPCEntity.createAttributes().build());
+		event.put(MINER_JOB_NPC.get(), MinerJobNPCEntity.createAttributes().build());
 	}
 }

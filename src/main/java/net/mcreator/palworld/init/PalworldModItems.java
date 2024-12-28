@@ -15,6 +15,8 @@ import net.mcreator.palworld.PalworldMod;
 public class PalworldModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(PalworldMod.MODID);
 	public static final DeferredItem<Item> FARMER_JOB_NPC_SPAWN_EGG = REGISTRY.register("farmer_job_npc_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.FARMER_JOB_NPC, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> FISHER_JOB_NPC_SPAWN_EGG = REGISTRY.register("fisher_job_npc_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.FISHER_JOB_NPC, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> MINER_JOB_NPC_SPAWN_EGG = REGISTRY.register("miner_job_npc_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.MINER_JOB_NPC, -1, -1, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }
