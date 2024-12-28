@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 176,
-    "height": 166,
+    "height": 143,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -22,7 +22,101 @@
             "falpha": 0.0
           },
           "x": 205,
-          "y": 51
+          "y": 59
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_quest_tap",
+          "image": "quest_tap.png",
+          "hoveredImage": "quest_tap_on.png",
+          "x": 128,
+          "y": 22
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_money_tap",
+          "image": "money_tap.png",
+          "hoveredImage": "money_tapon.png",
+          "x": 161,
+          "y": 22
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_main_quest",
+          "text": {
+            "fixedValue": "",
+            "name": "MainQuest"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsMainQuestExist"
+          },
+          "x": 150,
+          "y": 87
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_sub_quest",
+          "text": {
+            "fixedValue": "",
+            "name": "SubQuest"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsSubQuestExist"
+          },
+          "x": 149,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wanryo",
+          "text": {
+            "fixedValue": "완료✅"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsMainQuestComplete"
+          },
+          "x": 265,
+          "y": 87
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wanryo1",
+          "text": {
+            "fixedValue": "완료✅"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsSubQuestComplete"
+          },
+          "x": 265,
+          "y": 136
         }
       }
     ],

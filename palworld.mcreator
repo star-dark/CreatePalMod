@@ -38,7 +38,7 @@
     {
       "name": "UserGUI",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "user_gui",
       "metadata": {
@@ -104,7 +104,7 @@
     {
       "name": "FarmerJobNPC",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "farmer_job_npc",
       "metadata": {
@@ -299,7 +299,7 @@
     {
       "name": "MinerJobNPC",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "miner_job_npc",
       "metadata": {
@@ -357,7 +357,7 @@
     {
       "name": "JobNpcGui",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "job_npc_gui",
       "metadata": {
@@ -508,7 +508,7 @@
     {
       "name": "FisherJobNPC",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "fisher_job_npc",
       "metadata": {
@@ -562,6 +562,126 @@
         ]
       },
       "path": "~/JobItem/Miner"
+    },
+    {
+      "name": "MainQuest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_quest",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MainQuestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
+    },
+    {
+      "name": "IsMainQuestExist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_main_quest_exist",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsMainQuestExistProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
+    },
+    {
+      "name": "SubQuest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sub_quest",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SubQuestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
+    },
+    {
+      "name": "IsSubQuestExist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_sub_quest_exist",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsSubQuestExistProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
+    },
+    {
+      "name": "IsMainQuestComplete",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_main_quest_complete",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsMainQuestCompleteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
+    },
+    {
+      "name": "IsSubQuestComplete",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_sub_quest_complete",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsSubQuestCompleteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/User_Quest"
     }
   ],
   "variable_elements": [
@@ -690,7 +810,11 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
+      "gui.palworld.user_gui.label_wanryo": "완료✅"
+    }
   },
   "foldersRoot": {
     "name": "~",
