@@ -51,6 +51,24 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Fdsfsdfs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fdsfsdfs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FdsfsdfsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
