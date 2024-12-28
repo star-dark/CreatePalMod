@@ -55,7 +55,7 @@
     {
       "name": "Fdsfsdfs",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "fdsfsdfs",
       "metadata": {
