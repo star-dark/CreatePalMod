@@ -1,6 +1,19 @@
 {
   "mod_elements": [],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "job_production",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "talk_with",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
