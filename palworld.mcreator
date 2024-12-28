@@ -199,6 +199,79 @@
         ]
       },
       "path": "~/JobNPC"
+    },
+    {
+      "name": "JobNpcGuiText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_gui_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JobNpcGuiTextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobNpcGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_npc_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/world/inventory/JobNpcGuiMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java",
+          "src/main/java/net/mcreator/palworld/network/JobNpcGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobGetSuccess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_get_success",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JobGetSuccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
+    },
+    {
+      "name": "JobGuiClose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_gui_close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JobGuiCloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JobNPC"
     }
   ],
   "variable_elements": [
@@ -225,7 +298,9 @@
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
       "entity.palworld.fisher_job_npc": "Fisher Job NPC",
-      "entity.palworld.miner_job_npc": "Miner Job NPC"
+      "entity.palworld.miner_job_npc": "Miner Job NPC",
+      "gui.palworld.job_npc_gui.button_surag": "수락",
+      "gui.palworld.job_npc_gui.button_geojeol": "거절"
     }
   },
   "foldersRoot": {
