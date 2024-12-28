@@ -1,0 +1,44 @@
+{
+  "mod_elements": [
+    {
+      "name": "Hello",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HelloProcedure.java"
+        ],
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "palworld",
+    "modName": "PalWorld",
+    "version": "1.0.0",
+    "author": "den11, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "net.mcreator.palworld"
+  },
+  "mcreatorVersion": 202400342716
+}
