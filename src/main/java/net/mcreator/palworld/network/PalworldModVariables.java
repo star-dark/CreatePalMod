@@ -11,6 +11,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -72,6 +73,8 @@ public class PalworldModVariables {
 			clone.IsMainQuestExist = original.IsMainQuestExist;
 			clone.SubQuestRewardMoney = original.SubQuestRewardMoney;
 			clone.SubQuestContents = original.SubQuestContents;
+			clone.SubQuestProvider = original.SubQuestProvider;
+			clone.SubQuestItem = original.SubQuestItem;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -80,6 +83,7 @@ public class PalworldModVariables {
 				clone.MainRewardRequest = original.MainRewardRequest;
 				clone.MainQuestRequest = original.MainQuestRequest;
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
+				clone.QuestCooltimeBuffer = original.QuestCooltimeBuffer;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -105,6 +109,9 @@ public class PalworldModVariables {
 		public double RewardMoneyBuffer = 0;
 		public double SubQuestRewardMoney = 0;
 		public String SubQuestContents = "\"\"";
+		public double QuestCooltimeBuffer = 0;
+		public String SubQuestProvider = "\"\"";
+		public ItemStack SubQuestItem = ItemStack.EMPTY;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -128,6 +135,9 @@ public class PalworldModVariables {
 			nbt.putDouble("RewardMoneyBuffer", RewardMoneyBuffer);
 			nbt.putDouble("SubQuestRewardMoney", SubQuestRewardMoney);
 			nbt.putString("SubQuestContents", SubQuestContents);
+			nbt.putDouble("QuestCooltimeBuffer", QuestCooltimeBuffer);
+			nbt.putString("SubQuestProvider", SubQuestProvider);
+			nbt.put("SubQuestItem", SubQuestItem.saveOptional(lookupProvider));
 			return nbt;
 		}
 
@@ -152,6 +162,9 @@ public class PalworldModVariables {
 			RewardMoneyBuffer = nbt.getDouble("RewardMoneyBuffer");
 			SubQuestRewardMoney = nbt.getDouble("SubQuestRewardMoney");
 			SubQuestContents = nbt.getString("SubQuestContents");
+			QuestCooltimeBuffer = nbt.getDouble("QuestCooltimeBuffer");
+			SubQuestProvider = nbt.getString("SubQuestProvider");
+			SubQuestItem = ItemStack.parseOptional(lookupProvider, nbt.getCompound("SubQuestItem"));
 		}
 
 		public void syncPlayerVariables(Entity entity) {

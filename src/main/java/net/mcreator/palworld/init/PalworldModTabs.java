@@ -28,6 +28,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISHER_JOB_NPC_SPAWN_EGG.get());
 			tabData.accept(PalworldModItems.KING_SPAWN_EGG.get());
 			tabData.accept(PalworldModItems.PIG_SPAWN_EGG.get());
+			tabData.accept(PalworldModItems.QUEEN_SPAWN_EGG.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 

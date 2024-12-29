@@ -74,7 +74,7 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_quest_tap = new ImageButton(this.leftPos + 28, this.topPos + 58, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/quest_tap.png"), ResourceLocation.parse("palworld:textures/screens/quest_tap_on.png")),
+		imagebutton_quest_tap = new ImageButton(this.leftPos + 28, this.topPos + 58, 176, 143, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/quest_tap.png"), ResourceLocation.parse("palworld:textures/screens/quest_tap_on.png")),
 				e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new UserGUIButtonMessage(0, x, y, z));
@@ -88,7 +88,7 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 		};
 		guistate.put("button:imagebutton_quest_tap", imagebutton_quest_tap);
 		this.addRenderableWidget(imagebutton_quest_tap);
-		imagebutton_money_tap = new ImageButton(this.leftPos + 110, this.topPos + 58, 32, 32, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/money_tap.png"), ResourceLocation.parse("palworld:textures/screens/money_tapon.png")),
+		imagebutton_money_tap = new ImageButton(this.leftPos + 110, this.topPos + 58, 176, 166, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/money_tap.png"), ResourceLocation.parse("palworld:textures/screens/money_tapon.png")),
 				e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new UserGUIButtonMessage(1, x, y, z));

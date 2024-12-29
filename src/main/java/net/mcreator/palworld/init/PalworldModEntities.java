@@ -16,6 +16,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.palworld.entity.QueenEntity;
 import net.mcreator.palworld.entity.PigEntity;
 import net.mcreator.palworld.entity.MinerJobNPCEntity;
 import net.mcreator.palworld.entity.KingEntity;
@@ -39,6 +40,10 @@ public class PalworldModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<PigEntity>> PIG = register("pig", EntityType.Builder.<PigEntity>of(PigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 			.sized(0.9f, 0.9f));
+	public static final DeferredHolder<EntityType<?>, EntityType<QueenEntity>> QUEEN = register("queen",
+			EntityType.Builder.<QueenEntity>of(QueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -53,6 +58,7 @@ public class PalworldModEntities {
 		FisherJobNPCEntity.init(event);
 		KingEntity.init(event);
 		PigEntity.init(event);
+		QueenEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -62,5 +68,6 @@ public class PalworldModEntities {
 		event.put(FISHER_JOB_NPC.get(), FisherJobNPCEntity.createAttributes().build());
 		event.put(KING.get(), KingEntity.createAttributes().build());
 		event.put(PIG.get(), PigEntity.createAttributes().build());
+		event.put(QUEEN.get(), QueenEntity.createAttributes().build());
 	}
 }

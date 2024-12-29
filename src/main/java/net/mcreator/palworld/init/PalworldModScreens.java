@@ -10,6 +10,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.palworld.client.gui.UserGUIScreen;
+import net.mcreator.palworld.client.gui.SubQuestProvideGUIScreen;
+import net.mcreator.palworld.client.gui.SubQuestCompleteScreen;
 import net.mcreator.palworld.client.gui.QuestTapScreen;
 import net.mcreator.palworld.client.gui.QuestProvideGUIScreen;
 import net.mcreator.palworld.client.gui.MoneyTapScreen;
@@ -24,5 +26,7 @@ public class PalworldModScreens {
 		event.register(PalworldModMenus.MONEY_TAP.get(), MoneyTapScreen::new);
 		event.register(PalworldModMenus.QUEST_TAP.get(), QuestTapScreen::new);
 		event.register(PalworldModMenus.QUEST_PROVIDE_GUI.get(), QuestProvideGUIScreen::new);
+		event.register(PalworldModMenus.SUB_QUEST_PROVIDE_GUI.get(), SubQuestProvideGUIScreen::new);
+		event.register(PalworldModMenus.SUB_QUEST_COMPLETE.get(), SubQuestCompleteScreen::new);
 	}
 }
