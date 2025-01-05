@@ -1851,6 +1851,26 @@
         ]
       },
       "path": "~/QuestNPC"
+    },
+    {
+      "name": "UserFace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "user_face",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/UserFaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/UserGUI"
     }
   ],
   "variable_elements": [

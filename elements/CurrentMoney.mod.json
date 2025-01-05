@@ -10,8 +10,8 @@
           "image": "money2.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_LEFT",
-          "x": 0,
-          "y": 0
+          "x": 41,
+          "y": 5
         }
       },
       {
@@ -27,7 +27,21 @@
             "falpha": 0.0
           },
           "anchorPoint": "TOP_LEFT",
-          "x": 33,
+          "x": 74,
+          "y": 16
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "UserFace"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 12,
           "y": 11
         }
       }
