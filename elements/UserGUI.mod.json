@@ -11,32 +11,6 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_quest_tap",
-          "image": "quest_tap.png",
-          "hoveredImage": "quest_tap_on.png",
-          "onClick": {
-            "name": "OpenQuestTap"
-          },
-          "x": 154,
-          "y": 107
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_money_tap",
-          "image": "money_tap.png",
-          "hoveredImage": "money_tapon.png",
-          "onClick": {
-            "name": "OpenMoneyTap"
-          },
-          "x": 236,
-          "y": 107
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_kweseuteu",
@@ -47,8 +21,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 161,
-          "y": 141
+          "x": 156,
+          "y": 133
         }
       },
       {
@@ -62,8 +36,34 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 250,
-          "y": 140
+          "x": 213,
+          "y": 133
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_money_tapon",
+          "image": "money_tapon.png",
+          "hoveredImage": "money_tapon2.png",
+          "onClick": {
+            "name": "OpenMoneyTap"
+          },
+          "x": 198,
+          "y": 91
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_quest_tap_on",
+          "image": "quest_tap_on.png",
+          "hoveredImage": "quest_tapon2.png",
+          "onClick": {
+            "name": "OpenQuestTap"
+          },
+          "x": 149,
+          "y": 91
         }
       }
     ],

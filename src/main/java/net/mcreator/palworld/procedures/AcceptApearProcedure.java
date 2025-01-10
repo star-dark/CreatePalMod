@@ -8,6 +8,6 @@ public class AcceptApearProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return IsNotMainQuestCompleteProcedure.execute(entity) && !entity.getData(PalworldModVariables.PLAYER_VARIABLES).IsMainQuestExist;
+		return entity.getData(PalworldModVariables.PLAYER_VARIABLES).SubQuestRequest || entity.getData(PalworldModVariables.PLAYER_VARIABLES).MainQuestRequest;
 	}
 }

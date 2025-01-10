@@ -57,7 +57,7 @@ public class CurrentMoneyOverlay {
 
 					BringMyMoneyProcedure.execute(entity), 74, 16, -1, false);
 			if (UserFaceProcedure.execute(entity) instanceof LivingEntity livingEntity) {
-				renderEntityInInventoryFollowsAngle(event.getGuiGraphics(), 22, 31, 30, 0f, 0, livingEntity);
+				renderEntityInInventoryFollowsAngle(event.getGuiGraphics(), 22, 56, 30, 0f, 0, livingEntity);
 			}
 		}
 		RenderSystem.depthMask(true);

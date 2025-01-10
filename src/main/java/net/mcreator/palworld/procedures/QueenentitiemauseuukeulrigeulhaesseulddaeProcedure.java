@@ -63,7 +63,7 @@ public class QueenentitiemauseuukeulrigeulhaesseulddaeProcedure {
 			{
 				PalworldModVariables.PlayerVariables _vars = sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.quest_buffer = sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES).SubQuestItem.getDisplayName().getString() + "\uB97C "
-						+ new java.text.DecimalFormat("##").format(sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES).MainQuestGoal) + "\uAC1C \uAD6C\uD574\uC624\uC138\uC694.";
+						+ new java.text.DecimalFormat("##").format(sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES).SubQuestGoal) + "\uAC1C \uAD6C\uD574\uC624\uC138\uC694.";
 				_vars.syncPlayerVariables(sourceentity);
 			}
 		} else if (!sourceentity.getData(PalworldModVariables.PLAYER_VARIABLES).IsSubQuestExist && !(entity instanceof QueenEntity _datEntL5 && _datEntL5.getEntityData().get(QueenEntity.DATA_Quest_Activate))) {

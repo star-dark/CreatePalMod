@@ -48,7 +48,7 @@ public class AcceptButtonPressedProcedure {
 					_player.displayClientMessage(Component.literal(entity.getData(PalworldModVariables.PLAYER_VARIABLES).quest_buffer), false);
 				{
 					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-					_vars.MainQuestContents = entity.getData(PalworldModVariables.PLAYER_VARIABLES).quest_buffer;
+					_vars.SubQuestContents = entity.getData(PalworldModVariables.PLAYER_VARIABLES).quest_buffer;
 					_vars.syncPlayerVariables(entity);
 				}
 				{

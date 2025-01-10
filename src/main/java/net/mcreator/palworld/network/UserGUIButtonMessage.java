@@ -62,11 +62,11 @@ public record UserGUIButtonMessage(int buttonID, int x, int y, int z) implements
 			return;
 		if (buttonID == 0) {
 
-			OpenQuestTapProcedure.execute(world, x, y, z, entity);
+			OpenMoneyTapProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			OpenMoneyTapProcedure.execute(world, x, y, z, entity);
+			OpenQuestTapProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

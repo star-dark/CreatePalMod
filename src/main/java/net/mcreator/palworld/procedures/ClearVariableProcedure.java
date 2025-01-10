@@ -13,5 +13,25 @@ public class ClearVariableProcedure {
 			_vars.job_production = "";
 			_vars.syncPlayerVariables(entity);
 		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.IsSubQuestExist = false;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.IsMainQuestExist = false;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.MainQuestContents = "";
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.SubQuestContents = "";
+			_vars.syncPlayerVariables(entity);
+		}
 	}
 }
