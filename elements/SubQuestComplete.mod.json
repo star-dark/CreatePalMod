@@ -11,58 +11,18 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "image",
-        "data": {
-          "image": "bang.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "IsNotMainQuestComplete"
-          },
-          "x": 144,
-          "y": 76
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "question.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "IsMainQuestComplete"
-          },
-          "x": 144,
-          "y": 78
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_bring_quest_contents",
-          "text": {
-            "fixedValue": "",
-            "name": "BringQuestContents"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 172,
-          "y": 81
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_bosang",
           "text": {
-            "fixedValue": "보상  :"
+            "fixedValue": "남은시간  :"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 159,
-          "y": 104
+          "x": 144,
+          "y": 103
         }
       },
       {
@@ -71,86 +31,14 @@
           "name": "label_proc_bring_quest_reward",
           "text": {
             "fixedValue": "",
-            "name": "BringQuestReward"
+            "name": "CooltimeContents"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 192,
-          "y": 105
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_surag",
-          "text": "수락",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "AcceptButtonPressed"
-          },
-          "displayCondition": {
-            "name": "AcceptApear"
-          },
-          "width": 35,
-          "height": 20,
-          "x": 162,
-          "y": 141
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_geojeol",
-          "text": "거절",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "RejectButtonPressed"
-          },
-          "displayCondition": {
-            "name": "AcceptApear"
-          },
-          "width": 35,
-          "height": 20,
-          "x": 230,
-          "y": 141
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_dadgi",
-          "text": "닫기",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "ClosedButtonPressed"
-          },
-          "displayCondition": {
-            "name": "QuestTapCloseButtonAppear"
-          },
-          "width": 103,
-          "height": 20,
-          "x": 162,
-          "y": 141
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_bosanghoegdeug",
-          "text": "보상획득",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "RewardButtonPressed"
-          },
-          "displayCondition": {
-            "name": "RewardButtonAppear"
-          },
-          "width": 103,
-          "height": 20,
-          "x": 162,
-          "y": 141
+          "x": 195,
+          "y": 104
         }
       }
     ],

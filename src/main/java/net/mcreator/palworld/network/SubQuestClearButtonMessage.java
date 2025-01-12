@@ -16,31 +16,28 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.palworld.world.inventory.SubQuestCompleteMenu;
-import net.mcreator.palworld.procedures.RewardButtonPressedProcedure;
-import net.mcreator.palworld.procedures.RejectButtonPressedProcedure;
-import net.mcreator.palworld.procedures.ClosedButtonPressedProcedure;
-import net.mcreator.palworld.procedures.AcceptButtonPressedProcedure;
+import net.mcreator.palworld.world.inventory.SubQuestClearMenu;
+import net.mcreator.palworld.procedures.GetSubquestRewardProcedure;
 import net.mcreator.palworld.PalworldMod;
 
 import java.util.HashMap;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public record SubQuestCompleteButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+public record SubQuestClearButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<SubQuestCompleteButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "sub_quest_complete_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, SubQuestCompleteButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SubQuestCompleteButtonMessage message) -> {
+	public static final Type<SubQuestClearButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "sub_quest_clear_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, SubQuestClearButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SubQuestClearButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new SubQuestCompleteButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new SubQuestClearButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 	@Override
-	public Type<SubQuestCompleteButtonMessage> type() {
+	public Type<SubQuestClearButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final SubQuestCompleteButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final SubQuestClearButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				Player entity = context.player();
@@ -58,30 +55,18 @@ public record SubQuestCompleteButtonMessage(int buttonID, int x, int y, int z) i
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = SubQuestCompleteMenu.guistate;
+		HashMap guistate = SubQuestClearMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			AcceptButtonPressedProcedure.execute(entity);
-		}
-		if (buttonID == 1) {
-
-			RejectButtonPressedProcedure.execute(entity);
-		}
-		if (buttonID == 2) {
-
-			ClosedButtonPressedProcedure.execute(entity);
-		}
-		if (buttonID == 3) {
-
-			RewardButtonPressedProcedure.execute(entity);
+			GetSubquestRewardProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PalworldMod.addNetworkMessage(SubQuestCompleteButtonMessage.TYPE, SubQuestCompleteButtonMessage.STREAM_CODEC, SubQuestCompleteButtonMessage::handleData);
+		PalworldMod.addNetworkMessage(SubQuestClearButtonMessage.TYPE, SubQuestClearButtonMessage.STREAM_CODEC, SubQuestClearButtonMessage::handleData);
 	}
 }

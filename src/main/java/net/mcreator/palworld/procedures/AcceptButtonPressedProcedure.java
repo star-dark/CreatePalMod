@@ -66,6 +66,11 @@ public class AcceptButtonPressedProcedure {
 					_vars.SubQuestRewardMoney = entity.getData(PalworldModVariables.PLAYER_VARIABLES).RewardMoneyBuffer;
 					_vars.syncPlayerVariables(entity);
 				}
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.QuestCooltimeBuffer = 1728000;
+					_vars.syncPlayerVariables(entity);
+				}
 			} else {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\uB354\uC774\uC0C1 \uD018\uC2A4\uD2B8\uB97C \uBC1B\uC744 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4"), false);
