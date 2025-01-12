@@ -1807,8 +1807,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/world/inventory/SubQuestCompleteMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/SubQuestCompleteScreen.java",
-          "src/main/java/net/mcreator/palworld/network/SubQuestCompleteButtonMessage.java"
+          "src/main/java/net/mcreator/palworld/client/gui/SubQuestCompleteScreen.java"
         ]
       },
       "path": "~/GUI/Npc_Quest"
@@ -1871,6 +1870,98 @@
         ]
       },
       "path": "~/GUI/UserGUI"
+    },
+    {
+      "name": "QuestCooltimeReduce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_cooltime_reduce",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/QuestCooltimeReduceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/cooltime"
+    },
+    {
+      "name": "CooltimeContents",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooltime_contents",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/CooltimeContentsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest"
+    },
+    {
+      "name": "SubQuestClear",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sub_quest_clear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/gui/SubQuestClearScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/SubQuestClearMenu.java",
+          "src/main/java/net/mcreator/palworld/network/SubQuestClearButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Npc_Quest"
+    },
+    {
+      "name": "IsSubQuestCleared",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_sub_quest_cleared",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IsSubQuestClearedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest"
+    },
+    {
+      "name": "GetSubquestReward",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_subquest_reward",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/GetSubquestRewardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Npc_Quest"
     }
   ],
   "variable_elements": [
@@ -1991,7 +2082,7 @@
     {
       "name": "QuestCooltimeBuffer",
       "type": "number",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -2046,7 +2137,7 @@
       "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "item.palworld.ore_emerald": "Ore Emerald",
       "item.palworld.ore_coal": "Ore Coal",
-      "gui.palworld.sub_quest_complete.label_bosang": "보상  :",
+      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "item.palworld.fish_tuna": "Fish Tuna",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
@@ -2059,6 +2150,7 @@
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
       "item.palworld.manwon": "만원",
       "gui.palworld.sub_quest_complete.button_surag": "수락",
+      "gui.palworld.sub_quest_clear.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_perch": "Fish Perch",
       "item.palworld.burf_sword": "Burf Sword",
       "item.palworld.ore_lapis_lazuli": "Ore Lapis Lazuli",
@@ -2198,6 +2290,10 @@
       },
       {
         "name": "QuestEntity",
+        "children": []
+      },
+      {
+        "name": "cooltime",
         "children": []
       }
     ]

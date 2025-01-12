@@ -54,7 +54,7 @@ public class QueenEntity extends Monster {
 	protected void defineSynchedData(SynchedEntityData.Builder builder) {
 		super.defineSynchedData(builder);
 		builder.define(DATA_Quest_Activate, true);
-		builder.define(DATA_cooltime, 1728000);
+		builder.define(DATA_cooltime, 259200);
 		builder.define(DATA_provider_name, "Queen");
 	}
 

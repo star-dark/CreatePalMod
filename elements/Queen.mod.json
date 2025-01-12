@@ -137,7 +137,7 @@
         "max": 2147483647,
         "name": "cooltime",
         "type": "integer",
-        "value": 1728000
+        "value": 259200
       },
       {
         "name": "provider_name",

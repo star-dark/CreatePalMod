@@ -30,6 +30,11 @@ public class ClearVariableProcedure {
 		}
 		{
 			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.QuestCooltimeBuffer = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 			_vars.SubQuestContents = "";
 			_vars.syncPlayerVariables(entity);
 		}
