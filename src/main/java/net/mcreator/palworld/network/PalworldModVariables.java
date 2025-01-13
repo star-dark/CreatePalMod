@@ -76,6 +76,9 @@ public class PalworldModVariables {
 			clone.QuestCooltimeBuffer = original.QuestCooltimeBuffer;
 			clone.SubQuestProvider = original.SubQuestProvider;
 			clone.SubQuestItem = original.SubQuestItem;
+			clone.Skill_Points = original.Skill_Points;
+			clone.Player_Level = original.Player_Level;
+			clone.Player_EXP = original.Player_EXP;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -112,6 +115,9 @@ public class PalworldModVariables {
 		public double QuestCooltimeBuffer = 0;
 		public String SubQuestProvider = "\"\"";
 		public ItemStack SubQuestItem = ItemStack.EMPTY;
+		public double Skill_Points = 0;
+		public double Player_Level = 1.0;
+		public double Player_EXP = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -138,6 +144,9 @@ public class PalworldModVariables {
 			nbt.putDouble("QuestCooltimeBuffer", QuestCooltimeBuffer);
 			nbt.putString("SubQuestProvider", SubQuestProvider);
 			nbt.put("SubQuestItem", SubQuestItem.saveOptional(lookupProvider));
+			nbt.putDouble("Skill_Points", Skill_Points);
+			nbt.putDouble("Player_Level", Player_Level);
+			nbt.putDouble("Player_EXP", Player_EXP);
 			return nbt;
 		}
 
@@ -165,6 +174,9 @@ public class PalworldModVariables {
 			QuestCooltimeBuffer = nbt.getDouble("QuestCooltimeBuffer");
 			SubQuestProvider = nbt.getString("SubQuestProvider");
 			SubQuestItem = ItemStack.parseOptional(lookupProvider, nbt.getCompound("SubQuestItem"));
+			Skill_Points = nbt.getDouble("Skill_Points");
+			Player_Level = nbt.getDouble("Player_Level");
+			Player_EXP = nbt.getDouble("Player_EXP");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

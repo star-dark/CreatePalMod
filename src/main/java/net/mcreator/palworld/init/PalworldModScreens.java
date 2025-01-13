@@ -16,7 +16,9 @@ import net.mcreator.palworld.client.gui.SubQuestClearScreen;
 import net.mcreator.palworld.client.gui.QuestTapScreen;
 import net.mcreator.palworld.client.gui.QuestProvideGUIScreen;
 import net.mcreator.palworld.client.gui.MoneyTapScreen;
+import net.mcreator.palworld.client.gui.MinerSkillTreeScreen;
 import net.mcreator.palworld.client.gui.JobNpcGuiScreen;
+import net.mcreator.palworld.client.gui.FisherSkillTreeScreen;
 import net.mcreator.palworld.client.gui.FarmerSkillTreeScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -32,5 +34,7 @@ public class PalworldModScreens {
 		event.register(PalworldModMenus.SUB_QUEST_COMPLETE.get(), SubQuestCompleteScreen::new);
 		event.register(PalworldModMenus.SUB_QUEST_CLEAR.get(), SubQuestClearScreen::new);
 		event.register(PalworldModMenus.FARMER_SKILL_TREE.get(), FarmerSkillTreeScreen::new);
+		event.register(PalworldModMenus.MINER_SKILL_TREE.get(), MinerSkillTreeScreen::new);
+		event.register(PalworldModMenus.FISHER_SKILL_TREE.get(), FisherSkillTreeScreen::new);
 	}
 }

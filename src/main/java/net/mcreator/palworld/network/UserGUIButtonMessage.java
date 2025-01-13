@@ -17,6 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.UserGUIMenu;
+import net.mcreator.palworld.procedures.OpenSkillTreeGUIProcedure;
 import net.mcreator.palworld.procedures.OpenQuestTapProcedure;
 import net.mcreator.palworld.procedures.OpenMoneyTapProcedure;
 import net.mcreator.palworld.PalworldMod;
@@ -67,6 +68,10 @@ public record UserGUIButtonMessage(int buttonID, int x, int y, int z) implements
 		if (buttonID == 1) {
 
 			OpenQuestTapProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			OpenSkillTreeGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

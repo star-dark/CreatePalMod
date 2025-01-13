@@ -106,6 +106,10 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 		this.addRenderableWidget(imagebutton_quest_tap_on);
 		imagebutton_skilltree = new ImageButton(this.leftPos + 126, this.topPos + 43, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/skilltree.png"), ResourceLocation.parse("palworld:textures/screens/skilltreetapon.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new UserGUIButtonMessage(2, x, y, z));
+						UserGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+					}
 				}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {

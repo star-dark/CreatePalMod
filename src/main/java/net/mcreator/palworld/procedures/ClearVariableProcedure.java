@@ -38,5 +38,20 @@ public class ClearVariableProcedure {
 			_vars.SubQuestContents = "";
 			_vars.syncPlayerVariables(entity);
 		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.Player_EXP = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.Player_Level = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.Skill_Points = 0;
+			_vars.syncPlayerVariables(entity);
+		}
 	}
 }

@@ -18,7 +18,9 @@ import net.mcreator.palworld.world.inventory.SubQuestClearMenu;
 import net.mcreator.palworld.world.inventory.QuestTapMenu;
 import net.mcreator.palworld.world.inventory.QuestProvideGUIMenu;
 import net.mcreator.palworld.world.inventory.MoneyTapMenu;
+import net.mcreator.palworld.world.inventory.MinerSkillTreeMenu;
 import net.mcreator.palworld.world.inventory.JobNpcGuiMenu;
+import net.mcreator.palworld.world.inventory.FisherSkillTreeMenu;
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
 import net.mcreator.palworld.PalworldMod;
 
@@ -33,4 +35,6 @@ public class PalworldModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestCompleteMenu>> SUB_QUEST_COMPLETE = REGISTRY.register("sub_quest_complete", () -> IMenuTypeExtension.create(SubQuestCompleteMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestClearMenu>> SUB_QUEST_CLEAR = REGISTRY.register("sub_quest_clear", () -> IMenuTypeExtension.create(SubQuestClearMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FarmerSkillTreeMenu>> FARMER_SKILL_TREE = REGISTRY.register("farmer_skill_tree", () -> IMenuTypeExtension.create(FarmerSkillTreeMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MinerSkillTreeMenu>> MINER_SKILL_TREE = REGISTRY.register("miner_skill_tree", () -> IMenuTypeExtension.create(MinerSkillTreeMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<FisherSkillTreeMenu>> FISHER_SKILL_TREE = REGISTRY.register("fisher_skill_tree", () -> IMenuTypeExtension.create(FisherSkillTreeMenu::new));
 }
