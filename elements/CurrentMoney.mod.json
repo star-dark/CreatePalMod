@@ -8,10 +8,10 @@
         "type": "image",
         "data": {
           "image": "money2.png",
-          "use1Xscale": false,
+          "use1Xscale": true,
           "anchorPoint": "TOP_LEFT",
-          "x": 41,
-          "y": 5
+          "x": 42,
+          "y": 9
         }
       },
       {
@@ -23,12 +23,12 @@
             "name": "BringMyMoney"
           },
           "color": {
-            "value": -1,
+            "value": -256,
             "falpha": 0.0
           },
           "anchorPoint": "TOP_LEFT",
-          "x": 74,
-          "y": 16
+          "x": 58,
+          "y": 12
         }
       },
       {
@@ -43,6 +43,94 @@
           "anchorPoint": "TOP_LEFT",
           "x": 12,
           "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fisher.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IsFisher"
+          },
+          "anchorPoint": "CENTER",
+          "x": 41,
+          "y": 29
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "miner.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IsMiner"
+          },
+          "anchorPoint": "CENTER",
+          "x": 42,
+          "y": 28
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "farmer.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IsFarmer"
+          },
+          "anchorPoint": "CENTER",
+          "x": 42,
+          "y": 29
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": ""
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": ""
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_job_text",
+          "text": {
+            "fixedValue": "",
+            "name": "JobText"
+          },
+          "color": {
+            "value": -13421569,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 58,
+          "y": 32
         }
       }
     ],

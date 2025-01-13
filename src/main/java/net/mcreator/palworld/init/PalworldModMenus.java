@@ -19,6 +19,7 @@ import net.mcreator.palworld.world.inventory.QuestTapMenu;
 import net.mcreator.palworld.world.inventory.QuestProvideGUIMenu;
 import net.mcreator.palworld.world.inventory.MoneyTapMenu;
 import net.mcreator.palworld.world.inventory.JobNpcGuiMenu;
+import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
 import net.mcreator.palworld.PalworldMod;
 
 public class PalworldModMenus {
@@ -31,4 +32,5 @@ public class PalworldModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestProvideGUIMenu>> SUB_QUEST_PROVIDE_GUI = REGISTRY.register("sub_quest_provide_gui", () -> IMenuTypeExtension.create(SubQuestProvideGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestCompleteMenu>> SUB_QUEST_COMPLETE = REGISTRY.register("sub_quest_complete", () -> IMenuTypeExtension.create(SubQuestCompleteMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestClearMenu>> SUB_QUEST_CLEAR = REGISTRY.register("sub_quest_clear", () -> IMenuTypeExtension.create(SubQuestClearMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<FarmerSkillTreeMenu>> FARMER_SKILL_TREE = REGISTRY.register("farmer_skill_tree", () -> IMenuTypeExtension.create(FarmerSkillTreeMenu::new));
 }

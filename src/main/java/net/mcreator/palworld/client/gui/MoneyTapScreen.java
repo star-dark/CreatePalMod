@@ -36,7 +36,7 @@ public class MoneyTapScreen extends AbstractContainerScreen<MoneyTapMenu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageHeight = 126;
 	}
 
 	private static final ResourceLocation texture = ResourceLocation.parse("palworld:textures/screens/money_tap.png");
@@ -54,6 +54,9 @@ public class MoneyTapScreen extends AbstractContainerScreen<MoneyTapMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(ResourceLocation.parse("palworld:textures/screens/money_gui.png"), this.leftPos + 0, this.topPos + -19, 0, 0, 177, 143, 177, 143);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -68,10 +71,10 @@ public class MoneyTapScreen extends AbstractContainerScreen<MoneyTapMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.money_tap.label_inculganeunggeumaeg"), 24, 34, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.money_tap.label_inculganeunggeumaeg"), 24, 14, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				BringMyMoneyProcedure.execute(entity), 81, 34, -12829636, false);
+				BringMyMoneyProcedure.execute(entity), 81, 14, -12829636, false);
 	}
 
 	@Override
@@ -82,7 +85,7 @@ public class MoneyTapScreen extends AbstractContainerScreen<MoneyTapMenu> {
 				PacketDistributor.sendToServer(new MoneyTapButtonMessage(0, x, y, z));
 				MoneyTapButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 17, this.topPos + 119, 39, 20).build();
+		}).bounds(this.leftPos + 10, this.topPos + 92, 39, 20).build();
 		guistate.put("button:button_10000", button_10000);
 		this.addRenderableWidget(button_10000);
 		button_5000 = Button.builder(Component.translatable("gui.palworld.money_tap.button_5000"), e -> {
@@ -90,7 +93,7 @@ public class MoneyTapScreen extends AbstractContainerScreen<MoneyTapMenu> {
 				PacketDistributor.sendToServer(new MoneyTapButtonMessage(1, x, y, z));
 				MoneyTapButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 70, this.topPos + 119, 39, 20).build();
+		}).bounds(this.leftPos + 69, this.topPos + 92, 39, 20).build();
 		guistate.put("button:button_5000", button_5000);
 		this.addRenderableWidget(button_5000);
 		button_1000 = Button.builder(Component.translatable("gui.palworld.money_tap.button_1000"), e -> {
@@ -98,7 +101,7 @@ public class MoneyTapScreen extends AbstractContainerScreen<MoneyTapMenu> {
 				PacketDistributor.sendToServer(new MoneyTapButtonMessage(2, x, y, z));
 				MoneyTapButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}).bounds(this.leftPos + 123, this.topPos + 119, 39, 20).build();
+		}).bounds(this.leftPos + 127, this.topPos + 92, 39, 20).build();
 		guistate.put("button:button_1000", button_1000);
 		this.addRenderableWidget(button_1000);
 	}
