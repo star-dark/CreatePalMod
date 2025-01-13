@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 176,
-    "height": 166,
+    "height": 126,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -52,8 +52,8 @@
           },
           "width": 39,
           "height": 20,
-          "x": 143,
-          "y": 156
+          "x": 136,
+          "y": 149
         }
       },
       {
@@ -67,8 +67,8 @@
           },
           "width": 39,
           "height": 20,
-          "x": 196,
-          "y": 156
+          "x": 195,
+          "y": 149
         }
       },
       {
@@ -82,8 +82,17 @@
           },
           "width": 39,
           "height": 20,
-          "x": 249,
-          "y": 156
+          "x": 253,
+          "y": 149
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "money_gui.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 38
         }
       }
     ],

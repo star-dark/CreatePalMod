@@ -26,6 +26,7 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 	private final Player entity;
 	ImageButton imagebutton_money_tapon;
 	ImageButton imagebutton_quest_tap_on;
+	ImageButton imagebutton_skilltree;
 
 	public UserGUIScreen(UserGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -67,14 +68,15 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_kweseuteu"), 30, 84, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_don"), 87, 84, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_kweseuteu"), 32, 84, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_don"), 89, 84, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_seukilteuri"), 131, 84, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_money_tapon = new ImageButton(this.leftPos + 72, this.topPos + 42, 32, 32,
+		imagebutton_money_tapon = new ImageButton(this.leftPos + 75, this.topPos + 43, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/money_tapon.png"), ResourceLocation.parse("palworld:textures/screens/money_tapon2.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new UserGUIButtonMessage(0, x, y, z));
@@ -88,7 +90,7 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 		};
 		guistate.put("button:imagebutton_money_tapon", imagebutton_money_tapon);
 		this.addRenderableWidget(imagebutton_money_tapon);
-		imagebutton_quest_tap_on = new ImageButton(this.leftPos + 23, this.topPos + 42, 32, 32,
+		imagebutton_quest_tap_on = new ImageButton(this.leftPos + 23, this.topPos + 43, 32, 32,
 				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/quest_tap_on.png"), ResourceLocation.parse("palworld:textures/screens/quest_tapon2.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new UserGUIButtonMessage(1, x, y, z));
@@ -102,5 +104,15 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 		};
 		guistate.put("button:imagebutton_quest_tap_on", imagebutton_quest_tap_on);
 		this.addRenderableWidget(imagebutton_quest_tap_on);
+		imagebutton_skilltree = new ImageButton(this.leftPos + 126, this.topPos + 43, 32, 32,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/skilltree.png"), ResourceLocation.parse("palworld:textures/screens/skilltreetapon.png")), e -> {
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_skilltree", imagebutton_skilltree);
+		this.addRenderableWidget(imagebutton_skilltree);
 	}
 }

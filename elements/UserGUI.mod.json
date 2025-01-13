@@ -21,7 +21,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 156,
+          "x": 158,
           "y": 133
         }
       },
@@ -36,7 +36,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 213,
+          "x": 215,
           "y": 133
         }
       },
@@ -49,8 +49,8 @@
           "onClick": {
             "name": "OpenMoneyTap"
           },
-          "x": 198,
-          "y": 91
+          "x": 201,
+          "y": 92
         }
       },
       {
@@ -63,7 +63,32 @@
             "name": "OpenQuestTap"
           },
           "x": 149,
-          "y": 91
+          "y": 92
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree",
+          "image": "skilltree.png",
+          "hoveredImage": "skilltreetapon.png",
+          "x": 252,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_seukilteuri",
+          "text": {
+            "fixedValue": "스킬트리"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 257,
+          "y": 133
         }
       }
     ],
