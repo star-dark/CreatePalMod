@@ -14,6 +14,7 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.palworld.world.inventory.UserGUIMenu;
 import net.mcreator.palworld.world.inventory.SubQuestProvideGUIMenu;
 import net.mcreator.palworld.world.inventory.SubQuestCompleteMenu;
+import net.mcreator.palworld.world.inventory.SubQuestClearMenu;
 import net.mcreator.palworld.world.inventory.QuestTapMenu;
 import net.mcreator.palworld.world.inventory.QuestProvideGUIMenu;
 import net.mcreator.palworld.world.inventory.MoneyTapMenu;
@@ -29,4 +30,5 @@ public class PalworldModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<QuestProvideGUIMenu>> QUEST_PROVIDE_GUI = REGISTRY.register("quest_provide_gui", () -> IMenuTypeExtension.create(QuestProvideGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestProvideGUIMenu>> SUB_QUEST_PROVIDE_GUI = REGISTRY.register("sub_quest_provide_gui", () -> IMenuTypeExtension.create(SubQuestProvideGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestCompleteMenu>> SUB_QUEST_COMPLETE = REGISTRY.register("sub_quest_complete", () -> IMenuTypeExtension.create(SubQuestCompleteMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestClearMenu>> SUB_QUEST_CLEAR = REGISTRY.register("sub_quest_clear", () -> IMenuTypeExtension.create(SubQuestClearMenu::new));
 }

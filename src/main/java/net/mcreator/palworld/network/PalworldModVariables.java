@@ -73,6 +73,7 @@ public class PalworldModVariables {
 			clone.IsMainQuestExist = original.IsMainQuestExist;
 			clone.SubQuestRewardMoney = original.SubQuestRewardMoney;
 			clone.SubQuestContents = original.SubQuestContents;
+			clone.QuestCooltimeBuffer = original.QuestCooltimeBuffer;
 			clone.SubQuestProvider = original.SubQuestProvider;
 			clone.SubQuestItem = original.SubQuestItem;
 			if (!event.isWasDeath()) {
@@ -83,7 +84,6 @@ public class PalworldModVariables {
 				clone.MainRewardRequest = original.MainRewardRequest;
 				clone.MainQuestRequest = original.MainQuestRequest;
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
-				clone.QuestCooltimeBuffer = original.QuestCooltimeBuffer;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
