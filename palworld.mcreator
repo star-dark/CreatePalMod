@@ -2715,7 +2715,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/PlayerExpProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/UserGUI/Contents"
     },
@@ -2730,7 +2735,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HealthUpPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/SkillPoint"
     },
@@ -2773,7 +2783,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/PlayerLevelProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/UserGUI/Contents"
     },
@@ -2787,7 +2802,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/GetSkillPointsProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/SkillPoint"
     },
@@ -2801,7 +2821,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/MagicWandentitigaaitemeulhwidureulddaeProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/ClearWand"
     },
@@ -2816,7 +2841,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/AttackUpPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/SkillPoint"
     },
@@ -2831,7 +2861,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/CurrentSkillPointsProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/SkillPoint"
     },
@@ -2846,7 +2881,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/DefenseUpPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/SkillPoint"
     },
@@ -3190,8 +3230,8 @@
       "gui.palworld.miner_sell_gui.button_panmae": "모두 판매",
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "item.palworld.ore_emerald": "Ore Emerald",
+      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -3221,21 +3261,21 @@
       "gui.palworld.fisher_sell_gui.button_panmae10": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae11": "모두 판매",
       "gui.palworld.quest_tap.label_wanryo": "완료✅",
-      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
       "item.palworld.fish_pollock": "Fish Pollock",
+      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae16": "모두 판매",
+      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두 판매",
-      "item.palworld.ore_iron": "Ore Iron",
       "gui.palworld.farmer_skill_tree.label_102": "/ 10",
+      "item.palworld.ore_iron": "Ore Iron",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
       "gui.palworld.farmer_skill_tree.label_101": "/ 10",
@@ -3253,11 +3293,11 @@
       "gui.palworld.farmer_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_skill_tree.label_25lv": "25Lv",
       "gui.palworld.fisher_sell_gui.button_panmae": "모두 판매",
-      "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "item.palworld.ore_coal": "Ore Coal",
-      "item.palworld.fish_tuna": "Fish Tuna",
       "gui.palworld.farmer_sell_gui.button_modu_panmae": "모두 판매",
+      "item.palworld.fish_tuna": "Fish Tuna",
       "gui.palworld.fisher_sell_gui.label_70weon": "100원",
       "gui.palworld.sub_quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
