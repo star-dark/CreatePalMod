@@ -1,8 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.palworld.network.PalworldModVariables;
+import net.neoforged.bus.api.Event;
 
 public class JobNpcGuiTextProcedure {
 	public static String execute(Entity entity) {

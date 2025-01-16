@@ -72,6 +72,9 @@
           "name": "imagebutton_skilltree",
           "image": "skilltree.png",
           "hoveredImage": "skilltreetapon.png",
+          "onClick": {
+            "name": "OpenSkillTreeGUI"
+          },
           "x": 252,
           "y": 92
         }

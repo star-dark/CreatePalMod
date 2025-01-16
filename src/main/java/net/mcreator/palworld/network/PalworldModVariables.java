@@ -76,6 +76,12 @@ public class PalworldModVariables {
 			clone.QuestCooltimeBuffer = original.QuestCooltimeBuffer;
 			clone.SubQuestProvider = original.SubQuestProvider;
 			clone.SubQuestItem = original.SubQuestItem;
+			clone.Player_Level = original.Player_Level;
+			clone.HealthUpSkillPoint = original.HealthUpSkillPoint;
+			clone.DefenseUpSkillPoint = original.DefenseUpSkillPoint;
+			clone.Skill_Points = original.Skill_Points;
+			clone.AttackUpSkillPoint = original.AttackUpSkillPoint;
+			clone.Player_EXP = original.Player_EXP;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -112,6 +118,12 @@ public class PalworldModVariables {
 		public double QuestCooltimeBuffer = 0;
 		public String SubQuestProvider = "\"\"";
 		public ItemStack SubQuestItem = ItemStack.EMPTY;
+		public double Player_Level = 1.0;
+		public double HealthUpSkillPoint = 0;
+		public double DefenseUpSkillPoint = 0;
+		public double Skill_Points = 0;
+		public double AttackUpSkillPoint = 0;
+		public double Player_EXP = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -138,6 +150,12 @@ public class PalworldModVariables {
 			nbt.putDouble("QuestCooltimeBuffer", QuestCooltimeBuffer);
 			nbt.putString("SubQuestProvider", SubQuestProvider);
 			nbt.put("SubQuestItem", SubQuestItem.saveOptional(lookupProvider));
+			nbt.putDouble("Player_Level", Player_Level);
+			nbt.putDouble("HealthUpSkillPoint", HealthUpSkillPoint);
+			nbt.putDouble("DefenseUpSkillPoint", DefenseUpSkillPoint);
+			nbt.putDouble("Skill_Points", Skill_Points);
+			nbt.putDouble("AttackUpSkillPoint", AttackUpSkillPoint);
+			nbt.putDouble("Player_EXP", Player_EXP);
 			return nbt;
 		}
 
@@ -165,6 +183,12 @@ public class PalworldModVariables {
 			QuestCooltimeBuffer = nbt.getDouble("QuestCooltimeBuffer");
 			SubQuestProvider = nbt.getString("SubQuestProvider");
 			SubQuestItem = ItemStack.parseOptional(lookupProvider, nbt.getCompound("SubQuestItem"));
+			Player_Level = nbt.getDouble("Player_Level");
+			HealthUpSkillPoint = nbt.getDouble("HealthUpSkillPoint");
+			DefenseUpSkillPoint = nbt.getDouble("DefenseUpSkillPoint");
+			Skill_Points = nbt.getDouble("Skill_Points");
+			AttackUpSkillPoint = nbt.getDouble("AttackUpSkillPoint");
+			Player_EXP = nbt.getDouble("Player_EXP");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

@@ -1,10 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.palworld.network.PalworldModVariables;
-import net.mcreator.palworld.entity.MinerJobNPCEntity;
+import net.neoforged.bus.api.Event;
 
 public class MinerTalkProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
