@@ -397,12 +397,84 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 10)
+						continue;
+					if (j == 11)
+						continue;
+					if (j == 12)
+						continue;
+					if (j == 13)
+						continue;
+					if (j == 14)
+						continue;
+					if (j == 15)
+						continue;
+					if (j == 16)
+						continue;
+					if (j == 20)
+						continue;
+					if (j == 21)
+						continue;
+					if (j == 22)
+						continue;
+					if (j == 23)
+						continue;
+					if (j == 30)
+						continue;
+					if (j == 31)
+						continue;
+					if (j == 32)
+						continue;
+					if (j == 40)
+						continue;
+					if (j == 41)
+						continue;
+					if (j == 42)
+						continue;
+					if (j == 43)
+						continue;
 					playerIn.drop(internal.getStackInSlot(j), false);
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(j, ItemStack.EMPTY);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 10)
+						continue;
+					if (i == 11)
+						continue;
+					if (i == 12)
+						continue;
+					if (i == 13)
+						continue;
+					if (i == 14)
+						continue;
+					if (i == 15)
+						continue;
+					if (i == 16)
+						continue;
+					if (i == 20)
+						continue;
+					if (i == 21)
+						continue;
+					if (i == 22)
+						continue;
+					if (i == 23)
+						continue;
+					if (i == 30)
+						continue;
+					if (i == 31)
+						continue;
+					if (i == 32)
+						continue;
+					if (i == 40)
+						continue;
+					if (i == 41)
+						continue;
+					if (i == 42)
+						continue;
+					if (i == 43)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(i, ItemStack.EMPTY);

@@ -232,12 +232,24 @@ public class FarmerSellGuiMenu extends AbstractContainerMenu implements Supplier
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 50)
+						continue;
+					if (j == 51)
+						continue;
+					if (j == 52)
+						continue;
 					playerIn.drop(internal.getStackInSlot(j), false);
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(j, ItemStack.EMPTY);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 50)
+						continue;
+					if (i == 51)
+						continue;
+					if (i == 52)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(i, ItemStack.EMPTY);

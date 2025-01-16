@@ -276,12 +276,40 @@ public class MinerSellGuiMenu extends AbstractContainerMenu implements Supplier<
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 60)
+						continue;
+					if (j == 61)
+						continue;
+					if (j == 62)
+						continue;
+					if (j == 63)
+						continue;
+					if (j == 64)
+						continue;
+					if (j == 65)
+						continue;
+					if (j == 66)
+						continue;
 					playerIn.drop(internal.getStackInSlot(j), false);
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(j, ItemStack.EMPTY);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 60)
+						continue;
+					if (i == 61)
+						continue;
+					if (i == 62)
+						continue;
+					if (i == 63)
+						continue;
+					if (i == 64)
+						continue;
+					if (i == 65)
+						continue;
+					if (i == 66)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(i, ItemStack.EMPTY);
