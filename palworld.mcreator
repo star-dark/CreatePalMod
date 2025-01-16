@@ -116,7 +116,7 @@
           "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java"
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/NPC"
     },
     {
       "name": "FarmerDregs",
@@ -163,7 +163,7 @@
           }
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/JobGet"
     },
     {
       "name": "MinerTalk",
@@ -202,7 +202,7 @@
           }
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/JobGet"
     },
     {
       "name": "OreEmerald",
@@ -269,7 +269,7 @@
           }
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/JobGet"
     },
     {
       "name": "JobGuiClose",
@@ -343,7 +343,7 @@
           "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json"
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/NPC"
     },
     {
       "name": "OreLapisLazuli",
@@ -400,7 +400,7 @@
           "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java"
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/JobGet"
     },
     {
       "name": "JobNpcClick",
@@ -435,7 +435,7 @@
           }
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/JobGet"
     },
     {
       "name": "OreDiamond",
@@ -488,7 +488,7 @@
           }
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/JobGet"
     },
     {
       "name": "OreIron",
@@ -522,7 +522,7 @@
           }
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/JobGet"
     },
     {
       "name": "MinerPickLv15",
@@ -552,7 +552,7 @@
           "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json"
         ]
       },
-      "path": "~/JobNPC"
+      "path": "~/JobNPC/NPC"
     },
     {
       "name": "MinerPickLv1",
