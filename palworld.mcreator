@@ -2105,7 +2105,7 @@
     {
       "name": "DefenseUp",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "defense_up",
       "metadata": {
@@ -2138,7 +2138,7 @@
     {
       "name": "PlayerExpGoal",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "player_exp_goal",
       "metadata": {
@@ -2168,7 +2168,7 @@
     {
       "name": "HealthUp",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "health_up",
       "metadata": {
@@ -2215,7 +2215,7 @@
     {
       "name": "AttackUP",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "attack_up",
       "metadata": {
@@ -2314,7 +2314,7 @@
     {
       "name": "LevelUp",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "level_up",
       "metadata": {
@@ -3192,10 +3192,10 @@
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
       "gui.palworld.money_tap.label_inculganeunggeumaeg": "인출가능금액 :",
       "gui.palworld.sub_quest_provide_gui.button_geojeol": "거절",
-      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
-      "gui.palworld.quest_provide_gui.button_geojeol": "거절",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.current_money.label_empty": "",
+      "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.miner_sell_gui.label_30weon": "3원",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
