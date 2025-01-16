@@ -193,7 +193,7 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 30,
+          "id": 23,
           "disablePickup": {
             "fixedValue": true
           },
@@ -205,7 +205,7 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 31,
+          "id": 30,
           "disablePickup": {
             "fixedValue": true
           },
@@ -217,7 +217,7 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 32,
+          "id": 31,
           "disablePickup": {
             "fixedValue": true
           },
@@ -229,7 +229,7 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 33,
+          "id": 32,
           "disablePickup": {
             "fixedValue": true
           },

@@ -2417,8 +2417,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/client/gui/JobNpcActionScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/JobNpcActionMenu.java",
-          "src/main/java/net/mcreator/palworld/network/JobNpcActionButtonMessage.java"
+          "src/main/java/net/mcreator/palworld/network/JobNpcActionButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/JobNpcActionMenu.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2751,9 +2751,9 @@
       "registry_name": "fisher_sell_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/network/FisherSellGuiButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSellGuiScreen.java",
           "src/main/java/net/mcreator/palworld/world/inventory/FisherSellGuiMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSellGuiScreen.java"
+          "src/main/java/net/mcreator/palworld/network/FisherSellGuiButtonMessage.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2952,9 +2952,9 @@
       "registry_name": "farmer_sell_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/palworld/world/inventory/FarmerSellGuiMenu.java",
           "src/main/java/net/mcreator/palworld/network/FarmerSellGuiButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FarmerSellGuiScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/FarmerSellGuiMenu.java"
+          "src/main/java/net/mcreator/palworld/client/gui/FarmerSellGuiScreen.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"

@@ -192,7 +192,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 115, 101) {
+		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 115, 101) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -203,7 +203,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 214, 101) {
+		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 214, 101) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -214,7 +214,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 16, 128) {
+		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 16, 128) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -225,7 +225,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 115, 128) {
+		this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 115, 128) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
