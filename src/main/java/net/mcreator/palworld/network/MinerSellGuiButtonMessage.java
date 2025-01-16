@@ -21,10 +21,10 @@ import net.mcreator.palworld.procedures.MinerSell6Procedure;
 import net.mcreator.palworld.procedures.MinerSell5Procedure;
 import net.mcreator.palworld.procedures.MinerSell4Procedure;
 import net.mcreator.palworld.procedures.MinerSell3Procedure;
+import net.mcreator.palworld.procedures.MinerSell2Procedure;
 import net.mcreator.palworld.procedures.MinerSell1Procedure;
 import net.mcreator.palworld.procedures.MinerSell0Procedure;
 import net.mcreator.palworld.procedures.GuiCloseProcedure;
-import net.mcreator.palworld.procedures.FarmerSell2Procedure;
 import net.mcreator.palworld.PalworldMod;
 
 import java.util.HashMap;
@@ -76,7 +76,7 @@ public record MinerSellGuiButtonMessage(int buttonID, int x, int y, int z) imple
 		}
 		if (buttonID == 2) {
 
-			FarmerSell2Procedure.execute(entity);
+			MinerSell2Procedure.execute(entity);
 		}
 		if (buttonID == 3) {
 
