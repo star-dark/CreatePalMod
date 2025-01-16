@@ -2074,8 +2074,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree/Effect"
+      }
     },
     {
       "name": "PlayerExpGoal",
@@ -2089,8 +2088,7 @@
           "src/main/java/net/mcreator/palworld/procedures/PlayerExpGoalProcedure.java"
         ],
         "dependencies": []
-      },
-      "path": "~/GUI/UserGUI/Contents"
+      }
     },
     {
       "name": "HealthUp",
@@ -2108,8 +2106,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree/Effect"
+      }
     },
     {
       "name": "AttackUP",
@@ -2127,8 +2124,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree/Effect"
+      }
     },
     {
       "name": "LevelUp",
@@ -2146,8 +2142,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/Level"
+      }
     },
     {
       "name": "FisherSell6",
@@ -2635,7 +2630,7 @@
     {
       "name": "MinerSellGui",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "miner_sell_gui",
       "metadata": {
