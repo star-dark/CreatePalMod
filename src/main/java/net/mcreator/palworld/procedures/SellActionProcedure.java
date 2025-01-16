@@ -18,7 +18,6 @@ import net.mcreator.palworld.world.inventory.FisherSellGuiMenu;
 import net.mcreator.palworld.world.inventory.FarmerSellGuiMenu;
 import net.mcreator.palworld.network.PalworldModVariables;
 import net.mcreator.palworld.init.PalworldModItems;
-import net.mcreator.palworld.PalworldMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -258,6 +257,5 @@ public class SellActionProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 		}
-		PalworldMod.LOGGER.info("error");
 	}
 }

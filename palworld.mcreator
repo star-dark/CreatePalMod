@@ -110,10 +110,10 @@
       "registry_name": "farmer_job_npc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json",
           "src/main/resources/assets/palworld/models/item/farmer_job_npc_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java",
-          "src/main/resources/data/palworld/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json"
+          "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java",
+          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java"
         ]
       },
       "path": "~/JobNPC"
@@ -337,9 +337,9 @@
       "registry_name": "miner_job_npc",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java",
           "src/main/resources/assets/palworld/models/item/miner_job_npc_spawn_egg.json",
           "src/main/java/net/mcreator/palworld/entity/MinerJobNPCEntity.java",
-          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java",
           "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json"
         ]
       },
@@ -396,8 +396,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/world/inventory/JobNpcGuiMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java",
-          "src/main/java/net/mcreator/palworld/network/JobNpcGuiButtonMessage.java"
+          "src/main/java/net/mcreator/palworld/network/JobNpcGuiButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java"
         ]
       },
       "path": "~/JobNPC"
@@ -546,10 +546,10 @@
       "registry_name": "fisher_job_npc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/renderer/FisherJobNPCRenderer.java",
+          "src/main/java/net/mcreator/palworld/entity/FisherJobNPCEntity.java",
           "src/main/resources/data/palworld/neoforge/biome_modifier/fisher_job_npc_biome_modifier.json",
-          "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/entity/FisherJobNPCEntity.java"
+          "src/main/java/net/mcreator/palworld/client/renderer/FisherJobNPCRenderer.java",
+          "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json"
         ]
       },
       "path": "~/JobNPC"
@@ -2059,6 +2059,337 @@
       "path": "~/GUI/Skill_Tree"
     },
     {
+      "name": "PlayerExp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_exp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PlayerExpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/UserGUI/Contents"
+    },
+    {
+      "name": "HealthUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HealthUpPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "FisherSkillTree",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fisher_skill_tree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree"
+    },
+    {
+      "name": "DefenseUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DefenseUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "MinerSkillTree",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_skill_tree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree"
+    },
+    {
+      "name": "PlayerExpGoal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_exp_goal",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PlayerExpGoalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/UserGUI/Contents"
+    },
+    {
+      "name": "PlayerLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PlayerLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/UserGUI/Contents"
+    },
+    {
+      "name": "HealthUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HealthUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "GetSkillPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_skill_points",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/GetSkillPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "MagicWandentitigaaitemeulhwidureulddae",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_wandentitigaaitemeulhwidureulddae",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MagicWandentitigaaitemeulhwidureulddaeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ClearWand"
+    },
+    {
+      "name": "AttackUP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AttackUPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "AttackUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AttackUpPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "CurrentSkillPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_skill_points",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/CurrentSkillPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "DefenseUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DefenseUpPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "OpenSkillTreeGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_skill_tree_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/OpenSkillTreeGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/UserGUI/Open"
+    },
+    {
+      "name": "LevelUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/LevelUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Level"
+    },
+    {
+      "name": "LevelWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/LevelWandItem.java",
+          "src/main/resources/assets/palworld/models/item/level_wand.json"
+        ]
+      },
+      "path": "~/ClearWand"
+    },
+    {
       "name": "FisherSell6",
       "type": "procedure",
       "compiles": true,
@@ -2544,14 +2875,14 @@
     {
       "name": "MinerSellGui",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "miner_sell_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSellGuiMenu.java",
           "src/main/java/net/mcreator/palworld/network/MinerSellGuiButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSellGuiScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/MinerSellGuiScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/MinerSellGuiMenu.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2703,201 +3034,6 @@
         ]
       },
       "path": "~/JobNPC/JobTrade/SellButton"
-    },
-    {
-      "name": "PlayerExp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_exp",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PlayerExpProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/GUI/UserGUI/Contents"
-    },
-    {
-      "name": "GetSkillPoints",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_skill_points",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/GetSkillPointsProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
-    },
-    {
-      "name": "HealthUpPoint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "health_up_point",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/HealthUpPointProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
-    },
-    {
-      "name": "MagicWandentitigaaitemeulhwidureulddae",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_wandentitigaaitemeulhwidureulddae",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/MagicWandentitigaaitemeulhwidureulddaeProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/ClearWand"
-    },
-    {
-      "name": "FisherSkillTree",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fisher_skill_tree",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree"
-    },
-    {
-      "name": "AttackUpPoint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "attack_up_point",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AttackUpPointProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
-    },
-    {
-      "name": "MinerSkillTree",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "miner_skill_tree",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree"
-    },
-    {
-      "name": "CurrentSkillPoints",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "current_skill_points",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/CurrentSkillPointsProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
-    },
-    {
-      "name": "DefenseUpPoint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "defense_up_point",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DefenseUpPointProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
-    },
-    {
-      "name": "OpenSkillTreeGUI",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_skill_tree_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/OpenSkillTreeGUIProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI/UserGUI/Open"
-    },
-    {
-      "name": "PlayerLevel",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_level",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PlayerLevelProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/GUI/UserGUI/Contents"
-    },
-    {
-      "name": "LevelWand",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_wand",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/level_wand.json",
-          "src/main/java/net/mcreator/palworld/item/LevelWandItem.java"
-        ]
-      },
-      "path": "~/ClearWand"
     }
   ],
   "variable_elements": [
@@ -3097,6 +3233,7 @@
       "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
+      "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
       "gui.palworld.farmer_sell_gui.label_33weon1": "33원",
       "item.palworld.manwon": "만원",
@@ -3115,6 +3252,7 @@
       "gui.palworld.fisher_sell_gui.button_panmae1": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae2": "모두 판매",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
+      "gui.palworld.fisher_skill_tree.label_15lv": "15Lv",
       "item.palworld.fish_arapaima": "Fish Arapaima",
       "item.palworld.fish_red_grouper": "Fish Red Grouper",
       "gui.palworld.farmer_skill_tree.label_gonggyeogryeog_jeungga": "공격력",
@@ -3128,8 +3266,8 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae16": "모두 판매",
+      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두 판매",
@@ -3139,6 +3277,7 @@
       "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "item.palworld.ore_iron": "Ore Iron",
       "item.palworld.fish_carp": "Fish Carp",
+      "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
       "gui.palworld.farmer_skill_tree.label_101": "/ 10",
       "gui.palworld.miner_sell_gui.button_panmae13": "판매",
       "item.palworld.fish_angler": "Fish Angler",
@@ -3195,10 +3334,13 @@
       "gui.palworld.fisher_sell_gui.label_30weon3": "70원",
       "gui.palworld.current_money.label_empty1": "",
       "item.palworld.fish_rod_lv_15": "Fish Rod Lv 1 5",
+      "gui.palworld.fisher_skill_tree.label_10lv": "10Lv",
       "gui.palworld.fisher_sell_gui.label_30weon2": "30원",
       "item.palworld.miner_pick_lv_30": "Miner Pick Lv 3 0",
       "gui.palworld.fisher_sell_gui.label_30weon1": "30원",
+      "gui.palworld.miner_skill_tree.label_10lv": "10Lv",
       "gui.palworld.money_tap.button_5000": "5000",
+      "gui.palworld.fisher_skill_tree.label_5lv": "5Lv",
       "item.palworld.fish_rainbow_trout": "Fish Rainbow Trout",
       "gui.palworld.fisher_sell_gui.label_10weon": "10원",
       "gui.palworld.money_tap.label_inculganeunggeumaeg": "인출가능금액 :",
@@ -3250,6 +3392,7 @@
       "gui.palworld.miner_sell_gui.label_100weon": "개 당 100원",
       "gui.palworld.sub_quest_provide_gui.button_dadgi": "닫기",
       "gui.palworld.sub_quest_provide_gui.label_bosang": "보상  :",
+      "item.palworld.level_wand": "Magic Wand",
       "item.palworld.fish_herring": "Fish Herring",
       "gui.palworld.farmer_skill_tree.label_20lv": "20Lv",
       "gui.palworld.user_gui.label_seukilteuri": "스킬트리",
@@ -3257,8 +3400,10 @@
       "gui.palworld.miner_sell_gui.label_100weon2": "100원",
       "gui.palworld.miner_sell_gui.label_100weon1": "개 당 100원",
       "gui.palworld.job_npc_action.button_cwiso": "취소",
+      "gui.palworld.miner_skill_tree.label_20lv": "20Lv",
       "item.palworld.miner_pick_lv_1": "Miner Pick Lv 1",
       "entity.palworld.king": "King",
+      "gui.palworld.fisher_skill_tree.label_30lv": "30Lv",
       "item.palworld.burf_sword": "Burf Sword",
       "gui.palworld.miner_sell_gui.label_1weon1": "1원",
       "item.palworld.farmer_root": "Farmer Root",
@@ -3272,9 +3417,13 @@
       "gui.palworld.fisher_sell_gui.label_10weon6": "10원",
       "gui.palworld.fisher_sell_gui.label_10weon5": "10원",
       "item.palworld.ochunwon": "오천원",
+      "gui.palworld.miner_skill_tree.label_30lv": "30Lv",
       "item.palworld.ore_copper": "Ore Copper",
+      "gui.palworld.fisher_skill_tree.label_20lv": "20Lv",
       "item.palworld.fish_rod_lv_30": "Fish Rod Lv 3 0",
       "gui.palworld.farmer_skill_tree.label_ceryeogjeungga": "최대체력",
+      "gui.palworld.miner_skill_tree.label_15lv": "15Lv",
+      "gui.palworld.miner_skill_tree.label_5lv": "5Lv",
       "gui.palworld.quest_provide_gui.button_dadgi": "닫기",
       "entity.palworld.miner_job_npc": "Miner Job NPC",
       "item.palworld.fish_rod_lv_1": "Fish Rod Lv 1",
