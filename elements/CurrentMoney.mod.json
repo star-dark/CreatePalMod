@@ -132,57 +132,6 @@
           "x": 58,
           "y": 32
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_player_level",
-          "text": {
-            "fixedValue": "",
-            "name": "PlayerLevel"
-          },
-          "color": {
-            "value": -65536,
-            "falpha": 0.0
-          },
-          "anchorPoint": "CENTER",
-          "x": 43,
-          "y": 47
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_player_exp_goal",
-          "text": {
-            "fixedValue": "",
-            "name": "PlayerExpGoal"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "anchorPoint": "CENTER",
-          "x": 90,
-          "y": 47
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_player_exp",
-          "text": {
-            "fixedValue": "",
-            "name": "PlayerExp"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "anchorPoint": "CENTER",
-          "x": 62,
-          "y": 47
-        }
       }
     ],
     "baseTexture": "",

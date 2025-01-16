@@ -46,7 +46,6 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISH_ROD_LV_30.get());
 			tabData.accept(PalworldModItems.BURF_SWORD.get());
 			tabData.accept(PalworldModItems.MAGIC_WAND.get());
-			tabData.accept(PalworldModItems.LEVEL_WAND.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

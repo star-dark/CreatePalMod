@@ -1,6 +1,9 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class GuiCloseProcedure {
 	public static void execute(Entity entity) {
