@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 269,
-    "height": 166,
+    "width": 292,
+    "height": 194,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -21,8 +21,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 97,
-          "y": 48
+          "x": 83,
+          "y": 33
         }
       },
       {
@@ -36,8 +36,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 133,
-          "y": 48
+          "x": 124,
+          "y": 33
         }
       },
       {
@@ -51,8 +51,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 177,
-          "y": 48
+          "x": 171,
+          "y": 33
         }
       },
       {
@@ -66,8 +66,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 223,
-          "y": 48
+          "x": 219,
+          "y": 33
         }
       },
       {
@@ -82,7 +82,7 @@
             "falpha": 0.0
           },
           "x": 267,
-          "y": 48
+          "y": 33
         }
       },
       {
@@ -96,16 +96,234 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 311,
-          "y": 48
+          "x": 315,
+          "y": 33
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ceryeogjeungga",
+          "image": "ceryeogjeungga.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "HealthUp"
+          },
+          "x": 80,
+          "y": 114
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rangeup",
+          "image": "rangeup.png",
+          "hoveredImage": "",
+          "x": 176,
+          "y": 101
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_gonggyeogryeog",
+          "image": "gonggyeogryeog.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "AttackUP"
+          },
+          "x": 80,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gonggyeogryeog_jeungga",
+          "text": {
+            "fixedValue": "공격력"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 84,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_nameun_pointeu",
+          "text": {
+            "fixedValue": "남은 포인트 :"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 280,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_current_skill_points",
+          "text": {
+            "fixedValue": "",
+            "name": "CurrentSkillPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 329,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10",
+          "text": {
+            "fixedValue": "/10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 92,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_attack_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "AttackUpPoint"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 80,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_101",
+          "text": {
+            "fixedValue": "/ 10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 93,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_health_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "HealthUpPoint"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 80,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ceryeogjeungga",
+          "text": {
+            "fixedValue": "최대체력"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 82,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bangeoryeog",
+          "text": {
+            "fixedValue": "방어력"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 85,
+          "y": 188
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bangeoryeog",
+          "image": "bangeoryeog.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DefenseUp"
+          },
+          "x": 80,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_102",
+          "text": {
+            "fixedValue": "/ 10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 93,
+          "y": 199
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_defense_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "DefenseUpPoint"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 81,
+          "y": 199
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
+      "sx": 10,
       "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "ox": 18,
+      "oy": 11,
       "snapOnGrid": false
     }
   }
