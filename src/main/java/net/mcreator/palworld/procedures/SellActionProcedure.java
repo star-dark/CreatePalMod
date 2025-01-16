@@ -29,6 +29,8 @@ public class SellActionProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).talk_with).equals("Farmer")) {
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
 				_ent.openMenu(new MenuProvider() {
@@ -67,6 +69,8 @@ public class SellActionProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 		} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).talk_with).equals("Miner")) {
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
 				_ent.openMenu(new MenuProvider() {
@@ -129,6 +133,8 @@ public class SellActionProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 		} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).talk_with).equals("Fisher")) {
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
 				_ent.openMenu(new MenuProvider() {
