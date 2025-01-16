@@ -1,0 +1,268 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 230,
+    "height": 150,
+    "inventoryOffsetX": 999,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 51,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 116,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 52,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 116,
+          "y": 128
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 50,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 116,
+          "y": 68
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 61,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 224,
+          "y": 128
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 62,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 224,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 60,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 224,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_cwiso",
+          "text": "취소",
+          "isUndecorated": false,
+          "width": 35,
+          "height": 20,
+          "x": 197,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1weon",
+          "text": {
+            "fixedValue": "1원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1weon1",
+          "text": {
+            "fixedValue": "1원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1weon2",
+          "text": {
+            "fixedValue": "1원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_33weon",
+          "text": {
+            "fixedValue": "33원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 251,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_33weon1",
+          "text": {
+            "fixedValue": "33원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 251,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_33weon2",
+          "text": {
+            "fixedValue": "33원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 251,
+          "y": 128
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae",
+          "text": "판매",
+          "isUndecorated": false,
+          "width": 35,
+          "height": 20,
+          "x": 161,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae1",
+          "text": "판매",
+          "isUndecorated": false,
+          "width": 35,
+          "height": 20,
+          "x": 278,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae2",
+          "text": "판매",
+          "isUndecorated": false,
+          "width": 35,
+          "height": 20,
+          "x": 161,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae3",
+          "text": "판매",
+          "isUndecorated": false,
+          "width": 35,
+          "height": 20,
+          "x": 161,
+          "y": 128
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae4",
+          "text": "판매",
+          "isUndecorated": false,
+          "width": 35,
+          "height": 20,
+          "x": 278,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae5",
+          "text": "판매",
+          "isUndecorated": false,
+          "width": 35,
+          "height": 20,
+          "x": 278,
+          "y": 128
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 20,
+      "ox": 15,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 140,
+    "height": 150,
+    "inventoryOffsetX": 999,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 50,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 68
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 51,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 52,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1weon",
+          "text": {
+            "fixedValue": "개 당 1원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1weon1",
+          "text": {
+            "fixedValue": "개 당 1원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1weon2",
+          "text": {
+            "fixedValue": "개 당 10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 128
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_cwiso",
+          "text": "취소",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GuiClose"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 195,
+          "y": 158
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_modu_panmae",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FarmerSell0"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 231,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_modu_panmae1",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FarmerSell1"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 231,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_modu_panmae2",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FarmerSell2"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 231,
+          "y": 128
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 20,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
