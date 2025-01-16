@@ -1,6 +1,12 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.palworld.network.PalworldModVariables;
+import net.mcreator.palworld.init.PalworldModItems;
 
 public class FisherSell6Procedure {
 	public static void execute(Entity entity) {
