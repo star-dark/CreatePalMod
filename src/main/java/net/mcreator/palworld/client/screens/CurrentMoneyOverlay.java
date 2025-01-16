@@ -80,13 +80,13 @@ public class CurrentMoneyOverlay {
 					JobTextProcedure.execute(entity), w / 2 + -155, h / 2 + -88, -13421569, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					PlayerLevelProcedure.execute(entity), w / 2 + -169, h / 2 + -73, -65536, false);
+					PlayerLevelProcedure.execute(entity), w / 2 + -170, h / 2 + -73, -65536, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					PlayerExpGoalProcedure.execute(entity), w / 2 + -96, h / 2 + -73, -1, false);
+					PlayerExpGoalProcedure.execute(entity), w / 2 + -123, h / 2 + -73, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					PlayerExpProcedure.execute(entity), w / 2 + -139, h / 2 + -73, -1, false);
+					PlayerExpProcedure.execute(entity), w / 2 + -151, h / 2 + -73, -1, false);
 			if (UserFaceProcedure.execute(entity) instanceof LivingEntity livingEntity) {
 				renderEntityInInventoryFollowsAngle(event.getGuiGraphics(), 22, 56, 30, 0f, 0, livingEntity);
 			}

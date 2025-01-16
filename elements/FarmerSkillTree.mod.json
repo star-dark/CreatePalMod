@@ -106,6 +106,9 @@
           "name": "imagebutton_ceryeogjeungga",
           "image": "ceryeogjeungga.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "HealthUp"
+          },
           "x": 80,
           "y": 114
         }
@@ -116,8 +119,8 @@
           "name": "imagebutton_rangeup",
           "image": "rangeup.png",
           "hoveredImage": "",
-          "x": 170,
-          "y": 87
+          "x": 176,
+          "y": 101
         }
       },
       {
@@ -126,6 +129,9 @@
           "name": "imagebutton_gonggyeogryeog",
           "image": "gonggyeogryeog.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "AttackUP"
+          },
           "x": 80,
           "y": 58
         }
@@ -135,14 +141,14 @@
         "data": {
           "name": "label_gonggyeogryeog_jeungga",
           "text": {
-            "fixedValue": "공격력 증가"
+            "fixedValue": "공격력"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 78,
-          "y": 85
+          "x": 84,
+          "y": 84
         }
       },
       {
@@ -156,8 +162,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 287,
-          "y": 200
+          "x": 280,
+          "y": 201
         }
       },
       {
@@ -172,8 +178,144 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 330,
-          "y": 200
+          "x": 329,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10",
+          "text": {
+            "fixedValue": "/10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 92,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_attack_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "AttackUpPoint"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 80,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_101",
+          "text": {
+            "fixedValue": "/ 10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 93,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_health_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "HealthUpPoint"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 80,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ceryeogjeungga",
+          "text": {
+            "fixedValue": "최대체력"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 82,
+          "y": 139
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bangeoryeog",
+          "text": {
+            "fixedValue": "방어력"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 85,
+          "y": 188
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bangeoryeog",
+          "image": "bangeoryeog.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DefenseUp"
+          },
+          "x": 80,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_102",
+          "text": {
+            "fixedValue": "/ 10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 93,
+          "y": 199
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_defense_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "DefenseUpPoint"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 81,
+          "y": 199
         }
       }
     ],
