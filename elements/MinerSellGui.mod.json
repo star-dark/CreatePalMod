@@ -236,7 +236,7 @@
           "text": "모두 판매",
           "isUndecorated": false,
           "onClick": {
-            "name": "FarmerSell2"
+            "name": "MinerSell2"
           },
           "width": 35,
           "height": 20,

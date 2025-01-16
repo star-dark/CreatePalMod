@@ -39,10 +39,10 @@ public class PalworldModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestCompleteMenu>> SUB_QUEST_COMPLETE = REGISTRY.register("sub_quest_complete", () -> IMenuTypeExtension.create(SubQuestCompleteMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SubQuestClearMenu>> SUB_QUEST_CLEAR = REGISTRY.register("sub_quest_clear", () -> IMenuTypeExtension.create(SubQuestClearMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FarmerSkillTreeMenu>> FARMER_SKILL_TREE = REGISTRY.register("farmer_skill_tree", () -> IMenuTypeExtension.create(FarmerSkillTreeMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<JobNpcActionMenu>> JOB_NPC_ACTION = REGISTRY.register("job_npc_action", () -> IMenuTypeExtension.create(JobNpcActionMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<FarmerSellGuiMenu>> FARMER_SELL_GUI = REGISTRY.register("farmer_sell_gui", () -> IMenuTypeExtension.create(FarmerSellGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MinerSellGuiMenu>> MINER_SELL_GUI = REGISTRY.register("miner_sell_gui", () -> IMenuTypeExtension.create(MinerSellGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<FisherSellGuiMenu>> FISHER_SELL_GUI = REGISTRY.register("fisher_sell_gui", () -> IMenuTypeExtension.create(FisherSellGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FisherSkillTreeMenu>> FISHER_SKILL_TREE = REGISTRY.register("fisher_skill_tree", () -> IMenuTypeExtension.create(FisherSkillTreeMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<MinerSkillTreeMenu>> MINER_SKILL_TREE = REGISTRY.register("miner_skill_tree", () -> IMenuTypeExtension.create(MinerSkillTreeMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<JobNpcActionMenu>> JOB_NPC_ACTION = REGISTRY.register("job_npc_action", () -> IMenuTypeExtension.create(JobNpcActionMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<FisherSellGuiMenu>> FISHER_SELL_GUI = REGISTRY.register("fisher_sell_gui", () -> IMenuTypeExtension.create(FisherSellGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<MinerSellGuiMenu>> MINER_SELL_GUI = REGISTRY.register("miner_sell_gui", () -> IMenuTypeExtension.create(MinerSellGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<FarmerSellGuiMenu>> FARMER_SELL_GUI = REGISTRY.register("farmer_sell_gui", () -> IMenuTypeExtension.create(FarmerSellGuiMenu::new));
 }
