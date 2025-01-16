@@ -37,7 +37,7 @@ public class FishRodEffectProcedure {
 			return;
 		double RandomNumber = 0;
 		if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).job_production).equals("Fisher")) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.PUFFERFISH)) : false) {
+			if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.PUFFERFISH)) : false) && 1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
 				RandomNumber = Mth.nextInt(RandomSource.create(), 1, 7);
 				if (1 == RandomNumber) {
 					if (entity instanceof Player _player) {
@@ -109,7 +109,7 @@ public class FishRodEffectProcedure {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\uBB3C\uACE0\uAE30\uAC00 \uBBF8\uB07C\uB9CC \uBA39\uACE0 \uB3C4\uB9DD\uCCE4\uC2B5\uB2C8\uB2E4"), false);
 				}
-			} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.TROPICAL_FISH)) : false) {
+			} else if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.TROPICAL_FISH)) : false) && 1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
 				RandomNumber = Mth.nextInt(RandomSource.create(), 1, 5);
 				if (1 == RandomNumber) {
 					if (entity instanceof Player _player) {
@@ -162,7 +162,7 @@ public class FishRodEffectProcedure {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\uBB3C\uACE0\uAE30\uAC00 \uBBF8\uB07C\uB9CC \uBA39\uACE0 \uB3C4\uB9DD\uCCE4\uC2B5\uB2C8\uB2E4"), false);
 				}
-			} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.SALMON)) : false) {
+			} else if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.SALMON)) : false) && 1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
 				RandomNumber = Mth.nextInt(RandomSource.create(), 1, 5);
 				if (1 == RandomNumber) {
 					if (entity instanceof Player _player) {

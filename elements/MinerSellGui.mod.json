@@ -1,0 +1,331 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 150,
+    "height": 220,
+    "inventoryOffsetX": 999,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 60,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 25
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1weon",
+          "text": {
+            "fixedValue": "개 당 1원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 25
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 61,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 51
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_3weon",
+          "text": {
+            "fixedValue": "개 당 3원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 51
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 62,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_5weon",
+          "text": {
+            "fixedValue": "개 당 5원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 76
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 63,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon",
+          "text": {
+            "fixedValue": "개 당 10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 102
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 64,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 127
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon1",
+          "text": {
+            "fixedValue": "개 당 10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 127
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 65,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 153
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_100weon",
+          "text": {
+            "fixedValue": "개 당 100원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 153
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 66,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 178
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_100weon1",
+          "text": {
+            "fixedValue": "개 당 100원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 178
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinerSell0"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 240,
+          "y": 25
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae1",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinerSell1"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 240,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae2",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FarmerSell2"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 240,
+          "y": 76
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae3",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinerSell3"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 240,
+          "y": 102
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae4",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinerSell4"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 240,
+          "y": 127
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae5",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinerSell5"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 240,
+          "y": 153
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae6",
+          "text": "모두 판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinerSell6"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 240,
+          "y": 178
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_cwiso",
+          "text": "취소",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GuiClose"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 195,
+          "y": 204
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 17,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
