@@ -47,6 +47,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.BURF_SWORD.get());
 			tabData.accept(PalworldModItems.MAGIC_WAND.get());
 			tabData.accept(PalworldModItems.LEVEL_WAND.get());
+			tabData.accept(PalworldModItems.MJOLNIR.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

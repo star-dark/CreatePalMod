@@ -18,6 +18,7 @@ import net.mcreator.palworld.item.OreDiamondItem;
 import net.mcreator.palworld.item.OreCopperItem;
 import net.mcreator.palworld.item.OreCoalItem;
 import net.mcreator.palworld.item.OchunwonItem;
+import net.mcreator.palworld.item.MjolnirItem;
 import net.mcreator.palworld.item.MinerPickLv30Item;
 import net.mcreator.palworld.item.MinerPickLv1Item;
 import net.mcreator.palworld.item.MinerPickLv15Item;
@@ -100,6 +101,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> PIG_SPAWN_EGG = REGISTRY.register("pig_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.PIG, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> QUEEN_SPAWN_EGG = REGISTRY.register("queen_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.QUEEN, -3407668, -256, new Item.Properties()));
 	public static final DeferredItem<Item> LEVEL_WAND = REGISTRY.register("level_wand", LevelWandItem::new);
+	public static final DeferredItem<Item> MJOLNIR = REGISTRY.register("mjolnir", MjolnirItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
