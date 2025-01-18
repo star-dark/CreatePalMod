@@ -367,8 +367,8 @@
       "registry_name": "ore_copper",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java",
-          "src/main/resources/assets/palworld/models/item/ore_copper.json"
+          "src/main/resources/assets/palworld/models/item/ore_copper.json",
+          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -576,8 +576,8 @@
       "registry_name": "farmer_spore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FarmerSporeItem.java",
-          "src/main/resources/assets/palworld/models/item/farmer_spore.json"
+          "src/main/resources/assets/palworld/models/item/farmer_spore.json",
+          "src/main/java/net/mcreator/palworld/item/FarmerSporeItem.java"
         ]
       },
       "path": "~/JobItem/Farmer"
@@ -590,8 +590,8 @@
       "registry_name": "ore_coal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/OreCoalItem.java",
-          "src/main/resources/assets/palworld/models/item/ore_coal.json"
+          "src/main/resources/assets/palworld/models/item/ore_coal.json",
+          "src/main/java/net/mcreator/palworld/item/OreCoalItem.java"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -724,8 +724,8 @@
       "registry_name": "fish_bass",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishBassItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_bass.json"
+          "src/main/resources/assets/palworld/models/item/fish_bass.json",
+          "src/main/java/net/mcreator/palworld/item/FishBassItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -1370,8 +1370,8 @@
       "registry_name": "burf_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/burf_sword.json",
-          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
+          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java",
+          "src/main/resources/assets/palworld/models/item/burf_sword.json"
         ]
       },
       "path": "~/Sword"

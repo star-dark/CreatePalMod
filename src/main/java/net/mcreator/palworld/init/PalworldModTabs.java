@@ -21,7 +21,12 @@ public class PalworldModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+
+			tabData.accept(PalworldModItems.BURF_SWORD.get());
+			tabData.accept(PalworldModItems.MJOLNIR.get());
+
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
 			tabData.accept(PalworldModItems.FARMER_JOB_NPC_SPAWN_EGG.get());
 			tabData.accept(PalworldModItems.MINER_JOB_NPC_SPAWN_EGG.get());
@@ -32,6 +37,16 @@ public class PalworldModTabs {
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
+			tabData.accept(PalworldModItems.FARMER_DREGS.get());
+			tabData.accept(PalworldModItems.ORE_GOLD.get());
+			tabData.accept(PalworldModItems.ORE_EMERALD.get());
+			tabData.accept(PalworldModItems.FARMER_ROOT.get());
+			tabData.accept(PalworldModItems.ORE_LAPIS_LAZULI.get());
+			tabData.accept(PalworldModItems.ORE_COPPER.get());
+			tabData.accept(PalworldModItems.ORE_DIAMOND.get());
+			tabData.accept(PalworldModItems.ORE_IRON.get());
+			tabData.accept(PalworldModItems.FARMER_SPORE.get());
+			tabData.accept(PalworldModItems.ORE_COAL.get());
 			tabData.accept(PalworldModItems.CHUNWON.get());
 			tabData.accept(PalworldModItems.OCHUNWON.get());
 			tabData.accept(PalworldModItems.MANWON.get());
@@ -44,10 +59,8 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISH_ROD_LV_15.get());
 			tabData.accept(PalworldModItems.FISH_ROD_LV_1.get());
 			tabData.accept(PalworldModItems.FISH_ROD_LV_30.get());
-			tabData.accept(PalworldModItems.BURF_SWORD.get());
 			tabData.accept(PalworldModItems.MAGIC_WAND.get());
 			tabData.accept(PalworldModItems.LEVEL_WAND.get());
-			tabData.accept(PalworldModItems.MJOLNIR.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

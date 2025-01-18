@@ -5,7 +5,7 @@
     "toolType": "Axe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "minecraft:empty_slot_axe",
+    "texture": "minecraft:mace",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Mjolnir",
@@ -14,7 +14,7 @@
     },
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "COMBAT"
       }
     ],
     "efficiency": 7.0,
