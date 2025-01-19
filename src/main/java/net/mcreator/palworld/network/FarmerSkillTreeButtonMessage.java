@@ -17,6 +17,8 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
+import net.mcreator.palworld.procedures.RecoverUpProcedure;
+import net.mcreator.palworld.procedures.RangeUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.DefenseUpProcedure;
 import net.mcreator.palworld.procedures.AttackUPProcedure;
@@ -65,6 +67,10 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 
 			HealthUpProcedure.execute(entity);
 		}
+		if (buttonID == 1) {
+
+			RangeUpProcedure.execute(entity);
+		}
 		if (buttonID == 2) {
 
 			AttackUPProcedure.execute(entity);
@@ -72,6 +78,10 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		if (buttonID == 3) {
 
 			DefenseUpProcedure.execute(entity);
+		}
+		if (buttonID == 4) {
+
+			RecoverUpProcedure.execute(entity);
 		}
 	}
 

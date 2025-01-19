@@ -82,6 +82,8 @@ public class PalworldModVariables {
 			clone.Skill_Points = original.Skill_Points;
 			clone.AttackUpSkillPoint = original.AttackUpSkillPoint;
 			clone.Player_EXP = original.Player_EXP;
+			clone.RecoverSkillPoint = original.RecoverSkillPoint;
+			clone.RangeUpSkillPoint = original.RangeUpSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -124,6 +126,8 @@ public class PalworldModVariables {
 		public double Skill_Points = 0;
 		public double AttackUpSkillPoint = 0;
 		public double Player_EXP = 0;
+		public double RecoverSkillPoint = 0;
+		public double RangeUpSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -156,6 +160,8 @@ public class PalworldModVariables {
 			nbt.putDouble("Skill_Points", Skill_Points);
 			nbt.putDouble("AttackUpSkillPoint", AttackUpSkillPoint);
 			nbt.putDouble("Player_EXP", Player_EXP);
+			nbt.putDouble("RecoverSkillPoint", RecoverSkillPoint);
+			nbt.putDouble("RangeUpSkillPoint", RangeUpSkillPoint);
 			return nbt;
 		}
 
@@ -189,6 +195,8 @@ public class PalworldModVariables {
 			Skill_Points = nbt.getDouble("Skill_Points");
 			AttackUpSkillPoint = nbt.getDouble("AttackUpSkillPoint");
 			Player_EXP = nbt.getDouble("Player_EXP");
+			RecoverSkillPoint = nbt.getDouble("RecoverSkillPoint");
+			RangeUpSkillPoint = nbt.getDouble("RangeUpSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

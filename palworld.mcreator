@@ -3221,20 +3221,6 @@
       "path": "~/Sword"
     },
     {
-      "name": "Balmung",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "balmung",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/BalmungItem.java",
-          "src/main/resources/assets/palworld/models/item/balmung.json"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
       "name": "BalmungEffect",
       "type": "procedure",
       "compiles": true,
@@ -3256,6 +3242,88 @@
         ]
       },
       "path": "~/Sword"
+    },
+    {
+      "name": "Balmung",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balmung",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/BalmungItem.java",
+          "src/main/resources/assets/palworld/models/item/balmung.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "RangeUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "range_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RangeUpPointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "RecoverUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverUpPointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "RangeUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "range_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RangeUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "RecoverUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
     }
   ],
   "variable_elements": [
@@ -3423,6 +3491,18 @@
     },
     {
       "name": "Player_EXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RecoverSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RangeUpSkillPoint",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -3809,6 +3889,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Attribute",
+        "children": []
       }
     ]
   },
