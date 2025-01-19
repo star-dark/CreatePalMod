@@ -26,6 +26,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.BURF_SWORD.get());
 			tabData.accept(PalworldModItems.MJOLNIR.get());
 			tabData.accept(PalworldModItems.SKYSHATTER.get());
+			tabData.accept(PalworldModItems.DAINSLEIF.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 

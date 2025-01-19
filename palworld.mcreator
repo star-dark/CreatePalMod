@@ -3167,6 +3167,58 @@
         ]
       },
       "path": "~/Sword"
+    },
+    {
+      "name": "Dainsleif",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/dainsleif.json",
+          "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "DainsleifEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "DainsleifEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
     }
   ],
   "variable_elements": [
@@ -3355,6 +3407,7 @@
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Dainsleif",
       "~CUSTOM:Skyshatter",
       "~CUSTOM:BurfSword"
     ]
@@ -3441,6 +3494,7 @@
       "gui.palworld.sub_quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
+      "item.palworld.dainsleif": "Dainsleif",
       "gui.palworld.fisher_sell_gui.label_50weon2": "70원",
       "gui.palworld.fisher_sell_gui.label_50weon1": "70원",
       "gui.palworld.farmer_sell_gui.label_1weon": "개 당 1원",
