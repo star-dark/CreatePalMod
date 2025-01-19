@@ -17,7 +17,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 68
         }
@@ -29,7 +29,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 98
         }
@@ -41,7 +41,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 128
         }
@@ -110,7 +110,7 @@
         "type": "button",
         "data": {
           "name": "button_modu_panmae",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FarmerSell0"
@@ -125,7 +125,7 @@
         "type": "button",
         "data": {
           "name": "button_modu_panmae1",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FarmerSell1"
@@ -140,7 +140,7 @@
         "type": "button",
         "data": {
           "name": "button_modu_panmae2",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FarmerSell2"

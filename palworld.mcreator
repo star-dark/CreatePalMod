@@ -3036,6 +3036,36 @@
       "path": "~/JobNPC/JobTrade/SellButton"
     },
     {
+      "name": "RangeUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "range_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RangeUpPointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "RecoverUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverUpPointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
       "name": "RangeUp",
       "type": "procedure",
       "compiles": true,
@@ -3053,26 +3083,6 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Effect"
-    },
-    {
-      "name": "RangeUpPoint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "range_up_point",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/RangeUpPointProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "RecoverUp",
@@ -3094,15 +3104,47 @@
       "path": "~/GUI/Skill_Tree/Effect"
     },
     {
-      "name": "RecoverUpPoint",
+      "name": "DainsleifEffect2",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "recover_up_point",
+      "registry_name": "dainsleif_effect_2",
       "metadata": {
-        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/RecoverUpPointProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Skyshatter",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyshatter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/skyshatter.json",
+          "src/main/java/net/mcreator/palworld/item/SkyshatterItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "DainsleifEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -3111,7 +3153,140 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/Sword"
+    },
+    {
+      "name": "SkyshatterEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyshatter_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "SkyshatterEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyshatter_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Mjolnir",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java",
+          "src/main/resources/assets/palworld/models/item/mjolnir.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Dainsleif",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/dainsleif.json",
+          "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "MjolnirEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MjolnirEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
     }
   ],
   "variable_elements": [
@@ -3284,13 +3459,13 @@
       "value": "0"
     },
     {
-      "name": "RangeUpSkillPoint",
+      "name": "RecoverSkillPoint",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
     },
     {
-      "name": "RecoverSkillPoint",
+      "name": "RangeUpSkillPoint",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -3308,7 +3483,12 @@
       "~CUSTOM:MinerPickLv15",
       "~CUSTOM:MinerPickLv30"
     ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:Mjolnir"
+    ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Dainsleif",
+      "~CUSTOM:Skyshatter",
       "~CUSTOM:BurfSword"
     ]
   },
@@ -3352,8 +3532,8 @@
       "gui.palworld.fisher_sell_gui.button_panmae10": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae11": "모두 판매",
       "gui.palworld.quest_tap.label_wanryo": "완료✅",
-      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
       "item.palworld.fish_pollock": "Fish Pollock",
+      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
@@ -3397,8 +3577,8 @@
       "gui.palworld.fisher_sell_gui.label_50weon2": "70원",
       "gui.palworld.fisher_sell_gui.label_50weon1": "70원",
       "gui.palworld.farmer_sell_gui.label_1weon": "개 당 1원",
-      "gui.palworld.farmer_skill_tree.label_51": "/ 5",
       "gui.palworld.farmer_skill_tree.label_5lv": "5Lv",
+      "gui.palworld.farmer_skill_tree.label_51": "/ 5",
       "item.palworld.fish_blue_gill": "Fish Blue Gill",
       "item.palworld.magic_wand": "Magic Wand",
       "gui.palworld.miner_sell_gui.label_3weon": "개 당 3원",

@@ -17,7 +17,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 69,
           "y": 26
         }
@@ -29,7 +29,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 168,
           "y": 26
         }
@@ -41,7 +41,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 267,
           "y": 26
         }
@@ -53,7 +53,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 69,
           "y": 53
         }
@@ -65,7 +65,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 168,
           "y": 53
         }
@@ -77,7 +77,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 267,
           "y": 53
         }
@@ -89,7 +89,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 69,
           "y": 80
         }
@@ -116,7 +116,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 168,
           "y": 80
         }
@@ -128,7 +128,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 267,
           "y": 80
         }
@@ -140,7 +140,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 69,
           "y": 107
         }
@@ -179,7 +179,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae2",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell2"
@@ -193,12 +193,24 @@
       {
         "type": "outputslot",
         "data": {
+          "id": 23,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 168,
+          "y": 107
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
           "id": 30,
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
-          "x": 168,
+          "dropItemsWhenNotBound": false,
+          "x": 267,
           "y": 107
         }
       },
@@ -209,9 +221,9 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
-          "x": 267,
-          "y": 107
+          "dropItemsWhenNotBound": false,
+          "x": 69,
+          "y": 134
         }
       },
       {
@@ -221,19 +233,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
-          "x": 69,
-          "y": 134
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
-          "id": 33,
-          "disablePickup": {
-            "fixedValue": true
-          },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 168,
           "y": 134
         }
@@ -245,7 +245,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 267,
           "y": 134
         }
@@ -257,7 +257,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 69,
           "y": 161
         }
@@ -269,7 +269,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 168,
           "y": 161
         }
@@ -281,7 +281,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 267,
           "y": 161
         }
@@ -365,7 +365,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell0"
@@ -380,7 +380,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae1",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell1"
@@ -395,7 +395,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae3",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell3"
@@ -410,7 +410,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae4",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell4"
@@ -425,7 +425,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae5",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell5"
@@ -440,7 +440,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae6",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell6"
@@ -455,7 +455,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae7",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell7"
@@ -470,7 +470,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae8",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell8"
@@ -485,7 +485,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae9",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell9"
@@ -500,7 +500,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae10",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell10"
@@ -515,7 +515,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae11",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell11"
@@ -530,7 +530,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae12",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell12"
@@ -545,7 +545,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae13",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell13"
@@ -560,7 +560,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae14",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell14"
@@ -575,7 +575,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae15",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell15"
@@ -590,7 +590,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae16",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell16"
@@ -605,7 +605,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae17",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FisherSell17"

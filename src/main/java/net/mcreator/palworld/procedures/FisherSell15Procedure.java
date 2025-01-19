@@ -27,7 +27,7 @@ public class FisherSell15Procedure {
 				count = count + 1;
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((new ItemStack(PalworldModItems.FISH_ANGLER.get()).getDisplayName().getString() + "" + new java.text.DecimalFormat("##\uAC1C").format(count) + "\uC744/\uB97C \uD310\uB9E4\uD558\uC5EC"
+				_player.displayClientMessage(Component.literal((new ItemStack(PalworldModItems.FISH_ANGLER.get()).getDisplayName().getString() + "" + new java.text.DecimalFormat(" ##\uAC1C").format(count) + "\uB97C \uD310\uB9E4\uD558\uC5EC "
 						+ new java.text.DecimalFormat("##\uC6D0").format(count * 100) + "\uC744 \uD68D\uB4DD\uD558\uC168\uC2B5\uB2C8\uB2E4")), false);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())

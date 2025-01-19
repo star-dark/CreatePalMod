@@ -192,7 +192,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 115, 101) {
+		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 115, 101) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -203,7 +203,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 214, 101) {
+		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 214, 101) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -214,7 +214,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 16, 128) {
+		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 16, 128) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -225,7 +225,7 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 				return false;
 			}
 		}));
-		this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 115, 128) {
+		this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 115, 128) {
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -397,12 +397,84 @@ public class FisherSellGuiMenu extends AbstractContainerMenu implements Supplier
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 10)
+						continue;
+					if (j == 11)
+						continue;
+					if (j == 12)
+						continue;
+					if (j == 13)
+						continue;
+					if (j == 14)
+						continue;
+					if (j == 15)
+						continue;
+					if (j == 16)
+						continue;
+					if (j == 20)
+						continue;
+					if (j == 21)
+						continue;
+					if (j == 22)
+						continue;
+					if (j == 23)
+						continue;
+					if (j == 30)
+						continue;
+					if (j == 31)
+						continue;
+					if (j == 32)
+						continue;
+					if (j == 40)
+						continue;
+					if (j == 41)
+						continue;
+					if (j == 42)
+						continue;
+					if (j == 43)
+						continue;
 					playerIn.drop(internal.getStackInSlot(j), false);
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(j, ItemStack.EMPTY);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 10)
+						continue;
+					if (i == 11)
+						continue;
+					if (i == 12)
+						continue;
+					if (i == 13)
+						continue;
+					if (i == 14)
+						continue;
+					if (i == 15)
+						continue;
+					if (i == 16)
+						continue;
+					if (i == 20)
+						continue;
+					if (i == 21)
+						continue;
+					if (i == 22)
+						continue;
+					if (i == 23)
+						continue;
+					if (i == 30)
+						continue;
+					if (i == 31)
+						continue;
+					if (i == 32)
+						continue;
+					if (i == 40)
+						continue;
+					if (i == 41)
+						continue;
+					if (i == 42)
+						continue;
+					if (i == 43)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(i, ItemStack.EMPTY);

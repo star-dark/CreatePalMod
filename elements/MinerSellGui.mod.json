@@ -17,7 +17,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 25
         }
@@ -44,7 +44,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 51
         }
@@ -71,7 +71,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 76
         }
@@ -98,7 +98,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 102
         }
@@ -125,7 +125,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 127
         }
@@ -152,7 +152,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 153
         }
@@ -179,7 +179,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 178
         }
@@ -203,7 +203,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "MinerSell0"
@@ -218,7 +218,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae1",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "MinerSell1"
@@ -233,7 +233,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae2",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "FarmerSell2"
@@ -248,7 +248,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae3",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "MinerSell3"
@@ -263,7 +263,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae4",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "MinerSell4"
@@ -278,7 +278,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae5",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "MinerSell5"
@@ -293,7 +293,7 @@
         "type": "button",
         "data": {
           "name": "button_panmae6",
-          "text": "모두 판매",
+          "text": "모두판매",
           "isUndecorated": false,
           "onClick": {
             "name": "MinerSell6"

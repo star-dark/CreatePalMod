@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.palworld.item.SkyshatterItem;
 import net.mcreator.palworld.item.OreLapisLazuliItem;
 import net.mcreator.palworld.item.OreIronItem;
 import net.mcreator.palworld.item.OreGoldItem;
@@ -18,6 +19,7 @@ import net.mcreator.palworld.item.OreDiamondItem;
 import net.mcreator.palworld.item.OreCopperItem;
 import net.mcreator.palworld.item.OreCoalItem;
 import net.mcreator.palworld.item.OchunwonItem;
+import net.mcreator.palworld.item.MjolnirItem;
 import net.mcreator.palworld.item.MinerPickLv30Item;
 import net.mcreator.palworld.item.MinerPickLv1Item;
 import net.mcreator.palworld.item.MinerPickLv15Item;
@@ -48,6 +50,7 @@ import net.mcreator.palworld.item.FishAnglerItem;
 import net.mcreator.palworld.item.FarmerSporeItem;
 import net.mcreator.palworld.item.FarmerRootItem;
 import net.mcreator.palworld.item.FarmerDregsItem;
+import net.mcreator.palworld.item.DainsleifItem;
 import net.mcreator.palworld.item.ChunwonItem;
 import net.mcreator.palworld.item.BurfSwordItem;
 import net.mcreator.palworld.PalworldMod;
@@ -100,6 +103,9 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> PIG_SPAWN_EGG = REGISTRY.register("pig_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.PIG, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> QUEEN_SPAWN_EGG = REGISTRY.register("queen_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.QUEEN, -3407668, -256, new Item.Properties()));
 	public static final DeferredItem<Item> LEVEL_WAND = REGISTRY.register("level_wand", LevelWandItem::new);
+	public static final DeferredItem<Item> SKYSHATTER = REGISTRY.register("skyshatter", SkyshatterItem::new);
+	public static final DeferredItem<Item> MJOLNIR = REGISTRY.register("mjolnir", MjolnirItem::new);
+	public static final DeferredItem<Item> DAINSLEIF = REGISTRY.register("dainsleif", DainsleifItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

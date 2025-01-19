@@ -9,7 +9,11 @@
     "states": [],
     "name": "Farmer Dregs",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "MATERIALS"
+      }
+    ],
     "stackSize": 32,
     "enchantability": 0,
     "useDuration": 0,
