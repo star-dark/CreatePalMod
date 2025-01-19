@@ -7,24 +7,9 @@
     "height": 194,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
-      {
-        "type": "label",
-        "data": {
-          "name": "label_5lv",
-          "text": {
-            "fixedValue": "5Lv"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 83,
-          "y": 33
-        }
-      },
       {
         "type": "label",
         "data": {
@@ -33,7 +18,7 @@
             "fixedValue": "10Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 124,
@@ -48,7 +33,7 @@
             "fixedValue": "15Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 171,
@@ -63,7 +48,7 @@
             "fixedValue": "20Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 219,
@@ -78,7 +63,7 @@
             "fixedValue": "25Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 267,
@@ -93,7 +78,7 @@
             "fixedValue": "30Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 315,
@@ -119,8 +104,11 @@
           "name": "imagebutton_rangeup",
           "image": "rangeup.png",
           "hoveredImage": "",
-          "x": 176,
-          "y": 101
+          "onClick": {
+            "name": "RangeUp"
+          },
+          "x": 123,
+          "y": 79
         }
       },
       {
@@ -144,10 +132,10 @@
             "fixedValue": "공격력"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 84,
+          "x": 85,
           "y": 84
         }
       },
@@ -206,11 +194,11 @@
             "name": "AttackUpPoint"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 80,
-          "y": 96
+          "y": 94
         }
       },
       {
@@ -237,11 +225,11 @@
             "name": "HealthUpPoint"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 80,
-          "y": 147
+          "y": 148
         }
       },
       {
@@ -252,10 +240,10 @@
             "fixedValue": "최대체력"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 82,
+          "x": 83,
           "y": 139
         }
       },
@@ -267,11 +255,11 @@
             "fixedValue": "방어력"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 85,
-          "y": 188
+          "x": 86,
+          "y": 187
         }
       },
       {
@@ -311,11 +299,140 @@
             "name": "DefenseUpPoint"
           },
           "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 80,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "seukilteurigui.png",
+          "use1Xscale": false,
+          "x": 55,
+          "y": 23
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sageorijeungga",
+          "text": {
+            "fixedValue": "사거리증가"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 122,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_range_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "RangeUpPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_5",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 81,
-          "y": 199
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_103",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 114
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ceryeogjaesaeng",
+          "image": "ceryeogjaesaeng.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RecoverUp"
+          },
+          "x": 123,
+          "y": 138
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ceryeogjaesaeng",
+          "text": {
+            "fixedValue": "체력재생"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 126,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_51",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_recover_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "RecoverUpPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 171
         }
       }
     ],
