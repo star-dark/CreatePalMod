@@ -3297,6 +3297,43 @@
         ]
       },
       "path": "~/Sword"
+    },
+    {
+      "name": "BalmungEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balmung_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BalmungEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Balmung",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balmung",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/balmung.json",
+          "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
+        ]
+      },
+      "path": "~/Sword"
     }
   ],
   "variable_elements": [
@@ -3497,6 +3534,7 @@
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Balmung",
       "~CUSTOM:Dainsleif",
       "~CUSTOM:Skyshatter",
       "~CUSTOM:BurfSword"
