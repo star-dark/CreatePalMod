@@ -311,7 +311,7 @@
         "data": {
           "image": "seukilteurigui.png",
           "use1Xscale": false,
-          "x": 55,
+          "x": 56,
           "y": 23
         }
       },
@@ -366,7 +366,7 @@
         "data": {
           "name": "label_103",
           "text": {
-            "fixedValue": "/ 5"
+            "fixedValue": "/ 4"
           },
           "color": {
             "value": -12829636,
@@ -409,7 +409,7 @@
         "data": {
           "name": "label_51",
           "text": {
-            "fixedValue": "/ 5"
+            "fixedValue": "/ 4"
           },
           "color": {
             "value": -12829636,
@@ -432,7 +432,146 @@
             "falpha": 0.0
           },
           "x": 123,
-          "y": 171
+          "y": 173
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_gonggyeogryeog_ceryeog_5isang",
+          "text": {
+            "fixedValue": "공격력, 체력 5이상",
+            "name": "RangeUpToolTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 124,
+          "y": 79
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ceryeog_bangeoryeog_5isang",
+          "text": {
+            "fixedValue": "체력, 방어력 5이상",
+            "name": "RecoverUpToolTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 124,
+          "y": 139
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_gonggyeogryeog_1jeungga",
+          "text": {
+            "fixedValue": "공격력 1증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 81,
+          "y": 58
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ceryeog_1jeungga",
+          "text": {
+            "fixedValue": "체력 1증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 81,
+          "y": 114
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bangeoryeog_1jeungga",
+          "text": {
+            "fixedValue": "방어력 1증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 81,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_pupa",
+          "image": "pupa.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "FoodFighterUp"
+          },
+          "x": 169,
+          "y": 162
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_eumsigseobcwisi_heubsuhoegdeug",
+          "text": {
+            "fixedValue": "음식섭취시 흡수획득"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 170,
+          "y": 163
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_pudeupaiteo",
+          "text": {
+            "fixedValue": "푸드파이터"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 169,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_52",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 180,
+          "y": 196
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_food_fighter_point",
+          "text": {
+            "fixedValue": "",
+            "name": "FoodFighterPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 194
         }
       }
     ],
