@@ -3533,6 +3533,86 @@
         ]
       },
       "path": "~/Sword"
+    },
+    {
+      "name": "Amanomurakumonotsurugi",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amanomurakumonotsurugi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java",
+          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "ThunderParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/particle/ThunderParticleParticle.java",
+          "src/main/resources/assets/palworld/particles/thunder_particle.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AmanomurakumonotsurugiEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amanomurakumonotsurugi_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "ThunderPotion",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
+        ]
+      },
+      "path": "~/Sword"
     }
   ],
   "variable_elements": [
@@ -3740,6 +3820,7 @@
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Amanomurakumonotsurugi",
       "~CUSTOM:Balmung",
       "~CUSTOM:Dainsleif",
       "~CUSTOM:Skyshatter",
@@ -3755,8 +3836,8 @@
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "item.palworld.ore_emerald": "Ore Emerald",
+      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -3794,16 +3875,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
+      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "item.palworld.ore_iron": "Ore Iron",
       "gui.palworld.farmer_skill_tree.label_102": "/ 10",
+      "item.palworld.ore_iron": "Ore Iron",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -3817,14 +3898,15 @@
       "gui.palworld.farmer_skill_tree.label_bangeoryeog": "방어력",
       "gui.palworld.fisher_sell_gui.label_50weon": "70원",
       "gui.palworld.money_tap.button_1000": "1000",
+      "item.palworld.amanomurakumonotsurugi": "Amanomurakumonotsurugi",
       "entity.palworld.pig": "Pig",
       "gui.palworld.farmer_sell_gui.label_33weon": "33원",
       "gui.palworld.farmer_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_skill_tree.label_25lv": "25Lv",
       "item.palworld.mjolnir": "Mjolnir",
       "gui.palworld.fisher_sell_gui.button_panmae": "모두판매",
-      "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "item.palworld.ore_coal": "Ore Coal",
       "gui.palworld.farmer_sell_gui.button_modu_panmae": "모두판매",
       "item.palworld.fish_tuna": "Fish Tuna",
@@ -3935,6 +4017,7 @@
       "gui.palworld.sub_quest_provide_gui.button_dadgi": "닫기",
       "gui.palworld.sub_quest_provide_gui.label_bosang": "보상  :",
       "item.palworld.level_wand": "Magic Wand",
+      "effect.palworld.thunder_potion": "Thunder Potion",
       "item.palworld.fish_herring": "Fish Herring",
       "gui.palworld.farmer_skill_tree.label_20lv": "20Lv",
       "gui.palworld.user_gui.label_seukilteuri": "스킬트리",
