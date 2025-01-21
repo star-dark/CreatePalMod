@@ -116,7 +116,7 @@
           "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java"
         ]
       },
-      "path": "~/JobNPC/NPC"
+      "path": "~/JobNPC"
     },
     {
       "name": "FarmerDregs",
@@ -163,7 +163,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "MinerTalk",
@@ -202,7 +202,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "OreEmerald",
@@ -269,7 +269,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "JobGuiClose",
@@ -343,7 +343,7 @@
           "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json"
         ]
       },
-      "path": "~/JobNPC/NPC"
+      "path": "~/JobNPC"
     },
     {
       "name": "OreLapisLazuli",
@@ -367,8 +367,8 @@
       "registry_name": "ore_copper",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/ore_copper.json",
-          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java"
+          "src/main/java/net/mcreator/palworld/item/OreCopperItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_copper.json"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -400,7 +400,7 @@
           "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java"
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "JobNpcClick",
@@ -435,7 +435,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "OreDiamond",
@@ -488,7 +488,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "OreIron",
@@ -522,7 +522,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "MinerPickLv15",
@@ -552,7 +552,7 @@
           "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json"
         ]
       },
-      "path": "~/JobNPC/NPC"
+      "path": "~/JobNPC"
     },
     {
       "name": "MinerPickLv1",
@@ -576,8 +576,8 @@
       "registry_name": "farmer_spore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/farmer_spore.json",
-          "src/main/java/net/mcreator/palworld/item/FarmerSporeItem.java"
+          "src/main/java/net/mcreator/palworld/item/FarmerSporeItem.java",
+          "src/main/resources/assets/palworld/models/item/farmer_spore.json"
         ]
       },
       "path": "~/JobItem/Farmer"
@@ -590,8 +590,8 @@
       "registry_name": "ore_coal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/ore_coal.json",
-          "src/main/java/net/mcreator/palworld/item/OreCoalItem.java"
+          "src/main/java/net/mcreator/palworld/item/OreCoalItem.java",
+          "src/main/resources/assets/palworld/models/item/ore_coal.json"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -724,8 +724,8 @@
       "registry_name": "fish_bass",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/fish_bass.json",
-          "src/main/java/net/mcreator/palworld/item/FishBassItem.java"
+          "src/main/java/net/mcreator/palworld/item/FishBassItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_bass.json"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -1370,8 +1370,8 @@
       "registry_name": "burf_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java",
-          "src/main/resources/assets/palworld/models/item/burf_sword.json"
+          "src/main/resources/assets/palworld/models/item/burf_sword.json",
+          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
         ]
       },
       "path": "~/Sword"
@@ -2417,8 +2417,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/client/gui/JobNpcActionScreen.java",
-          "src/main/java/net/mcreator/palworld/network/JobNpcActionButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/JobNpcActionMenu.java"
+          "src/main/java/net/mcreator/palworld/world/inventory/JobNpcActionMenu.java",
+          "src/main/java/net/mcreator/palworld/network/JobNpcActionButtonMessage.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2751,9 +2751,9 @@
       "registry_name": "fisher_sell_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSellGuiScreen.java",
+          "src/main/java/net/mcreator/palworld/network/FisherSellGuiButtonMessage.java",
           "src/main/java/net/mcreator/palworld/world/inventory/FisherSellGuiMenu.java",
-          "src/main/java/net/mcreator/palworld/network/FisherSellGuiButtonMessage.java"
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSellGuiScreen.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2880,9 +2880,9 @@
       "registry_name": "miner_sell_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSellGuiMenu.java",
           "src/main/java/net/mcreator/palworld/network/MinerSellGuiButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSellGuiScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/MinerSellGuiScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/MinerSellGuiMenu.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2952,9 +2952,9 @@
       "registry_name": "farmer_sell_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/FarmerSellGuiMenu.java",
           "src/main/java/net/mcreator/palworld/network/FarmerSellGuiButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FarmerSellGuiScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/FarmerSellGuiScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/FarmerSellGuiMenu.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -3036,53 +3036,97 @@
       "path": "~/JobNPC/JobTrade/SellButton"
     },
     {
-      "name": "Mjolnir",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mjolnir",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/mjolnir.json",
-          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "MjolnirEffect",
+      "name": "RangeUpPoint",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mjolnir_effect",
+      "registry_name": "range_up_point",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/MjolnirEffectProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/RangeUpPointProcedure.java"
         ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "RecoverUpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover_up_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverUpPointProcedure.java"
+        ],
+        "dependencies": [
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "RangeUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "range_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RangeUpProcedure.java"
+        ],
+        "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "RecoverUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverUpProcedure.java"
+        ],
+        "dependencies": [
           {
-            "name": "y",
-            "type": "number"
-          },
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "DainsleifEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffect2Procedure.java"
+        ],
+        "dependencies": [
           {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       },
@@ -3098,6 +3142,52 @@
         "files": [
           "src/main/resources/assets/palworld/models/item/skyshatter.json",
           "src/main/java/net/mcreator/palworld/item/SkyshatterItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "DainsleifEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "SkyshatterEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyshatter_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
       "path": "~/Sword"
@@ -3142,28 +3232,15 @@
       "path": "~/Sword"
     },
     {
-      "name": "SkyshatterEffect2",
-      "type": "procedure",
+      "name": "Mjolnir",
+      "type": "tool",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "skyshatter_effect_2",
+      "registry_name": "mjolnir",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java",
+          "src/main/resources/assets/palworld/models/item/mjolnir.json"
         ]
       },
       "path": "~/Sword"
@@ -3183,38 +3260,39 @@
       "path": "~/Sword"
     },
     {
-      "name": "DainsleifEffect",
+      "name": "MjolnirEffect",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dainsleif_effect",
+      "registry_name": "mjolnir_effect",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffectProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/MjolnirEffectProcedure.java"
         ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "DainsleifEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dainsleif_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffect2Procedure.java"
-        ],
-        "dependencies": [
+          },
           {
-            "name": "sourceentity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3251,51 +3329,84 @@
       "registry_name": "balmung",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/BalmungItem.java",
-          "src/main/resources/assets/palworld/models/item/balmung.json"
+          "src/main/resources/assets/palworld/models/item/balmung.json",
+          "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
         ]
       },
       "path": "~/Sword"
     },
     {
-      "name": "RangeUpPoint",
+      "name": "RangeUpToolTip",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "range_up_point",
+      "registry_name": "range_up_tool_tip",
       "metadata": {
         "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/RangeUpPointProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/RangeUpToolTipProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Activation"
     },
     {
-      "name": "RecoverUpPoint",
+      "name": "RecoverUpToolTip",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "recover_up_point",
+      "registry_name": "recover_up_tool_tip",
       "metadata": {
         "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/RecoverUpPointProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/RecoverUpToolTipProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Activation"
     },
     {
-      "name": "RangeUp",
+      "name": "FoodFighter",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "range_up",
+      "registry_name": "food_fighter",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/RangeUpProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/FoodFighterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "FoodFighterUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_fighter_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FoodFighterUpProcedure.java"
         ],
         "dependencies": [
           {
@@ -3307,19 +3418,73 @@
       "path": "~/GUI/Skill_Tree/Effect"
     },
     {
-      "name": "RecoverUp",
+      "name": "FoodFighterPoint",
       "type": "procedure",
       "compiles": false,
       "locked_code": false,
-      "registry_name": "recover_up",
+      "registry_name": "food_fighter_point",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/RecoverUpProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/FoodFighterPointProcedure.java"
         ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/SkillPoint"
+    },
+    {
+      "name": "LevelUpParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/particle/LevelUpParticleParticle.java",
+          "src/main/resources/assets/palworld/particles/level_up_particle.json"
+        ]
+      },
+      "path": "~/ClearWand"
+    },
+    {
+      "name": "HornPlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horn_play",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HornPlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3520,6 +3685,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "FoodFighterSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -3551,6 +3722,7 @@
       "gui.palworld.fisher_sell_gui.button_panmae20": "모두 판매",
       "gui.palworld.miner_sell_gui.button_panmae": "모두판매",
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
+      "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
       "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
@@ -3577,6 +3749,7 @@
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
       "gui.palworld.fisher_skill_tree.label_15lv": "15Lv",
       "item.palworld.fish_arapaima": "Fish Arapaima",
+      "gui.palworld.farmer_skill_tree.tooltip_ceryeog_1jeungga": "체력 1증가",
       "item.palworld.fish_red_grouper": "Fish Red Grouper",
       "gui.palworld.farmer_skill_tree.label_gonggyeogryeog_jeungga": "공격력",
       "gui.palworld.job_npc_action.button_gumae": "구매",
@@ -3584,8 +3757,8 @@
       "gui.palworld.fisher_sell_gui.button_panmae10": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae11": "모두판매",
       "gui.palworld.quest_tap.label_wanryo": "완료✅",
-      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
       "item.palworld.fish_pollock": "Fish Pollock",
+      "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
       "item.palworld.balmung": "Balmung",
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
@@ -3600,6 +3773,7 @@
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
       "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "item.palworld.ore_iron": "Ore Iron",
+      "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
       "gui.palworld.farmer_skill_tree.label_101": "/ 10",
@@ -3623,6 +3797,7 @@
       "item.palworld.ore_coal": "Ore Coal",
       "gui.palworld.farmer_sell_gui.button_modu_panmae": "모두판매",
       "item.palworld.fish_tuna": "Fish Tuna",
+      "gui.palworld.farmer_skill_tree.tooltip_bangeoryeog_1jeungga": "방어력 1증가",
       "gui.palworld.fisher_sell_gui.label_70weon": "100원",
       "gui.palworld.sub_quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
@@ -3631,13 +3806,16 @@
       "gui.palworld.fisher_sell_gui.label_50weon2": "70원",
       "gui.palworld.fisher_sell_gui.label_50weon1": "70원",
       "gui.palworld.farmer_sell_gui.label_1weon": "개 당 1원",
+      "gui.palworld.farmer_skill_tree.label_51": "/ 4",
       "gui.palworld.farmer_skill_tree.label_5lv": "5Lv",
+      "gui.palworld.farmer_skill_tree.label_52": "/ 5",
       "item.palworld.fish_blue_gill": "Fish Blue Gill",
       "item.palworld.magic_wand": "Magic Wand",
       "gui.palworld.miner_sell_gui.label_3weon": "개 당 3원",
       "gui.palworld.user_gui.label_wanryo": "완료✅",
       "item.palworld.fish_tambaqui": "Fish Tambaqui",
       "entity.palworld.queen": "Queen",
+      "gui.palworld.farmer_skill_tree.label_5": "/ 5",
       "gui.palworld.fisher_sell_gui.label_70weon1": "100원",
       "gui.palworld.job_npc_sell_gui.button_gyohwan2": "교환",
       "gui.palworld.job_npc_sell_gui.button_gyohwan3": "교환",
@@ -3672,6 +3850,8 @@
       "gui.palworld.money_tap.label_inculganeunggeumaeg": "인출가능금액 :",
       "gui.palworld.miner_sell_gui.label_10weon": "개 당 10원",
       "gui.palworld.sub_quest_provide_gui.button_geojeol": "거절",
+      "gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_1jeungga": "공격력 1증가",
+      "gui.palworld.farmer_skill_tree.label_pudeupaiteo": "푸드파이터",
       "gui.palworld.current_money.label_empty": "",
       "gui.palworld.miner_sell_gui.label_30weon": "3원",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
@@ -3686,6 +3866,7 @@
       "item.palworld.fish_catfish": "Fish Catfish",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
       "gui.palworld.miner_sell_gui.button_panmae9": "판매",
+      "gui.palworld.farmer_skill_tree.tooltip_ceryeog_bangeoryeog_5isang": "체력, 방어력 5이상",
       "gui.palworld.miner_sell_gui.button_panmae5": "모두판매",
       "gui.palworld.miner_sell_gui.button_panmae6": "모두판매",
       "gui.palworld.miner_sell_gui.button_panmae7": "판매",
@@ -3695,6 +3876,7 @@
       "gui.palworld.miner_sell_gui.button_panmae1": "모두판매",
       "item.palworld.fish_hailbut": "Fish Hailbut",
       "gui.palworld.miner_sell_gui.button_panmae2": "모두판매",
+      "gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_ceryeog_5isang": "공격력, 체력 5이상",
       "gui.palworld.miner_sell_gui.button_panmae3": "모두판매",
       "gui.palworld.miner_sell_gui.button_panmae4": "모두판매",
       "gui.palworld.farmer_sell_gui.button_panmae4": "판매",
@@ -3703,6 +3885,7 @@
       "gui.palworld.farmer_sell_gui.button_panmae1": "판매",
       "gui.palworld.money_tap.button_10000": "10000",
       "gui.palworld.farmer_sell_gui.button_panmae5": "판매",
+      "gui.palworld.farmer_skill_tree.label_sageorijeungga": "사거리증가",
       "gui.palworld.job_npc_action.button_panmae": "판매",
       "gui.palworld.job_npc_sell_gui.button_gyohwan": "교환",
       "gui.palworld.farmer_sell_gui.button_panmae": "판매",
@@ -3714,6 +3897,7 @@
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_sell_gui.button_modu_panmae1": "모두판매",
       "gui.palworld.farmer_sell_gui.button_modu_panmae2": "모두판매",
+      "gui.palworld.farmer_skill_tree.tooltip_eumsigseobcwisi_heubsuhoegdeug": "음식섭취시 흡수획득",
       "key.palworld.open_quest_gui": "Open Quest GUI",
       "gui.palworld.miner_sell_gui.label_100weon": "개 당 100원",
       "gui.palworld.sub_quest_provide_gui.button_dadgi": "닫기",
@@ -3820,6 +4004,10 @@
               },
               {
                 "name": "Effect",
+                "children": []
+              },
+              {
+                "name": "Activation",
                 "children": []
               }
             ]

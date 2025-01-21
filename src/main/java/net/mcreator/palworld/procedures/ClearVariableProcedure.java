@@ -1,6 +1,10 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class ClearVariableProcedure {
 	public static void execute(Entity entity) {
@@ -72,10 +76,8 @@ public class ClearVariableProcedure {
 			_vars.DefenseUpSkillPoint = 0;
 			_vars.syncPlayerVariables(entity);
 		}
-		if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE))
-			_livingEntity4.getAttribute(Attributes.BLOCK_INTERACTION_RANGE)
-					.setBaseValue(((entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity3.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getBaseValue() : 0)
-							- entity.getData(PalworldModVariables.PLAYER_VARIABLES).RangeUpSkillPoint));
+		if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE))
+			_livingEntity3.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).setBaseValue(4.5);
 		{
 			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 			_vars.RangeUpSkillPoint = 0;
