@@ -28,7 +28,7 @@ import net.mcreator.palworld.PalworldMod;
 public class PalworldModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, PalworldMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<FarmerJobNPCEntity>> FARMER_JOB_NPC = register("farmer_job_npc",
-			EntityType.Builder.<FarmerJobNPCEntity>of(FarmerJobNPCEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<FarmerJobNPCEntity>of(FarmerJobNPCEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MinerJobNPCEntity>> MINER_JOB_NPC = register("miner_job_npc",
 			EntityType.Builder.<MinerJobNPCEntity>of(MinerJobNPCEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FisherJobNPCEntity>> FISHER_JOB_NPC = register("fisher_job_npc",
