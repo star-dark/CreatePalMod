@@ -3309,7 +3309,7 @@
     {
       "name": "RecoverUp",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "recover_up",
       "metadata": {
@@ -3324,6 +3324,20 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Effect"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/TestProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Sword"
     }
   ],
   "variable_elements": [
