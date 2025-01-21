@@ -93,6 +93,8 @@ public class PalworldModVariables {
 				clone.MainRewardRequest = original.MainRewardRequest;
 				clone.MainQuestRequest = original.MainQuestRequest;
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
+				clone.aegis_tick = original.aegis_tick;
+				clone.aegis_bool = original.aegis_bool;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -130,6 +132,8 @@ public class PalworldModVariables {
 		public double RecoverSkillPoint = 0;
 		public double RangeUpSkillPoint = 0;
 		public double FoodFighterSkillPoint = 0;
+		public double aegis_tick = 100.0;
+		public boolean aegis_bool = true;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -165,6 +169,8 @@ public class PalworldModVariables {
 			nbt.putDouble("RecoverSkillPoint", RecoverSkillPoint);
 			nbt.putDouble("RangeUpSkillPoint", RangeUpSkillPoint);
 			nbt.putDouble("FoodFighterSkillPoint", FoodFighterSkillPoint);
+			nbt.putDouble("aegis_tick", aegis_tick);
+			nbt.putBoolean("aegis_bool", aegis_bool);
 			return nbt;
 		}
 
@@ -201,6 +207,8 @@ public class PalworldModVariables {
 			RecoverSkillPoint = nbt.getDouble("RecoverSkillPoint");
 			RangeUpSkillPoint = nbt.getDouble("RangeUpSkillPoint");
 			FoodFighterSkillPoint = nbt.getDouble("FoodFighterSkillPoint");
+			aegis_tick = nbt.getDouble("aegis_tick");
+			aegis_bool = nbt.getBoolean("aegis_bool");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

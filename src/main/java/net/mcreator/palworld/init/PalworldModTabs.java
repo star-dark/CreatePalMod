@@ -30,6 +30,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.BALMUNG.get());
 			tabData.accept(PalworldModItems.BANGOBU.get());
 			tabData.accept(PalworldModItems.AMANOMURAKUMONOTSURUGI.get());
+			tabData.accept(PalworldModItems.AEGIS.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
