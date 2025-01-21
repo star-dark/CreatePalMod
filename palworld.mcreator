@@ -112,11 +112,10 @@
         "files": [
           "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java",
           "src/main/resources/assets/palworld/models/item/farmer_job_npc_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java",
-          "src/main/resources/data/palworld/neoforge/biome_modifier/farmer_job_npc_biome_modifier.json"
+          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java"
         ]
       },
-      "path": "~/JobNPC/NPC"
+      "path": "~/JobNPC"
     },
     {
       "name": "FarmerDregs",
@@ -163,7 +162,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "MinerTalk",
@@ -202,7 +201,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "OreEmerald",
@@ -269,7 +268,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "JobGuiClose",
@@ -288,7 +287,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "FarmerHoeEffect",
@@ -339,11 +338,10 @@
         "files": [
           "src/main/resources/assets/palworld/models/item/miner_job_npc_spawn_egg.json",
           "src/main/java/net/mcreator/palworld/entity/MinerJobNPCEntity.java",
-          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java",
-          "src/main/resources/data/palworld/neoforge/biome_modifier/miner_job_npc_biome_modifier.json"
+          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java"
         ]
       },
-      "path": "~/JobNPC/NPC"
+      "path": "~/JobNPC"
     },
     {
       "name": "OreLapisLazuli",
@@ -400,7 +398,7 @@
           "src/main/java/net/mcreator/palworld/client/gui/JobNpcGuiScreen.java"
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "JobNpcClick",
@@ -488,7 +486,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "OreIron",
@@ -522,7 +520,7 @@
           }
         ]
       },
-      "path": "~/JobNPC/JobGet"
+      "path": "~/JobNPC"
     },
     {
       "name": "MinerPickLv15",
@@ -547,12 +545,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/client/renderer/FisherJobNPCRenderer.java",
-          "src/main/resources/data/palworld/neoforge/biome_modifier/fisher_job_npc_biome_modifier.json",
           "src/main/resources/assets/palworld/models/item/fisher_job_npc_spawn_egg.json",
           "src/main/java/net/mcreator/palworld/entity/FisherJobNPCEntity.java"
         ]
       },
-      "path": "~/JobNPC/NPC"
+      "path": "~/JobNPC"
     },
     {
       "name": "MinerPickLv1",
@@ -3378,7 +3375,7 @@
     {
       "name": "FoodFighter",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "food_fighter",
       "metadata": {
@@ -3401,7 +3398,7 @@
     {
       "name": "FoodFighterUp",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "food_fighter_up",
       "metadata": {
@@ -3454,7 +3451,7 @@
     {
       "name": "HornPlay",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "horn_play",
       "metadata": {
@@ -3999,15 +3996,15 @@
             "name": "Skill_Tree",
             "children": [
               {
+                "name": "Activation",
+                "children": []
+              },
+              {
                 "name": "SkillPoint",
                 "children": []
               },
               {
                 "name": "Effect",
-                "children": []
-              },
-              {
-                "name": "Activation",
                 "children": []
               }
             ]
