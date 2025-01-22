@@ -54,15 +54,21 @@ public class AegisEffectProcedure {
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.AEGIS_COOL, 10, 1));
-			PalworldMod.queueServerWork(777, () -> {
-				{
-					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-					_vars.aegis_tick = 500;
-					_vars.syncPlayerVariables(entity);
-				}
+			PalworldMod.queueServerWork(500, () -> {
+				PalworldModVariables.WorldVariables.get(world).TestValue = 0;
+				PalworldModVariables.WorldVariables.get(world).syncData(world);
+			});
+			PalworldMod.queueServerWork(5, () -> {
 				{
 					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 					_vars.aegis_bool = true;
+					_vars.syncPlayerVariables(entity);
+				}
+			});
+			PalworldMod.queueServerWork(300, () -> {
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.aegis_tick = 10;
 					_vars.syncPlayerVariables(entity);
 				}
 			});
@@ -79,8 +85,8 @@ public class AegisEffectProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator instanceof Player)) {
-							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), 1);
-							entityiterator.setDeltaMovement(new Vec3(((-1.5) * entityiterator.getX()), ((-1.5) * entityiterator.getY()), ((-1.5) * entityiterator.getZ())));
+							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) 0.5);
+							entityiterator.setDeltaMovement(new Vec3(((-0.05) * entityiterator.getX()), ((-0.05) * entityiterator.getY()), ((-0.05) * entityiterator.getZ())));
 						}
 					}
 				}
