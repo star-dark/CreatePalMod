@@ -17,8 +17,10 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
+import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.RecoverUpProcedure;
 import net.mcreator.palworld.procedures.RangeUpProcedure;
+import net.mcreator.palworld.procedures.HornPlayUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
 import net.mcreator.palworld.procedures.DefenseUpProcedure;
@@ -87,6 +89,14 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		if (buttonID == 5) {
 
 			FoodFighterUpProcedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			HornPlayUpProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			ReflectionUpProcedure.execute(entity);
 		}
 	}
 

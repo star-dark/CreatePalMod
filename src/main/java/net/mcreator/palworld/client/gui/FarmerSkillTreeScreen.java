@@ -13,10 +13,13 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
+import net.mcreator.palworld.procedures.ReflectionPointProcedure;
 import net.mcreator.palworld.procedures.RecoverUpToolTipProcedure;
 import net.mcreator.palworld.procedures.RecoverUpPointProcedure;
 import net.mcreator.palworld.procedures.RangeUpToolTipProcedure;
 import net.mcreator.palworld.procedures.RangeUpPointProcedure;
+import net.mcreator.palworld.procedures.HornPlayerPointProcedure;
+import net.mcreator.palworld.procedures.HornPlayUpToolTipProcedure;
 import net.mcreator.palworld.procedures.HealthUpPointProcedure;
 import net.mcreator.palworld.procedures.FoodFighterPointProcedure;
 import net.mcreator.palworld.procedures.DefenseUpPointProcedure;
@@ -39,6 +42,8 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 	ImageButton imagebutton_bangeoryeog;
 	ImageButton imagebutton_ceryeogjaesaeng;
 	ImageButton imagebutton_pupa;
+	ImageButton imagebutton_yeomsobbul;
+	ImageButton imagebutton_bansa;
 
 	public FarmerSkillTreeScreen(FarmerSkillTreeMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -62,12 +67,14 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 			guiGraphics.renderTooltip(font, Component.literal(RecoverUpToolTipProcedure.execute(entity)), mouseX, mouseY);
 		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 35 && mouseY < topPos + 59)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_1jeungga"), mouseX, mouseY);
-		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 91 && mouseY < topPos + 115)
+		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 88 && mouseY < topPos + 112)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.farmer_skill_tree.tooltip_ceryeog_1jeungga"), mouseX, mouseY);
 		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 139 && mouseY < topPos + 163)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.farmer_skill_tree.tooltip_bangeoryeog_1jeungga"), mouseX, mouseY);
 		if (mouseX > leftPos + 102 && mouseX < leftPos + 126 && mouseY > topPos + 140 && mouseY < topPos + 164)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.farmer_skill_tree.tooltip_eumsigseobcwisi_heubsuhoegdeug"), mouseX, mouseY);
+		if (mouseX > leftPos + 101 && mouseX < leftPos + 125 && mouseY > topPos + 88 && mouseY < topPos + 112)
+			guiGraphics.renderTooltip(font, Component.literal(HornPlayUpToolTipProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override
@@ -76,7 +83,7 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(ResourceLocation.parse("palworld:textures/screens/seukilteurigui.png"), this.leftPos + -12, this.topPos + 0, 0, 0, 330, 193, 330, 193);
+		guiGraphics.blit(ResourceLocation.parse("palworld:textures/screens/seukilteurigui.png"), this.leftPos + -13, this.topPos + 0, 0, 0, 330, 193, 330, 193);
 
 		RenderSystem.disableBlend();
 	}
@@ -105,17 +112,17 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_10"), 24, 73, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				AttackUpPointProcedure.execute(entity), 12, 71, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_101"), 25, 124, -12829636, false);
+				AttackUpPointProcedure.execute(entity), 10, 72, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_101"), 25, 120, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				HealthUpPointProcedure.execute(entity), 12, 125, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_ceryeogjeungga"), 15, 116, -1, false);
+				HealthUpPointProcedure.execute(entity), 10, 121, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_ceryeogjeungga"), 14, 114, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_bangeoryeog"), 18, 164, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_102"), 25, 176, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_102"), 25, 175, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				DefenseUpPointProcedure.execute(entity), 12, 174, -1, false);
+				DefenseUpPointProcedure.execute(entity), 11, 174, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_sageorijeungga"), 54, 82, -1, false);
 		guiGraphics.drawString(this.font,
 
@@ -132,12 +139,22 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		guiGraphics.drawString(this.font,
 
 				FoodFighterPointProcedure.execute(entity), 100, 171, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_horeun_peulreieo"), 98, 113, -16776961, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_53"), 113, 121, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				HornPlayerPointProcedure.execute(entity), 100, 120, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_54"), 112, 66, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_bansa"), 108, 59, -1, false);
+		guiGraphics.drawString(this.font,
+
+				ReflectionPointProcedure.execute(entity), 103, 66, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_ceryeogjeungga = new ImageButton(this.leftPos + 12, this.topPos + 91, 25, 25,
+		imagebutton_ceryeogjeungga = new ImageButton(this.leftPos + 12, this.topPos + 88, 25, 25,
 				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/ceryeogjeungga.png"), ResourceLocation.parse("palworld:textures/screens/ceryeogjeungga.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new FarmerSkillTreeButtonMessage(0, x, y, z));
@@ -219,5 +236,32 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		};
 		guistate.put("button:imagebutton_pupa", imagebutton_pupa);
 		this.addRenderableWidget(imagebutton_pupa);
+		imagebutton_yeomsobbul = new ImageButton(this.leftPos + 101, this.topPos + 88, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/yeomsobbul.png"), ResourceLocation.parse("palworld:textures/screens/yeomsobbul.png")),
+				e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new FarmerSkillTreeButtonMessage(6, x, y, z));
+						FarmerSkillTreeButtonMessage.handleButtonAction(entity, 6, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_yeomsobbul", imagebutton_yeomsobbul);
+		this.addRenderableWidget(imagebutton_yeomsobbul);
+		imagebutton_bansa = new ImageButton(this.leftPos + 101, this.topPos + 35, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/bansa.png"), ResourceLocation.parse("palworld:textures/screens/bansa.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new FarmerSkillTreeButtonMessage(7, x, y, z));
+				FarmerSkillTreeButtonMessage.handleButtonAction(entity, 7, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_bansa", imagebutton_bansa);
+		this.addRenderableWidget(imagebutton_bansa);
 	}
 }

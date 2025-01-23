@@ -85,6 +85,9 @@ public class PalworldModVariables {
 			clone.RecoverSkillPoint = original.RecoverSkillPoint;
 			clone.RangeUpSkillPoint = original.RangeUpSkillPoint;
 			clone.FoodFighterSkillPoint = original.FoodFighterSkillPoint;
+			clone.HornPlayerSkillPoint = original.HornPlayerSkillPoint;
+			clone.ReflectionSkillPointUp = original.ReflectionSkillPointUp;
+			clone.JumpVar = original.JumpVar;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -130,6 +133,9 @@ public class PalworldModVariables {
 		public double RecoverSkillPoint = 0;
 		public double RangeUpSkillPoint = 0;
 		public double FoodFighterSkillPoint = 0;
+		public double HornPlayerSkillPoint = 0;
+		public double ReflectionSkillPointUp = 0;
+		public boolean JumpVar = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -165,6 +171,9 @@ public class PalworldModVariables {
 			nbt.putDouble("RecoverSkillPoint", RecoverSkillPoint);
 			nbt.putDouble("RangeUpSkillPoint", RangeUpSkillPoint);
 			nbt.putDouble("FoodFighterSkillPoint", FoodFighterSkillPoint);
+			nbt.putDouble("HornPlayerSkillPoint", HornPlayerSkillPoint);
+			nbt.putDouble("ReflectionSkillPointUp", ReflectionSkillPointUp);
+			nbt.putBoolean("JumpVar", JumpVar);
 			return nbt;
 		}
 
@@ -201,6 +210,9 @@ public class PalworldModVariables {
 			RecoverSkillPoint = nbt.getDouble("RecoverSkillPoint");
 			RangeUpSkillPoint = nbt.getDouble("RangeUpSkillPoint");
 			FoodFighterSkillPoint = nbt.getDouble("FoodFighterSkillPoint");
+			HornPlayerSkillPoint = nbt.getDouble("HornPlayerSkillPoint");
+			ReflectionSkillPointUp = nbt.getDouble("ReflectionSkillPointUp");
+			JumpVar = nbt.getBoolean("JumpVar");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

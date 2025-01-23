@@ -95,7 +95,7 @@
             "name": "HealthUp"
           },
           "x": 80,
-          "y": 114
+          "y": 111
         }
       },
       {
@@ -197,8 +197,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 80,
-          "y": 94
+          "x": 78,
+          "y": 95
         }
       },
       {
@@ -213,7 +213,7 @@
             "falpha": 0.0
           },
           "x": 93,
-          "y": 147
+          "y": 143
         }
       },
       {
@@ -228,8 +228,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 80,
-          "y": 148
+          "x": 78,
+          "y": 144
         }
       },
       {
@@ -243,8 +243,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 83,
-          "y": 139
+          "x": 82,
+          "y": 137
         }
       },
       {
@@ -287,7 +287,7 @@
             "falpha": 0.0
           },
           "x": 93,
-          "y": 199
+          "y": 198
         }
       },
       {
@@ -302,7 +302,7 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 80,
+          "x": 79,
           "y": 197
         }
       },
@@ -311,7 +311,7 @@
         "data": {
           "image": "seukilteurigui.png",
           "use1Xscale": false,
-          "x": 56,
+          "x": 55,
           "y": 23
         }
       },
@@ -486,7 +486,7 @@
           "width": 24,
           "height": 24,
           "x": 81,
-          "y": 114
+          "y": 111
         }
       },
       {
@@ -572,6 +572,138 @@
           },
           "x": 168,
           "y": 194
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_yeomsobbul",
+          "image": "yeomsobbul.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "HornPlayUp"
+          },
+          "x": 169,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_horeun_peulreieo",
+          "text": {
+            "fixedValue": "호른 플레이어"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 166,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_53",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_horn_player_point",
+          "text": {
+            "fixedValue": "",
+            "name": "HornPlayerPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 143
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_horn_play_up_tool_tip",
+          "text": {
+            "fixedValue": "",
+            "name": "HornPlayUpToolTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 169,
+          "y": 111
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bansa",
+          "image": "bansa.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ReflectionUp"
+          },
+          "x": 169,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_54",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 180,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bansa",
+          "text": {
+            "fixedValue": "반사!"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 176,
+          "y": 82
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_reflection_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ReflectionPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 89
         }
       }
     ],

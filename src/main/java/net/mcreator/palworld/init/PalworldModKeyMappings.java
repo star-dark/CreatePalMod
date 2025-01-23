@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.palworld.network.OpenQuestGUIMessage;
+import net.mcreator.palworld.network.DoubleJumpMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class PalworldModKeyMappings {
@@ -33,10 +34,24 @@ public class PalworldModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping DOUBLE_JUMP = new KeyMapping("key.palworld.double_jump", GLFW.GLFW_KEY_SPACE, "key.categories.movement") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new DoubleJumpMessage(0, 0));
+				DoubleJumpMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(OPEN_QUEST_GUI);
+		event.register(DOUBLE_JUMP);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -45,6 +60,7 @@ public class PalworldModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				OPEN_QUEST_GUI.consumeClick();
+				DOUBLE_JUMP.consumeClick();
 			}
 		}
 	}
