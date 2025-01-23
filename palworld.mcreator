@@ -2050,7 +2050,7 @@
           "src/main/java/net/mcreator/palworld/world/inventory/FarmerSkillTreeMenu.java"
         ]
       },
-      "path": "~/GUI/Skill_Tree"
+      "path": "~/GUI/Skill_Tree/Farmer"
     },
     {
       "name": "PlayerExp",
@@ -2090,7 +2090,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "FisherSkillTree",
@@ -2123,7 +2123,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "MinerSkillTree",
@@ -2196,7 +2196,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "GetSkillPoints",
@@ -2215,7 +2215,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "MagicWandentitigaaitemeulhwidureulddae",
@@ -2253,7 +2253,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "AttackUpPoint",
@@ -2273,7 +2273,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "CurrentSkillPoints",
@@ -2293,7 +2293,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "DefenseUpPoint",
@@ -2313,7 +2313,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "OpenSkillTreeGUI",
@@ -3047,7 +3047,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "RecoverUpPoint",
@@ -3067,7 +3067,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "RangeUp",
@@ -3086,7 +3086,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "RecoverUp",
@@ -3105,7 +3105,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "DainsleifEffect2",
@@ -3347,7 +3347,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Activation"
+      "path": "~/GUI/Skill_Tree/Farmer/Activation"
     },
     {
       "name": "RecoverUpToolTip",
@@ -3367,7 +3367,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Activation"
+      "path": "~/GUI/Skill_Tree/Farmer/Activation"
     },
     {
       "name": "FoodFighter",
@@ -3390,7 +3390,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "FoodFighterUp",
@@ -3409,12 +3409,12 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "FoodFighterPoint",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "food_fighter_point",
       "metadata": {
@@ -3429,7 +3429,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "LevelUpParticle",
@@ -3482,7 +3482,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Effect"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "Test",
@@ -3509,7 +3509,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/ReflectionToolTipProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Activation"
     },
@@ -3523,7 +3528,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/IsJumpProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
@@ -3576,7 +3586,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/ReflectionPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
@@ -3650,7 +3665,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HornPlayerPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
@@ -3665,7 +3685,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HornPlayUpToolTipProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Activation"
     },
@@ -4132,11 +4157,12 @@
       "gui.palworld.sub_quest_complete.button_dadgi": "닫기",
       "gui.palworld.fisher_sell_gui.button_panmae20": "모두 판매",
       "gui.palworld.miner_sell_gui.button_panmae": "모두판매",
+      "effect.palworld.aegis_cool": "Aegis Cool",
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -4174,16 +4200,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
+      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "item.palworld.ore_iron": "Ore Iron",
+      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -4197,14 +4223,15 @@
       "gui.palworld.farmer_skill_tree.label_bangeoryeog": "방어력",
       "gui.palworld.fisher_sell_gui.label_50weon": "70원",
       "gui.palworld.money_tap.button_1000": "1000",
+      "item.palworld.amanomurakumonotsurugi": "Amanomurakumonotsurugi",
       "entity.palworld.pig": "Pig",
       "gui.palworld.farmer_sell_gui.label_33weon": "33원",
       "gui.palworld.farmer_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_skill_tree.label_25lv": "25Lv",
       "item.palworld.mjolnir": "Mjolnir",
       "gui.palworld.fisher_sell_gui.button_panmae": "모두판매",
-      "gui.palworld.user_gui.label_wanryo1": "완료✅",
       "item.palworld.fish_electric_eel": "Fish Electric Eel",
+      "gui.palworld.user_gui.label_wanryo1": "완료✅",
       "item.palworld.ore_coal": "Ore Coal",
       "gui.palworld.farmer_sell_gui.button_modu_panmae": "모두판매",
       "item.palworld.fish_tuna": "Fish Tuna",
@@ -4270,6 +4297,7 @@
       "gui.palworld.miner_sell_gui.label_30weon": "3원",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.label_5weon": "개 당 5원",
+      "item.palworld.aegis": "Aegis",
       "gui.palworld.user_gui.label_don": "돈",
       "gui.palworld.fisher_sell_gui.button_cwiso": "취소",
       "gui.palworld.sub_quest_complete.button_surag": "수락",
@@ -4302,6 +4330,7 @@
       "gui.palworld.farmer_skill_tree.label_sageorijeungga": "사거리증가",
       "gui.palworld.job_npc_action.button_panmae": "판매",
       "gui.palworld.job_npc_sell_gui.button_gyohwan": "교환",
+      "item.palworld.bangobu": "Bangobu",
       "gui.palworld.farmer_sell_gui.button_panmae": "판매",
       "gui.palworld.farmer_skill_tree.label_bansa": "반사!",
       "gui.palworld.quest_provide_gui.button_surag": "수락",
@@ -4310,6 +4339,7 @@
       "item.palworld.fish_synodontis": "Fish Synodontis",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
+      "key.palworld.double_jump": "Double Jump",
       "gui.palworld.farmer_sell_gui.button_modu_panmae1": "모두판매",
       "gui.palworld.farmer_sell_gui.button_modu_panmae2": "모두판매",
       "gui.palworld.farmer_skill_tree.tooltip_eumsigseobcwisi_heubsuhoegdeug": "음식섭취시 흡수획득",
@@ -4318,6 +4348,7 @@
       "gui.palworld.sub_quest_provide_gui.button_dadgi": "닫기",
       "gui.palworld.sub_quest_provide_gui.label_bosang": "보상  :",
       "item.palworld.level_wand": "Magic Wand",
+      "effect.palworld.thunder_potion": "Thunder Potion",
       "item.palworld.fish_herring": "Fish Herring",
       "gui.palworld.farmer_skill_tree.label_20lv": "20Lv",
       "gui.palworld.user_gui.label_seukilteuri": "스킬트리",
