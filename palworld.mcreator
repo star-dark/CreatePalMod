@@ -3636,8 +3636,8 @@
       "registry_name": "aegis_particle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java",
-          "src/main/resources/assets/palworld/particles/aegis_particle.json"
+          "src/main/resources/assets/palworld/particles/aegis_particle.json",
+          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
         ]
       },
       "path": "~/Sword"
@@ -3908,6 +3908,12 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "true"
+    },
+    {
+      "name": "TestValue",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [],
