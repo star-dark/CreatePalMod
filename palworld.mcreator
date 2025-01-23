@@ -2089,8 +2089,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "FisherSkillTree",
@@ -2122,8 +2121,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "MinerSkillTree",
@@ -2195,8 +2193,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "GetSkillPoints",
@@ -2214,8 +2211,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "MagicWandentitigaaitemeulhwidureulddae",
@@ -2252,8 +2248,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "AttackUpPoint",
@@ -2272,8 +2267,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "CurrentSkillPoints",
@@ -2292,8 +2286,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "DefenseUpPoint",
@@ -2312,8 +2305,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "OpenSkillTreeGUI",
@@ -3046,8 +3038,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "RecoverUpPoint",
@@ -3066,8 +3057,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "RangeUp",
@@ -3085,8 +3075,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "RecoverUp",
@@ -3104,8 +3093,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "DainsleifEffect2",
@@ -3346,8 +3334,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "RecoverUpToolTip",
@@ -3366,8 +3353,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "FoodFighter",
@@ -3389,8 +3375,7 @@
             "type": "itemstack"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "FoodFighterUp",
@@ -3408,8 +3393,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "FoodFighterPoint",
@@ -3428,8 +3412,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "LevelUpParticle",
@@ -3481,8 +3464,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/GUI/Skill_Tree"
+      }
     },
     {
       "name": "Test",
@@ -4417,11 +4399,11 @@
                 "name": "Farmer",
                 "children": [
                   {
-                    "name": "SkillPoint",
+                    "name": "Effect",
                     "children": []
                   },
                   {
-                    "name": "Effect",
+                    "name": "SkillPoint",
                     "children": []
                   },
                   {
