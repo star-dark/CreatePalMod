@@ -79,7 +79,7 @@ public class AegisEffectProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator instanceof Player)) {
-							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), 1);
+							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FLY_INTO_WALL)), 1);
 							entityiterator.setDeltaMovement(new Vec3(((-1.5) * entityiterator.getX()), ((-1.5) * entityiterator.getY()), ((-1.5) * entityiterator.getZ())));
 						}
 					}
