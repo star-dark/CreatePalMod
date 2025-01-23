@@ -2050,7 +2050,7 @@
           "src/main/java/net/mcreator/palworld/world/inventory/FarmerSkillTreeMenu.java"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer"
+      "path": "~/GUI/Skill_Tree"
     },
     {
       "name": "PlayerExp",
@@ -2090,7 +2090,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "FisherSkillTree",
@@ -2123,7 +2123,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "MinerSkillTree",
@@ -2196,7 +2196,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "GetSkillPoints",
@@ -2215,7 +2215,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "MagicWandentitigaaitemeulhwidureulddae",
@@ -2253,7 +2253,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "AttackUpPoint",
@@ -2273,7 +2273,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "CurrentSkillPoints",
@@ -2293,7 +2293,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "DefenseUpPoint",
@@ -2313,7 +2313,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "OpenSkillTreeGUI",
@@ -3047,7 +3047,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "RecoverUpPoint",
@@ -3067,7 +3067,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "RangeUp",
@@ -3086,7 +3086,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "RecoverUp",
@@ -3105,7 +3105,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "DainsleifEffect2",
@@ -3347,7 +3347,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Activation"
+      "path": "~/GUI/Skill_Tree/Activation"
     },
     {
       "name": "RecoverUpToolTip",
@@ -3367,7 +3367,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Activation"
+      "path": "~/GUI/Skill_Tree/Activation"
     },
     {
       "name": "FoodFighter",
@@ -3390,7 +3390,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "FoodFighterUp",
@@ -3409,12 +3409,12 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "FoodFighterPoint",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "food_fighter_point",
       "metadata": {
@@ -3429,7 +3429,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/SkillPoint"
     },
     {
       "name": "LevelUpParticle",
@@ -3482,7 +3482,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Effect"
     },
     {
       "name": "Test",
@@ -3499,14 +3499,43 @@
       "path": "~/Sword"
     },
     {
-      "name": "HornPlayUp",
+      "name": "ReflectionToolTip",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "horn_play_up",
+      "registry_name": "reflection_tool_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ReflectionToolTipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Activation"
+    },
+    {
+      "name": "IsJump",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_jump",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/HornPlayUpProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/IsJumpProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "DoubleJumpOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DoubleJumpOnKeyPressedProcedure.java"
         ],
         "dependencies": [
           {
@@ -3516,46 +3545,6 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "HornPlayerPoint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "horn_player_point",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/HornPlayerPointProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
-    },
-    {
-      "name": "HornPlayUpToolTip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "horn_play_up_tool_tip",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/HornPlayUpToolTipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Activation"
     },
     {
       "name": "ReflectionUp",
@@ -3587,6 +3576,33 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/ReflectionPointProcedure.java"
         ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "DoubleJump",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/network/DoubleJumpMessage.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "HornPlayUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horn_play_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HornPlayUpProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -3594,7 +3610,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "Reflection",
@@ -3624,34 +3640,139 @@
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
-      "name": "ReflectionToolTip",
+      "name": "HornPlayerPoint",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "reflection_tool_tip",
+      "registry_name": "horn_player_point",
       "metadata": {
         "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/ReflectionToolTipProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/HornPlayerPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "HornPlayUpToolTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horn_play_up_tool_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HornPlayUpToolTipProcedure.java"
+        ],
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Farmer/Activation"
     },
     {
-      "name": "DoubleJumpOnKeyPressed",
+      "name": "AegisParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/particles/aegis_particle.json",
+          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AmanomurakumonotsurugiEffect",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "double_jump_on_key_pressed",
+      "registry_name": "amanomurakumonotsurugi_effect",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DoubleJumpOnKeyPressedProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Bangobu",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bangobu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/BangobuItem.java",
+          "src/main/resources/assets/palworld/models/item/bangobu.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "ThunderParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/particles/thunder_particle.json",
+          "src/main/java/net/mcreator/palworld/client/particle/ThunderParticleParticle.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Amanomurakumonotsurugi",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amanomurakumonotsurugi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java",
+          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "BangobuEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bangobu_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BangobuEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -3660,30 +3781,17 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/Sword"
     },
     {
-      "name": "DoubleJump",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "double_jump",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/network/DoubleJumpMessage.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "IsJump",
+      "name": "AegisEffect2",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "is_jump",
+      "registry_name": "aegis_effect_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/IsJumpProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/AegisEffect2Procedure.java"
         ],
         "dependencies": [
           {
@@ -3692,7 +3800,82 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/Sword"
+    },
+    {
+      "name": "AegisEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AegisEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "ThunderPotion",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AegisCool",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_cool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Aegis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/aegis.json",
+          "src/main/java/net/mcreator/palworld/item/AegisItem.java"
+        ]
+      },
+      "path": "~/Sword"
     }
   ],
   "variable_elements": [
@@ -3883,6 +4066,12 @@
       "value": "0"
     },
     {
+      "name": "JumpVar",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
       "name": "HornPlayerSkillPoint",
       "type": "number",
       "scope": "player_persistent",
@@ -3895,10 +4084,22 @@
       "value": "0"
     },
     {
-      "name": "JumpVar",
+      "name": "aegis_tick",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "100.0"
+    },
+    {
+      "name": "TestValue",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "aegis_bool",
       "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
+      "scope": "player_lifetime",
+      "value": "true"
     }
   ],
   "sound_elements": [],
@@ -3914,9 +4115,11 @@
       "~CUSTOM:MinerPickLv30"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:Bangobu",
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Amanomurakumonotsurugi",
       "~CUSTOM:Balmung",
       "~CUSTOM:Dainsleif",
       "~CUSTOM:Skyshatter",
@@ -3932,8 +4135,8 @@
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "item.palworld.ore_emerald": "Ore Emerald",
+      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -3971,16 +4174,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
+      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "item.palworld.ore_iron": "Ore Iron",
       "gui.palworld.farmer_skill_tree.label_102": "/ 10",
+      "item.palworld.ore_iron": "Ore Iron",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -4000,8 +4203,8 @@
       "gui.palworld.farmer_skill_tree.label_25lv": "25Lv",
       "item.palworld.mjolnir": "Mjolnir",
       "gui.palworld.fisher_sell_gui.button_panmae": "모두판매",
-      "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "item.palworld.ore_coal": "Ore Coal",
       "gui.palworld.farmer_sell_gui.button_modu_panmae": "모두판매",
       "item.palworld.fish_tuna": "Fish Tuna",
@@ -4107,7 +4310,6 @@
       "item.palworld.fish_synodontis": "Fish Synodontis",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
-      "key.palworld.double_jump": "Double Jump",
       "gui.palworld.farmer_sell_gui.button_modu_panmae1": "모두판매",
       "gui.palworld.farmer_sell_gui.button_modu_panmae2": "모두판매",
       "gui.palworld.farmer_skill_tree.tooltip_eumsigseobcwisi_heubsuhoegdeug": "음식섭취시 흡수획득",
