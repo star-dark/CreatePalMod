@@ -31,7 +31,7 @@ public class ReflectionProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.isBlocking() && entity.getData(PalworldModVariables.PLAYER_VARIABLES).ReflectionSkillPointUp > 0) {
 			immediatesourceentity.hurt(damagesource, (float) entity.getData(PalworldModVariables.PLAYER_VARIABLES).ReflectionSkillPointUp);
-			immediatesourceentity.push((entity.getLookAngle().x * Math.sqrt(entity.getData(PalworldModVariables.PLAYER_VARIABLES).ReflectionSkillPointUp)), Math.log(entity.getData(PalworldModVariables.PLAYER_VARIABLES).ReflectionSkillPointUp),
+			immediatesourceentity.push((entity.getLookAngle().x * Math.sqrt(entity.getData(PalworldModVariables.PLAYER_VARIABLES).ReflectionSkillPointUp)), Math.log10(entity.getData(PalworldModVariables.PLAYER_VARIABLES).ReflectionSkillPointUp),
 					(entity.getLookAngle().z * Math.sqrt(entity.getData(PalworldModVariables.PLAYER_VARIABLES).ReflectionSkillPointUp)));
 		}
 	}

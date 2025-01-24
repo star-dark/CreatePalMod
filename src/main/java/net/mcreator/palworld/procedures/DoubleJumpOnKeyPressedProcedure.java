@@ -9,7 +9,7 @@ public class DoubleJumpOnKeyPressedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (!entity.onGround() && entity.getData(PalworldModVariables.PLAYER_VARIABLES).JumpVar == true) {
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).DoubleJumpSkillPoint >= 1 && !entity.onGround() && entity.getData(PalworldModVariables.PLAYER_VARIABLES).JumpVar == true) {
 			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0.5, (entity.getDeltaMovement().z())));
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
