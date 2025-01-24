@@ -16,7 +16,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.SimpleParticleType;
 
 import net.mcreator.palworld.network.PalworldModVariables;
@@ -51,8 +50,6 @@ public class AegisEffectProcedure {
 			_vars.aegis_tick = entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick - 1;
 			_vars.syncPlayerVariables(entity);
 		}
-		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick))), true);
 		if (0 < entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick && entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick < 300) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
