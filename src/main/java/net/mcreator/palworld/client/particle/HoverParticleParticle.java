@@ -36,7 +36,7 @@ public class HoverParticleParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.lifetime = 7;
+		this.lifetime = 35;
 		this.gravity = 0f;
 		this.hasPhysics = false;
 		this.xd = vx * 1;

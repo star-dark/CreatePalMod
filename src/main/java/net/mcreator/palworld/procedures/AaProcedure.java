@@ -6,9 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.SimpleParticleType;
 
 import net.mcreator.palworld.network.PalworldModVariables;
@@ -30,15 +28,22 @@ public class AaProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double startTime = 0;
 		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).BlinkVar) {
-			if (world.dayTime() <= entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer + 10) {
+			if (world.dayTime() <= entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer + 40) {
 				world.addParticle((SimpleParticleType) (PalworldModParticleTypes.HOVER_PARTICLE.get()), x, y, z, 0, 0, 0);
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##\uCD08").format((entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer + 10) - world.dayTime()))), true);
 			} else {
 				entity.setNoGravity(false);
 				entity.setInvisible(false);
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.BlinkVar = false;
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.timeBuffer = world.dayTime() + 100;
+					_vars.syncPlayerVariables(entity);
+				}
 			}
 		}
 	}

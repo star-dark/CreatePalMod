@@ -9,6 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
@@ -69,18 +70,21 @@ public class HoverAtivateProcedure {
 		if (entity == null)
 			return;
 		if (!entity.onGround()) {
-			{
-				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-				_vars.BlinkVar = true;
-				_vars.syncPlayerVariables(entity);
+			if (!entity.getData(PalworldModVariables.PLAYER_VARIABLES).BlinkVar && world.dayTime() < entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer) {
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.BlinkVar = true;
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.timeBuffer = world.dayTime();
+					_vars.syncPlayerVariables(entity);
+				}
+				entity.setInvisible(true);
+				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * 5), (entity.getLookAngle().y * 5), (entity.getLookAngle().z * 5)));
+				entity.setNoGravity(true);
 			}
-			{
-				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-				_vars.timeBuffer = world.dayTime();
-				_vars.syncPlayerVariables(entity);
-			}
-			entity.setInvisible(true);
-			entity.setNoGravity(true);
 		}
 	}
 }
