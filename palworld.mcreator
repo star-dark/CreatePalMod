@@ -1338,7 +1338,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/BurfSword"
     },
     {
       "name": "ClearVariable",
@@ -3124,7 +3124,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Dainsleif"
     },
     {
       "name": "Skyshatter",
@@ -3157,7 +3157,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Dainsleif"
     },
     {
       "name": "SkyshatterEffect2",
@@ -3184,7 +3184,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Skyshatter"
     },
     {
       "name": "SkyshatterEffect",
@@ -3223,7 +3223,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Skyshatter"
     },
     {
       "name": "Mjolnir",
@@ -3290,7 +3290,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Mjolnir"
     },
     {
       "name": "BalmungEffect",
@@ -3313,7 +3313,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Balmung"
     },
     {
       "name": "Balmung",
@@ -3483,20 +3483,6 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "Test",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/TestProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Sword"
     },
     {
       "name": "ReflectionToolTip",
@@ -3706,46 +3692,7 @@
           "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
         ]
       },
-      "path": "~/Sword"
-    },
-    {
-      "name": "AmanomurakumonotsurugiEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amanomurakumonotsurugi_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword"
+      "path": "~/Sword/Aegis"
     },
     {
       "name": "Bangobu",
@@ -3773,7 +3720,7 @@
           "src/main/resources/assets/palworld/particles/thunder_particle.json"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Amanomurakumonotsurugi"
     },
     {
       "name": "Amanomurakumonotsurugi",
@@ -3806,7 +3753,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Bangobu"
     },
     {
       "name": "AegisEffect2",
@@ -3825,7 +3772,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Aegis"
     },
     {
       "name": "AegisEffect",
@@ -3860,7 +3807,7 @@
           }
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Aegis"
     },
     {
       "name": "ThunderPotion",
@@ -3873,7 +3820,7 @@
           "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Amanomurakumonotsurugi"
     },
     {
       "name": "AegisCool",
@@ -3886,7 +3833,7 @@
           "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Sword/Aegis"
     },
     {
       "name": "Aegis",
@@ -3992,6 +3939,80 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "AmanomurakumonotsurugiEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amanomurakumonotsurugi_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword/Amanomurakumonotsurugi"
+    },
+    {
+      "name": "AmanomurakumonotsurugiEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amanomurakumonotsurugi_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword/Amanomurakumonotsurugi"
     }
   ],
   "variable_elements": [
@@ -4206,12 +4227,6 @@
       "value": "100.0"
     },
     {
-      "name": "TestValue",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
       "name": "aegis_bool",
       "type": "logic",
       "scope": "player_lifetime",
@@ -4234,6 +4249,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Amanomuraku_tick",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
@@ -4516,7 +4537,40 @@
       },
       {
         "name": "Sword",
-        "children": []
+        "children": [
+          {
+            "name": "BurfSword",
+            "children": []
+          },
+          {
+            "name": "Dainsleif",
+            "children": []
+          },
+          {
+            "name": "Skyshatter",
+            "children": []
+          },
+          {
+            "name": "Mjolnir",
+            "children": []
+          },
+          {
+            "name": "Balmung",
+            "children": []
+          },
+          {
+            "name": "Aegis",
+            "children": []
+          },
+          {
+            "name": "Bangobu",
+            "children": []
+          },
+          {
+            "name": "Amanomurakumonotsurugi",
+            "children": []
+          }
+        ]
       },
       {
         "name": "QuestNPC",

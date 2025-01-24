@@ -16,13 +16,13 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.SimpleParticleType;
 
 import net.mcreator.palworld.network.PalworldModVariables;
 import net.mcreator.palworld.init.PalworldModParticleTypes;
 import net.mcreator.palworld.init.PalworldModMobEffects;
 import net.mcreator.palworld.init.PalworldModItems;
-import net.mcreator.palworld.PalworldMod;
 
 import javax.annotation.Nullable;
 
@@ -46,7 +46,14 @@ public class AegisEffectProcedure {
 		double r = 0;
 		double a = 0;
 		double b = 0;
-		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick <= 0) {
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.aegis_tick = entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick - 1;
+			_vars.syncPlayerVariables(entity);
+		}
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick))), true);
+		if (0 < entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick && entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick < 300) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.aegis_bool = false;
@@ -54,32 +61,26 @@ public class AegisEffectProcedure {
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.AEGIS_COOL, 10, 1));
-			PalworldMod.queueServerWork(500, () -> {
-				PalworldModVariables.WorldVariables.get(world).TestValue = 0;
-				PalworldModVariables.WorldVariables.get(world).syncData(world);
-			});
-			PalworldMod.queueServerWork(5, () -> {
-				{
-					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-					_vars.aegis_bool = true;
-					_vars.syncPlayerVariables(entity);
-				}
-			});
-			PalworldMod.queueServerWork(300, () -> {
-				{
-					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-					_vars.aegis_tick = 10;
-					_vars.syncPlayerVariables(entity);
-				}
-			});
+		} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick <= 0) {
+			{
+				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+				_vars.aegis_bool = true;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+				_vars.aegis_tick = 600;
+				_vars.syncPlayerVariables(entity);
+			}
+		} else if (300 <= entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick && entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick <= 600 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_bool == false) {
+			{
+				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+				_vars.aegis_tick = entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick + 4;
+				_vars.syncPlayerVariables(entity);
+			}
 		} else {
 			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PalworldModItems.AEGIS.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == PalworldModItems.AEGIS.get()) && entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_bool == true) {
-				{
-					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-					_vars.aegis_tick = entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick - 1;
-					_vars.syncPlayerVariables(entity);
-				}
 				{
 					final Vec3 _center = new Vec3(x, (y + 1), z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
