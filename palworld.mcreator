@@ -4013,6 +4013,67 @@
         ]
       },
       "path": "~/Sword/Amanomurakumonotsurugi"
+    },
+    {
+      "name": "GloryGoldGhostEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glory_gold_ghost_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/GloryGoldGhostEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword/GloryGoldGhost"
+    },
+    {
+      "name": "GloryGoldGhost",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glory_gold_ghost",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/glory_gold_ghost.json",
+          "src/main/java/net/mcreator/palworld/item/GloryGoldGhostItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "GloryGoldGhostEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glory_gold_ghost_effect_2",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/GloryGoldGhostEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword/GloryGoldGhost"
     }
   ],
   "variable_elements": [
@@ -4434,6 +4495,7 @@
       "gui.palworld.sub_quest_clear.button_bosanghoegdeug": "보상획득",
       "gui.palworld.farmer_skill_tree.label_15lv": "15Lv",
       "gui.palworld.quest_provide_gui.button_bosanghoegdeug": "보상획득",
+      "item.palworld.glory_gold_ghost": "Glory Gold Ghost",
       "gui.palworld.farmer_skill_tree.label_10": "/10",
       "item.palworld.fish_catfish": "Fish Catfish",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
@@ -4568,6 +4630,10 @@
           },
           {
             "name": "Amanomurakumonotsurugi",
+            "children": []
+          },
+          {
+            "name": "GloryGoldGhost",
             "children": []
           }
         ]
