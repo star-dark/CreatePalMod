@@ -18,7 +18,7 @@ public class PalworldModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(PalworldModParticleTypes.LEVEL_UP_PARTICLE.get(), LevelUpParticleParticle::provider);
-		event.registerSpriteSet(PalworldModParticleTypes.AEGIS_PARTICLE.get(), AegisParticleParticle::provider);
 		event.registerSpriteSet(PalworldModParticleTypes.THUNDER_PARTICLE.get(), ThunderParticleParticle::provider);
+		event.registerSpriteSet(PalworldModParticleTypes.AEGIS_PARTICLE.get(), AegisParticleParticle::provider);
 	}
 }
