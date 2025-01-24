@@ -1,9 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import net.neoforged.bus.api.Event;
 
 public class GloryGoldGhostEffect2Procedure {
 	public static double execute(Entity entity) {

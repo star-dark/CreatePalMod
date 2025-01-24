@@ -3582,19 +3582,6 @@
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
-      "name": "DoubleJump",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "double_jump",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/network/DoubleJumpMessage.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
       "name": "HornPlayUp",
       "type": "procedure",
       "compiles": true,
@@ -3883,41 +3870,6 @@
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
-      "name": "Aa",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aa",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
       "name": "HoverAtivate",
       "type": "procedure",
       "compiles": true,
@@ -4015,33 +3967,6 @@
       "path": "~/Sword/Amanomurakumonotsurugi"
     },
     {
-      "name": "GloryGoldGhostEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glory_gold_ghost_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/GloryGoldGhostEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword/GloryGoldGhost"
-    },
-    {
       "name": "GloryGoldGhost",
       "type": "item",
       "compiles": true,
@@ -4074,6 +3999,170 @@
         ]
       },
       "path": "~/Sword/GloryGoldGhost"
+    },
+    {
+      "name": "GloryGoldGhostEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glory_gold_ghost_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/GloryGoldGhostEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword/GloryGoldGhost"
+    },
+    {
+      "name": "HoverState",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hover_state",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HoverStateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "HoverPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hover_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HoverPointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "HoverToolTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hover_tool_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HoverToolTipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Activation"
+    },
+    {
+      "name": "DoubleJumpKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/network/DoubleJumpKeyMessage.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "DoubleJumpToolTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump_tool_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DoubleJumpToolTipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Activation"
+    },
+    {
+      "name": "DoubleJumpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DoubleJumpPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "HoverUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hover_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HoverUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     }
   ],
   "variable_elements": [
@@ -4316,6 +4405,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "HoverSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -4350,10 +4445,11 @@
       "gui.palworld.miner_sell_gui.button_panmae": "모두판매",
       "effect.palworld.aegis_cool": "Aegis Cool",
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
+      "gui.palworld.farmer_skill_tree.label_deobeuljeompeu": "더블점프",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "item.palworld.ore_emerald": "Ore Emerald",
+      "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -4391,16 +4487,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
+      "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "item.palworld.ore_iron": "Ore Iron",
       "gui.palworld.farmer_skill_tree.label_102": "/ 10",
+      "item.palworld.ore_iron": "Ore Iron",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -4452,6 +4548,7 @@
       "gui.palworld.job_npc_sell_gui.button_gyohwan2": "교환",
       "gui.palworld.job_npc_sell_gui.button_gyohwan3": "교환",
       "gui.palworld.fisher_sell_gui.label_70weon2": "100원",
+      "gui.palworld.farmer_skill_tree.label_1": "/ 1",
       "gui.palworld.sub_quest_provide_gui.button_surag": "수락",
       "gui.palworld.job_npc_sell_gui.button_gyohwan1": "교환",
       "gui.palworld.miner_sell_gui.label_10weon1": "개 당 10원",
@@ -4495,7 +4592,7 @@
       "gui.palworld.sub_quest_clear.button_bosanghoegdeug": "보상획득",
       "gui.palworld.farmer_skill_tree.label_15lv": "15Lv",
       "gui.palworld.quest_provide_gui.button_bosanghoegdeug": "보상획득",
-      "item.palworld.glory_gold_ghost": "Glory Gold Ghost",
+      "gui.palworld.farmer_skill_tree.label_11": "/ 1",
       "gui.palworld.farmer_skill_tree.label_10": "/10",
       "item.palworld.fish_catfish": "Fish Catfish",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
@@ -4531,7 +4628,6 @@
       "item.palworld.fish_synodontis": "Fish Synodontis",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
-      "key.palworld.double_jump": "Double Jump",
       "gui.palworld.farmer_sell_gui.button_modu_panmae1": "모두판매",
       "gui.palworld.farmer_sell_gui.button_modu_panmae2": "모두판매",
       "gui.palworld.farmer_skill_tree.tooltip_eumsigseobcwisi_heubsuhoegdeug": "음식섭취시 흡수획득",
@@ -4541,6 +4637,7 @@
       "gui.palworld.sub_quest_provide_gui.label_bosang": "보상  :",
       "item.palworld.level_wand": "Magic Wand",
       "effect.palworld.thunder_potion": "Thunder Potion",
+      "gui.palworld.farmer_skill_tree.label_eodumyi_jasig": "어둠의 자식",
       "item.palworld.fish_herring": "Fish Herring",
       "gui.palworld.farmer_skill_tree.label_20lv": "20Lv",
       "gui.palworld.user_gui.label_seukilteuri": "스킬트리",
