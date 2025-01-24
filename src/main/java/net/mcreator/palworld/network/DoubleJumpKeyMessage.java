@@ -19,19 +19,19 @@ import net.mcreator.palworld.procedures.DoubleJumpOnKeyPressedProcedure;
 import net.mcreator.palworld.PalworldMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public record DoubleJumpMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<DoubleJumpMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "key_double_jump"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, DoubleJumpMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, DoubleJumpMessage message) -> {
+public record DoubleJumpKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
+	public static final Type<DoubleJumpKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "key_double_jump_key"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, DoubleJumpKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, DoubleJumpKeyMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
-	}, (RegistryFriendlyByteBuf buffer) -> new DoubleJumpMessage(buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new DoubleJumpKeyMessage(buffer.readInt(), buffer.readInt()));
 
 	@Override
-	public Type<DoubleJumpMessage> type() {
+	public Type<DoubleJumpKeyMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final DoubleJumpMessage message, final IPayloadContext context) {
+	public static void handleData(final DoubleJumpKeyMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				pressAction(context.player(), message.eventType, message.pressedms);
@@ -58,6 +58,6 @@ public record DoubleJumpMessage(int eventType, int pressedms) implements CustomP
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PalworldMod.addNetworkMessage(DoubleJumpMessage.TYPE, DoubleJumpMessage.STREAM_CODEC, DoubleJumpMessage::handleData);
+		PalworldMod.addNetworkMessage(DoubleJumpKeyMessage.TYPE, DoubleJumpKeyMessage.STREAM_CODEC, DoubleJumpKeyMessage::handleData);
 	}
 }

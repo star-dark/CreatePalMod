@@ -97,6 +97,7 @@ public class PalworldModVariables {
 			clone.DoubleJumpSkillPoint = original.DoubleJumpSkillPoint;
 			clone.BlinkVar = original.BlinkVar;
 			clone.timeBuffer = original.timeBuffer;
+			clone.HoverSkillPoint = original.HoverSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -283,7 +284,8 @@ public class PalworldModVariables {
 		public boolean aegis_bool = true;
 		public double DoubleJumpSkillPoint = 0;
 		public boolean BlinkVar = false;
-		public double timeBuffer = 0;
+		public double timeBuffer = 0.0;
+		public double HoverSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -327,6 +329,7 @@ public class PalworldModVariables {
 			nbt.putDouble("DoubleJumpSkillPoint", DoubleJumpSkillPoint);
 			nbt.putBoolean("BlinkVar", BlinkVar);
 			nbt.putDouble("timeBuffer", timeBuffer);
+			nbt.putDouble("HoverSkillPoint", HoverSkillPoint);
 			return nbt;
 		}
 
@@ -371,6 +374,7 @@ public class PalworldModVariables {
 			DoubleJumpSkillPoint = nbt.getDouble("DoubleJumpSkillPoint");
 			BlinkVar = nbt.getBoolean("BlinkVar");
 			timeBuffer = nbt.getDouble("timeBuffer");
+			HoverSkillPoint = nbt.getDouble("HoverSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
