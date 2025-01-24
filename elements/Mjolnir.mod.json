@@ -3,10 +3,10 @@
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
-    "renderType": 0,
+    "renderType": 1,
     "blockingRenderType": 0,
-    "texture": "minecraft:mace",
-    "customModelName": "Normal",
+    "texture": "hammer_great",
+    "customModelName": "hammer_stormlander:default",
     "blockingModelName": "Normal blocking",
     "name": "Mjolnir",
     "specialInformation": {

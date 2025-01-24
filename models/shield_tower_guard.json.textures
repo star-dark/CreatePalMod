@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "shield_tower_guard"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "palworld:custom/hammer_stormlander",
   "textures": {
-    "layer0": "minecraft:item/mace"
+    "0": "palworld:block/hammer_stormlander",
+    "particle": "palworld:item/hammer_great"
   }
 }

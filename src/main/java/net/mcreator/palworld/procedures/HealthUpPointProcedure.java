@@ -1,6 +1,8 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class HealthUpPointProcedure {
 	public static String execute(Entity entity) {
