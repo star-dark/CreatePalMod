@@ -2,17 +2,17 @@
   "_fv": 69,
   "_type": "particle",
   "definition": {
-    "texture": "thunder_particle",
+    "texture": "tunder_particle",
     "animate": false,
     "frameDuration": 1,
-    "width": 0.2,
-    "height": 0.2,
+    "width": 1.5,
+    "height": 3.0,
     "scale": {
-      "fixedValue": 1.0
+      "fixedValue": 15.0
     },
     "speedFactor": 1.0,
     "gravity": 0.0,
-    "maxAge": 7,
+    "maxAge": 30,
     "maxAgeDiff": 0,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
