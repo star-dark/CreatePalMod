@@ -91,6 +91,9 @@ public class PalworldModVariables {
 			clone.RecoverSkillPoint = original.RecoverSkillPoint;
 			clone.RangeUpSkillPoint = original.RangeUpSkillPoint;
 			clone.FoodFighterSkillPoint = original.FoodFighterSkillPoint;
+			clone.JumpVar = original.JumpVar;
+			clone.HornPlayerSkillPoint = original.HornPlayerSkillPoint;
+			clone.ReflectionSkillPointUp = original.ReflectionSkillPointUp;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -270,6 +273,9 @@ public class PalworldModVariables {
 		public double RecoverSkillPoint = 0;
 		public double RangeUpSkillPoint = 0;
 		public double FoodFighterSkillPoint = 0;
+		public boolean JumpVar = false;
+		public double HornPlayerSkillPoint = 0;
+		public double ReflectionSkillPointUp = 0;
 		public double aegis_tick = 100.0;
 		public boolean aegis_bool = true;
 
@@ -307,6 +313,9 @@ public class PalworldModVariables {
 			nbt.putDouble("RecoverSkillPoint", RecoverSkillPoint);
 			nbt.putDouble("RangeUpSkillPoint", RangeUpSkillPoint);
 			nbt.putDouble("FoodFighterSkillPoint", FoodFighterSkillPoint);
+			nbt.putBoolean("JumpVar", JumpVar);
+			nbt.putDouble("HornPlayerSkillPoint", HornPlayerSkillPoint);
+			nbt.putDouble("ReflectionSkillPointUp", ReflectionSkillPointUp);
 			nbt.putDouble("aegis_tick", aegis_tick);
 			nbt.putBoolean("aegis_bool", aegis_bool);
 			return nbt;
@@ -345,6 +354,9 @@ public class PalworldModVariables {
 			RecoverSkillPoint = nbt.getDouble("RecoverSkillPoint");
 			RangeUpSkillPoint = nbt.getDouble("RangeUpSkillPoint");
 			FoodFighterSkillPoint = nbt.getDouble("FoodFighterSkillPoint");
+			JumpVar = nbt.getBoolean("JumpVar");
+			HornPlayerSkillPoint = nbt.getDouble("HornPlayerSkillPoint");
+			ReflectionSkillPointUp = nbt.getDouble("ReflectionSkillPointUp");
 			aegis_tick = nbt.getDouble("aegis_tick");
 			aegis_bool = nbt.getBoolean("aegis_bool");
 		}

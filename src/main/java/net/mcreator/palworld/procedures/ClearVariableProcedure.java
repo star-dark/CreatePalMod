@@ -88,6 +88,21 @@ public class ClearVariableProcedure {
 			_vars.RecoverSkillPoint = 0;
 			_vars.syncPlayerVariables(entity);
 		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.FoodFighterSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.HornPlayerSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ReflectionSkillPointUp = 0;
+			_vars.syncPlayerVariables(entity);
+		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
 	}
