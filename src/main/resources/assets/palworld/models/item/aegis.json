@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "palworld:custom/shield_tower_guard",
   "textures": {
-    "layer0": "minecraft:item/empty_armor_slot_shield"
+    "0": "palworld:block/shield_tower_guard",
+    "particle": "palworld:item/shield_tower_guard"
   }
 }

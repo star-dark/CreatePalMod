@@ -5,7 +5,7 @@
     "toolType": "Axe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "minecraft:empty_slot_axe",
+    "texture": "axe_encrusted_anchor",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Bangobu",
