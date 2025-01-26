@@ -56,6 +56,7 @@ import net.mcreator.palworld.item.ChunwonItem;
 import net.mcreator.palworld.item.BurfSwordItem;
 import net.mcreator.palworld.item.BangobuItem;
 import net.mcreator.palworld.item.BalmungItem;
+import net.mcreator.palworld.item.AstraBookItem;
 import net.mcreator.palworld.item.AmanomurakumonotsurugiItem;
 import net.mcreator.palworld.item.AegisItem;
 import net.mcreator.palworld.PalworldMod;
@@ -116,6 +117,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> AMANOMURAKUMONOTSURUGI = REGISTRY.register("amanomurakumonotsurugi", AmanomurakumonotsurugiItem::new);
 	public static final DeferredItem<Item> AEGIS = REGISTRY.register("aegis", AegisItem::new);
 	public static final DeferredItem<Item> GLORY_GOLD_GHOST = REGISTRY.register("glory_gold_ghost", GloryGoldGhostItem::new);
+	public static final DeferredItem<Item> ASTRA_BOOK = REGISTRY.register("astra_book", AstraBookItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
