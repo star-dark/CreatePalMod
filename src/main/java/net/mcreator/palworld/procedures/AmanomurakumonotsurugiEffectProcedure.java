@@ -59,6 +59,8 @@ public class AmanomurakumonotsurugiEffectProcedure {
 						_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.THUNDER_POTION, 40, 1));
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.THUNDER_POTION, 40, 1));
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 250));
 					PalworldMod.queueServerWork(30, () -> {
 						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * 2));
 						if (world instanceof Level _level) {
@@ -68,8 +70,6 @@ public class AmanomurakumonotsurugiEffectProcedure {
 								_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.attack.sweep")), SoundSource.NEUTRAL, 1, 1, false);
 							}
 						}
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 250));
 					});
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {

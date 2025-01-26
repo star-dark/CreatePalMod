@@ -5,8 +5,8 @@
     "toolType": "Axe",
     "renderType": 1,
     "blockingRenderType": 0,
-    "texture": "hammer_stormlander",
-    "customModelName": "hammer_stormlander:default",
+    "texture": "hammer_gravity",
+    "customModelName": "hammer_gravity:default",
     "blockingModelName": "Normal blocking",
     "name": "Mjolnir",
     "specialInformation": {

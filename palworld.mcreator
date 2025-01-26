@@ -3130,7 +3130,7 @@
       "name": "Skyshatter",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "skyshatter",
       "metadata": {
         "files": [
@@ -3319,7 +3319,7 @@
       "name": "Balmung",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "balmung",
       "metadata": {
         "files": [
@@ -3698,7 +3698,7 @@
       "name": "Bangobu",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "bangobu",
       "metadata": {
         "files": [
@@ -3726,7 +3726,7 @@
       "name": "Amanomurakumonotsurugi",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "amanomurakumonotsurugi",
       "metadata": {
         "files": [
@@ -4045,7 +4045,7 @@
       "name": "GloryGoldGhost",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "glory_gold_ghost",
       "metadata": {
         "files": [
@@ -4337,7 +4337,6 @@
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Amanomurakumonotsurugi",
       "~CUSTOM:Balmung",
-      "~CUSTOM:Dainsleif",
       "~CUSTOM:Skyshatter",
       "~CUSTOM:BurfSword"
     ]
