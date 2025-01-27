@@ -68,7 +68,7 @@ public class AvalonOfMerlinEffectProcedure {
 				angle = angle + 360 / (k * 0.33);
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uB370\uBBF8\uC9C0(\uAC15)"), false);
+				_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uB370\uBBF8\uC9C0"), false);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\uB9C8\uBC95 \uC0AC\uC6A9 \uC2E4\uD328"), true);
