@@ -13,8 +13,8 @@
       "fixedValue": [
         "낙원을 뜻하는 멀린의 지팡이.",
         "",
-        "주변 몹에게 좌클릭으로 디버프를 부여하고,",
-        "주변 플레이어에게 우클릭으로 버프를 부여한다."
+        "좌클릭으로 주변 적에게 부여하는 디버프를 바꾼다,",
+        "우클릭으로 주변 플레이어에게 부여하는 버프를 바꾼다."
       ]
     },
     "creativeTabs": [
@@ -37,16 +37,16 @@
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "AvalonOfMerlinEffect2"
+      "name": "AvalonOfMerlinEffect5"
     },
     "onRightClickedOnBlock": {
-      "name": "AvalonOfMerlinEffect2"
+      "name": "AvalonOfMerlinEffect5"
     },
     "onEntityHitWith": {
-      "name": "AvalonOfMerlinEffect"
+      "name": "AvalonOfMerlinEffect4"
     },
     "onEntitySwing": {
-      "name": "AvalonOfMerlinEffect"
+      "name": "AvalonOfMerlinEffect4"
     }
   }
 }

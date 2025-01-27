@@ -30,8 +30,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.palworld.procedures.AvalonOfMerlinEffectProcedure;
-import net.mcreator.palworld.procedures.AvalonOfMerlinEffect2Procedure;
+import net.mcreator.palworld.procedures.AvalonOfMerlinEffect5Procedure;
+import net.mcreator.palworld.procedures.AvalonOfMerlinEffect4Procedure;
 
 import java.util.List;
 
@@ -98,14 +98,14 @@ public class AvalonOfMerlinItem extends TieredItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		itemstack.hurtAndBreak(2, entity, LivingEntity.getSlotForHand(entity.getUsedItemHand()));
-		AvalonOfMerlinEffectProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		AvalonOfMerlinEffect4Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return true;
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		AvalonOfMerlinEffect2Procedure.execute(world, entity, ar.getObject());
+		AvalonOfMerlinEffect5Procedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 
@@ -130,21 +130,21 @@ public class AvalonOfMerlinItem extends TieredItem {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\uB099\uC6D0\uC744 \uB73B\uD558\uB294 \uBA40\uB9B0\uC758 \uC9C0\uD321\uC774."));
 		list.add(Component.literal(""));
-		list.add(Component.literal("\uC8FC\uBCC0 \uBAB9\uC5D0\uAC8C \uC88C\uD074\uB9AD\uC73C\uB85C \uB514\uBC84\uD504\uB97C \uBD80\uC5EC\uD558\uACE0,"));
-		list.add(Component.literal("\uC8FC\uBCC0 \uD50C\uB808\uC774\uC5B4\uC5D0\uAC8C \uC6B0\uD074\uB9AD\uC73C\uB85C \uBC84\uD504\uB97C \uBD80\uC5EC\uD55C\uB2E4."));
+		list.add(Component.literal("\uC88C\uD074\uB9AD\uC73C\uB85C \uC8FC\uBCC0 \uC801\uC5D0\uAC8C \uBD80\uC5EC\uD558\uB294 \uB514\uBC84\uD504\uB97C \uBC14\uAFBC\uB2E4,"));
+		list.add(Component.literal("\uC6B0\uD074\uB9AD\uC73C\uB85C \uC8FC\uBCC0 \uD50C\uB808\uC774\uC5B4\uC5D0\uAC8C \uBD80\uC5EC\uD558\uB294 \uBC84\uD504\uB97C \uBC14\uAFBC\uB2E4."));
 	}
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		AvalonOfMerlinEffect2Procedure.execute(context.getLevel(), context.getPlayer(), context.getItemInHand());
+		AvalonOfMerlinEffect5Procedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
 		return InteractionResult.SUCCESS;
 	}
 
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
 		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		AvalonOfMerlinEffectProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		AvalonOfMerlinEffect4Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return retval;
 	}
 }
