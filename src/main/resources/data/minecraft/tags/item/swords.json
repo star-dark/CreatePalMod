@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "palworld:skyshatter",
+    "palworld:dainsleif",
+    "palworld:amanomurakumonotsurugi",
+    "palworld:balmung",
     "palworld:heaven",
     "palworld:avalon_of_merlin",
     "palworld:astra_book",

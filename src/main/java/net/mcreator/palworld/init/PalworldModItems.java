@@ -27,6 +27,7 @@ import net.mcreator.palworld.item.ManwonItem;
 import net.mcreator.palworld.item.MagicWandItem;
 import net.mcreator.palworld.item.LevelWandItem;
 import net.mcreator.palworld.item.HeavenItem;
+import net.mcreator.palworld.item.GloryGoldGhostItem;
 import net.mcreator.palworld.item.FishTunaItem;
 import net.mcreator.palworld.item.FishTambaquiItem;
 import net.mcreator.palworld.item.FishSynodontisItem;
