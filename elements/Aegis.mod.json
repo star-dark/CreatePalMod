@@ -29,7 +29,12 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "헤파이토스가 제작한 신들의 방패,",
+        "",
+        "적들과 투사체를 밀쳐낸다.",
+        "우클릭으로 on/off를 할 수 있으며, off하여 사용시간을 충전할 수 있다."
+      ]
     },
     "glowCondition": {
       "fixedValue": false
@@ -37,12 +42,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "AegisEffect2"
-    },
-    "onRightClickedOnBlock": {
-      "name": "AegisEffect2"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

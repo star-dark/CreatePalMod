@@ -35,7 +35,7 @@ public class DainsleifItem extends SwordItem {
 
 		@Override
 		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
+			return BlockTags.INCORRECT_FOR_WOODEN_TOOL;
 		}
 
 		@Override
