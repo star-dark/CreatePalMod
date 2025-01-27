@@ -44,7 +44,7 @@ public class AvalonOfMerlinEffectProcedure {
 			d = 1;
 			for (int index2 = 0; index2 < (int) k; index2++) {
 				r = 8 * Math.cos(Math.toRadians((n / d) * angle));
-				world.addParticle(ParticleTypes.FALLING_NECTAR, (entity.getX() + r * Math.cos(Math.toRadians(angle))), (entity.getY() + 4), (entity.getZ() + r * Math.sin(Math.toRadians(angle))), 0, 0, 0);
+				world.addParticle(ParticleTypes.LANDING_HONEY, (entity.getX() + r * Math.cos(Math.toRadians(angle))), (entity.getY() + 4), (entity.getZ() + r * Math.sin(Math.toRadians(angle))), 0, 0, 0);
 				angle = angle + 360 / (k * 0.33);
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -54,11 +54,11 @@ public class AvalonOfMerlinEffectProcedure {
 			d = 2;
 			for (int index3 = 0; index3 < (int) k; index3++) {
 				r = 8 * Math.cos(Math.toRadians((n / d) * angle));
-				world.addParticle(ParticleTypes.LANDING_HONEY, (entity.getX() + r * Math.cos(Math.toRadians(angle))), (entity.getY() + 4), (entity.getZ() + r * Math.sin(Math.toRadians(angle))), 0, 0, 0);
+				world.addParticle(ParticleTypes.FALLING_NECTAR, (entity.getX() + r * Math.cos(Math.toRadians(angle))), (entity.getY() + 4), (entity.getZ() + r * Math.sin(Math.toRadians(angle))), 0, 0, 0);
 				angle = angle + 360 / (k * 0.33);
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uB370\uBBF8\uC9C0"), false);
+				_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uC5D0\uC5B4\uBCF8"), false);
 		} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == 4) {
 			n = 5;
 			d = 3;

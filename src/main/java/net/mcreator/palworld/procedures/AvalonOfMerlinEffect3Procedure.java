@@ -40,7 +40,8 @@ public class AvalonOfMerlinEffect3Procedure {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 3, false, false));
 					} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == 3) {
-						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level);
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 80, 2, false, false));
 					} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == 4) {
 						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * 1.5));
 						{
