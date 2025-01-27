@@ -34,7 +34,7 @@ public class AvalonOfMerlinEffectProcedure {
 		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(15 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					num = Mth.nextInt(RandomSource.create(), 1, 5);
 					k = 1080;
@@ -44,7 +44,7 @@ public class AvalonOfMerlinEffectProcedure {
 							n = 1;
 							d = 2;
 							for (int index0 = 0; index0 < (int) k; index0++) {
-								r = 5 * Math.cos(Math.toRadians((n / d) * angle));
+								r = 3 * Math.cos(Math.toRadians((n / d) * angle));
 								world.addParticle(ParticleTypes.SOUL, (entity.getX() + r * Math.cos(Math.toRadians(angle))), (entity.getY() + 0.2), (entity.getZ() + r * Math.sin(Math.toRadians(angle))), 0, 0, 0);
 								angle = angle + 360 / (k * 0.33);
 							}

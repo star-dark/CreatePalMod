@@ -31,6 +31,12 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "AvalonOfMerlinEffect2"
+    },
+    "onRightClickedOnBlock": {
+      "name": "AvalonOfMerlinEffect2"
+    },
     "onEntityHitWith": {
       "name": "AvalonOfMerlinEffect"
     },
