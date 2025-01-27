@@ -1338,7 +1338,7 @@
           }
         ]
       },
-      "path": "~/Sword/BurfSword"
+      "path": "~/Weapon/BurfSword"
     },
     {
       "name": "ClearVariable",
@@ -1371,7 +1371,7 @@
           "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "MagicWand",
@@ -3124,7 +3124,7 @@
           }
         ]
       },
-      "path": "~/Sword/Dainsleif"
+      "path": "~/Weapon/Dainsleif"
     },
     {
       "name": "Skyshatter",
@@ -3138,7 +3138,7 @@
           "src/main/resources/assets/palworld/models/item/skyshatter.json"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "DainsleifEffect",
@@ -3157,7 +3157,7 @@
           }
         ]
       },
-      "path": "~/Sword/Dainsleif"
+      "path": "~/Weapon/Dainsleif"
     },
     {
       "name": "SkyshatterEffect2",
@@ -3184,7 +3184,7 @@
           }
         ]
       },
-      "path": "~/Sword/Skyshatter"
+      "path": "~/Weapon/Skyshatter"
     },
     {
       "name": "SkyshatterEffect",
@@ -3223,7 +3223,7 @@
           }
         ]
       },
-      "path": "~/Sword/Skyshatter"
+      "path": "~/Weapon/Skyshatter"
     },
     {
       "name": "Mjolnir",
@@ -3237,7 +3237,7 @@
           "src/main/resources/assets/palworld/models/item/mjolnir.json"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "Dainsleif",
@@ -3251,7 +3251,7 @@
           "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "MjolnirEffect",
@@ -3290,7 +3290,7 @@
           }
         ]
       },
-      "path": "~/Sword/Mjolnir"
+      "path": "~/Weapon/Mjolnir"
     },
     {
       "name": "BalmungEffect",
@@ -3313,7 +3313,7 @@
           }
         ]
       },
-      "path": "~/Sword/Balmung"
+      "path": "~/Weapon/Balmung"
     },
     {
       "name": "Balmung",
@@ -3327,7 +3327,7 @@
           "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "RangeUpToolTip",
@@ -3692,7 +3692,7 @@
           "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
         ]
       },
-      "path": "~/Sword/Aegis"
+      "path": "~/Weapon/Aegis"
     },
     {
       "name": "Bangobu",
@@ -3706,7 +3706,7 @@
           "src/main/java/net/mcreator/palworld/item/BangobuItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "ThunderParticle",
@@ -3720,7 +3720,7 @@
           "src/main/resources/assets/palworld/particles/thunder_particle.json"
         ]
       },
-      "path": "~/Sword/Amanomurakumonotsurugi"
+      "path": "~/Weapon/Amanomurakumonotsurugi"
     },
     {
       "name": "Amanomurakumonotsurugi",
@@ -3734,7 +3734,7 @@
           "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "BangobuEffect",
@@ -3753,7 +3753,7 @@
           }
         ]
       },
-      "path": "~/Sword/Bangobu"
+      "path": "~/Weapon/Bangobu"
     },
     {
       "name": "AegisEffect2",
@@ -3772,7 +3772,7 @@
           }
         ]
       },
-      "path": "~/Sword/Aegis"
+      "path": "~/Weapon/Aegis"
     },
     {
       "name": "AegisEffect",
@@ -3807,7 +3807,7 @@
           }
         ]
       },
-      "path": "~/Sword/Aegis"
+      "path": "~/Weapon/Aegis"
     },
     {
       "name": "ThunderPotion",
@@ -3820,7 +3820,7 @@
           "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
         ]
       },
-      "path": "~/Sword/Amanomurakumonotsurugi"
+      "path": "~/Weapon/Amanomurakumonotsurugi"
     },
     {
       "name": "AegisCool",
@@ -3833,7 +3833,7 @@
           "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
         ]
       },
-      "path": "~/Sword/Aegis"
+      "path": "~/Weapon/Aegis"
     },
     {
       "name": "Aegis",
@@ -3847,7 +3847,7 @@
           "src/main/resources/assets/palworld/models/item/aegis.json"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "DoubleJumpUp",
@@ -3973,7 +3973,7 @@
           }
         ]
       },
-      "path": "~/Sword/Amanomurakumonotsurugi"
+      "path": "~/Weapon/Amanomurakumonotsurugi"
     },
     {
       "name": "AmanomurakumonotsurugiEffect",
@@ -4012,7 +4012,7 @@
           }
         ]
       },
-      "path": "~/Sword/Amanomurakumonotsurugi"
+      "path": "~/Weapon/Amanomurakumonotsurugi"
     },
     {
       "name": "GloryGoldGhostEffect",
@@ -4039,7 +4039,7 @@
           }
         ]
       },
-      "path": "~/Sword/GloryGoldGhost"
+      "path": "~/Weapon/GloryGoldGhost"
     },
     {
       "name": "GloryGoldGhost",
@@ -4053,7 +4053,7 @@
           "src/main/java/net/mcreator/palworld/item/GloryGoldGhostItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "GloryGoldGhostEffect2",
@@ -4073,7 +4073,7 @@
           }
         ]
       },
-      "path": "~/Sword/GloryGoldGhost"
+      "path": "~/Weapon/GloryGoldGhost"
     },
     {
       "name": "AstraBookEffect2",
@@ -4108,7 +4108,7 @@
           }
         ]
       },
-      "path": "~/Sword/AstraBook"
+      "path": "~/Weapon/AstraBook"
     },
     {
       "name": "AstraBookEffect",
@@ -4143,7 +4143,7 @@
           }
         ]
       },
-      "path": "~/Sword/AstraBook"
+      "path": "~/Weapon/AstraBook"
     },
     {
       "name": "AstraBook",
@@ -4157,7 +4157,7 @@
           "src/main/java/net/mcreator/palworld/item/AstraBookItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "AvalonOfMerlin",
@@ -4171,7 +4171,7 @@
           "src/main/java/net/mcreator/palworld/item/AvalonOfMerlinItem.java"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "AvalonOfMerlinEffect",
@@ -4210,7 +4210,7 @@
           }
         ]
       },
-      "path": "~/Sword/AvalonOfMerlin"
+      "path": "~/Weapon/AvalonOfMerlin"
     },
     {
       "name": "AvalonOfMerlinEffect2",
@@ -4249,7 +4249,7 @@
           }
         ]
       },
-      "path": "~/Sword/AvalonOfMerlin"
+      "path": "~/Weapon/AvalonOfMerlin"
     },
     {
       "name": "Heaven",
@@ -4263,7 +4263,7 @@
           "src/main/resources/assets/palworld/models/item/heaven.json"
         ]
       },
-      "path": "~/Sword"
+      "path": "~/Weapon"
     },
     {
       "name": "HeavenEffect",
@@ -4286,7 +4286,7 @@
           }
         ]
       },
-      "path": "~/Sword/Heaven"
+      "path": "~/Weapon/Heaven"
     }
   ],
   "variable_elements": [
@@ -4577,8 +4577,8 @@
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -4598,8 +4598,8 @@
       "gui.palworld.fisher_sell_gui.button_panmae6": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae3": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae4": "모두판매",
-      "item.palworld.astra_book": "Astra Book",
       "gui.palworld.fisher_sell_gui.button_panmae1": "모두판매",
+      "item.palworld.astra_book": "Astra Book",
       "gui.palworld.fisher_sell_gui.button_panmae2": "모두판매",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
       "gui.palworld.fisher_skill_tree.label_15lv": "15Lv",
@@ -4618,16 +4618,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
+      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "item.palworld.ore_iron": "Ore Iron",
+      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -4826,7 +4826,7 @@
         "children": []
       },
       {
-        "name": "Sword",
+        "name": "Weapon",
         "children": [
           {
             "name": "BurfSword",
