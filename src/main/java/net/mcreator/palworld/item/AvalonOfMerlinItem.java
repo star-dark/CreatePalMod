@@ -105,7 +105,7 @@ public class AvalonOfMerlinItem extends TieredItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		AvalonOfMerlinEffect2Procedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		AvalonOfMerlinEffect2Procedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 
@@ -137,7 +137,7 @@ public class AvalonOfMerlinItem extends TieredItem {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		AvalonOfMerlinEffect2Procedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
+		AvalonOfMerlinEffect2Procedure.execute(context.getLevel(), context.getPlayer(), context.getItemInHand());
 		return InteractionResult.SUCCESS;
 	}
 

@@ -104,6 +104,7 @@ public class PalworldModVariables {
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
 				clone.aegis_tick = original.aegis_tick;
 				clone.aegis_bool = original.aegis_bool;
+				clone.Avalon_number = original.Avalon_number;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -151,6 +152,7 @@ public class PalworldModVariables {
 		public double timeBuffer = 0;
 		public double Amanomuraku_tick = 0.0;
 		public double AstraBook_tick = 0;
+		public double Avalon_number = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -196,6 +198,7 @@ public class PalworldModVariables {
 			nbt.putDouble("timeBuffer", timeBuffer);
 			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
 			nbt.putDouble("AstraBook_tick", AstraBook_tick);
+			nbt.putDouble("Avalon_number", Avalon_number);
 			return nbt;
 		}
 
@@ -242,6 +245,7 @@ public class PalworldModVariables {
 			timeBuffer = nbt.getDouble("timeBuffer");
 			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
 			AstraBook_tick = nbt.getDouble("AstraBook_tick");
+			Avalon_number = nbt.getDouble("Avalon_number");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
