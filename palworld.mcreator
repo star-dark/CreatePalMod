@@ -4652,19 +4652,15 @@
       "~CUSTOM:MinerPickLv30"
     ],
     "ITEMS:minecraft:axes": [
-      "~CUSTOM:AstraBook",
       "~CUSTOM:Heaven",
       "~CUSTOM:AvalonOfMerlin",
-      "~CUSTOM:Bangobu",
+      "~CUSTOM:AstraBook",
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
-      "~CUSTOM:AstraBook",
       "~CUSTOM:Heaven",
       "~CUSTOM:AvalonOfMerlin",
-      "~CUSTOM:Amanomurakumonotsurugi",
-      "~CUSTOM:Balmung",
-      "~CUSTOM:Skyshatter",
+      "~CUSTOM:AstraBook",
       "~CUSTOM:BurfSword"
     ]
   },

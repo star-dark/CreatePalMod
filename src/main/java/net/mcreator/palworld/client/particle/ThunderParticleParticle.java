@@ -35,8 +35,9 @@ public class ThunderParticleParticle extends TextureSheetParticle {
 	protected ThunderParticleParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.2f, 0.2f);
-		this.lifetime = 7;
+		this.setSize(1.5f, 3f);
+		this.quadSize *= 15f;
+		this.lifetime = 30;
 		this.gravity = 0f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;

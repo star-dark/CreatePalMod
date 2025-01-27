@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.palworld.network.OpenQuestGUIMessage;
+import net.mcreator.palworld.network.DoubleJumpMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class PalworldModKeyMappings {

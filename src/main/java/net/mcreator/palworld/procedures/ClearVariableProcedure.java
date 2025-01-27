@@ -103,21 +103,6 @@ public class ClearVariableProcedure {
 			_vars.ReflectionSkillPointUp = 0;
 			_vars.syncPlayerVariables(entity);
 		}
-		{
-			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.DoubleJumpSkillPoint = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.HoverSkillPoint = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.timeBuffer = 0;
-			_vars.syncPlayerVariables(entity);
-		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
 	}

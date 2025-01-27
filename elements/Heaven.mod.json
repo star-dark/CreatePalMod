@@ -2,18 +2,18 @@
   "_fv": 69,
   "_type": "tool",
   "definition": {
-    "toolType": "Axe",
-    "renderType": 1,
+    "toolType": "MultiTool",
+    "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "hammer_gravity",
-    "customModelName": "hammer_gravity:default",
+    "texture": "staff_1",
+    "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "묠니르",
+    "name": "천 국",
     "specialInformation": {
       "fixedValue": [
-        "자격을 갖추었다면 토르의 권능을 사용할 수 있다.",
+        "천국으로 갈 수 있는 지팡이.",
         "",
-        "우클릭으로 주변 적들에게 번개를 내리친다."
+        "하늘을 보고 우클릭 시, 천국에 갈 수 있다."
       ]
     },
     "creativeTabs": [
@@ -21,25 +21,25 @@
         "value": "COMBAT"
       }
     ],
-    "efficiency": 7.0,
+    "efficiency": 0.0,
     "attackSpeed": 1.0,
-    "enchantability": 2,
-    "damageVsEntity": 4.0,
+    "enchantability": 0,
+    "damageVsEntity": 2.0,
     "usageCount": 100,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [],
     "immuneToFire": false,
-    "blockDropsTier": "NETHERITE",
+    "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": true,
+    "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "MjolnirEffect"
+      "name": "HeavenEffect"
     },
     "onRightClickedOnBlock": {
-      "name": "MjolnirEffect"
+      "name": "HeavenEffect"
     }
   }
 }
