@@ -26,6 +26,7 @@ import net.mcreator.palworld.item.MinerPickLv15Item;
 import net.mcreator.palworld.item.ManwonItem;
 import net.mcreator.palworld.item.MagicWandItem;
 import net.mcreator.palworld.item.LevelWandItem;
+import net.mcreator.palworld.item.HeavenItem;
 import net.mcreator.palworld.item.GloryGoldGhostItem;
 import net.mcreator.palworld.item.FishTunaItem;
 import net.mcreator.palworld.item.FishTambaquiItem;
@@ -120,6 +121,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> GLORY_GOLD_GHOST = REGISTRY.register("glory_gold_ghost", GloryGoldGhostItem::new);
 	public static final DeferredItem<Item> ASTRA_BOOK = REGISTRY.register("astra_book", AstraBookItem::new);
 	public static final DeferredItem<Item> AVALON_OF_MERLIN = REGISTRY.register("avalon_of_merlin", AvalonOfMerlinItem::new);
+	public static final DeferredItem<Item> HEAVEN = REGISTRY.register("heaven", HeavenItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

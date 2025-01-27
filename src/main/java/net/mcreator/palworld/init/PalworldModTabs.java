@@ -34,6 +34,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.GLORY_GOLD_GHOST.get());
 			tabData.accept(PalworldModItems.ASTRA_BOOK.get());
 			tabData.accept(PalworldModItems.AVALON_OF_MERLIN.get());
+			tabData.accept(PalworldModItems.HEAVEN.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
