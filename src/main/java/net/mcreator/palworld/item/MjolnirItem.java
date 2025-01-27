@@ -1,10 +1,14 @@
 
 package net.mcreator.palworld.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -16,8 +20,11 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.palworld.procedures.MjolnirEffectProcedure;
+
+import java.util.List;
 
 public class MjolnirItem extends AxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -61,6 +68,15 @@ public class MjolnirItem extends AxeItem {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		MjolnirEffectProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.literal("\uC790\uACA9\uC744 \uAC16\uCD94\uC5C8\uB2E4\uBA74 \uD1A0\uB974\uC758 \uAD8C\uB2A5\uC744 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB2E4."));
+		list.add(Component.literal(""));
+		list.add(Component.literal("\uC6B0\uD074\uB9AD\uC73C\uB85C \uC8FC\uBCC0 \uC801\uB4E4\uC5D0\uAC8C \uBC88\uAC1C\uB97C \uB0B4\uB9AC\uCE5C\uB2E4."));
 	}
 
 	@Override
