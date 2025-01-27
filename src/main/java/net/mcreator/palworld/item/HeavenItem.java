@@ -3,6 +3,8 @@ package net.mcreator.palworld.item;
 
 import net.neoforged.neoforge.common.ItemAbility;
 import net.neoforged.neoforge.common.ItemAbilities;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Block;
@@ -10,6 +12,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
@@ -24,9 +27,12 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.procedures.HeavenEffectProcedure;
+
+import java.util.List;
 
 public class HeavenItem extends TieredItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -99,6 +105,13 @@ public class HeavenItem extends TieredItem {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		HeavenEffectProcedure.execute(entity, ar.getObject());
 		return ar;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.literal("\uCC9C\uAD6D : \uD558\uB298\uC744 \uBCF4\uACE0 \uC6B0\uD074\uB9AD \uC2DC, \uCC9C\uAD6D\uC5D0 \uAC08 \uC218 \uC788\uB2E4."));
 	}
 
 	@Override

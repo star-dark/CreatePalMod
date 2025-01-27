@@ -10,7 +10,9 @@
     "blockingModelName": "Normal blocking",
     "name": "Mjolnir",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "묠니르 : 우클릭으로 주변 적들에게 번개를 내리친다."
+      ]
     },
     "creativeTabs": [
       {
@@ -30,7 +32,7 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
+    "damageOnCrafting": true,
     "onRightClickedInAir": {
       "name": "MjolnirEffect"
     },

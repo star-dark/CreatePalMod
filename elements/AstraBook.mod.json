@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "tool",
   "definition": {
-    "toolType": "Special",
+    "toolType": "MultiTool",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "minecraft:enchanted_book",
@@ -10,12 +10,11 @@
     "blockingModelName": "Normal blocking",
     "name": "Astra Book",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "아스트라북 : 우클릭시 범위내의 모든 생물의 움직임을 제한한다. 이후 5초간 주변 적들에게 데미지를 준다."
+      ]
     },
     "creativeTabs": [
-      {
-        "value": "TOOLS"
-      },
       {
         "value": "COMBAT"
       }

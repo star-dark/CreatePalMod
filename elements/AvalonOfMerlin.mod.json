@@ -10,7 +10,9 @@
     "blockingModelName": "Normal blocking",
     "name": "Avalon Of Merlin",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "아발론 : 주변 몹에게 좌클릭으로 디버프를 부여하고, 주변 플레이어에게 우클릭으로 버프를 부여한다."
+      ]
     },
     "creativeTabs": [
       {
@@ -29,7 +31,7 @@
     "immuneToFire": false,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
       "name": "AvalonOfMerlinEffect2"

@@ -3,6 +3,8 @@ package net.mcreator.palworld.item;
 
 import net.neoforged.neoforge.common.ItemAbility;
 import net.neoforged.neoforge.common.ItemAbilities;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Block;
@@ -10,6 +12,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
@@ -24,10 +27,13 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.procedures.AvalonOfMerlinEffectProcedure;
 import net.mcreator.palworld.procedures.AvalonOfMerlinEffect2Procedure;
+
+import java.util.List;
 
 public class AvalonOfMerlinItem extends TieredItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -101,6 +107,29 @@ public class AvalonOfMerlinItem extends TieredItem {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		AvalonOfMerlinEffect2Procedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
+	}
+
+	@Override
+	public boolean hasCraftingRemainingItem(ItemStack stack) {
+		return true;
+	}
+
+	@Override
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+		return new ItemStack(this);
+	}
+
+	@Override
+	public boolean isRepairable(ItemStack itemstack) {
+		return false;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.literal(
+				"\uC544\uBC1C\uB860 : \uC8FC\uBCC0 \uBAB9\uC5D0\uAC8C \uC88C\uD074\uB9AD\uC73C\uB85C \uB514\uBC84\uD504\uB97C \uBD80\uC5EC\uD558\uACE0, \uC8FC\uBCC0 \uD50C\uB808\uC774\uC5B4\uC5D0\uAC8C \uC6B0\uD074\uB9AD\uC73C\uB85C \uBC84\uD504\uB97C \uBD80\uC5EC\uD55C\uB2E4."));
 	}
 
 	@Override

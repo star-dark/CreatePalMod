@@ -10,7 +10,9 @@
     "blockingModelName": "Normal blocking",
     "name": "Heaven",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "천국 : 하늘을 보고 우클릭 시, 천국에 갈 수 있다."
+      ]
     },
     "creativeTabs": [
       {
