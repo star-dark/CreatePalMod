@@ -29,12 +29,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "헤파이토스가 제작한 신들의 방패.",
-        "",
-        "적들과 투사체를 밀쳐낸다.",
-        "우클릭으로 on/off를 할 수 있으며, off시 사용시간이 충전된다."
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
