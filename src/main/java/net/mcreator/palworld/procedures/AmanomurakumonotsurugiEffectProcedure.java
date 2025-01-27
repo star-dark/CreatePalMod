@@ -18,11 +18,13 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.palworld.network.PalworldModVariables;
+import net.mcreator.palworld.init.PalworldModParticleTypes;
 import net.mcreator.palworld.init.PalworldModMobEffects;
 import net.mcreator.palworld.PalworldMod;
 
