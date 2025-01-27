@@ -12,6 +12,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.mcreator.palworld.client.renderer.QueenRenderer;
 import net.mcreator.palworld.client.renderer.PigRenderer;
 import net.mcreator.palworld.client.renderer.MinerJobNPCRenderer;
+import net.mcreator.palworld.client.renderer.LazerRenderer;
 import net.mcreator.palworld.client.renderer.KingRenderer;
 import net.mcreator.palworld.client.renderer.FisherJobNPCRenderer;
 import net.mcreator.palworld.client.renderer.FarmerJobNPCRenderer;
@@ -26,5 +27,6 @@ public class PalworldModEntityRenderers {
 		event.registerEntityRenderer(PalworldModEntities.KING.get(), KingRenderer::new);
 		event.registerEntityRenderer(PalworldModEntities.PIG.get(), PigRenderer::new);
 		event.registerEntityRenderer(PalworldModEntities.QUEEN.get(), QueenRenderer::new);
+		event.registerEntityRenderer(PalworldModEntities.LAZER.get(), LazerRenderer::new);
 	}
 }

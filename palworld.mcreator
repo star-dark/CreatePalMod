@@ -4091,6 +4091,21 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "Lazer",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lazer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/renderer/LazerRenderer.java",
+          "src/main/resources/data/palworld/neoforge/biome_modifier/lazer_biome_modifier.json",
+          "src/main/java/net/mcreator/palworld/entity/model/LazerModel.java",
+          "src/main/java/net/mcreator/palworld/entity/LazerEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4456,6 +4471,7 @@
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
       "item.palworld.dainsleif": "Dainsleif",
+      "entity.palworld.lazer": "Lazer",
       "gui.palworld.fisher_sell_gui.label_50weon2": "70원",
       "gui.palworld.fisher_sell_gui.label_50weon1": "70원",
       "gui.palworld.farmer_sell_gui.label_1weon": "개 당 1원",
@@ -4554,6 +4570,7 @@
       "gui.palworld.quest_provide_gui.button_surag": "수락",
       "gui.palworld.farmer_skill_tree.label_nameun_pointeu": "남은 포인트 :",
       "gui.palworld.miner_sell_gui.label_50weon": "5원",
+      "item.palworld.lazer_spawn_egg": "Lazer Spawn Egg",
       "item.palworld.fish_synodontis": "Fish Synodontis",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
