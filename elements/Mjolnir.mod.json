@@ -5,16 +5,12 @@
     "toolType": "Axe",
     "renderType": 1,
     "blockingRenderType": 0,
-    "texture": "hammer_gravity",
-    "customModelName": "hammer_gravity:default",
+    "texture": "hammer_great",
+    "customModelName": "hammer_stormlander:default",
     "blockingModelName": "Normal blocking",
-    "name": "묠니르",
+    "name": "Mjolnir",
     "specialInformation": {
-      "fixedValue": [
-        "자격을 갖추었다면 토르의 권능을 사용할 수 있다.",
-        "",
-        "우클릭으로 주변 적들에게 번개를 내리친다."
-      ]
+      "fixedValue": []
     },
     "creativeTabs": [
       {
@@ -34,7 +30,7 @@
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": true,
+    "damageOnCrafting": false,
     "onRightClickedInAir": {
       "name": "MjolnirEffect"
     },

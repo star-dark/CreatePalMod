@@ -1338,7 +1338,7 @@
           }
         ]
       },
-      "path": "~/Weapon/BurfSword"
+      "path": "~/Sword"
     },
     {
       "name": "ClearVariable",
@@ -1371,7 +1371,7 @@
           "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
         ]
       },
-      "path": "~/Weapon"
+      "path": "~/Sword"
     },
     {
       "name": "MagicWand",
@@ -3124,13 +3124,13 @@
           }
         ]
       },
-      "path": "~/Weapon/Dainsleif"
+      "path": "~/Sword"
     },
     {
       "name": "Skyshatter",
       "type": "tool",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "skyshatter",
       "metadata": {
         "files": [
@@ -3138,7 +3138,7 @@
           "src/main/java/net/mcreator/palworld/item/SkyshatterItem.java"
         ]
       },
-      "path": "~/Weapon"
+      "path": "~/Sword"
     },
     {
       "name": "DainsleifEffect",
@@ -3157,7 +3157,7 @@
           }
         ]
       },
-      "path": "~/Weapon/Dainsleif"
+      "path": "~/Sword"
     },
     {
       "name": "SkyshatterEffect2",
@@ -3184,7 +3184,7 @@
           }
         ]
       },
-      "path": "~/Weapon/Skyshatter"
+      "path": "~/Sword"
     },
     {
       "name": "SkyshatterEffect",
@@ -3223,7 +3223,7 @@
           }
         ]
       },
-      "path": "~/Weapon/Skyshatter"
+      "path": "~/Sword"
     },
     {
       "name": "Mjolnir",
@@ -3237,13 +3237,13 @@
           "src/main/resources/assets/palworld/models/item/mjolnir.json"
         ]
       },
-      "path": "~/Weapon"
+      "path": "~/Sword"
     },
     {
       "name": "Dainsleif",
       "type": "tool",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "dainsleif",
       "metadata": {
         "files": [
@@ -3251,7 +3251,7 @@
           "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
         ]
       },
-      "path": "~/Weapon"
+      "path": "~/Sword"
     },
     {
       "name": "MjolnirEffect",
@@ -3290,7 +3290,7 @@
           }
         ]
       },
-      "path": "~/Weapon/Mjolnir"
+      "path": "~/Sword"
     },
     {
       "name": "BalmungEffect",
@@ -3313,13 +3313,13 @@
           }
         ]
       },
-      "path": "~/Weapon/Balmung"
+      "path": "~/Sword"
     },
     {
       "name": "Balmung",
       "type": "tool",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "balmung",
       "metadata": {
         "files": [
@@ -3327,7 +3327,7 @@
           "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
         ]
       },
-      "path": "~/Weapon"
+      "path": "~/Sword"
     },
     {
       "name": "RangeUpToolTip",
@@ -3596,19 +3596,6 @@
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
-      "name": "DoubleJump",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "double_jump",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/network/DoubleJumpMessage.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
       "name": "HornPlayUp",
       "type": "procedure",
       "compiles": true,
@@ -3706,288 +3693,7 @@
           "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
         ]
       },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "Bangobu",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "bangobu",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/bangobu.json",
-          "src/main/java/net/mcreator/palworld/item/BangobuItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "ThunderParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thunder_particle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/client/particle/ThunderParticleParticle.java",
-          "src/main/resources/assets/palworld/particles/thunder_particle.json"
-        ]
-      },
-      "path": "~/Weapon/Amanomurakumonotsurugi"
-    },
-    {
-      "name": "Amanomurakumonotsurugi",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "amanomurakumonotsurugi",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json",
-          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "BangobuEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bangobu_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BangobuEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Weapon/Bangobu"
-    },
-    {
-      "name": "AegisEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AegisEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "AegisEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AegisEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "ThunderPotion",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thunder_potion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
-        ]
-      },
-      "path": "~/Weapon/Amanomurakumonotsurugi"
-    },
-    {
-      "name": "AegisCool",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_cool",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
-        ]
-      },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "Aegis",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/AegisItem.java",
-          "src/main/resources/assets/palworld/models/item/aegis.json"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "DoubleJumpUp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "double_jump_up",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DoubleJumpUpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "HoverParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hover_particle",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/particles/hover_particle.json",
-          "src/main/java/net/mcreator/palworld/client/particle/HoverParticleParticle.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "Aa",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aa",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "HoverAtivate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hover_ativate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/HoverAtivateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "AmanomurakumonotsurugiEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amanomurakumonotsurugi_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/Amanomurakumonotsurugi"
+      "path": "~/Sword"
     },
     {
       "name": "AmanomurakumonotsurugiEffect",
@@ -4026,7 +3732,7 @@
           }
         ]
       },
-      "path": "~/Weapon/Amanomurakumonotsurugi"
+      "path": "~/Sword"
     },
     {
       "name": "Bangobu",
@@ -4072,58 +3778,13 @@
     },
     {
       "name": "BangobuEffect",
-      "name": "GloryGoldGhostEffect",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glory_gold_ghost_effect",
+      "registry_name": "bangobu_effect",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/GloryGoldGhostEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/GloryGoldGhost"
-    },
-    {
-      "name": "GloryGoldGhost",
-      "type": "item",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "glory_gold_ghost",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/aegis.json",
-          "src/main/java/net/mcreator/palworld/item/AegisItem.java"
-          "src/main/resources/assets/palworld/models/item/glory_gold_ghost.json",
-          "src/main/java/net/mcreator/palworld/item/GloryGoldGhostItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "GloryGoldGhostEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glory_gold_ghost_effect_2",
-      "metadata": {
-        "return_type": "number",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/GloryGoldGhostEffect2Procedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/BangobuEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -4132,17 +3793,36 @@
           }
         ]
       },
-      "path": "~/Weapon/GloryGoldGhost"
+      "path": "~/Sword"
     },
     {
-      "name": "AstraBookEffect2",
+      "name": "AegisEffect2",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "astra_book_effect_2",
+      "registry_name": "aegis_effect_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AstraBookEffect2Procedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/AegisEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AegisEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AegisEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -4167,7 +3847,138 @@
           }
         ]
       },
-      "path": "~/Weapon/AstraBook"
+      "path": "~/Sword"
+    },
+    {
+      "name": "ThunderPotion",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AegisCool",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_cool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Aegis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/aegis.json",
+          "src/main/java/net/mcreator/palworld/item/AegisItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "DoubleJumpUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DoubleJumpUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "HoverParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hover_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/particles/hover_particle.json",
+          "src/main/java/net/mcreator/palworld/client/particle/HoverParticleParticle.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "HoverAtivate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hover_ativate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HoverAtivateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "HoverState",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hover_state",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HoverStateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
       "name": "HoverUp",
@@ -4178,14 +3989,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HoverUpProcedure.java"
-      "name": "AstraBookEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "astra_book_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AstraBookEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -4219,64 +4022,6 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/DoubleJumpToolTipProcedure.java"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/AstraBook"
-    },
-    {
-      "name": "AstraBook",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "astra_book",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/astra_book.json",
-          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "AvalonOfMerlin",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avalon_of_merlin",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/avalon_of_merlin.json",
-          "src/main/java/net/mcreator/palworld/item/AvalonOfMerlinItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "AvalonOfMerlinEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avalon_of_merlin_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AvalonOfMerlinEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -4297,24 +4042,6 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HoverToolTipProcedure.java"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/AvalonOfMerlin"
-    },
-    {
-      "name": "AvalonOfMerlinEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avalon_of_merlin_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AvalonOfMerlinEffect2Procedure.java"
         ],
         "dependencies": [
           {
@@ -4335,50 +4062,6 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HoverPointProcedure.java"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/AvalonOfMerlin"
-    },
-    {
-      "name": "Heaven",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heaven",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/HeavenItem.java",
-          "src/main/resources/assets/palworld/models/item/heaven.json"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "HeavenEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heaven_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/HeavenEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -4399,24 +4082,6 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/DoubleJumpPointProcedure.java"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Weapon/Heaven"
-    },
-    {
-      "name": "AvalonOfMerlinEffect3",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avalon_of_merlin_effect_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AvalonOfMerlinEffect3Procedure.java"
         ],
         "dependencies": [
           {
@@ -4426,104 +4091,6 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/AvalonOfMerlin"
-    },
-    {
-      "name": "AvalonOfMerlinEffect4",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avalon_of_merlin_effect_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AvalonOfMerlinEffect4Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/AvalonOfMerlin"
-    },
-    {
-      "name": "AvalonOfMerlinEffect5",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avalon_of_merlin_effect_5",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AvalonOfMerlinEffect5Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/AvalonOfMerlin"
     }
   ],
   "variable_elements": [
@@ -4768,21 +4335,9 @@
       "value": "0.0"
     },
     {
-      "name": "Amanomuraku_tick",
+      "name": "HoverSkillPoint",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
-    },
-    {
-      "name": "AstraBook_tick",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "Avalon_number",
-      "type": "number",
-      "scope": "player_lifetime",
       "value": "0"
     }
   ],
@@ -4794,26 +4349,18 @@
       "~CUSTOM:FishRodLv15"
     ],
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:Heaven",
-      "~CUSTOM:AvalonOfMerlin",
-      "~CUSTOM:AstraBook",
       "~CUSTOM:MinerPickLv1",
       "~CUSTOM:MinerPickLv15",
       "~CUSTOM:MinerPickLv30"
     ],
     "ITEMS:minecraft:axes": [
-      "~CUSTOM:AstraBook",
-      "~CUSTOM:Heaven",
-      "~CUSTOM:AvalonOfMerlin",
       "~CUSTOM:Bangobu",
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
-      "~CUSTOM:AstraBook",
-      "~CUSTOM:Heaven",
-      "~CUSTOM:AvalonOfMerlin",
       "~CUSTOM:Amanomurakumonotsurugi",
       "~CUSTOM:Balmung",
+      "~CUSTOM:Dainsleif",
       "~CUSTOM:Skyshatter",
       "~CUSTOM:BurfSword"
     ]
@@ -4826,6 +4373,7 @@
       "gui.palworld.miner_sell_gui.button_panmae": "모두판매",
       "effect.palworld.aegis_cool": "Aegis Cool",
       "item.palworld.miner_job_npc_spawn_egg": "Miner Job NPC Spawn Egg",
+      "gui.palworld.farmer_skill_tree.label_deobeuljeompeu": "더블점프",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
       "item.palworld.ore_emerald": "Ore Emerald",
@@ -4838,7 +4386,6 @@
       "gui.palworld.farmer_sell_gui.label_33weon2": "33원",
       "item.palworld.skyshatter": "Skyshatter",
       "item.palworld.fish_perch": "Fish Perch",
-      "item.palworld.avalon_of_merlin": "아발론",
       "item.palworld.ore_lapis_lazuli": "Ore Lapis Lazuli",
       "gui.palworld.fisher_sell_gui.button_panmae9": "모두판매",
       "gui.palworld.quest_tap.label_kweseuteu": "퀘스트",
@@ -4849,7 +4396,10 @@
       "gui.palworld.fisher_sell_gui.button_panmae6": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae3": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae4": "모두판매",
+<<<<<<< HEAD
       "item.palworld.astra_book": "아스트라 북",
+=======
+>>>>>>> parent of 9f4e9e1 (conflict 해결 (확인필요))
       "gui.palworld.fisher_sell_gui.button_panmae1": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae2": "모두판매",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
@@ -4897,7 +4447,7 @@
       "gui.palworld.farmer_sell_gui.label_33weon": "33원",
       "gui.palworld.farmer_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_skill_tree.label_25lv": "25Lv",
-      "item.palworld.mjolnir": "묠니르",
+      "item.palworld.mjolnir": "Mjolnir",
       "gui.palworld.fisher_sell_gui.button_panmae": "모두판매",
       "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "gui.palworld.user_gui.label_wanryo1": "완료✅",
@@ -4930,7 +4480,7 @@
       "gui.palworld.job_npc_sell_gui.button_gyohwan2": "교환",
       "gui.palworld.job_npc_sell_gui.button_gyohwan3": "교환",
       "gui.palworld.fisher_sell_gui.label_70weon2": "100원",
-      "item.palworld.heaven": "천 국",
+      "gui.palworld.farmer_skill_tree.label_1": "/ 1",
       "gui.palworld.sub_quest_provide_gui.button_surag": "수락",
       "gui.palworld.job_npc_sell_gui.button_gyohwan1": "교환",
       "gui.palworld.miner_sell_gui.label_10weon1": "개 당 10원",
@@ -4967,7 +4517,7 @@
       "gui.palworld.miner_sell_gui.label_30weon": "3원",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.label_5weon": "개 당 5원",
-      "item.palworld.aegis": "아이기스의 방패",
+      "item.palworld.aegis": "Aegis",
       "gui.palworld.user_gui.label_don": "돈",
       "gui.palworld.fisher_sell_gui.button_cwiso": "취소",
       "gui.palworld.sub_quest_complete.button_surag": "수락",
@@ -4976,7 +4526,6 @@
       "gui.palworld.quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "key.palworld.double_jump_key": "Double Jump",
       "gui.palworld.farmer_skill_tree.label_11": "/ 1",
-      "item.palworld.glory_gold_ghost": "Glory Gold Ghost",
       "gui.palworld.farmer_skill_tree.label_10": "/10",
       "item.palworld.fish_catfish": "Fish Catfish",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
@@ -5012,7 +4561,6 @@
       "item.palworld.fish_synodontis": "Fish Synodontis",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
-      "key.palworld.double_jump": "Double Jump",
       "gui.palworld.farmer_sell_gui.button_modu_panmae1": "모두판매",
       "gui.palworld.farmer_sell_gui.button_modu_panmae2": "모두판매",
       "gui.palworld.farmer_skill_tree.tooltip_eumsigseobcwisi_heubsuhoegdeug": "음식섭취시 흡수획득",
@@ -5022,6 +4570,7 @@
       "gui.palworld.sub_quest_provide_gui.label_bosang": "보상  :",
       "item.palworld.level_wand": "Magic Wand",
       "effect.palworld.thunder_potion": "Thunder Potion",
+      "gui.palworld.farmer_skill_tree.label_eodumyi_jasig": "어둠의 자식",
       "item.palworld.fish_herring": "Fish Herring",
       "gui.palworld.farmer_skill_tree.label_20lv": "20Lv",
       "gui.palworld.user_gui.label_seukilteuri": "스킬트리",
@@ -5081,57 +4630,6 @@
       {
         "name": "Sword",
         "children": []
-        "name": "Weapon",
-        "children": [
-          {
-            "name": "BurfSword",
-            "children": []
-          },
-          {
-            "name": "Dainsleif",
-            "children": []
-          },
-          {
-            "name": "Skyshatter",
-            "children": []
-          },
-          {
-            "name": "Mjolnir",
-            "children": []
-          },
-          {
-            "name": "Balmung",
-            "children": []
-          },
-          {
-            "name": "Aegis",
-            "children": []
-          },
-          {
-            "name": "Bangobu",
-            "children": []
-          },
-          {
-            "name": "Amanomurakumonotsurugi",
-            "children": []
-          },
-          {
-            "name": "GloryGoldGhost",
-            "children": []
-          },
-          {
-            "name": "AstraBook",
-            "children": []
-          },
-          {
-            "name": "AvalonOfMerlin",
-            "children": []
-          },
-          {
-            "name": "Heaven",
-            "children": []
-          }
-        ]
       },
       {
         "name": "QuestNPC",

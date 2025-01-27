@@ -99,8 +99,6 @@ public class PalworldModVariables {
 			clone.BlinkVar = original.BlinkVar;
 			clone.timeBuffer = original.timeBuffer;
 			clone.HoverSkillPoint = original.HoverSkillPoint;
-			clone.Amanomuraku_tick = original.Amanomuraku_tick;
-			clone.AstraBook_tick = original.AstraBook_tick;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -111,7 +109,6 @@ public class PalworldModVariables {
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
 				clone.aegis_tick = original.aegis_tick;
 				clone.aegis_bool = original.aegis_bool;
-				clone.Avalon_number = original.Avalon_number;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -290,10 +287,6 @@ public class PalworldModVariables {
 		public boolean BlinkVar = false;
 		public double timeBuffer = 0.0;
 		public double HoverSkillPoint = 0;
-		public double timeBuffer = 0;
-		public double Amanomuraku_tick = 0.0;
-		public double AstraBook_tick = 0;
-		public double Avalon_number = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -338,9 +331,6 @@ public class PalworldModVariables {
 			nbt.putBoolean("BlinkVar", BlinkVar);
 			nbt.putDouble("timeBuffer", timeBuffer);
 			nbt.putDouble("HoverSkillPoint", HoverSkillPoint);
-			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
-			nbt.putDouble("AstraBook_tick", AstraBook_tick);
-			nbt.putDouble("Avalon_number", Avalon_number);
 			return nbt;
 		}
 
@@ -386,9 +376,6 @@ public class PalworldModVariables {
 			BlinkVar = nbt.getBoolean("BlinkVar");
 			timeBuffer = nbt.getDouble("timeBuffer");
 			HoverSkillPoint = nbt.getDouble("HoverSkillPoint");
-			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
-			AstraBook_tick = nbt.getDouble("AstraBook_tick");
-			Avalon_number = nbt.getDouble("Avalon_number");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

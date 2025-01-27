@@ -15,7 +15,7 @@ import net.mcreator.palworld.init.PalworldModParticleTypes;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class AaProcedure {
+public class HoverStateProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
 		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
@@ -29,7 +29,7 @@ public class AaProcedure {
 		if (entity == null)
 			return;
 		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).BlinkVar) {
-			if (world.dayTime() <= entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer + 40) {
+			if (world.dayTime() <= entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer + 20) {
 				world.addParticle((SimpleParticleType) (PalworldModParticleTypes.HOVER_PARTICLE.get()), x, y, z, 0, 0, 0);
 			} else {
 				entity.setNoGravity(false);
