@@ -111,7 +111,9 @@ public class HeavenItem extends TieredItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\uCC9C\uAD6D : \uD558\uB298\uC744 \uBCF4\uACE0 \uC6B0\uD074\uB9AD \uC2DC, \uCC9C\uAD6D\uC5D0 \uAC08 \uC218 \uC788\uB2E4."));
+		list.add(Component.literal("\uCC9C\uAD6D\uC73C\uB85C \uAC08 \uC218 \uC788\uB294 \uC9C0\uD321\uC774."));
+		list.add(Component.literal(""));
+		list.add(Component.literal("\uD558\uB298\uC744 \uBCF4\uACE0 \uC6B0\uD074\uB9AD \uC2DC, \uCC9C\uAD6D\uC5D0 \uAC08 \uC218 \uC788\uB2E4."));
 	}
 
 	@Override

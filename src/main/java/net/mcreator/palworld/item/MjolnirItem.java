@@ -74,7 +74,9 @@ public class MjolnirItem extends AxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\uBB20\uB2C8\uB974 : \uC6B0\uD074\uB9AD\uC73C\uB85C \uC8FC\uBCC0 \uC801\uB4E4\uC5D0\uAC8C \uBC88\uAC1C\uB97C \uB0B4\uB9AC\uCE5C\uB2E4."));
+		list.add(Component.literal("\uC790\uACA9\uC744 \uAC16\uCD94\uC5C8\uB2E4\uBA74 \uD1A0\uB974\uC758 \uAD8C\uB2A5\uC744 \uC0AC\uC6A9\uD560 \uC218 \uC788\uB2E4."));
+		list.add(Component.literal(""));
+		list.add(Component.literal("\uC6B0\uD074\uB9AD\uC73C\uB85C \uC8FC\uBCC0 \uC801\uB4E4\uC5D0\uAC8C \uBC88\uAC1C\uB97C \uB0B4\uB9AC\uCE5C\uB2E4."));
 	}
 
 	@Override

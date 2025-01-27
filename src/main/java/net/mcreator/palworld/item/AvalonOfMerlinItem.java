@@ -128,8 +128,10 @@ public class AvalonOfMerlinItem extends TieredItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal(
-				"\uC544\uBC1C\uB860 : \uC8FC\uBCC0 \uBAB9\uC5D0\uAC8C \uC88C\uD074\uB9AD\uC73C\uB85C \uB514\uBC84\uD504\uB97C \uBD80\uC5EC\uD558\uACE0, \uC8FC\uBCC0 \uD50C\uB808\uC774\uC5B4\uC5D0\uAC8C \uC6B0\uD074\uB9AD\uC73C\uB85C \uBC84\uD504\uB97C \uBD80\uC5EC\uD55C\uB2E4."));
+		list.add(Component.literal("\uB099\uC6D0\uC744 \uB73B\uD558\uB294 \uBA40\uB9B0\uC758 \uC9C0\uD321\uC774."));
+		list.add(Component.literal(""));
+		list.add(Component.literal("\uC8FC\uBCC0 \uBAB9\uC5D0\uAC8C \uC88C\uD074\uB9AD\uC73C\uB85C \uB514\uBC84\uD504\uB97C \uBD80\uC5EC\uD558\uACE0,"));
+		list.add(Component.literal("\uC8FC\uBCC0 \uD50C\uB808\uC774\uC5B4\uC5D0\uAC8C \uC6B0\uD074\uB9AD\uC73C\uB85C \uBC84\uD504\uB97C \uBD80\uC5EC\uD55C\uB2E4."));
 	}
 
 	@Override

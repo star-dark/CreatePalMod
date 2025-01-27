@@ -8,10 +8,12 @@
     "texture": "staff_1",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Heaven",
+    "name": "천 국",
     "specialInformation": {
       "fixedValue": [
-        "천국 : 하늘을 보고 우클릭 시, 천국에 갈 수 있다."
+        "천국으로 갈 수 있는 지팡이.",
+        "",
+        "하늘을 보고 우클릭 시, 천국에 갈 수 있다."
       ]
     },
     "creativeTabs": [

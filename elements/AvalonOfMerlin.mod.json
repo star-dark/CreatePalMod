@@ -8,10 +8,13 @@
     "texture": "amethyst-staff",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Avalon Of Merlin",
+    "name": "아발론",
     "specialInformation": {
       "fixedValue": [
-        "아발론 : 주변 몹에게 좌클릭으로 디버프를 부여하고, 주변 플레이어에게 우클릭으로 버프를 부여한다."
+        "낙원을 뜻하는 멀린의 지팡이.",
+        "",
+        "주변 몹에게 좌클릭으로 디버프를 부여하고,",
+        "주변 플레이어에게 우클릭으로 버프를 부여한다."
       ]
     },
     "creativeTabs": [

@@ -8,10 +8,13 @@
     "texture": "evil-book",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Astra Book",
+    "name": "아스트라 북",
     "specialInformation": {
       "fixedValue": [
-        "아스트라북 : 우클릭시 범위내의 모든 생물의 움직임을 제한한다. 이후 5초간 주변 적들에게 데미지를 준다."
+        "별의 주술을 담은 책.",
+        "",
+        "우클릭시 범위내의 모든 생물의 움직임을 제한한다.",
+        "이후 3초간 주변 적들에게 데미지를 준다."
       ]
     },
     "creativeTabs": [

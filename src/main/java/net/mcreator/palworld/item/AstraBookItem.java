@@ -109,7 +109,9 @@ public class AstraBookItem extends TieredItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal(
-				"\uC544\uC2A4\uD2B8\uB77C\uBD81 : \uC6B0\uD074\uB9AD\uC2DC \uBC94\uC704\uB0B4\uC758 \uBAA8\uB4E0 \uC0DD\uBB3C\uC758 \uC6C0\uC9C1\uC784\uC744 \uC81C\uD55C\uD55C\uB2E4. \uC774\uD6C4 5\uCD08\uAC04 \uC8FC\uBCC0 \uC801\uB4E4\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."));
+		list.add(Component.literal("\uBCC4\uC758 \uC8FC\uC220\uC744 \uB2F4\uC740 \uCC45."));
+		list.add(Component.literal(""));
+		list.add(Component.literal("\uC6B0\uD074\uB9AD\uC2DC \uBC94\uC704\uB0B4\uC758 \uBAA8\uB4E0 \uC0DD\uBB3C\uC758 \uC6C0\uC9C1\uC784\uC744 \uC81C\uD55C\uD55C\uB2E4."));
+		list.add(Component.literal("\uC774\uD6C4 3\uCD08\uAC04 \uC8FC\uBCC0 \uC801\uB4E4\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."));
 	}
 }

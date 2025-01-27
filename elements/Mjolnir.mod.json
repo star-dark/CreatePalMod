@@ -8,10 +8,12 @@
     "texture": "hammer_gravity",
     "customModelName": "hammer_gravity:default",
     "blockingModelName": "Normal blocking",
-    "name": "Mjolnir",
+    "name": "묠니르",
     "specialInformation": {
       "fixedValue": [
-        "묠니르 : 우클릭으로 주변 적들에게 번개를 내리친다."
+        "자격을 갖추었다면 토르의 권능을 사용할 수 있다.",
+        "",
+        "우클릭으로 주변 적들에게 번개를 내리친다."
       ]
     },
     "creativeTabs": [
