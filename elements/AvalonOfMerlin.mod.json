@@ -42,9 +42,6 @@
     "onRightClickedOnBlock": {
       "name": "AvalonOfMerlinEffect2"
     },
-    "onEntityHitWith": {
-      "name": "AvalonOfMerlinEffect"
-    },
     "onEntitySwing": {
       "name": "AvalonOfMerlinEffect"
     }

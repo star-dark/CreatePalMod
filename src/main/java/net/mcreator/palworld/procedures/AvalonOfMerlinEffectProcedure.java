@@ -50,6 +50,10 @@ public class AvalonOfMerlinEffectProcedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 80, 10, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uC18D\uBC15"), false);
 						} else if (num == 2) {
 							n = 3;
 							d = 2;
@@ -60,6 +64,10 @@ public class AvalonOfMerlinEffectProcedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 2, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uC911\uB3C5"), false);
 						} else if (num == 3) {
 							n = 4;
 							d = 1;
@@ -70,6 +78,10 @@ public class AvalonOfMerlinEffectProcedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 3, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uC57D\uD654"), false);
 						} else if (num == 4) {
 							n = 5;
 							d = 2;
@@ -79,6 +91,10 @@ public class AvalonOfMerlinEffectProcedure {
 								angle = angle + 360 / (k * 0.33);
 							}
 							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level);
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uB370\uBBF8\uC9C0"), false);
 						} else if (num == 5) {
 							n = 5;
 							d = 3;
@@ -88,12 +104,14 @@ public class AvalonOfMerlinEffectProcedure {
 								angle = angle + 360 / (k * 0.33);
 							}
 							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * 1.5));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uB370\uBBF8\uC9C0(\uAC15)"), false);
 						} else {
 							if (entity instanceof Player _player && !_player.level().isClientSide())
 								_player.displayClientMessage(Component.literal("\uB9C8\uBC95 \uC0AC\uC6A9 \uC2E4\uD328"), true);
 						}
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(itemstack.getItem(), 1000);
 					}
 				}
 			}

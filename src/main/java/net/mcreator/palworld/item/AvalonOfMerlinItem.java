@@ -98,7 +98,6 @@ public class AvalonOfMerlinItem extends TieredItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		itemstack.hurtAndBreak(2, entity, LivingEntity.getSlotForHand(entity.getUsedItemHand()));
-		AvalonOfMerlinEffectProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return true;
 	}
 

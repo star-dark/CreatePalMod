@@ -48,6 +48,10 @@ public class AvalonOfMerlinEffect2Procedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 5, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10), false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uBC84\uD504 : \uD790"), false);
 						} else if (num == 2) {
 							n = 3;
 							d = 5;
@@ -58,6 +62,10 @@ public class AvalonOfMerlinEffect2Procedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 100, 1, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uBC84\uD504 : \uD22C\uBA85\uD654"), false);
 						} else if (num == 3) {
 							n = 3;
 							d = 4;
@@ -68,6 +76,10 @@ public class AvalonOfMerlinEffect2Procedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 2, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uBC84\uD504 : \uC7AC\uC0DD"), false);
 						} else if (num == 4) {
 							n = 2;
 							d = 3;
@@ -78,6 +90,10 @@ public class AvalonOfMerlinEffect2Procedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 10, 1, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uBC84\uD504 : \uCD94\uAC00 \uCCB4\uB825"), false);
 						} else if (num == 5) {
 							n = 1;
 							d = 4;
@@ -88,6 +104,10 @@ public class AvalonOfMerlinEffect2Procedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uBC84\uD504 : \uBC29\uC5B4\uB825 \uC99D\uAC00"), false);
 						} else if (num == 6) {
 							n = 4;
 							d = 3;
@@ -98,6 +118,10 @@ public class AvalonOfMerlinEffect2Procedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uBC84\uD504 : \uACF5\uACA9\uB825 \uC99D\uAC00"), false);
 						} else if (num == 7) {
 							n = 2;
 							d = 5;
@@ -108,13 +132,15 @@ public class AvalonOfMerlinEffect2Procedure {
 							}
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 1));
+							if (entity instanceof Player _player && !_player.level().isClientSide())
+								_player.displayClientMessage(Component.literal("\uBC84\uD504 : \uC774\uB3D9\uC18D\uB3C4 \uC99D\uAC00"), false);
 						} else {
 							if (entity instanceof Player _player && !_player.level().isClientSide())
 								_player.displayClientMessage(Component.literal("\uB9C8\uBC95 \uC0AC\uC6A9 \uC2E4\uD328"), true);
 						}
 					}
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 1000);
 				}
 			}
 		}
