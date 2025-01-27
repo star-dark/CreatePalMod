@@ -5,7 +5,7 @@
     "toolType": "MultiTool",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "minecraft:enchanted_book",
+    "texture": "evil-book",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Astra Book",
