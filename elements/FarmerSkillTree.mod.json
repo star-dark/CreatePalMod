@@ -536,7 +536,7 @@
             "fixedValue": "푸드파이터"
           },
           "color": {
-            "value": -16776961,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 169,
@@ -567,7 +567,7 @@
             "name": "FoodFighterPoint"
           },
           "color": {
-            "value": -16776961,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 168,
@@ -626,7 +626,7 @@
             "name": "HornPlayerPoint"
           },
           "color": {
-            "value": -16776961,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 168,
@@ -683,7 +683,7 @@
             "fixedValue": "반사!"
           },
           "color": {
-            "value": -16776961,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 176,
@@ -699,157 +699,11 @@
             "name": "ReflectionPoint"
           },
           "color": {
-            "value": -16776961,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 171,
           "y": 89
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_hover",
-          "image": "hover.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "HoverUp"
-          },
-          "x": 217,
-          "y": 138
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_deobeuljeompeu",
-          "image": "deobeuljeompeu.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "DoubleJumpUp"
-          },
-          "x": 217,
-          "y": 79
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_double_jump_tool_tip",
-          "text": {
-            "fixedValue": "",
-            "name": "DoubleJumpToolTip"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 217,
-          "y": 79
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_hover_tool_tip",
-          "text": {
-            "fixedValue": "",
-            "name": "HoverToolTip"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 217,
-          "y": 138
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_deobeuljeompeu",
-          "text": {
-            "fixedValue": "더블점프"
-          },
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "x": 220,
-          "y": 103
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_eodumyi_jasig",
-          "text": {
-            "fixedValue": "어둠의 자식"
-          },
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "x": 216,
-          "y": 163
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_1",
-          "text": {
-            "fixedValue": "/ 1"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 228,
-          "y": 110
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_11",
-          "text": {
-            "fixedValue": "/ 1"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 228,
-          "y": 173
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_hover_point",
-          "text": {
-            "fixedValue": "",
-            "name": "HoverPoint"
-          },
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "x": 218,
-          "y": 172
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_double_jump_point",
-          "text": {
-            "fixedValue": "",
-            "name": "DoubleJumpPoint"
-          },
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "x": 220,
-          "y": 109
         }
       }
     ],

@@ -1,0 +1,43 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "MultiTool",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "evil-book",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "아스트라 북",
+    "specialInformation": {
+      "fixedValue": [
+        "별의 주술을 담은 책.",
+        "",
+        "우클릭시 범위내의 모든 생물의 움직임을 제한한다.",
+        "이후 3초간 주변 적들에게 데미지를 준다."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 0.1,
+    "enchantability": 2,
+    "damageVsEntity": 0.1,
+    "usageCount": 100,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "AstraBookEffect"
+    }
+  }
+}

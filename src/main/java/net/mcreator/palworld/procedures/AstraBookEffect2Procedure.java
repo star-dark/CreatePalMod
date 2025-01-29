@@ -1,0 +1,43 @@
+package net.mcreator.palworld.procedures;
+
+import net.neoforged.bus.api.Event;
+
+@EventBusSubscriber
+public class AstraBookEffect2Procedure {
+	@SubscribeEvent
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+	}
+
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		double time1 = 0;
+		double time2 = 0;
+		double time3 = 0;
+		double time4 = 0;
+		double time5 = 0;
+		time1 = +10;
+		time2 = +20;
+		time3 = +30;
+		time4 = +40;
+		time5 = +50;
+		{
+			final Vec3 _center = new Vec3(x, y, z);
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+			for (Entity entityiterator : _entfound) {
+				if (time1 == world.dayTime() || time2 == world.dayTime() || time3 == world.dayTime() || time4 == world.dayTime() || time5 == world.dayTime()) {
+					if (!world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), 0.1, 0.1, 0.1), e -> true).isEmpty() && !(entityiterator instanceof Player)) {
+						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), (float) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * 0.4));
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 50, 3, false, false));
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 {
-  "parent": "palworld:custom/hammer_stormlander",
+  "parent": "palworld:custom/hammer_gravity",
   "textures": {
-    "0": "palworld:block/hammer_stormlander",
-    "particle": "palworld:item/hammer_great"
+    "0": "palworld:block/hammer_gravity",
+    "particle": "palworld:item/hammer_gravity"
   }
 }

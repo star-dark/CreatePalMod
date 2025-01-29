@@ -11,7 +11,6 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
@@ -70,8 +69,8 @@ public class HoverAtivateProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (!entity.onGround() && entity.getData(PalworldModVariables.PLAYER_VARIABLES).HoverSkillPoint > 0) {
-			if (!entity.getData(PalworldModVariables.PLAYER_VARIABLES).BlinkVar && (world.dayTime() >= entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer || entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer == 0)) {
+		if (!entity.onGround()) {
+			if (!entity.getData(PalworldModVariables.PLAYER_VARIABLES).BlinkVar && world.dayTime() < entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer) {
 				{
 					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 					_vars.BlinkVar = true;
@@ -83,12 +82,8 @@ public class HoverAtivateProcedure {
 					_vars.syncPlayerVariables(entity);
 				}
 				entity.setInvisible(true);
-				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * 2), (entity.getLookAngle().y * 2), (entity.getLookAngle().z * 2)));
+				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * 5), (entity.getLookAngle().y * 5), (entity.getLookAngle().z * 5)));
 				entity.setNoGravity(true);
-			} else if (world.dayTime() < entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format((entity.getData(PalworldModVariables.PLAYER_VARIABLES).timeBuffer - world.dayTime()) / 20) + "\uCD08 \uB4A4 \uC0AC\uC6A9 \uAC00\uB2A5")),
-							true);
 			}
 		}
 	}

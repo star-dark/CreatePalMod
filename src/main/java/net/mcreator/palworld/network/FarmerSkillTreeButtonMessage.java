@@ -20,11 +20,9 @@ import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
 import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.RecoverUpProcedure;
 import net.mcreator.palworld.procedures.RangeUpProcedure;
-import net.mcreator.palworld.procedures.HoverUpProcedure;
 import net.mcreator.palworld.procedures.HornPlayUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
-import net.mcreator.palworld.procedures.DoubleJumpUpProcedure;
 import net.mcreator.palworld.procedures.DefenseUpProcedure;
 import net.mcreator.palworld.procedures.AttackUPProcedure;
 import net.mcreator.palworld.PalworldMod;
@@ -99,14 +97,6 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		if (buttonID == 7) {
 
 			ReflectionUpProcedure.execute(entity);
-		}
-		if (buttonID == 8) {
-
-			HoverUpProcedure.execute(entity);
-		}
-		if (buttonID == 9) {
-
-			DoubleJumpUpProcedure.execute(entity);
 		}
 	}
 
