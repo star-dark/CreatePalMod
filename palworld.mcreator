@@ -39,7 +39,7 @@
       "name": "UserGUI",
       "type": "gui",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": false,  
       "registry_name": "user_gui",
       "metadata": {
         "files": [
@@ -4396,6 +4396,7 @@
       "gui.palworld.fisher_sell_gui.button_panmae6": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae3": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae4": "모두판매",
+      "item.palworld.astra_book": "아스트라 북",
       "gui.palworld.fisher_sell_gui.button_panmae1": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae2": "모두판매",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
