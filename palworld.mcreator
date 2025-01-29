@@ -4256,6 +4256,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Avalon_number",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "10.0"
     }
   ],
   "sound_elements": [],

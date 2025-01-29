@@ -287,6 +287,10 @@ public class PalworldModVariables {
 		public boolean BlinkVar = false;
 		public double timeBuffer = 0.0;
 		public double HoverSkillPoint = 0;
+		public double timeBuffer = 0;
+		public double Amanomuraku_tick = 0.0;
+		public double AstraBook_tick = 0;
+		public double Avalon_number = 10.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
