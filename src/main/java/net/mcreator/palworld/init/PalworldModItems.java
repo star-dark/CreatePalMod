@@ -19,6 +19,7 @@ import net.mcreator.palworld.item.OreDiamondItem;
 import net.mcreator.palworld.item.OreCopperItem;
 import net.mcreator.palworld.item.OreCoalItem;
 import net.mcreator.palworld.item.OchunwonItem;
+import net.mcreator.palworld.item.NichirinItem;
 import net.mcreator.palworld.item.MjolnirItem;
 import net.mcreator.palworld.item.MinerPickLv30Item;
 import net.mcreator.palworld.item.MinerPickLv1Item;
@@ -122,6 +123,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> ASTRA_BOOK = REGISTRY.register("astra_book", AstraBookItem::new);
 	public static final DeferredItem<Item> AVALON_OF_MERLIN = REGISTRY.register("avalon_of_merlin", AvalonOfMerlinItem::new);
 	public static final DeferredItem<Item> HEAVEN = REGISTRY.register("heaven", HeavenItem::new);
+	public static final DeferredItem<Item> NICHIRIN = REGISTRY.register("nichirin", NichirinItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
