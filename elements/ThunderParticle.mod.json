@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "particle",
   "definition": {
-    "texture": "tunder_particle",
+    "texture": "thunder_particle",
     "animate": false,
     "frameDuration": 1,
     "width": 1.5,

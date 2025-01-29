@@ -22,9 +22,7 @@ import net.mcreator.palworld.network.PalworldModVariables;
 import net.mcreator.palworld.init.PalworldModTabs;
 import net.mcreator.palworld.init.PalworldModParticleTypes;
 import net.mcreator.palworld.init.PalworldModMobEffects;
-import net.mcreator.palworld.init.PalworldModMenus;
 import net.mcreator.palworld.init.PalworldModItems;
-import net.mcreator.palworld.init.PalworldModEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -45,12 +43,12 @@ public class PalworldMod {
 		modEventBus.addListener(this::registerNetworking);
 
 		PalworldModItems.REGISTRY.register(modEventBus);
-		PalworldModEntities.REGISTRY.register(modEventBus);
+
 		PalworldModTabs.REGISTRY.register(modEventBus);
 		PalworldModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		PalworldModMobEffects.REGISTRY.register(modEventBus);
-		PalworldModMenus.REGISTRY.register(modEventBus);
+
 		PalworldModParticleTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
