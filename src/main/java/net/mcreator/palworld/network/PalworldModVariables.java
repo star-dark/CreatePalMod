@@ -11,9 +11,14 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
@@ -35,6 +40,7 @@ public class PalworldModVariables {
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
+		PalworldMod.addNetworkMessage(SavedDataSyncMessage.TYPE, SavedDataSyncMessage.STREAM_CODEC, SavedDataSyncMessage::handleData);
 		PalworldMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
@@ -92,8 +98,7 @@ public class PalworldModVariables {
 			clone.DoubleJumpSkillPoint = original.DoubleJumpSkillPoint;
 			clone.BlinkVar = original.BlinkVar;
 			clone.timeBuffer = original.timeBuffer;
-			clone.Amanomuraku_tick = original.Amanomuraku_tick;
-			clone.AstraBook_tick = original.AstraBook_tick;
+			clone.HoverSkillPoint = original.HoverSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -104,9 +109,140 @@ public class PalworldModVariables {
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
 				clone.aegis_tick = original.aegis_tick;
 				clone.aegis_bool = original.aegis_bool;
-				clone.Avalon_number = original.Avalon_number;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
+		}
+
+		@SubscribeEvent
+		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+			if (event.getEntity() instanceof ServerPlayer player) {
+				SavedData mapdata = MapVariables.get(event.getEntity().level());
+				SavedData worlddata = WorldVariables.get(event.getEntity().level());
+				if (mapdata != null)
+					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
+				if (worlddata != null)
+					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+
+		@SubscribeEvent
+		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+			if (event.getEntity() instanceof ServerPlayer player) {
+				SavedData worlddata = WorldVariables.get(event.getEntity().level());
+				if (worlddata != null)
+					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+	}
+
+	public static class WorldVariables extends SavedData {
+		public static final String DATA_NAME = "palworld_worldvars";
+		public double TestValue = 0;
+
+		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
+			WorldVariables data = new WorldVariables();
+			data.read(tag, lookupProvider);
+			return data;
+		}
+
+		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			TestValue = nbt.getDouble("TestValue");
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			nbt.putDouble("TestValue", TestValue);
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof ServerLevel level)
+				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, this));
+		}
+
+		static WorldVariables clientSide = new WorldVariables();
+
+		public static WorldVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevel level) {
+				return level.getDataStorage().computeIfAbsent(new SavedData.Factory<>(WorldVariables::new, WorldVariables::load), DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class MapVariables extends SavedData {
+		public static final String DATA_NAME = "palworld_mapvars";
+
+		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
+			MapVariables data = new MapVariables();
+			data.read(tag, lookupProvider);
+			return data;
+		}
+
+		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof Level && !world.isClientSide())
+				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, this));
+		}
+
+		static MapVariables clientSide = new MapVariables();
+
+		public static MapVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevelAccessor serverLevelAcc) {
+				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(new SavedData.Factory<>(MapVariables::new, MapVariables::load), DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public record SavedDataSyncMessage(int dataType, SavedData data) implements CustomPacketPayload {
+		public static final Type<SavedDataSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "saved_data_sync"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, SavedDataSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SavedDataSyncMessage message) -> {
+			buffer.writeInt(message.dataType);
+			if (message.data != null)
+				buffer.writeNbt(message.data.save(new CompoundTag(), buffer.registryAccess()));
+		}, (RegistryFriendlyByteBuf buffer) -> {
+			int dataType = buffer.readInt();
+			CompoundTag nbt = buffer.readNbt();
+			SavedData data = null;
+			if (nbt != null) {
+				data = dataType == 0 ? new MapVariables() : new WorldVariables();
+				if (data instanceof MapVariables mapVariables)
+					mapVariables.read(nbt, buffer.registryAccess());
+				else if (data instanceof WorldVariables worldVariables)
+					worldVariables.read(nbt, buffer.registryAccess());
+			}
+			return new SavedDataSyncMessage(dataType, data);
+		});
+
+		@Override
+		public Type<SavedDataSyncMessage> type() {
+			return TYPE;
+		}
+
+		public static void handleData(final SavedDataSyncMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.enqueueWork(() -> {
+					if (message.dataType == 0)
+						MapVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+					else
+						WorldVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+				}).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
 		}
 	}
 
@@ -149,10 +285,8 @@ public class PalworldModVariables {
 		public boolean aegis_bool = true;
 		public double DoubleJumpSkillPoint = 0;
 		public boolean BlinkVar = false;
-		public double timeBuffer = 0;
-		public double Amanomuraku_tick = 0.0;
-		public double AstraBook_tick = 0;
-		public double Avalon_number = 0;
+		public double timeBuffer = 0.0;
+		public double HoverSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -196,9 +330,7 @@ public class PalworldModVariables {
 			nbt.putDouble("DoubleJumpSkillPoint", DoubleJumpSkillPoint);
 			nbt.putBoolean("BlinkVar", BlinkVar);
 			nbt.putDouble("timeBuffer", timeBuffer);
-			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
-			nbt.putDouble("AstraBook_tick", AstraBook_tick);
-			nbt.putDouble("Avalon_number", Avalon_number);
+			nbt.putDouble("HoverSkillPoint", HoverSkillPoint);
 			return nbt;
 		}
 
@@ -243,9 +375,7 @@ public class PalworldModVariables {
 			DoubleJumpSkillPoint = nbt.getDouble("DoubleJumpSkillPoint");
 			BlinkVar = nbt.getBoolean("BlinkVar");
 			timeBuffer = nbt.getDouble("timeBuffer");
-			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
-			AstraBook_tick = nbt.getDouble("AstraBook_tick");
-			Avalon_number = nbt.getDouble("Avalon_number");
+			HoverSkillPoint = nbt.getDouble("HoverSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
