@@ -1,7 +1,0 @@
-{
-  "parent": "palworld:custom/shield_tower_guard",
-  "textures": {
-    "0": "palworld:block/shield_tower_guard",
-    "particle": "palworld:item/shield_tower_guard"
-  }
-}
