@@ -21,22 +21,7 @@ public class PalworldModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-
-			tabData.accept(PalworldModItems.BURF_SWORD.get());
-			tabData.accept(PalworldModItems.SKYSHATTER.get());
-			tabData.accept(PalworldModItems.MJOLNIR.get());
-			tabData.accept(PalworldModItems.DAINSLEIF.get());
-			tabData.accept(PalworldModItems.BALMUNG.get());
-			tabData.accept(PalworldModItems.BANGOBU.get());
-			tabData.accept(PalworldModItems.AMANOMURAKUMONOTSURUGI.get());
-			tabData.accept(PalworldModItems.AEGIS.get());
-			tabData.accept(PalworldModItems.GLORY_GOLD_GHOST.get());
-			tabData.accept(PalworldModItems.ASTRA_BOOK.get());
-			tabData.accept(PalworldModItems.AVALON_OF_MERLIN.get());
-			tabData.accept(PalworldModItems.HEAVEN.get());
-
-		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
 			tabData.accept(PalworldModItems.FARMER_JOB_NPC_SPAWN_EGG.get());
 			tabData.accept(PalworldModItems.MINER_JOB_NPC_SPAWN_EGG.get());
