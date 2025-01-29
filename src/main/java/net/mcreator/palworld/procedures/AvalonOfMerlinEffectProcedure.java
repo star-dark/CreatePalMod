@@ -21,7 +21,7 @@ public class AvalonOfMerlinEffectProcedure {
 		angle = 0;
 		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == 0) {
 			n = 1;
-			d = 2;
+			d = 4;
 			for (int index0 = 0; index0 < (int) k; index0++) {
 				r = 7 * Math.cos(Math.toRadians((n / d) * angle));
 				world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, (entity.getX() + r * Math.cos(Math.toRadians(angle))), (entity.getY() + 4), (entity.getZ() + r * Math.sin(Math.toRadians(angle))), 0, 0, 0);
