@@ -1,27 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-
-import net.mcreator.palworld.network.PalworldModVariables;
-
-import javax.annotation.Nullable;
-
-import java.util.List;
-import java.util.Comparator;
 
 @EventBusSubscriber
 public class AstraBookEffect2Procedure {
@@ -42,11 +21,11 @@ public class AstraBookEffect2Procedure {
 		double time3 = 0;
 		double time4 = 0;
 		double time5 = 0;
-		time1 = entity.getData(PalworldModVariables.PLAYER_VARIABLES).AstraBook_tick + 10;
-		time2 = entity.getData(PalworldModVariables.PLAYER_VARIABLES).AstraBook_tick + 20;
-		time3 = entity.getData(PalworldModVariables.PLAYER_VARIABLES).AstraBook_tick + 30;
-		time4 = entity.getData(PalworldModVariables.PLAYER_VARIABLES).AstraBook_tick + 40;
-		time5 = entity.getData(PalworldModVariables.PLAYER_VARIABLES).AstraBook_tick + 50;
+		time1 = +10;
+		time2 = +20;
+		time3 = +30;
+		time4 = +40;
+		time5 = +50;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();

@@ -1,37 +1,6 @@
 
 package net.mcreator.palworld.item;
 
-import net.neoforged.neoforge.common.ItemAbility;
-import net.neoforged.neoforge.common.ItemAbilities;
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.TieredItem;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.tags.TagKey;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.palworld.procedures.AstraBookEffectProcedure;
-
-import java.util.List;
-
 public class AstraBookItem extends TieredItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
@@ -101,7 +70,7 @@ public class AstraBookItem extends TieredItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		AstraBookEffectProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		AstraBookEffectProcedure.execute();
 		return ar;
 	}
 

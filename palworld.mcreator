@@ -4382,20 +4382,6 @@
       "path": "~/Weapon/AvalonOfMerlin"
     },
     {
-      "name": "Nichirin",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nichirin",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/nichirin.json",
-          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
       "name": "NichirinEffect",
       "type": "procedure",
       "compiles": true,
@@ -4433,6 +4419,59 @@
         ]
       },
       "path": "~/Weapon"
+    },
+    {
+      "name": "Nichirin",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nichirin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/nichirin.json",
+          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
+        ]
+      },
+      "path": "~/Weapon"
+    },
+    {
+      "name": "Earthquake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earthquake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/EarthquakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     }
   ],
   "variable_elements": [
@@ -4983,30 +5022,18 @@
         "children": []
       },
       {
+        "name": "QuestNPC",
+        "children": []
+      },
+      {
+        "name": "MoneyItem",
+        "children": []
+      },
+      {
         "name": "Weapon",
         "children": [
           {
-            "name": "BurfSword",
-            "children": []
-          },
-          {
-            "name": "Dainsleif",
-            "children": []
-          },
-          {
-            "name": "Skyshatter",
-            "children": []
-          },
-          {
             "name": "Mjolnir",
-            "children": []
-          },
-          {
-            "name": "Balmung",
-            "children": []
-          },
-          {
-            "name": "Aegis",
             "children": []
           },
           {
@@ -5014,7 +5041,19 @@
             "children": []
           },
           {
+            "name": "AvalonOfMerlin",
+            "children": []
+          },
+          {
             "name": "Amanomurakumonotsurugi",
+            "children": []
+          },
+          {
+            "name": "BurfSword",
+            "children": []
+          },
+          {
+            "name": "Heaven",
             "children": []
           },
           {
@@ -5026,22 +5065,22 @@
             "children": []
           },
           {
-            "name": "AvalonOfMerlin",
+            "name": "Aegis",
             "children": []
           },
           {
-            "name": "Heaven",
+            "name": "Dainsleif",
+            "children": []
+          },
+          {
+            "name": "Skyshatter",
+            "children": []
+          },
+          {
+            "name": "Balmung",
             "children": []
           }
         ]
-      },
-      {
-        "name": "QuestNPC",
-        "children": []
-      },
-      {
-        "name": "MoneyItem",
-        "children": []
       },
       {
         "name": "cooltime",

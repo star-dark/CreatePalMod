@@ -1,19 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.core.particles.ParticleTypes;
-
-import net.mcreator.palworld.network.PalworldModVariables;
-
-import java.util.List;
-import java.util.Comparator;
+import net.neoforged.bus.api.Event;
 
 public class AstraBookEffectProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -37,11 +24,6 @@ public class AstraBookEffectProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 50, 200, false, false));
-				{
-					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-					_vars.AstraBook_tick = world.dayTime();
-					_vars.syncPlayerVariables(entity);
-				}
 				AstraBookEffect2Procedure.execute(world, x, y, z, entity);
 				r = 1;
 				k = 50;
