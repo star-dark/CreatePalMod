@@ -17,15 +17,28 @@ public class AvalonOfMerlinEffectProcedure {
 		double angle = 0;
 		double k = 0;
 		double n = 0;
-		k = 1080;
+		k = 2160;
 		angle = 0;
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == -1) {
+			{
+				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+				_vars.Avalon_number = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number + 41;
+				_vars.syncPlayerVariables(entity);
+			}
+		} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == 9) {
+			{
+				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+				_vars.Avalon_number = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number + 1;
+				_vars.syncPlayerVariables(entity);
+			}
+		}
 		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == 0) {
 			n = 1;
 			d = 4;
 			for (int index0 = 0; index0 < (int) k; index0++) {
 				r = 7 * Math.cos(Math.toRadians((n / d) * angle));
 				world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, (entity.getX() + r * Math.cos(Math.toRadians(angle))), (entity.getY() + 4), (entity.getZ() + r * Math.sin(Math.toRadians(angle))), 0, 0, 0);
-				angle = angle + 360 / (k * 0.33);
+				angle = angle + 360 / (k * 0.1415);
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uC18D\uBC15"), false);
@@ -71,10 +84,10 @@ public class AvalonOfMerlinEffectProcedure {
 				_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 : \uB370\uBBF8\uC9C0"), false);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\uB9C8\uBC95 \uC0AC\uC6A9 \uC2E4\uD328"), true);
+				_player.displayClientMessage(Component.literal("\uB514\uBC84\uD504 \uC0AC\uC6A9 \uC2E4\uD328"), true);
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-				_vars.Avalon_number = 0;
+				_vars.Avalon_number = 10;
 				_vars.syncPlayerVariables(entity);
 			}
 		}

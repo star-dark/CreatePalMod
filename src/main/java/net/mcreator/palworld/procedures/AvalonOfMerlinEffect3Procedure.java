@@ -44,48 +44,44 @@ public class AvalonOfMerlinEffect3Procedure {
 							_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 80, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number / 10), false, false));
 					} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 == 4) {
 						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * 1.5));
-						{
-							PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-							_vars.Avalon_number = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - 5;
-							_vars.syncPlayerVariables(entity);
-						}
 					}
 				}
 				if (entityiterator instanceof Player) {
-					if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 0) {
+					if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 1) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 5, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10), false, false));
-					} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 1) {
-						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 100, 1, false, false));
 					} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 2) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 2, false, false));
+							_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 100, 1, false, false));
 					} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 3) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 1, false, false));
+							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 2, false, false));
 					} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 4) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
+							_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 1, false, false));
 					} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 5) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
+							_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
 					} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 6) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
+					} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 == 7) {
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level / 10 + 1), false, false));
-						{
-							PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-							_vars.Avalon_number = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - 70;
-							_vars.syncPlayerVariables(entity);
-						}
 					}
 				}
 			}
 		}
-		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 >= 5 || (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 >= 7) {
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10 >= 4) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-				_vars.Avalon_number = 0;
+				_vars.Avalon_number = (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) - 1;
+				_vars.syncPlayerVariables(entity);
+			}
+		} else if ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10) / 10 >= 7) {
+			{
+				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+				_vars.Avalon_number = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Avalon_number % 10;
 				_vars.syncPlayerVariables(entity);
 			}
 		}

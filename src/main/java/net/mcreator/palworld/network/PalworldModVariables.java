@@ -152,7 +152,7 @@ public class PalworldModVariables {
 		public double timeBuffer = 0;
 		public double Amanomuraku_tick = 0.0;
 		public double AstraBook_tick = 0;
-		public double Avalon_number = 0;
+		public double Avalon_number = 10.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {

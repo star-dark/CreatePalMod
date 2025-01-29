@@ -1121,7 +1121,7 @@
       "name": "Avalon_number",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "0"
+      "value": "10.0"
     }
   ],
   "sound_elements": [],
