@@ -14,18 +14,18 @@ authors="den11, MCreator"
 # End of user code block mod configuration
 
 [[dependencies.palworld]]
-    modId="neoforge"
-    type="required"
-    versionRange="[21.1.65,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.palworld]]
-    modId="minecraft"
-    type="required"
-    versionRange="[1.21.1]"
-    ordering="AFTER"
-    side="BOTH"
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
 
 
 
