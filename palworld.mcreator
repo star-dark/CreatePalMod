@@ -3119,14 +3119,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/FoodFighterProcedure.java"
-      "name": "BurfSwordEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "burf_sword_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BurfSwordEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -3150,64 +3142,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/FoodFighterUpProcedure.java"
-      "path": "~/Weapon/BurfSword"
-    },
-    {
-      "name": "BurfSword",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "burf_sword",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/burf_sword.json",
-          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "DainsleifEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dainsleif_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Weapon/Dainsleif"
-    },
-    {
-      "name": "Skyshatter",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "skyshatter",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/SkyshatterItem.java",
-          "src/main/resources/assets/palworld/models/item/skyshatter.json"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "DainsleifEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dainsleif_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -3228,17 +3162,6 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/FoodFighterPointProcedure.java"
-      "path": "~/Weapon/Dainsleif"
-    },
-    {
-      "name": "SkyshatterEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skyshatter_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffect2Procedure.java"
         ],
         "dependencies": [
           {
@@ -3272,28 +3195,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HornPlayProcedure.java"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/Skyshatter"
-    },
-    {
-      "name": "SkyshatterEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skyshatter_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -3372,45 +3273,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/DoubleJumpOnKeyPressedProcedure.java"
-      "path": "~/Weapon/Skyshatter"
-    },
-    {
-      "name": "Mjolnir",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mjolnir",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java",
-          "src/main/resources/assets/palworld/models/item/mjolnir.json"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "Dainsleif",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "dainsleif",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/dainsleif.json",
-          "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "MjolnirEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mjolnir_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/MjolnirEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -3588,40 +3450,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/HoverAtivateProcedure.java"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/Mjolnir"
-    },
-    {
-      "name": "BalmungEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "balmung_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BalmungEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -3638,193 +3466,6 @@
     },
     {
       "name": "HoverState",
-      "path": "~/Weapon/Balmung"
-    },
-    {
-      "name": "Balmung",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "balmung",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/balmung.json",
-          "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "AegisParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_particle",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/particles/aegis_particle.json",
-          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
-        ]
-      },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "Bangobu",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "bangobu",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/bangobu.json",
-          "src/main/java/net/mcreator/palworld/item/BangobuItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "ThunderParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thunder_particle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/client/particle/ThunderParticleParticle.java",
-          "src/main/resources/assets/palworld/particles/thunder_particle.json"
-        ]
-      },
-      "path": "~/Weapon/Amanomurakumonotsurugi"
-    },
-    {
-      "name": "Amanomurakumonotsurugi",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "amanomurakumonotsurugi",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json",
-          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "BangobuEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bangobu_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BangobuEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Weapon/Bangobu"
-    },
-    {
-      "name": "AegisEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AegisEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "AegisEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AegisEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "ThunderPotion",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thunder_potion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
-        ]
-      },
-      "path": "~/Weapon/Amanomurakumonotsurugi"
-    },
-    {
-      "name": "AegisCool",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_cool",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
-        ]
-      },
-      "path": "~/Weapon/Aegis"
-    },
-    {
-      "name": "Aegis",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/AegisItem.java",
-          "src/main/resources/assets/palworld/models/item/aegis.json"
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "AmanomurakumonotsurugiEffect2",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
@@ -4266,30 +3907,15 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:FishRodLv30",
+      "~CUSTOM:FishRodLv1",
+      "~CUSTOM:FishRodLv15"
+    ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:MinerPickLv1",
       "~CUSTOM:MinerPickLv15",
       "~CUSTOM:MinerPickLv30"
-      "~CUSTOM:Heaven",
-      "~CUSTOM:AvalonOfMerlin",
-      "~CUSTOM:AstraBook"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~CUSTOM:Bangobu",
-      "~CUSTOM:Heaven",
-      "~CUSTOM:AvalonOfMerlin",
-      "~CUSTOM:AstraBook",
-      "~CUSTOM:Mjolnir"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:Skyshatter",
-      "~CUSTOM:Dainsleif",
-      "~CUSTOM:Amanomurakumonotsurugi",
-      "~CUSTOM:Balmung",
-      "~CUSTOM:Heaven",
-      "~CUSTOM:AvalonOfMerlin",
-      "~CUSTOM:AstraBook",
-      "~CUSTOM:BurfSword"
     ]
   },
   "tab_element_order": {},
@@ -4307,9 +3933,8 @@
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
-      "effect.palworld.aegis_cool": "Aegis Cool",
-      "gui.palworld.miner_sell_gui.label_10weon3": "10원",
       "gui.palworld.farmer_sell_gui.label_33weon1": "33원",
+      "item.palworld.manwon": "만원",
       "gui.palworld.farmer_sell_gui.label_33weon2": "33원",
       "item.palworld.fish_perch": "Fish Perch",
       "item.palworld.ore_lapis_lazuli": "Ore Lapis Lazuli",
@@ -4355,10 +3980,8 @@
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
       "gui.palworld.farmer_skill_tree.label_101": "/ 10",
-      "item.palworld.skyshatter": "Skyshatter",
-      "item.palworld.avalon_of_merlin": "아발론",
-      "item.palworld.balmung": "Balmung",
       "gui.palworld.miner_sell_gui.button_panmae13": "판매",
+      "item.palworld.fish_angler": "Fish Angler",
       "gui.palworld.miner_sell_gui.button_panmae12": "판매",
       "gui.palworld.miner_sell_gui.button_panmae11": "판매",
       "gui.palworld.miner_sell_gui.button_panmae10": "판매",
@@ -4385,22 +4008,56 @@
       "gui.palworld.fisher_sell_gui.label_50weon1": "70원",
       "gui.palworld.farmer_sell_gui.label_1weon": "개 당 1원",
       "gui.palworld.farmer_skill_tree.label_51": "/ 4",
-      "item.palworld.amanomurakumonotsurugi": "Amanomurakumonotsurugi",
-      "item.palworld.mjolnir": "묠니르",
-      "item.palworld.dainsleif": "Dainsleif",
       "gui.palworld.farmer_skill_tree.label_5lv": "5Lv",
+      "gui.palworld.farmer_skill_tree.label_53": "/ 5",
+      "gui.palworld.farmer_skill_tree.label_52": "/ 5",
+      "item.palworld.fish_blue_gill": "Fish Blue Gill",
+      "gui.palworld.farmer_skill_tree.label_54": "/ 5",
+      "item.palworld.magic_wand": "Magic Wand",
+      "gui.palworld.miner_sell_gui.label_3weon": "개 당 3원",
       "gui.palworld.user_gui.label_wanryo": "완료✅",
+      "item.palworld.fish_tambaqui": "Fish Tambaqui",
+      "gui.palworld.farmer_skill_tree.label_horeun_peulreieo": "호른 플레이어",
+      "entity.palworld.queen": "Queen",
+      "gui.palworld.farmer_skill_tree.label_5": "/ 5",
+      "gui.palworld.fisher_sell_gui.label_70weon1": "100원",
       "gui.palworld.job_npc_sell_gui.button_gyohwan2": "교환",
       "gui.palworld.job_npc_sell_gui.button_gyohwan3": "교환",
       "gui.palworld.fisher_sell_gui.label_70weon2": "100원",
       "gui.palworld.farmer_skill_tree.label_1": "/ 1",
       "gui.palworld.sub_quest_provide_gui.button_surag": "수락",
-      "item.palworld.heaven": "천 국",
       "gui.palworld.job_npc_sell_gui.button_gyohwan1": "교환",
+      "gui.palworld.miner_sell_gui.label_10weon1": "개 당 10원",
       "gui.palworld.miner_sell_gui.label_10weon2": "10원",
       "gui.palworld.job_npc_sell_gui.button_gyohwan4": "교환",
       "gui.palworld.job_npc_sell_gui.button_gyohwan5": "교환",
+      "gui.palworld.quest_provide_gui.label_bosang": "보상  :",
+      "gui.palworld.farmer_sell_gui.label_1weon2": "개 당 10원",
+      "gui.palworld.job_npc_gui.button_surag": "수락",
+      "gui.palworld.farmer_sell_gui.label_1weon1": "개 당 1원",
+      "item.palworld.queen_spawn_egg": "Queen Spawn Egg",
       "gui.palworld.sub_quest_complete.button_bosanghoegdeug": "보상획득",
+      "item.palworld.chunwon": "천원",
+      "gui.palworld.fisher_sell_gui.label_100weon": "100원",
+      "gui.palworld.farmer_skill_tree.label_30lv": "30Lv",
+      "gui.palworld.fisher_sell_gui.label_30weon3": "70원",
+      "gui.palworld.current_money.label_empty1": "",
+      "item.palworld.fish_rod_lv_15": "Fish Rod Lv 1 5",
+      "gui.palworld.fisher_skill_tree.label_10lv": "10Lv",
+      "gui.palworld.fisher_sell_gui.label_30weon2": "30원",
+      "item.palworld.miner_pick_lv_30": "Miner Pick Lv 3 0",
+      "gui.palworld.fisher_sell_gui.label_30weon1": "30원",
+      "gui.palworld.miner_skill_tree.label_10lv": "10Lv",
+      "gui.palworld.money_tap.button_5000": "5000",
+      "gui.palworld.fisher_skill_tree.label_5lv": "5Lv",
+      "item.palworld.fish_rainbow_trout": "Fish Rainbow Trout",
+      "gui.palworld.fisher_sell_gui.label_10weon": "10원",
+      "gui.palworld.money_tap.label_inculganeunggeumaeg": "인출가능금액 :",
+      "gui.palworld.miner_sell_gui.label_10weon": "개 당 10원",
+      "gui.palworld.sub_quest_provide_gui.button_geojeol": "거절",
+      "gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_1jeungga": "공격력 1증가",
+      "gui.palworld.farmer_skill_tree.label_pudeupaiteo": "푸드파이터",
+      "gui.palworld.current_money.label_empty": "",
       "gui.palworld.miner_sell_gui.label_30weon": "3원",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.label_5weon": "개 당 5원",
@@ -4415,21 +4072,33 @@
       "gui.palworld.farmer_skill_tree.label_10": "/10",
       "item.palworld.fish_catfish": "Fish Catfish",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
-      "item.palworld.aegis": "아이기스의 방패",
-      "gui.palworld.sub_quest_complete.button_surag": "수락",
-      "item.palworld.glory_gold_ghost": "Glory Gold Ghost",
       "gui.palworld.miner_sell_gui.button_panmae9": "판매",
       "gui.palworld.farmer_skill_tree.tooltip_ceryeog_bangeoryeog_5isang": "체력, 방어력 5이상",
+      "gui.palworld.miner_sell_gui.button_panmae5": "모두판매",
+      "gui.palworld.miner_sell_gui.button_panmae6": "모두판매",
       "gui.palworld.miner_sell_gui.button_panmae7": "판매",
+      "gui.palworld.job_npc_gui.button_geojeol": "거절",
+      "item.palworld.ore_diamond": "Ore Diamond",
       "gui.palworld.miner_sell_gui.button_panmae8": "판매",
+      "gui.palworld.miner_sell_gui.button_panmae1": "모두판매",
+      "item.palworld.fish_hailbut": "Fish Hailbut",
+      "gui.palworld.miner_sell_gui.button_panmae2": "모두판매",
       "gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_ceryeog_5isang": "공격력, 체력 5이상",
+      "gui.palworld.miner_sell_gui.button_panmae3": "모두판매",
+      "gui.palworld.miner_sell_gui.button_panmae4": "모두판매",
       "gui.palworld.farmer_sell_gui.button_panmae4": "판매",
       "gui.palworld.farmer_sell_gui.button_panmae3": "판매",
       "gui.palworld.farmer_sell_gui.button_panmae2": "판매",
       "gui.palworld.farmer_sell_gui.button_panmae1": "판매",
+      "gui.palworld.money_tap.button_10000": "10000",
       "gui.palworld.farmer_sell_gui.button_panmae5": "판매",
+      "gui.palworld.farmer_skill_tree.label_sageorijeungga": "사거리증가",
+      "gui.palworld.job_npc_action.button_panmae": "판매",
       "gui.palworld.job_npc_sell_gui.button_gyohwan": "교환",
       "gui.palworld.farmer_sell_gui.button_panmae": "판매",
+      "gui.palworld.farmer_skill_tree.label_bansa": "반사!",
+      "gui.palworld.quest_provide_gui.button_surag": "수락",
+      "gui.palworld.farmer_skill_tree.label_nameun_pointeu": "남은 포인트 :",
       "gui.palworld.miner_sell_gui.label_50weon": "5원",
       "item.palworld.fish_synodontis": "Fish Synodontis",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
@@ -4454,10 +4123,33 @@
       "item.palworld.miner_pick_lv_1": "Miner Pick Lv 1",
       "entity.palworld.king": "King",
       "gui.palworld.fisher_skill_tree.label_30lv": "30Lv",
-      "effect.palworld.thunder_potion": "Thunder Potion",
-      "item.palworld.burf_sword": "Burf Sword",
       "gui.palworld.miner_sell_gui.label_1weon1": "1원",
-      "gui.palworld.sub_quest_complete.button_geojeol": "거절"
+      "item.palworld.farmer_root": "Farmer Root",
+      "item.palworld.fish_bass": "Fish Bass",
+      "item.palworld.pig_spawn_egg": "Pig Spawn Egg",
+      "gui.palworld.fisher_sell_gui.label_10weon2": "10원",
+      "gui.palworld.fisher_sell_gui.label_10weon1": "10원",
+      "gui.palworld.farmer_skill_tree.label_10lv": "10Lv",
+      "gui.palworld.fisher_sell_gui.label_10weon4": "10원",
+      "gui.palworld.fisher_sell_gui.label_10weon3": "10원",
+      "gui.palworld.fisher_sell_gui.label_10weon6": "10원",
+      "gui.palworld.fisher_sell_gui.label_10weon5": "10원",
+      "item.palworld.ochunwon": "오천원",
+      "gui.palworld.miner_skill_tree.label_30lv": "30Lv",
+      "item.palworld.ore_copper": "Ore Copper",
+      "gui.palworld.fisher_skill_tree.label_20lv": "20Lv",
+      "item.palworld.fish_rod_lv_30": "Fish Rod Lv 3 0",
+      "gui.palworld.farmer_skill_tree.label_ceryeogjeungga": "최대체력",
+      "gui.palworld.miner_skill_tree.label_15lv": "15Lv",
+      "gui.palworld.miner_skill_tree.label_5lv": "5Lv",
+      "gui.palworld.quest_provide_gui.button_dadgi": "닫기",
+      "entity.palworld.miner_job_npc": "Miner Job NPC",
+      "item.palworld.fish_rod_lv_1": "Fish Rod Lv 1",
+      "gui.palworld.sub_quest_complete.button_geojeol": "거절",
+      "item.palworld.ore_gold": "Ore Gold",
+      "gui.palworld.miner_sell_gui.label_1weon": "개 당 1원",
+      "item.palworld.farmer_spore": "Farmer Spore",
+      "gui.palworld.fisher_sell_gui.label_30weon": "30원"
     }
   },
   "foldersRoot": {
@@ -4612,57 +4304,6 @@
       {
         "name": "Attribute",
         "children": []
-        "name": "Weapon",
-        "children": [
-          {
-            "name": "BurfSword",
-            "children": []
-          },
-          {
-            "name": "Dainsleif",
-            "children": []
-          },
-          {
-            "name": "Skyshatter",
-            "children": []
-          },
-          {
-            "name": "Mjolnir",
-            "children": []
-          },
-          {
-            "name": "Balmung",
-            "children": []
-          },
-          {
-            "name": "Aegis",
-            "children": []
-          },
-          {
-            "name": "Bangobu",
-            "children": []
-          },
-          {
-            "name": "Amanomurakumonotsurugi",
-            "children": []
-          },
-          {
-            "name": "GloryGoldGhost",
-            "children": []
-          },
-          {
-            "name": "AstraBook",
-            "children": []
-          },
-          {
-            "name": "Heaven",
-            "children": []
-          },
-          {
-            "name": "AvalonOfMerlin",
-            "children": []
-          }
-        ]
       }
     ]
   },

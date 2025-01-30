@@ -1,0 +1,793 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 320,
+    "height": 226,
+    "inventoryOffsetX": 999,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 69,
+          "y": 26
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 168,
+          "y": 26
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 12,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 267,
+          "y": 26
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 13,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 69,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 14,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 168,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 15,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 267,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 16,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 69,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon",
+          "text": {
+            "fixedValue": "10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 26
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 20,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 168,
+          "y": 80
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 21,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 267,
+          "y": 80
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 22,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 69,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon1",
+          "text": {
+            "fixedValue": "10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon2",
+          "text": {
+            "fixedValue": "10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae2",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell2"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 312,
+          "y": 26
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 23,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 168,
+          "y": 107
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 30,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 267,
+          "y": 107
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 31,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 69,
+          "y": 134
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 32,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 168,
+          "y": 134
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 40,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 267,
+          "y": 134
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 41,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 69,
+          "y": 161
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 42,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 168,
+          "y": 161
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 43,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 267,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon3",
+          "text": {
+            "fixedValue": "10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon4",
+          "text": {
+            "fixedValue": "10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon5",
+          "text": {
+            "fixedValue": "10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10weon6",
+          "text": {
+            "fixedValue": "10원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30weon",
+          "text": {
+            "fixedValue": "30원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell0"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 114,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae1",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell1"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 213,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae3",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell3"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 114,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae4",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell4"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 213,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae5",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell5"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 312,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae6",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell6"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 114,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae7",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell7"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae8",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell8"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 312,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae9",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell9"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 114,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae10",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell10"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 213,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae11",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell11"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 312,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae12",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell12"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 114,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae13",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell13"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 213,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae14",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell14"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 312,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae15",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell15"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 114,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae16",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell16"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 213,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_panmae17",
+          "text": "모두판매",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FisherSell17"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 312,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30weon1",
+          "text": {
+            "fixedValue": "30원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30weon2",
+          "text": {
+            "fixedValue": "30원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30weon3",
+          "text": {
+            "fixedValue": "70원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_50weon",
+          "text": {
+            "fixedValue": "70원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_50weon1",
+          "text": {
+            "fixedValue": "70원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_50weon2",
+          "text": {
+            "fixedValue": "70원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_70weon",
+          "text": {
+            "fixedValue": "100원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_70weon1",
+          "text": {
+            "fixedValue": "100원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_70weon2",
+          "text": {
+            "fixedValue": "100원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_100weon",
+          "text": {
+            "fixedValue": "100원"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_cwiso",
+          "text": "취소",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GuiClose"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 195,
+          "y": 197
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

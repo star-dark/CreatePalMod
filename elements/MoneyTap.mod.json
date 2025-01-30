@@ -1,0 +1,107 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 126,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inculganeunggeumaeg",
+          "text": {
+            "fixedValue": "인출가능금액 :"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_bring_my_money",
+          "text": {
+            "fixedValue": "",
+            "name": "BringMyMoney"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_10000",
+          "text": "10000",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GetManwonFromUser"
+          },
+          "width": 39,
+          "height": 20,
+          "x": 136,
+          "y": 149
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_5000",
+          "text": "5000",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GetOchunwonFromUser"
+          },
+          "width": 39,
+          "height": 20,
+          "x": 195,
+          "y": 149
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1000",
+          "text": "1000",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GetChunwonFromUser"
+          },
+          "width": 39,
+          "height": 20,
+          "x": 253,
+          "y": 149
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "money_gui.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 38
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
