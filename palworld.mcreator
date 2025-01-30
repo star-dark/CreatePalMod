@@ -4105,6 +4105,20 @@
         ]
       },
       "path": "~/Sword"
+    },
+    {
+      "name": "Teststst",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teststst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/TestststProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/ttttest"
     }
   ],
   "variable_elements": [
@@ -4777,6 +4791,10 @@
       },
       {
         "name": "Attribute",
+        "children": []
+      },
+      {
+        "name": "ttttest",
         "children": []
       }
     ]
