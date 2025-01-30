@@ -1318,29 +1318,6 @@
       "path": "~/GUI/Money"
     },
     {
-      "name": "BurfSwordEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "burf_sword_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BurfSwordEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
       "name": "ClearVariable",
       "type": "procedure",
       "compiles": true,
@@ -1358,20 +1335,6 @@
         ]
       },
       "path": "~/ClearWand"
-    },
-    {
-      "name": "BurfSword",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "burf_sword",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/burf_sword.json",
-          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
-        ]
-      },
-      "path": "~/Sword"
     },
     {
       "name": "MagicWand",
@@ -3108,228 +3071,6 @@
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
     },
     {
-      "name": "DainsleifEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dainsleif_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "Skyshatter",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skyshatter",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/skyshatter.json",
-          "src/main/java/net/mcreator/palworld/item/SkyshatterItem.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "DainsleifEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dainsleif_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "SkyshatterEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skyshatter_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "SkyshatterEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skyshatter_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "Mjolnir",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mjolnir",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java",
-          "src/main/resources/assets/palworld/models/item/mjolnir.json"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "Dainsleif",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dainsleif",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/dainsleif.json",
-          "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "MjolnirEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mjolnir_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/MjolnirEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "BalmungEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "balmung_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BalmungEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "Balmung",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "balmung",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/balmung.json",
-          "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
       "name": "RangeUpToolTip",
       "type": "procedure",
       "compiles": true,
@@ -3483,20 +3224,6 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
-      "name": "Test",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/TestProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Sword"
     },
     {
       "name": "ReflectionToolTip",
@@ -3680,214 +3407,6 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Activation"
-    },
-    {
-      "name": "AegisParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_particle",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/particles/aegis_particle.json",
-          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "AmanomurakumonotsurugiEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amanomurakumonotsurugi_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "Bangobu",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bangobu",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/BangobuItem.java",
-          "src/main/resources/assets/palworld/models/item/bangobu.json"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "ThunderParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thunder_particle",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/particles/thunder_particle.json",
-          "src/main/java/net/mcreator/palworld/client/particle/ThunderParticleParticle.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "Amanomurakumonotsurugi",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amanomurakumonotsurugi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java",
-          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "BangobuEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bangobu_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/BangobuEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "AegisEffect2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_effect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AegisEffect2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "AegisEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AegisEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "ThunderPotion",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thunder_potion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "AegisCool",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis_cool",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
-        ]
-      },
-      "path": "~/Sword"
-    },
-    {
-      "name": "Aegis",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aegis",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/aegis.json",
-          "src/main/java/net/mcreator/palworld/item/AegisItem.java"
-        ]
-      },
-      "path": "~/Sword"
     },
     {
       "name": "DoubleJumpUp",
@@ -4105,6 +3624,487 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "AegisParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/particles/aegis_particle.json",
+          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "DainsleifEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "BurfSwordEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burf_sword_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BurfSwordEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AmanomurakumonotsurugiEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amanomurakumonotsurugi_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AmanomurakumonotsurugiEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "ThunderParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/particles/thunder_particle.json",
+          "src/main/java/net/mcreator/palworld/client/particle/ThunderParticleParticle.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "DainsleifEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/DainsleifEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Amanomurakumonotsurugi",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amanomurakumonotsurugi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java",
+          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Balmung",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balmung",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/balmung.json",
+          "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "SkyshatterEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyshatter_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AegisCool",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_cool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/AegisCoolMobEffect.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Mjolnir",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java",
+          "src/main/resources/assets/palworld/models/item/mjolnir.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Dainsleif",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dainsleif",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/dainsleif.json",
+          "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Aegis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/aegis.json",
+          "src/main/java/net/mcreator/palworld/item/AegisItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Skyshatter",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyshatter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/skyshatter.json",
+          "src/main/java/net/mcreator/palworld/item/SkyshatterItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "BalmungEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balmung_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BalmungEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/TestProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "Bangobu",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bangobu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/BangobuItem.java",
+          "src/main/resources/assets/palworld/models/item/bangobu.json"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "BangobuEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bangobu_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BangobuEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AegisEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AegisEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "AegisEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aegis_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AegisEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "BurfSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burf_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/burf_sword.json",
+          "src/main/java/net/mcreator/palworld/item/BurfSwordItem.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "ThunderPotion",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/ThunderPotionMobEffect.java"
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "SkyshatterEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyshatter_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SkyshatterEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
+    },
+    {
+      "name": "MjolnirEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MjolnirEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sword"
     }
   ],
   "variable_elements": [
@@ -4372,11 +4372,11 @@
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
-      "~CUSTOM:Amanomurakumonotsurugi",
-      "~CUSTOM:Balmung",
-      "~CUSTOM:Dainsleif",
+      "~CUSTOM:BurfSword",
       "~CUSTOM:Skyshatter",
-      "~CUSTOM:BurfSword"
+      "~CUSTOM:Dainsleif",
+      "~CUSTOM:Balmung",
+      "~CUSTOM:Amanomurakumonotsurugi"
     ]
   },
   "tab_element_order": {},

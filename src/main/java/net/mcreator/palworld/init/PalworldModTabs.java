@@ -23,14 +23,14 @@ public class PalworldModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 
-			tabData.accept(PalworldModItems.BURF_SWORD.get());
-			tabData.accept(PalworldModItems.SKYSHATTER.get());
+			tabData.accept(PalworldModItems.AMANOMURAKUMONOTSURUGI.get());
+			tabData.accept(PalworldModItems.BALMUNG.get());
 			tabData.accept(PalworldModItems.MJOLNIR.get());
 			tabData.accept(PalworldModItems.DAINSLEIF.get());
-			tabData.accept(PalworldModItems.BALMUNG.get());
-			tabData.accept(PalworldModItems.BANGOBU.get());
-			tabData.accept(PalworldModItems.AMANOMURAKUMONOTSURUGI.get());
 			tabData.accept(PalworldModItems.AEGIS.get());
+			tabData.accept(PalworldModItems.SKYSHATTER.get());
+			tabData.accept(PalworldModItems.BANGOBU.get());
+			tabData.accept(PalworldModItems.BURF_SWORD.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 

@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "palworld:amanomurakumonotsurugi",
-    "palworld:balmung",
-    "palworld:dainsleif",
+    "palworld:burf_sword",
     "palworld:skyshatter",
-    "palworld:burf_sword"
+    "palworld:dainsleif",
+    "palworld:balmung",
+    "palworld:amanomurakumonotsurugi"
   ]
 }
