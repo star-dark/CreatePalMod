@@ -77,20 +77,6 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISH_MUSKELLUNGE.get());
 			tabData.accept(PalworldModItems.FISH_RED_GROUPER.get());
 			tabData.accept(PalworldModItems.FISH_HERRING.get());
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-
-			tabData.accept(PalworldModItems.BURF_SWORD.get());
-			tabData.accept(PalworldModItems.SKYSHATTER.get());
-			tabData.accept(PalworldModItems.MJOLNIR.get());
-			tabData.accept(PalworldModItems.DAINSLEIF.get());
-			tabData.accept(PalworldModItems.BALMUNG.get());
-			tabData.accept(PalworldModItems.BANGOBU.get());
-			tabData.accept(PalworldModItems.AMANOMURAKUMONOTSURUGI.get());
-			tabData.accept(PalworldModItems.AEGIS.get());
-			tabData.accept(PalworldModItems.GLORY_GOLD_GHOST.get());
-			tabData.accept(PalworldModItems.ASTRA_BOOK.get());
-			tabData.accept(PalworldModItems.AVALON_OF_MERLIN.get());
-			tabData.accept(PalworldModItems.HEAVEN.get());
 
 		}
 	}
