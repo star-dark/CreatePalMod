@@ -109,6 +109,8 @@ public class PalworldModVariables {
 				clone.RewardMoneyBuffer = original.RewardMoneyBuffer;
 				clone.aegis_tick = original.aegis_tick;
 				clone.aegis_bool = original.aegis_bool;
+				clone.Avalon_number = original.Avalon_number;
+				clone.ProtectionAmount = original.ProtectionAmount;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -287,10 +289,8 @@ public class PalworldModVariables {
 		public boolean BlinkVar = false;
 		public double timeBuffer = 0.0;
 		public double HoverSkillPoint = 0;
-		public double timeBuffer = 0;
-		public double Amanomuraku_tick = 0.0;
-		public double AstraBook_tick = 0;
 		public double Avalon_number = 10.0;
+		public double ProtectionAmount = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -335,6 +335,8 @@ public class PalworldModVariables {
 			nbt.putBoolean("BlinkVar", BlinkVar);
 			nbt.putDouble("timeBuffer", timeBuffer);
 			nbt.putDouble("HoverSkillPoint", HoverSkillPoint);
+			nbt.putDouble("Avalon_number", Avalon_number);
+			nbt.putDouble("ProtectionAmount", ProtectionAmount);
 			return nbt;
 		}
 
@@ -380,6 +382,8 @@ public class PalworldModVariables {
 			BlinkVar = nbt.getBoolean("BlinkVar");
 			timeBuffer = nbt.getDouble("timeBuffer");
 			HoverSkillPoint = nbt.getDouble("HoverSkillPoint");
+			Avalon_number = nbt.getDouble("Avalon_number");
+			ProtectionAmount = nbt.getDouble("ProtectionAmount");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
