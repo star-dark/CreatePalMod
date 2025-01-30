@@ -1,6 +1,9 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 
 public class DainsleifEffect2Procedure {
 	public static void execute(Entity sourceentity) {

@@ -3612,23 +3612,9 @@
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
-      "name": "Junk",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "junk",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/JunkProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "AegisParticle",
       "type": "particle",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aegis_particle",
       "metadata": {
@@ -3723,7 +3709,7 @@
     {
       "name": "ThunderParticle",
       "type": "particle",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "thunder_particle",
       "metadata": {
@@ -3756,7 +3742,7 @@
     {
       "name": "Amanomurakumonotsurugi",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "amanomurakumonotsurugi",
       "metadata": {
@@ -3770,7 +3756,7 @@
     {
       "name": "Balmung",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "balmung",
       "metadata": {
@@ -3811,7 +3797,7 @@
     {
       "name": "AegisCool",
       "type": "potioneffect",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aegis_cool",
       "metadata": {
@@ -3824,7 +3810,7 @@
     {
       "name": "Mjolnir",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "mjolnir",
       "metadata": {
@@ -3838,7 +3824,7 @@
     {
       "name": "Dainsleif",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "dainsleif",
       "metadata": {
@@ -3852,7 +3838,7 @@
     {
       "name": "Aegis",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aegis",
       "metadata": {
@@ -3866,7 +3852,7 @@
     {
       "name": "Skyshatter",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "skyshatter",
       "metadata": {
@@ -3917,7 +3903,7 @@
     {
       "name": "Bangobu",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "bangobu",
       "metadata": {
@@ -3950,7 +3936,7 @@
     {
       "name": "AegisEffect2",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aegis_effect_2",
       "metadata": {
@@ -3969,7 +3955,7 @@
     {
       "name": "AegisEffect",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aegis_effect",
       "metadata": {
@@ -4004,7 +3990,7 @@
     {
       "name": "BurfSword",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "burf_sword",
       "metadata": {
@@ -4018,7 +4004,7 @@
     {
       "name": "ThunderPotion",
       "type": "potioneffect",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "thunder_potion",
       "metadata": {
@@ -4105,20 +4091,6 @@
         ]
       },
       "path": "~/Sword"
-    },
-    {
-      "name": "Teststst",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "teststst",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/TestststProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/ttttest"
     }
   ],
   "variable_elements": [
@@ -4404,8 +4376,8 @@
       "gui.palworld.farmer_skill_tree.label_deobeuljeompeu": "더블점프",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -4443,16 +4415,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
+      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "item.palworld.ore_iron": "Ore Iron",
+      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -4791,10 +4763,6 @@
       },
       {
         "name": "Attribute",
-        "children": []
-      },
-      {
-        "name": "ttttest",
         "children": []
       }
     ]
