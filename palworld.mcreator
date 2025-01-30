@@ -44,8 +44,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/world/inventory/UserGUIMenu.java",
-          "src/main/java/net/mcreator/palworld/network/UserGUIButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java",
+          "src/main/java/net/mcreator/palworld/network/UserGUIButtonMessage.java"
         ]
       },
       "path": "~/GUI/UserGUI"
@@ -111,8 +111,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/palworld/models/item/farmer_job_npc_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java",
-          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java"
+          "src/main/java/net/mcreator/palworld/entity/FarmerJobNPCEntity.java",
+          "src/main/java/net/mcreator/palworld/client/renderer/FarmerJobNPCRenderer.java"
         ]
       },
       "path": "~/JobNPC/NPC"
@@ -211,8 +211,8 @@
       "registry_name": "ore_emerald",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/OreEmeraldItem.java",
-          "src/main/resources/assets/palworld/models/item/ore_emerald.json"
+          "src/main/resources/assets/palworld/models/item/ore_emerald.json",
+          "src/main/java/net/mcreator/palworld/item/OreEmeraldItem.java"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -336,9 +336,9 @@
       "registry_name": "miner_job_npc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java",
           "src/main/resources/assets/palworld/models/item/miner_job_npc_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/entity/MinerJobNPCEntity.java"
+          "src/main/java/net/mcreator/palworld/entity/MinerJobNPCEntity.java",
+          "src/main/java/net/mcreator/palworld/client/renderer/MinerJobNPCRenderer.java"
         ]
       },
       "path": "~/JobNPC/NPC"
@@ -379,8 +379,8 @@
       "registry_name": "miner_pick_lv_30",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/miner_pick_lv_30.json",
-          "src/main/java/net/mcreator/palworld/item/MinerPickLv30Item.java"
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv30Item.java",
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_30.json"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -530,8 +530,8 @@
       "registry_name": "miner_pick_lv_15",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/miner_pick_lv_15.json",
-          "src/main/java/net/mcreator/palworld/item/MinerPickLv15Item.java"
+          "src/main/java/net/mcreator/palworld/item/MinerPickLv15Item.java",
+          "src/main/resources/assets/palworld/models/item/miner_pick_lv_15.json"
         ]
       },
       "path": "~/JobItem/Miner"
@@ -735,8 +735,8 @@
       "registry_name": "fish_pollock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishPollockItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_pollock.json"
+          "src/main/resources/assets/palworld/models/item/fish_pollock.json",
+          "src/main/java/net/mcreator/palworld/item/FishPollockItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -777,8 +777,8 @@
       "registry_name": "fish_blue_gill",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishBlueGillItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_blue_gill.json"
+          "src/main/resources/assets/palworld/models/item/fish_blue_gill.json",
+          "src/main/java/net/mcreator/palworld/item/FishBlueGillItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -805,8 +805,8 @@
       "registry_name": "fish_angler",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishAnglerItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_angler.json"
+          "src/main/resources/assets/palworld/models/item/fish_angler.json",
+          "src/main/java/net/mcreator/palworld/item/FishAnglerItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -868,8 +868,8 @@
       "registry_name": "fish_catfish",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishCatfishItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_catfish.json"
+          "src/main/resources/assets/palworld/models/item/fish_catfish.json",
+          "src/main/java/net/mcreator/palworld/item/FishCatfishItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -910,8 +910,8 @@
       "registry_name": "fish_red_bellied_piranha",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishRedBelliedPiranhaItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_red_bellied_piranha.json"
+          "src/main/resources/assets/palworld/models/item/fish_red_bellied_piranha.json",
+          "src/main/java/net/mcreator/palworld/item/FishRedBelliedPiranhaItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -924,8 +924,8 @@
       "registry_name": "fish_rainbow_trout",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishRainbowTroutItem.java",
-          "src/main/resources/assets/palworld/models/item/fish_rainbow_trout.json"
+          "src/main/resources/assets/palworld/models/item/fish_rainbow_trout.json",
+          "src/main/java/net/mcreator/palworld/item/FishRainbowTroutItem.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -952,8 +952,8 @@
       "registry_name": "fish_rod_lv_15",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/fish_rod_lv_15.json",
-          "src/main/java/net/mcreator/palworld/item/FishRodLv15Item.java"
+          "src/main/java/net/mcreator/palworld/item/FishRodLv15Item.java",
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_15.json"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -980,8 +980,8 @@
       "registry_name": "fish_rod_lv_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishRodLv1Item.java",
-          "src/main/resources/assets/palworld/models/item/fish_rod_lv_1.json"
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_1.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv1Item.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -994,8 +994,8 @@
       "registry_name": "fish_rod_lv_30",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/FishRodLv30Item.java",
-          "src/main/resources/assets/palworld/models/item/fish_rod_lv_30.json"
+          "src/main/resources/assets/palworld/models/item/fish_rod_lv_30.json",
+          "src/main/java/net/mcreator/palworld/item/FishRodLv30Item.java"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -1008,8 +1008,8 @@
       "registry_name": "fish_muskellunge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/fish_muskellunge.json",
-          "src/main/java/net/mcreator/palworld/item/FishMuskellungeItem.java"
+          "src/main/java/net/mcreator/palworld/item/FishMuskellungeItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_muskellunge.json"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -1036,8 +1036,8 @@
       "registry_name": "fish_herring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/fish_herring.json",
-          "src/main/java/net/mcreator/palworld/item/FishHerringItem.java"
+          "src/main/java/net/mcreator/palworld/item/FishHerringItem.java",
+          "src/main/resources/assets/palworld/models/item/fish_herring.json"
         ]
       },
       "path": "~/JobItem/Fisher"
@@ -1142,8 +1142,8 @@
       "registry_name": "chunwon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/ChunwonItem.java",
-          "src/main/resources/assets/palworld/models/item/chunwon.json"
+          "src/main/resources/assets/palworld/models/item/chunwon.json",
+          "src/main/java/net/mcreator/palworld/item/ChunwonItem.java"
         ]
       },
       "path": "~/MoneyItem"
@@ -1156,8 +1156,8 @@
       "registry_name": "money_tap",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/MoneyTapScreen.java",
           "src/main/java/net/mcreator/palworld/world/inventory/MoneyTapMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/MoneyTapScreen.java",
           "src/main/java/net/mcreator/palworld/network/MoneyTapButtonMessage.java"
         ]
       },
@@ -1171,8 +1171,8 @@
       "registry_name": "ochunwon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/ochunwon.json",
-          "src/main/java/net/mcreator/palworld/item/OchunwonItem.java"
+          "src/main/java/net/mcreator/palworld/item/OchunwonItem.java",
+          "src/main/resources/assets/palworld/models/item/ochunwon.json"
         ]
       },
       "path": "~/MoneyItem"
@@ -1292,8 +1292,8 @@
       "registry_name": "quest_tap",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/QuestTapScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/QuestTapMenu.java"
+          "src/main/java/net/mcreator/palworld/world/inventory/QuestTapMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/QuestTapScreen.java"
         ]
       },
       "path": "~/GUI/User_Quest"
@@ -1344,8 +1344,8 @@
       "registry_name": "magic_wand",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/magic_wand.json",
-          "src/main/java/net/mcreator/palworld/item/MagicWandItem.java"
+          "src/main/java/net/mcreator/palworld/item/MagicWandItem.java",
+          "src/main/resources/assets/palworld/models/item/magic_wand.json"
         ]
       },
       "path": "~/ClearWand"
@@ -1451,8 +1451,8 @@
       "registry_name": "quest_provide_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/QuestProvideGUIScreen.java",
           "src/main/java/net/mcreator/palworld/world/inventory/QuestProvideGUIMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/QuestProvideGUIScreen.java",
           "src/main/java/net/mcreator/palworld/network/QuestProvideGUIButtonMessage.java"
         ]
       },
@@ -1466,9 +1466,9 @@
       "registry_name": "king",
       "metadata": {
         "files": [
+          "src/main/resources/assets/palworld/models/item/king_spawn_egg.json",
           "src/main/java/net/mcreator/palworld/entity/KingEntity.java",
-          "src/main/java/net/mcreator/palworld/client/renderer/KingRenderer.java",
-          "src/main/resources/assets/palworld/models/item/king_spawn_egg.json"
+          "src/main/java/net/mcreator/palworld/client/renderer/KingRenderer.java"
         ]
       },
       "path": "~/QuestNPC"
@@ -1699,9 +1699,9 @@
       "registry_name": "pig",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/renderer/PigRenderer.java",
           "src/main/resources/assets/palworld/models/item/pig_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/entity/PigEntity.java"
+          "src/main/java/net/mcreator/palworld/entity/PigEntity.java",
+          "src/main/java/net/mcreator/palworld/client/renderer/PigRenderer.java"
         ]
       },
       "path": "~/QuestEntity"
@@ -1714,8 +1714,8 @@
       "registry_name": "queen",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/queen_spawn_egg.json",
           "src/main/java/net/mcreator/palworld/client/renderer/QueenRenderer.java",
+          "src/main/resources/assets/palworld/models/item/queen_spawn_egg.json",
           "src/main/java/net/mcreator/palworld/entity/QueenEntity.java"
         ]
       },
@@ -1729,9 +1729,9 @@
       "registry_name": "sub_quest_provide_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/network/SubQuestProvideGUIButtonMessage.java",
           "src/main/java/net/mcreator/palworld/world/inventory/SubQuestProvideGUIMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/SubQuestProvideGUIScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/SubQuestProvideGUIScreen.java",
+          "src/main/java/net/mcreator/palworld/network/SubQuestProvideGUIButtonMessage.java"
         ]
       },
       "path": "~/GUI/Npc_Quest"
@@ -1875,8 +1875,8 @@
       "registry_name": "sub_quest_clear",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/SubQuestClearScreen.java",
           "src/main/java/net/mcreator/palworld/world/inventory/SubQuestClearMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/SubQuestClearScreen.java",
           "src/main/java/net/mcreator/palworld/network/SubQuestClearButtonMessage.java"
         ]
       },
@@ -2008,8 +2008,8 @@
       "registry_name": "farmer_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/network/FarmerSkillTreeButtonMessage.java",
           "src/main/java/net/mcreator/palworld/client/gui/FarmerSkillTreeScreen.java",
+          "src/main/java/net/mcreator/palworld/network/FarmerSkillTreeButtonMessage.java",
           "src/main/java/net/mcreator/palworld/world/inventory/FarmerSkillTreeMenu.java"
         ]
       },
@@ -2063,8 +2063,8 @@
       "registry_name": "fisher_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java"
+          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java"
         ]
       },
       "path": "~/GUI/Skill_Tree"
@@ -2096,8 +2096,8 @@
       "registry_name": "miner_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java"
+          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java"
         ]
       },
       "path": "~/GUI/Skill_Tree"
@@ -2373,9 +2373,9 @@
       "registry_name": "job_npc_action",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/JobNpcActionScreen.java",
           "src/main/java/net/mcreator/palworld/world/inventory/JobNpcActionMenu.java",
-          "src/main/java/net/mcreator/palworld/network/JobNpcActionButtonMessage.java"
+          "src/main/java/net/mcreator/palworld/network/JobNpcActionButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/client/gui/JobNpcActionScreen.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2709,8 +2709,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/network/FisherSellGuiButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSellGuiMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSellGuiScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSellGuiScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/FisherSellGuiMenu.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2837,9 +2837,9 @@
       "registry_name": "miner_sell_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/palworld/world/inventory/MinerSellGuiMenu.java",
           "src/main/java/net/mcreator/palworld/network/MinerSellGuiButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSellGuiScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSellGuiMenu.java"
+          "src/main/java/net/mcreator/palworld/client/gui/MinerSellGuiScreen.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -2909,9 +2909,9 @@
       "registry_name": "farmer_sell_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/network/FarmerSellGuiButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/FarmerSellGuiMenu.java",
           "src/main/java/net/mcreator/palworld/client/gui/FarmerSellGuiScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/FarmerSellGuiMenu.java"
+          "src/main/java/net/mcreator/palworld/network/FarmerSellGuiButtonMessage.java"
         ]
       },
       "path": "~/JobNPC/JobTrade"
@@ -3180,8 +3180,8 @@
       "registry_name": "level_up_particle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/particle/LevelUpParticleParticle.java",
-          "src/main/resources/assets/palworld/particles/level_up_particle.json"
+          "src/main/resources/assets/palworld/particles/level_up_particle.json",
+          "src/main/java/net/mcreator/palworld/client/particle/LevelUpParticleParticle.java"
         ]
       },
       "path": "~/ClearWand"
@@ -3612,20 +3612,6 @@
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
-      "name": "Junk",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "junk",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/JunkProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "AegisParticle",
       "type": "particle",
       "compiles": true,
@@ -3633,8 +3619,8 @@
       "registry_name": "aegis_particle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/particles/aegis_particle.json",
-          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java"
+          "src/main/java/net/mcreator/palworld/client/particle/AegisParticleParticle.java",
+          "src/main/resources/assets/palworld/particles/aegis_particle.json"
         ]
       },
       "path": "~/Sword"
@@ -3761,8 +3747,8 @@
       "registry_name": "amanomurakumonotsurugi",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java",
-          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json"
+          "src/main/resources/assets/palworld/models/item/amanomurakumonotsurugi.json",
+          "src/main/java/net/mcreator/palworld/item/AmanomurakumonotsurugiItem.java"
         ]
       },
       "path": "~/Sword"
@@ -3775,8 +3761,8 @@
       "registry_name": "balmung",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/balmung.json",
-          "src/main/java/net/mcreator/palworld/item/BalmungItem.java"
+          "src/main/java/net/mcreator/palworld/item/BalmungItem.java",
+          "src/main/resources/assets/palworld/models/item/balmung.json"
         ]
       },
       "path": "~/Sword"
@@ -3829,8 +3815,8 @@
       "registry_name": "mjolnir",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java",
-          "src/main/resources/assets/palworld/models/item/mjolnir.json"
+          "src/main/resources/assets/palworld/models/item/mjolnir.json",
+          "src/main/java/net/mcreator/palworld/item/MjolnirItem.java"
         ]
       },
       "path": "~/Sword"
@@ -3843,8 +3829,8 @@
       "registry_name": "dainsleif",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/dainsleif.json",
-          "src/main/java/net/mcreator/palworld/item/DainsleifItem.java"
+          "src/main/java/net/mcreator/palworld/item/DainsleifItem.java",
+          "src/main/resources/assets/palworld/models/item/dainsleif.json"
         ]
       },
       "path": "~/Sword"
@@ -4105,20 +4091,6 @@
         ]
       },
       "path": "~/Sword"
-    },
-    {
-      "name": "Teststst",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "teststst",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/TestststProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/ttttest"
     }
   ],
   "variable_elements": [
@@ -4404,8 +4376,8 @@
       "gui.palworld.farmer_skill_tree.label_deobeuljeompeu": "더블점프",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -4443,16 +4415,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
+      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "item.palworld.ore_iron": "Ore Iron",
+      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -4791,10 +4763,6 @@
       },
       {
         "name": "Attribute",
-        "children": []
-      },
-      {
-        "name": "ttttest",
         "children": []
       }
     ]

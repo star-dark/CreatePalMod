@@ -1,6 +1,10 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class AegisEffect2Procedure {
 	public static void execute(Entity entity) {
