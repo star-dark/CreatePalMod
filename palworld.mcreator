@@ -3614,7 +3614,7 @@
     {
       "name": "AegisParticle",
       "type": "particle",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aegis_particle",
       "metadata": {
@@ -3709,7 +3709,7 @@
     {
       "name": "ThunderParticle",
       "type": "particle",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "thunder_particle",
       "metadata": {
@@ -3742,7 +3742,7 @@
     {
       "name": "Amanomurakumonotsurugi",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "amanomurakumonotsurugi",
       "metadata": {
@@ -3756,7 +3756,7 @@
     {
       "name": "Balmung",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "balmung",
       "metadata": {
@@ -3797,7 +3797,7 @@
     {
       "name": "AegisCool",
       "type": "potioneffect",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aegis_cool",
       "metadata": {
@@ -3810,7 +3810,7 @@
     {
       "name": "Mjolnir",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "mjolnir",
       "metadata": {
@@ -3824,7 +3824,7 @@
     {
       "name": "Dainsleif",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "dainsleif",
       "metadata": {
@@ -3838,7 +3838,7 @@
     {
       "name": "Aegis",
       "type": "item",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aegis",
       "metadata": {
@@ -3852,7 +3852,7 @@
     {
       "name": "Skyshatter",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "skyshatter",
       "metadata": {
@@ -3903,7 +3903,7 @@
     {
       "name": "Bangobu",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "bangobu",
       "metadata": {
@@ -3936,7 +3936,7 @@
     {
       "name": "AegisEffect2",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aegis_effect_2",
       "metadata": {
@@ -3955,7 +3955,7 @@
     {
       "name": "AegisEffect",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aegis_effect",
       "metadata": {
@@ -3990,7 +3990,7 @@
     {
       "name": "BurfSword",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "burf_sword",
       "metadata": {
@@ -4004,7 +4004,7 @@
     {
       "name": "ThunderPotion",
       "type": "potioneffect",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "thunder_potion",
       "metadata": {
