@@ -17,6 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
+import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
 import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.RecoverUpProcedure;
 import net.mcreator.palworld.procedures.RangeUpProcedure;
@@ -107,6 +108,10 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		if (buttonID == 9) {
 
 			DoubleJumpUpProcedure.execute(entity);
+		}
+		if (buttonID == 10) {
+
+			ShieldBoomberUpProcedure.execute(entity);
 		}
 	}
 

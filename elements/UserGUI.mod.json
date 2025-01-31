@@ -7,7 +7,7 @@
     "height": 143,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
@@ -18,7 +18,7 @@
             "fixedValue": "퀘스트"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 158,
@@ -33,7 +33,7 @@
             "fixedValue": "돈"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 215,
@@ -87,11 +87,20 @@
             "fixedValue": "스킬트리"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 257,
           "y": 133
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rtaeb.png",
+          "use1Xscale": true,
+          "x": 88,
+          "y": 41
         }
       }
     ],

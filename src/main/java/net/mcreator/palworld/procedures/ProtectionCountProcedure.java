@@ -1,10 +1,11 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.neoforge.event.entity.living.LivingShieldBlockEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.palworld.network.PalworldModVariables;
@@ -14,7 +15,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class ProtectionCountProcedure {
 	@SubscribeEvent
-	public static void whenEntityBlocksWithShield(LivingShieldBlockEvent event) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity());
 		}
@@ -27,8 +28,7 @@ public class ProtectionCountProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).ProtectionAmount < 9) {
-			assert Boolean.TRUE; //#dbg:ProtectionCount:marker1
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.isBlocking() && entity.getData(PalworldModVariables.PLAYER_VARIABLES).ProtectionAmount < 9) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.ProtectionAmount = entity.getData(PalworldModVariables.PLAYER_VARIABLES).ProtectionAmount + 1;

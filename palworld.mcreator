@@ -44,8 +44,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/world/inventory/UserGUIMenu.java",
-          "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java",
-          "src/main/java/net/mcreator/palworld/network/UserGUIButtonMessage.java"
+          "src/main/java/net/mcreator/palworld/network/UserGUIButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/client/gui/UserGUIScreen.java"
         ]
       },
       "path": "~/GUI/UserGUI"
@@ -1344,8 +1344,8 @@
       "registry_name": "magic_wand",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/MagicWandItem.java",
-          "src/main/resources/assets/palworld/models/item/magic_wand.json"
+          "src/main/resources/assets/palworld/models/item/magic_wand.json",
+          "src/main/java/net/mcreator/palworld/item/MagicWandItem.java"
         ]
       },
       "path": "~/ClearWand"
@@ -2008,8 +2008,8 @@
       "registry_name": "farmer_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/FarmerSkillTreeScreen.java",
           "src/main/java/net/mcreator/palworld/network/FarmerSkillTreeButtonMessage.java",
+          "src/main/java/net/mcreator/palworld/client/gui/FarmerSkillTreeScreen.java",
           "src/main/java/net/mcreator/palworld/world/inventory/FarmerSkillTreeMenu.java"
         ]
       },
@@ -4364,14 +4364,14 @@
       "path": "~/GUI/UserGUI/Condition"
     },
     {
-      "name": "ShieldFire",
+      "name": "ShieldBoomberUp",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "shield_fire",
+      "registry_name": "shield_boomber_up",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/ShieldFireProcedure.java"
+          "src/main/java/net/mcreator/palworld/procedures/ShieldBoomberUpProcedure.java"
         ],
         "dependencies": [
           {
@@ -4381,6 +4381,61 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ShieldBoomber",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shield_boomber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ShieldBoomberProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ShieldBoomberPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shield_boomber_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ShieldBoomberPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     }
   ],
   "variable_elements": [
@@ -4641,6 +4696,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "shieldBoomberSkillpoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -4678,8 +4739,8 @@
       "gui.palworld.farmer_skill_tree.label_deobeuljeompeu": "더블점프",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
@@ -4698,8 +4759,8 @@
       "gui.palworld.fisher_sell_gui.button_panmae6": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae3": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae4": "모두판매",
-      "item.palworld.astra_book": "아스트라 북",
       "gui.palworld.fisher_sell_gui.button_panmae1": "모두판매",
+      "item.palworld.astra_book": "아스트라 북",
       "gui.palworld.fisher_sell_gui.button_panmae2": "모두판매",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
       "gui.palworld.fisher_skill_tree.label_15lv": "15Lv",
@@ -4718,16 +4779,16 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
+      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "item.palworld.ore_iron": "Ore Iron",
+      "gui.palworld.farmer_skill_tree.label_102": "/ 10",
       "gui.palworld.farmer_skill_tree.label_103": "/ 4",
       "item.palworld.fish_carp": "Fish Carp",
       "gui.palworld.miner_skill_tree.label_25lv": "25Lv",
@@ -4766,6 +4827,7 @@
       "gui.palworld.farmer_skill_tree.label_5lv": "5Lv",
       "gui.palworld.farmer_skill_tree.label_53": "/ 5",
       "gui.palworld.farmer_skill_tree.label_52": "/ 5",
+      "gui.palworld.farmer_skill_tree.label_55": "/ 5",
       "item.palworld.fish_blue_gill": "Fish Blue Gill",
       "gui.palworld.farmer_skill_tree.label_54": "/ 5",
       "item.palworld.magic_wand": "Magic Wand",
@@ -4903,6 +4965,7 @@
       "gui.palworld.miner_skill_tree.label_5lv": "5Lv",
       "gui.palworld.quest_provide_gui.button_dadgi": "닫기",
       "entity.palworld.miner_job_npc": "Miner Job NPC",
+      "gui.palworld.farmer_skill_tree.label_swildeubumbeo": "쉴드붐버",
       "item.palworld.fish_rod_lv_1": "Fish Rod Lv 1",
       "gui.palworld.sub_quest_complete.button_geojeol": "거절",
       "item.palworld.ore_gold": "Ore Gold",

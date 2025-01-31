@@ -10,7 +10,7 @@ public class MagicWandentitigaaitemeulhwidureulddaeProcedure {
 			return;
 		{
 			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.Player_EXP = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_EXP + 1000;
+			_vars.Player_EXP = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_EXP + 10000;
 			_vars.syncPlayerVariables(entity);
 		}
 	}

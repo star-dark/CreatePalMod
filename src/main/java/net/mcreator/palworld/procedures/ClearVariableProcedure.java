@@ -115,6 +115,11 @@ public class ClearVariableProcedure {
 		}
 		{
 			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.shieldBoomberSkillpoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 			_vars.timeBuffer = 0;
 			_vars.syncPlayerVariables(entity);
 		}

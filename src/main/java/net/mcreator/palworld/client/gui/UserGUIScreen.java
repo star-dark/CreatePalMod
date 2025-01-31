@@ -39,8 +39,6 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 		this.imageHeight = 143;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("palworld:textures/screens/user_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
@@ -53,7 +51,9 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(ResourceLocation.parse("palworld:textures/screens/rtaeb.png"), this.leftPos + -38, this.topPos + -8, 0, 0, 255, 157, 255, 157);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -68,9 +68,9 @@ public class UserGUIScreen extends AbstractContainerScreen<UserGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_kweseuteu"), 32, 84, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_don"), 89, 84, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_seukilteuri"), 131, 84, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_kweseuteu"), 32, 84, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_don"), 89, 84, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.user_gui.label_seukilteuri"), 131, 84, -1, false);
 	}
 
 	@Override

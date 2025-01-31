@@ -851,6 +851,65 @@
           "x": 220,
           "y": 109
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_swildeubumbeo",
+          "image": "swildeubumbeo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ShieldBoomberUp"
+          },
+          "x": 265,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_swildeubumbeo",
+          "text": {
+            "fixedValue": "쉴드붐버"
+          },
+          "color": {
+            "value": -13421569,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 83
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_55",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 276,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_shield_boomber_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ShieldBoomberPoint"
+          },
+          "color": {
+            "value": -13421569,
+            "falpha": 0.0
+          },
+          "x": 266,
+          "y": 89
+        }
       }
     ],
     "gridSettings": {

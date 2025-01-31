@@ -13,6 +13,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
+import net.mcreator.palworld.procedures.ShieldBoomberPointProcedure;
 import net.mcreator.palworld.procedures.ReflectionPointProcedure;
 import net.mcreator.palworld.procedures.RecoverUpToolTipProcedure;
 import net.mcreator.palworld.procedures.RecoverUpPointProcedure;
@@ -50,6 +51,7 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 	ImageButton imagebutton_bansa;
 	ImageButton imagebutton_hover;
 	ImageButton imagebutton_deobeuljeompeu;
+	ImageButton imagebutton_swildeubumbeo;
 
 	public FarmerSkillTreeScreen(FarmerSkillTreeMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -169,6 +171,11 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		guiGraphics.drawString(this.font,
 
 				DoubleJumpPointProcedure.execute(entity), 152, 86, -10092442, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_swildeubumbeo"), 199, 60, -13421569, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_55"), 208, 66, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				ShieldBoomberPointProcedure.execute(entity), 198, 66, -13421569, false);
 	}
 
 	@Override
@@ -310,5 +317,19 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		};
 		guistate.put("button:imagebutton_deobeuljeompeu", imagebutton_deobeuljeompeu);
 		this.addRenderableWidget(imagebutton_deobeuljeompeu);
+		imagebutton_swildeubumbeo = new ImageButton(this.leftPos + 197, this.topPos + 35, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/swildeubumbeo.png"), ResourceLocation.parse("palworld:textures/screens/swildeubumbeo.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new FarmerSkillTreeButtonMessage(10, x, y, z));
+						FarmerSkillTreeButtonMessage.handleButtonAction(entity, 10, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_swildeubumbeo", imagebutton_swildeubumbeo);
+		this.addRenderableWidget(imagebutton_swildeubumbeo);
 	}
 }

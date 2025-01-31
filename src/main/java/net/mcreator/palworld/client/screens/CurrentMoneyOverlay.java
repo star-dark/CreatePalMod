@@ -24,7 +24,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.palworld.procedures.UserFaceProcedure;
 import net.mcreator.palworld.procedures.PlayerLevelProcedure;
-import net.mcreator.palworld.procedures.PlayerExpProcedure;
 import net.mcreator.palworld.procedures.PlayerExpGoalProcedure;
 import net.mcreator.palworld.procedures.JobTextProcedure;
 import net.mcreator.palworld.procedures.IsMinerProcedure;
@@ -59,34 +58,31 @@ public class CurrentMoneyOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
-			event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/money2.png"), 42, 9, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/money2.png"), 42, 10, 0, 0, 16, 16, 16, 16);
 
 			if (IsFisherProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/fisher.png"), w / 2 + -172, h / 2 + -91, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/fisher.png"), w / 2 + -122, h / 2 + -94, 0, 0, 16, 16, 16, 16);
 			}
 			if (IsMinerProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/miner.png"), w / 2 + -171, h / 2 + -92, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/miner.png"), w / 2 + -121, h / 2 + -94, 0, 0, 16, 16, 16, 16);
 			}
 			if (IsFarmerProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/farmer.png"), w / 2 + -171, h / 2 + -91, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("palworld:textures/screens/farmer.png"), w / 2 + -120, h / 2 + -95, 0, 0, 16, 16, 16, 16);
 			}
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					BringMyMoneyProcedure.execute(entity), 58, 12, -256, false);
+					BringMyMoneyProcedure.execute(entity), 58, 13, -256, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.palworld.current_money.label_empty"), w / 2 + -213, h / 2 + -120, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.palworld.current_money.label_empty1"), w / 2 + -213, h / 2 + -120, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					JobTextProcedure.execute(entity), w / 2 + -155, h / 2 + -88, -13421569, false);
+					JobTextProcedure.execute(entity), w / 2 + -145, h / 2 + -90, -13421569, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					PlayerLevelProcedure.execute(entity), w / 2 + -170, h / 2 + -73, -65536, false);
+					PlayerLevelProcedure.execute(entity), w / 2 + -167, h / 2 + -90, -65536, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					PlayerExpGoalProcedure.execute(entity), w / 2 + -123, h / 2 + -73, -1, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
-
-					PlayerExpProcedure.execute(entity), w / 2 + -151, h / 2 + -73, -1, false);
+					PlayerExpGoalProcedure.execute(entity), w / 2 + -167, h / 2 + -75, -1, false);
 			if (UserFaceProcedure.execute(entity) instanceof LivingEntity livingEntity) {
 				renderEntityInInventoryFollowsAngle(event.getGuiGraphics(), 22, 56, 30, 0f, 0, livingEntity);
 			}
