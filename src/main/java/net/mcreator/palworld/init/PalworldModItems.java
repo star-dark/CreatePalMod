@@ -55,6 +55,7 @@ import net.mcreator.palworld.item.ChunwonItem;
 import net.mcreator.palworld.item.BurfSwordItem;
 import net.mcreator.palworld.item.BangobuItem;
 import net.mcreator.palworld.item.BalmungItem;
+import net.mcreator.palworld.item.AvalonOfMerlinItem;
 import net.mcreator.palworld.item.AstraBookItem;
 import net.mcreator.palworld.item.AmanomurakumonotsurugiItem;
 import net.mcreator.palworld.item.AegisItem;
@@ -116,6 +117,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> BANGOBU = REGISTRY.register("bangobu", BangobuItem::new);
 	public static final DeferredItem<Item> BURF_SWORD = REGISTRY.register("burf_sword", BurfSwordItem::new);
 	public static final DeferredItem<Item> ASTRA_BOOK = REGISTRY.register("astra_book", AstraBookItem::new);
+	public static final DeferredItem<Item> AVALON_OF_MERLIN = REGISTRY.register("avalon_of_merlin", AvalonOfMerlinItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

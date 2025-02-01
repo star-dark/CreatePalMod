@@ -1,0 +1,44 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "MultiTool",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "amethyst-staff",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Avalon Of Merlin",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "efficiency": 2.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "AvalonOfMerlinEffect5"
+    },
+    "onRightClickedOnBlock": {
+      "name": "AvalonOfMerlinEffect5"
+    },
+    "onEntitySwing": {
+      "name": "AvalonOfMerlinEffect4"
+    }
+  }
+}

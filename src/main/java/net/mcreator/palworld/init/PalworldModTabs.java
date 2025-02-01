@@ -32,6 +32,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.BANGOBU.get());
 			tabData.accept(PalworldModItems.BURF_SWORD.get());
 			tabData.accept(PalworldModItems.ASTRA_BOOK.get());
+			tabData.accept(PalworldModItems.AVALON_OF_MERLIN.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
