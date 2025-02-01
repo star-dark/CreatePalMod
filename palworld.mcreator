@@ -4824,6 +4824,25 @@
         ]
       },
       "path": "~/Weapon/Heaven"
+    },
+    {
+      "name": "HeavenEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heaven_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HeavenEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapon/Heaven"
     }
   ],
   "variable_elements": [
