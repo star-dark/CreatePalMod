@@ -287,7 +287,7 @@ public class PalworldModVariables {
 		public double HornPlayerSkillPoint = 0;
 		public double ReflectionSkillPointUp = 0;
 		public double aegis_tick = 100.0;
-		public boolean aegis_bool = true;
+		public boolean aegis_bool = false;
 		public double DoubleJumpSkillPoint = 0;
 		public boolean BlinkVar = false;
 		public double timeBuffer = 0.0;

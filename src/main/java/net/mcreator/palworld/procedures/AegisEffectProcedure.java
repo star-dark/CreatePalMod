@@ -83,7 +83,7 @@ public class AegisEffectProcedure {
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator instanceof Player)) {
 							entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) 0.5);
-							entityiterator.setDeltaMovement(new Vec3(((-0.05) * entityiterator.getX()), ((-0.05) * entityiterator.getY()), ((-0.05) * entityiterator.getZ())));
+							entityiterator.setDeltaMovement(new Vec3(((-0.005) * entityiterator.getX()), ((-0.005) * entityiterator.getY()), ((-0.005) * entityiterator.getZ())));
 						}
 					}
 				}

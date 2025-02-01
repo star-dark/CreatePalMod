@@ -9,7 +9,11 @@
     "states": [],
     "name": "Glory Gold Ghost",
     "rarity": "EPIC",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 72000,
