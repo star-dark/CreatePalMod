@@ -19,4 +19,5 @@ public class PalworldModParticleTypes {
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> HOVER_PARTICLE = REGISTRY.register("hover_particle", () -> new SimpleParticleType(false));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> AEGIS_PARTICLE = REGISTRY.register("aegis_particle", () -> new SimpleParticleType(false));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> THUNDER_PARTICLE = REGISTRY.register("thunder_particle", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> WATER_PARTICLE = REGISTRY.register("water_particle", () -> new SimpleParticleType(false));
 }

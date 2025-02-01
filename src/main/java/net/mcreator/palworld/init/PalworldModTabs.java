@@ -71,6 +71,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISH_ROD_LV_30.get());
 			tabData.accept(PalworldModItems.MAGIC_WAND.get());
 			tabData.accept(PalworldModItems.LEVEL_WAND.get());
+			tabData.accept(PalworldModItems.NICHIRIN.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 
