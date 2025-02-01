@@ -1,0 +1,41 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "MultiTool",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "evil-book",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Astra Book",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "efficiency": 0.1,
+    "attackSpeed": 0.1,
+    "enchantability": 2,
+    "damageVsEntity": 0.1,
+    "usageCount": 100,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "AstraBookEffect"
+    },
+    "onRightClickedOnBlock": {
+      "name": "AstraBookEffect"
+    }
+  }
+}

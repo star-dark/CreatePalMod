@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "palworld:astra_book",
     "palworld:bangobu",
     "palworld:mjolnir"
   ]

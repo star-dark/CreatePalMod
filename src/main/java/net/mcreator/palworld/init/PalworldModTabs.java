@@ -31,6 +31,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.SKYSHATTER.get());
 			tabData.accept(PalworldModItems.BANGOBU.get());
 			tabData.accept(PalworldModItems.BURF_SWORD.get());
+			tabData.accept(PalworldModItems.ASTRA_BOOK.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
