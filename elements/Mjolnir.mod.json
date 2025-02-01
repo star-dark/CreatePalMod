@@ -8,7 +8,7 @@
     "texture": "hammer_gravity",
     "customModelName": "hammer_stormlander:default",
     "blockingModelName": "Normal blocking",
-    "name": "Mjolnir",
+    "name": "묠니르",
     "specialInformation": {
       "fixedValue": []
     },
