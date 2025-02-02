@@ -4,12 +4,11 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.SimpleParticleType;
 
@@ -23,34 +22,77 @@ public class NichirinEffectProcedure {
 			return;
 		double r = 0;
 		double deg = 0;
-		if (entity instanceof LivingEntity _entity)
-			_entity.swing(InteractionHand.MAIN_HAND, true);
-		deg = entity.getYRot() - 90;
-		r = 1;
-		if (world instanceof ServerLevel _level) {
-			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
-			});
-		}
-		for (int index0 = 0; index0 < 2; index0++) {
-			for (int index1 = 0; index1 < 11; index1++) {
-				world.addParticle((SimpleParticleType) (PalworldModParticleTypes.WATER_PARTICLE.get()), (x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg))), ((-0.1) * Math.sin(Math.toRadians(deg))), 0,
-						(0.1 * Math.cos(Math.toRadians(deg))));
-				if (((Entity) world.getEntitiesOfClass(Monster.class, AABB.ofSize(new Vec3((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg)))), 2, 2, 2), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg))))).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 2, false, false));
-				if (((Entity) world.getEntitiesOfClass(Monster.class, AABB.ofSize(new Vec3((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg)))), 2, 2, 2), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg))))).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 2, false, false));
-				deg = deg + 18;
+		double i = 0;
+		if (true == true) {
+			deg = entity.getYRot() - 90;
+			r = 1;
+			if (world instanceof ServerLevel _level) {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+				});
 			}
-			deg = entity.getYRot() - 81;
-			r = r + 1;
+			for (int index0 = 0; index0 < 2; index0++) {
+				for (int index1 = 0; index1 < 11; index1++) {
+					world.addParticle((SimpleParticleType) (PalworldModParticleTypes.WATER_PARTICLE.get()), (x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg))), ((-0.1) * Math.sin(Math.toRadians(deg))), 0,
+							(0.1 * Math.cos(Math.toRadians(deg))));
+					if (((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg)))), 2, 2, 2), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg))))).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 1, false, false));
+					if (((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg)))), 2, 2, 2), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf((x - r * Math.sin(Math.toRadians(deg))), (y + 1), (z + r * Math.cos(Math.toRadians(deg))))).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1, false, false));
+					deg = deg + 18;
+				}
+				deg = entity.getYRot() - 81;
+				r = r + 1;
+			}
+		}
+		if (true == true) {
+			{
+				Entity _ent = entity;
+				_ent.teleportTo(x, (y + 2.5), z);
+				if (_ent instanceof ServerPlayer _serverPlayer)
+					_serverPlayer.connection.teleport(x, (y + 2.5), z, _ent.getYRot(), _ent.getXRot());
+			}
+			deg = 0;
+			r = 1;
+			i = 1;
+			if (world instanceof ServerLevel _level) {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+				});
+			}
+			for (int index2 = 0; index2 < 2; index2++) {
+				for (int index3 = 0; index3 < 2; index3++) {
+					for (int index4 = 0; index4 < 11; index4++) {
+						world.addParticle((SimpleParticleType) (PalworldModParticleTypes.WATER_PARTICLE.get()), (x - r * Math.sin(Math.toRadians(deg))), (y + i), (z + r * Math.cos(Math.toRadians(deg))), ((-0.1) * Math.sin(Math.toRadians(deg))), 0,
+								(0.1 * Math.cos(Math.toRadians(deg))));
+						if (((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x - r * Math.sin(Math.toRadians(deg))), y, (z + r * Math.cos(Math.toRadians(deg)))), 2, 2, 2), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf((x - r * Math.sin(Math.toRadians(deg))), y, (z + r * Math.cos(Math.toRadians(deg))))).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 1, false, false));
+						if (((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x - r * Math.sin(Math.toRadians(deg))), y, (z + r * Math.cos(Math.toRadians(deg)))), 2, 2, 2), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf((x - r * Math.sin(Math.toRadians(deg))), y, (z + r * Math.cos(Math.toRadians(deg))))).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1, false, false));
+						deg = deg + 36;
+					}
+					if (i == 2 || i == 4) {
+						deg = 18;
+					} else {
+						deg = 0;
+					}
+					r = r + 1;
+				}
+			}
 		}
 	}
 }

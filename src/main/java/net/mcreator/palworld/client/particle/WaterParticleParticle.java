@@ -37,7 +37,7 @@ public class WaterParticleParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.quadSize *= 3f;
-		this.lifetime = 10;
+		this.lifetime = 6;
 		this.gravity = 0.2f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
@@ -55,7 +55,7 @@ public class WaterParticleParticle extends TextureSheetParticle {
 	public void tick() {
 		super.tick();
 		if (!this.removed) {
-			this.setSprite(this.spriteSet.get((this.age / 1) % 9 + 1, 9));
+			this.setSprite(this.spriteSet.get((this.age / 2) % 9 + 1, 9));
 		}
 	}
 }

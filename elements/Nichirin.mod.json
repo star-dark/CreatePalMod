@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "tool",
   "definition": {
-    "toolType": "Pickaxe",
+    "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "minecraft:empty_slot_sword",
@@ -14,14 +14,14 @@
     },
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "COMBAT"
       }
     ],
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 100,
+    "usageCount": 99999,
     "glowCondition": {
       "fixedValue": false
     },
@@ -30,7 +30,7 @@
     "blockDropsTier": "WOOD",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
+    "damageOnCrafting": true,
     "onEntitySwing": {
       "name": "NichirinEffect"
     }

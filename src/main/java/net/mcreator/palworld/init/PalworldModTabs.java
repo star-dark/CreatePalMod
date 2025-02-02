@@ -35,6 +35,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.AVALON_OF_MERLIN.get());
 			tabData.accept(PalworldModItems.GLORY_GOLD_GHOST.get());
 			tabData.accept(PalworldModItems.HEAVEN.get());
+			tabData.accept(PalworldModItems.NICHIRIN.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
@@ -71,7 +72,6 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISH_ROD_LV_30.get());
 			tabData.accept(PalworldModItems.MAGIC_WAND.get());
 			tabData.accept(PalworldModItems.LEVEL_WAND.get());
-			tabData.accept(PalworldModItems.NICHIRIN.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 
