@@ -114,6 +114,8 @@ public class PalworldModVariables {
 				clone.aegis_bool = original.aegis_bool;
 				clone.Avalon_number = original.Avalon_number;
 				clone.ProtectionAmount = original.ProtectionAmount;
+				clone.Nichirin_number = original.Nichirin_number;
+				clone.Nichirin_tick = original.Nichirin_tick;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -297,6 +299,8 @@ public class PalworldModVariables {
 		public double shieldBoomberSkillpoint = 0;
 		public double Amanomuraku_tick = 0;
 		public double AstraBook_tick = 0;
+		public double Nichirin_number = 0;
+		public double Nichirin_tick = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -346,6 +350,8 @@ public class PalworldModVariables {
 			nbt.putDouble("shieldBoomberSkillpoint", shieldBoomberSkillpoint);
 			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
 			nbt.putDouble("AstraBook_tick", AstraBook_tick);
+			nbt.putDouble("Nichirin_number", Nichirin_number);
+			nbt.putDouble("Nichirin_tick", Nichirin_tick);
 			return nbt;
 		}
 
@@ -396,6 +402,8 @@ public class PalworldModVariables {
 			shieldBoomberSkillpoint = nbt.getDouble("shieldBoomberSkillpoint");
 			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
 			AstraBook_tick = nbt.getDouble("AstraBook_tick");
+			Nichirin_number = nbt.getDouble("Nichirin_number");
+			Nichirin_tick = nbt.getDouble("Nichirin_tick");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

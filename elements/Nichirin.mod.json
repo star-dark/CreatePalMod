@@ -31,8 +31,14 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": true,
+    "onRightClickedInAir": {
+      "name": "NichirinEffect4"
+    },
+    "onRightClickedOnBlock": {
+      "name": "NichirinEffect4"
+    },
     "onEntitySwing": {
-      "name": "NichirinEffect"
+      "name": "NichirinEffect5"
     }
   }
 }
