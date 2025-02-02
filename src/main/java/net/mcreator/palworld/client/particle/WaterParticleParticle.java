@@ -35,14 +35,15 @@ public class WaterParticleParticle extends TextureSheetParticle {
 	protected WaterParticleParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(3f, 3f);
-		this.lifetime = 20;
-		this.gravity = 0f;
+		this.setSize(0.2f, 0.2f);
+		this.quadSize *= 3f;
+		this.lifetime = 10;
+		this.gravity = 0.2f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
 		this.yd = vy * 1;
 		this.zd = vz * 1;
-		this.pickSprite(spriteSet);
+		this.setSpriteFromAge(spriteSet);
 	}
 
 	@Override
@@ -53,5 +54,8 @@ public class WaterParticleParticle extends TextureSheetParticle {
 	@Override
 	public void tick() {
 		super.tick();
+		if (!this.removed) {
+			this.setSprite(this.spriteSet.get((this.age / 1) % 9 + 1, 9));
+		}
 	}
 }

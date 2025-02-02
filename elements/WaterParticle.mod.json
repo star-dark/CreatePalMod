@@ -3,16 +3,16 @@
   "_type": "particle",
   "definition": {
     "texture": "nichirin_particle",
-    "animate": false,
+    "animate": true,
     "frameDuration": 1,
-    "width": 3.0,
-    "height": 3.0,
+    "width": 0.2,
+    "height": 0.2,
     "scale": {
-      "fixedValue": 1.0
+      "fixedValue": 3.0
     },
     "speedFactor": 1.0,
-    "gravity": 0.0,
-    "maxAge": 20,
+    "gravity": 0.2,
+    "maxAge": 10,
     "maxAgeDiff": 0,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
