@@ -55,8 +55,10 @@ public class AegisEffectProcedure {
 				_vars.aegis_bool = false;
 				_vars.syncPlayerVariables(entity);
 			}
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.AEGIS_COOL, 10, 1));
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PalworldModItems.AEGIS.get())) : false) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.AEGIS_COOL, 10, 1));
+			}
 		} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).aegis_tick <= 0) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);

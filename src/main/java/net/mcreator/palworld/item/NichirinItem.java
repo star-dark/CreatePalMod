@@ -74,7 +74,7 @@ public class NichirinItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
 		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		NichirinEffect5Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		NichirinEffect5Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

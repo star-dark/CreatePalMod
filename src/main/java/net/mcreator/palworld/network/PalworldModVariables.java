@@ -116,6 +116,7 @@ public class PalworldModVariables {
 				clone.ProtectionAmount = original.ProtectionAmount;
 				clone.Nichirin_number = original.Nichirin_number;
 				clone.Nichirin_tick = original.Nichirin_tick;
+				clone.Nichirin_cool = original.Nichirin_cool;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -301,6 +302,7 @@ public class PalworldModVariables {
 		public double AstraBook_tick = 0;
 		public double Nichirin_number = 0;
 		public double Nichirin_tick = 0;
+		public double Nichirin_cool = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -352,6 +354,7 @@ public class PalworldModVariables {
 			nbt.putDouble("AstraBook_tick", AstraBook_tick);
 			nbt.putDouble("Nichirin_number", Nichirin_number);
 			nbt.putDouble("Nichirin_tick", Nichirin_tick);
+			nbt.putDouble("Nichirin_cool", Nichirin_cool);
 			return nbt;
 		}
 
@@ -404,6 +407,7 @@ public class PalworldModVariables {
 			AstraBook_tick = nbt.getDouble("AstraBook_tick");
 			Nichirin_number = nbt.getDouble("Nichirin_number");
 			Nichirin_tick = nbt.getDouble("Nichirin_tick");
+			Nichirin_cool = nbt.getDouble("Nichirin_cool");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
