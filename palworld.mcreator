@@ -1669,44 +1669,6 @@
       "path": "~/GUI/User_Quest/Contents"
     },
     {
-      "name": "Pigentitigajugeosseulddae",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pigentitigajugeosseulddae",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PigentitigajugeosseulddaeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/QuestEntity"
-    },
-    {
-      "name": "Pig",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pig",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/pig_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/entity/PigEntity.java",
-          "src/main/java/net/mcreator/palworld/client/renderer/PigRenderer.java"
-        ]
-      },
-      "path": "~/QuestEntity"
-    },
-    {
       "name": "Queen",
       "type": "livingentity",
       "compiles": true,
@@ -4853,6 +4815,14 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffectProcedure.java"
+      "name": "SpeedUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SpeedUpProcedure.java"
         ],
         "dependencies": [
           {
@@ -4916,6 +4886,50 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffect2Procedure.java"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "SpeedPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SpeedPointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "ScalePoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scale_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ScalePointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "ToughnessUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toughness_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ToughnessUpProcedure.java"
         ],
         "dependencies": [
           {
@@ -4951,6 +4965,20 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffect4Procedure.java"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "Recover",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverProcedure.java"
         ],
         "dependencies": [
           {
@@ -4964,6 +4992,63 @@
         ]
       },
       "path": "~/Weapon/Nichirin"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "Up",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/UpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ScaleUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scale_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ScaleUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ToghnessPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toghness_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ToghnessPointProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "NichirinEffect5",
@@ -5066,6 +5151,181 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      },
+      "path": "~/Weapon/Nichirin"
+    },
+    {
+      "name": "NichirinEffect3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nichirin_effect_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/NichirinEffect3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapon/Nichirin"
+    },
+    {
+      "name": "NichirinEffect4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nichirin_effect_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/NichirinEffect4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapon/Nichirin"
+    },
+    {
+      "name": "NichirinEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nichirin_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/NichirinEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapon/Nichirin"
+    },
+    {
+      "name": "NichirinEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nichirin_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/NichirinEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapon/Nichirin"
+    },
+    {
+      "name": "Nichirin",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nichirin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/nichirin.json",
+          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
+        ]
+      },
+      "path": "~/Weapon/Nichirin"
+    },
+    {
+      "name": "HeavenEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heaven_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/HeavenEffect2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapon/Heaven"
+    },
+    {
+      "name": "WaterParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/particle/WaterParticleParticle.java",
+          "src/main/resources/assets/palworld/particles/water_particle.json"
         ]
       },
       "path": "~/Weapon/Nichirin"
@@ -5400,10 +5660,31 @@
       "name": "Nichirin_number",
       "type": "number",
       "scope": "player_lifetime",
+      "name": "ToughnessSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpeedUpSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ScaleUpSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
       "name": "Nichirin_tick",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "Nichirin_number",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -5467,6 +5748,7 @@
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
+      "gui.palworld.farmer_skill_tree.label_idongsogdo": "커져라!",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
       "gui.palworld.farmer_sell_gui.label_33weon1": "33원",
       "item.palworld.manwon": "만원",
@@ -5551,7 +5833,7 @@
       "gui.palworld.farmer_skill_tree.label_51": "/ 4",
       "gui.palworld.farmer_skill_tree.label_5lv": "5Lv",
       "gui.palworld.farmer_skill_tree.label_53": "/ 5",
-      "gui.palworld.farmer_skill_tree.label_52": "/ 5",
+      "gui.palworld.farmer_skill_tree.label_52": "/ 4",
       "gui.palworld.farmer_skill_tree.label_55": "/ 5",
       "item.palworld.fish_blue_gill": "Fish Blue Gill",
       "gui.palworld.farmer_skill_tree.label_54": "/ 5",
@@ -5566,6 +5848,7 @@
       "gui.palworld.job_npc_sell_gui.button_gyohwan2": "교환",
       "gui.palworld.job_npc_sell_gui.button_gyohwan3": "교환",
       "gui.palworld.fisher_sell_gui.label_70weon2": "100원",
+      "gui.palworld.farmer_skill_tree.label_4": "/ 4",
       "gui.palworld.farmer_skill_tree.label_1": "/ 1",
       "item.palworld.heaven": "천 국",
       "gui.palworld.sub_quest_provide_gui.button_surag": "수락",
@@ -5649,6 +5932,7 @@
       "gui.palworld.farmer_skill_tree.label_nameun_pointeu": "남은 포인트 :",
       "gui.palworld.miner_sell_gui.label_50weon": "5원",
       "item.palworld.fish_synodontis": "Fish Synodontis",
+      "gui.palworld.farmer_skill_tree.label_bangeogangdo": "방어강도",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_sell_gui.button_modu_panmae1": "모두판매",
@@ -5676,7 +5960,6 @@
       "gui.palworld.miner_sell_gui.label_1weon1": "1원",
       "item.palworld.farmer_root": "Farmer Root",
       "item.palworld.fish_bass": "Fish Bass",
-      "item.palworld.pig_spawn_egg": "Pig Spawn Egg",
       "gui.palworld.fisher_sell_gui.label_10weon2": "10원",
       "gui.palworld.fisher_sell_gui.label_10weon1": "10원",
       "gui.palworld.farmer_skill_tree.label_10lv": "10Lv",
@@ -5707,10 +5990,6 @@
     "name": "~",
     "children": [
       {
-        "name": "QuestEntity",
-        "children": []
-      },
-      {
         "name": "Level",
         "children": []
       },
@@ -5719,30 +5998,18 @@
         "children": []
       },
       {
+        "name": "QuestNPC",
+        "children": []
+      },
+      {
+        "name": "MoneyItem",
+        "children": []
+      },
+      {
         "name": "Weapon",
         "children": [
           {
-            "name": "Aegis",
-            "children": []
-          },
-          {
-            "name": "Amanomurakumonotsurugi",
-            "children": []
-          },
-          {
-            "name": "AstraBook",
-            "children": []
-          },
-          {
             "name": "AvalonOfMerlin",
-            "children": []
-          },
-          {
-            "name": "Balmung",
-            "children": []
-          },
-          {
-            "name": "Bangobu",
             "children": []
           },
           {
@@ -5750,7 +6017,7 @@
             "children": []
           },
           {
-            "name": "Dainsleif",
+            "name": "AstraBook",
             "children": []
           },
           {
@@ -5758,11 +6025,35 @@
             "children": []
           },
           {
-            "name": "Heaven",
+            "name": "Dainsleif",
+            "children": []
+          },
+          {
+            "name": "Balmung",
+            "children": []
+          },
+          {
+            "name": "Nichirin",
+            "children": []
+          },
+          {
+            "name": "Bangobu",
             "children": []
           },
           {
             "name": "Mjolnir",
+            "children": []
+          },
+          {
+            "name": "Amanomurakumonotsurugi",
+            "children": []
+          },
+          {
+            "name": "Heaven",
+            "children": []
+          },
+          {
+            "name": "Aegis",
             "children": []
           },
           {
@@ -5774,14 +6065,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "QuestNPC",
-        "children": []
-      },
-      {
-        "name": "MoneyItem",
-        "children": []
       },
       {
         "name": "cooltime",

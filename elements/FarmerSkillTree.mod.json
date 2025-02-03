@@ -385,8 +385,8 @@
           "onClick": {
             "name": "RecoverUp"
           },
-          "x": 123,
-          "y": 138
+          "x": 265,
+          "y": 79
         }
       },
       {
@@ -400,8 +400,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 126,
-          "y": 164
+          "x": 266,
+          "y": 103
         }
       },
       {
@@ -415,8 +415,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 134,
-          "y": 172
+          "x": 277,
+          "y": 110
         }
       },
       {
@@ -431,8 +431,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 123,
-          "y": 173
+          "x": 263,
+          "y": 109
         }
       },
       {
@@ -459,8 +459,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 124,
-          "y": 139
+          "x": 265,
+          "y": 79
         }
       },
       {
@@ -511,8 +511,8 @@
           "onClick": {
             "name": "FoodFighterUp"
           },
-          "x": 169,
-          "y": 162
+          "x": 264,
+          "y": 137
         }
       },
       {
@@ -524,8 +524,8 @@
           },
           "width": 24,
           "height": 24,
-          "x": 170,
-          "y": 163
+          "x": 265,
+          "y": 137
         }
       },
       {
@@ -539,8 +539,8 @@
             "value": -16776961,
             "falpha": 0.0
           },
-          "x": 169,
-          "y": 188
+          "x": 264,
+          "y": 162
         }
       },
       {
@@ -548,14 +548,14 @@
         "data": {
           "name": "label_52",
           "text": {
-            "fixedValue": "/ 5"
+            "fixedValue": "/ 4"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 180,
-          "y": 196
+          "x": 278,
+          "y": 171
         }
       },
       {
@@ -570,81 +570,8 @@
             "value": -16776961,
             "falpha": 0.0
           },
-          "x": 168,
-          "y": 194
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_yeomsobbul",
-          "image": "yeomsobbul.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "HornPlayUp"
-          },
-          "x": 169,
-          "y": 111
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_horeun_peulreieo",
-          "text": {
-            "fixedValue": "호른 플레이어"
-          },
-          "color": {
-            "value": -16776961,
-            "falpha": 0.0
-          },
-          "x": 166,
-          "y": 136
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_53",
-          "text": {
-            "fixedValue": "/ 5"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 181,
-          "y": 144
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_horn_player_point",
-          "text": {
-            "fixedValue": "",
-            "name": "HornPlayerPoint"
-          },
-          "color": {
-            "value": -16776961,
-            "falpha": 0.0
-          },
-          "x": 168,
-          "y": 143
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_horn_play_up_tool_tip",
-          "text": {
-            "fixedValue": "",
-            "name": "HornPlayUpToolTip"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 169,
-          "y": 111
+          "x": 264,
+          "y": 171
         }
       },
       {
@@ -656,8 +583,8 @@
           "onClick": {
             "name": "ReflectionUp"
           },
-          "x": 169,
-          "y": 58
+          "x": 314,
+          "y": 111
         }
       },
       {
@@ -671,8 +598,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 180,
-          "y": 89
+          "x": 324,
+          "y": 144
         }
       },
       {
@@ -686,8 +613,8 @@
             "value": -16776961,
             "falpha": 0.0
           },
-          "x": 176,
-          "y": 82
+          "x": 316,
+          "y": 137
         }
       },
       {
@@ -702,21 +629,8 @@
             "value": -16776961,
             "falpha": 0.0
           },
-          "x": 171,
-          "y": 89
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_hover",
-          "image": "hover.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "HoverUp"
-          },
-          "x": 217,
-          "y": 138
+          "x": 312,
+          "y": 143
         }
       },
       {
@@ -729,7 +643,7 @@
             "name": "DoubleJumpUp"
           },
           "x": 217,
-          "y": 79
+          "y": 111
         }
       },
       {
@@ -743,21 +657,7 @@
           "width": 24,
           "height": 24,
           "x": 217,
-          "y": 79
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_hover_tool_tip",
-          "text": {
-            "fixedValue": "",
-            "name": "HoverToolTip"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 217,
-          "y": 138
+          "y": 111
         }
       },
       {
@@ -771,23 +671,8 @@
             "value": -10092442,
             "falpha": 0.0
           },
-          "x": 220,
-          "y": 103
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_eodumyi_jasig",
-          "text": {
-            "fixedValue": "어둠의 자식"
-          },
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "x": 216,
-          "y": 163
+          "x": 218,
+          "y": 135
         }
       },
       {
@@ -801,39 +686,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 228,
-          "y": 110
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_11",
-          "text": {
-            "fixedValue": "/ 1"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 228,
-          "y": 173
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_hover_point",
-          "text": {
-            "fixedValue": "",
-            "name": "HoverPoint"
-          },
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "x": 218,
-          "y": 172
+          "x": 229,
+          "y": 144
         }
       },
       {
@@ -848,8 +702,8 @@
             "value": -10092442,
             "falpha": 0.0
           },
-          "x": 220,
-          "y": 109
+          "x": 217,
+          "y": 144
         }
       },
       {
@@ -861,7 +715,7 @@
           "onClick": {
             "name": "ShieldBoomberUp"
           },
-          "x": 265,
+          "x": 312,
           "y": 58
         }
       },
@@ -876,7 +730,7 @@
             "value": -13421569,
             "falpha": 0.0
           },
-          "x": 267,
+          "x": 313,
           "y": 83
         }
       },
@@ -891,8 +745,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 276,
-          "y": 89
+          "x": 324,
+          "y": 90
         }
       },
       {
@@ -907,8 +761,126 @@
             "value": -13421569,
             "falpha": 0.0
           },
-          "x": 266,
+          "x": 314,
           "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_idongsogdo",
+          "text": {
+            "fixedValue": "커져라!"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 124,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_4",
+          "text": {
+            "fixedValue": "/ 4"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_speed_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ScalePoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 167
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_keojyeora",
+          "image": "keojyeora.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ScaleUp"
+          },
+          "x": 123,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bangeogangdo",
+          "image": "bangeogangdo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ToughnessUp"
+          },
+          "x": 169,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bangeogangdo",
+          "text": {
+            "fixedValue": "방어강도"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_53",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 195
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_toghness_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ToghnessPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 169,
+          "y": 193
         }
       }
     ],

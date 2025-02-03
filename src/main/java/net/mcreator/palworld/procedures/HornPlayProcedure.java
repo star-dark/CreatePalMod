@@ -45,15 +45,28 @@ public class HornPlayProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Player) {
-						if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint < 3) {
+						if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint > 0) {
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, (int) (entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint - 1), true, true));
-						} else {
+								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 30, 1, true, true));
+						}
+						if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint > 1) {
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) ((entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint - 2) * 60), 2, true, true));
+								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 30, 1, true, true));
+						}
+						if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint > 2) {
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 30, 1, true, true));
+						}
+						if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint > 3) {
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 30, 3, true, true));
 						}
 					}
 				}
+			}
+			if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint > 4) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1, true, true));
 			}
 		}
 	}

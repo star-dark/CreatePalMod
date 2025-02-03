@@ -108,7 +108,6 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> MANWON = REGISTRY.register("manwon", ManwonItem::new);
 	public static final DeferredItem<Item> MAGIC_WAND = REGISTRY.register("magic_wand", MagicWandItem::new);
 	public static final DeferredItem<Item> KING_SPAWN_EGG = REGISTRY.register("king_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.KING, -65536, -256, new Item.Properties()));
-	public static final DeferredItem<Item> PIG_SPAWN_EGG = REGISTRY.register("pig_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.PIG, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> QUEEN_SPAWN_EGG = REGISTRY.register("queen_spawn_egg", () -> new DeferredSpawnEggItem(PalworldModEntities.QUEEN, -3407668, -256, new Item.Properties()));
 	public static final DeferredItem<Item> LEVEL_WAND = REGISTRY.register("level_wand", LevelWandItem::new);
 	public static final DeferredItem<Item> AMANOMURAKUMONOTSURUGI = REGISTRY.register("amanomurakumonotsurugi", AmanomurakumonotsurugiItem::new);
