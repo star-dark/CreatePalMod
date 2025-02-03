@@ -5,10 +5,10 @@
     "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "minecraft:empty_slot_sword",
+    "texture": "sword_dark_katana",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Nichirin",
+    "name": "일륜도",
     "specialInformation": {
       "fixedValue": []
     },

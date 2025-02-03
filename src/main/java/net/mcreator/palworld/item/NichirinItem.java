@@ -60,14 +60,14 @@ public class NichirinItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		NichirinEffect4Procedure.execute(entity);
+		NichirinEffect4Procedure.execute(world, entity);
 		return ar;
 	}
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		NichirinEffect4Procedure.execute(context.getPlayer());
+		NichirinEffect4Procedure.execute(context.getLevel(), context.getPlayer());
 		return InteractionResult.SUCCESS;
 	}
 

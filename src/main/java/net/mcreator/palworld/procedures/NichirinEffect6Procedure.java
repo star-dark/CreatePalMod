@@ -8,6 +8,7 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.palworld.network.PalworldModVariables;
@@ -34,11 +35,13 @@ public class NichirinEffect6Procedure {
 		} else if (world.dayTime() == entity.getData(PalworldModVariables.PLAYER_VARIABLES).Nichirin_tick + 14) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-				_vars.Nichirin_cool = world.dayTime() + 40;
+				_vars.Nichirin_cool = world.dayTime() + 60;
 				_vars.syncPlayerVariables(entity);
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.WATER_POTION_EFFECT, 40, 1, false, false));
+				_entity.addEffect(new MobEffectInstance(PalworldModMobEffects.WATER_POTION_EFFECT, 60, 1, false, false));
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 3, 3, false, false));
 		}
 	}
 }

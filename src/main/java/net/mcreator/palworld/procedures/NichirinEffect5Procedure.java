@@ -13,7 +13,7 @@ public class NichirinEffect5Procedure {
 		if (world.dayTime() >= entity.getData(PalworldModVariables.PLAYER_VARIABLES).Nichirin_cool) {
 			if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Nichirin_number == 0) {
 				NichirinEffectProcedure.execute(world, x, y, z, entity);
-			} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Nichirin_number == 1) {
+			} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Nichirin_number == 2) {
 				if (entity.onGround()) {
 					NichirinEffect2Procedure.execute(world, x, y, z, entity);
 				} else if (!entity.onGround()) {
@@ -25,6 +25,8 @@ public class NichirinEffect5Procedure {
 					}
 					NichirinEffect6Procedure.execute(world, x, y, z, entity);
 				}
+			} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Nichirin_number == 1) {
+				NichirinEffect7Procedure.execute(world, x, y, z, entity);
 			}
 		}
 	}
