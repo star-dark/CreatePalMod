@@ -4817,12 +4817,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/SpeedPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
@@ -4837,12 +4832,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/ScalePointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
@@ -4933,12 +4923,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/ToghnessPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
@@ -5141,6 +5126,20 @@
       "path": "~/Weapon/Nichirin"
     },
     {
+      "name": "Nichirin",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nichirin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/nichirin.json",
+          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
+        ]
+      },
+      "path": "~/Weapon/Nichirin"
+    },
+    {
       "name": "HeavenEffect2",
       "type": "procedure",
       "compiles": true,
@@ -5158,20 +5157,6 @@
         ]
       },
       "path": "~/Weapon/Heaven"
-    },
-    {
-      "name": "Nichirin",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nichirin",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/nichirin.json",
-          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
-        ]
-      },
-      "path": "~/Weapon/Nichirin"
     },
     {
       "name": "WaterParticle",
