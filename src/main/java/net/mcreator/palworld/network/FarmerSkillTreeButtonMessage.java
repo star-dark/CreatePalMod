@@ -17,12 +17,12 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
+import net.mcreator.palworld.procedures.ToughnessUpProcedure;
 import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
+import net.mcreator.palworld.procedures.ScaleUpProcedure;
 import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.RecoverUpProcedure;
 import net.mcreator.palworld.procedures.RangeUpProcedure;
-import net.mcreator.palworld.procedures.HoverUpProcedure;
-import net.mcreator.palworld.procedures.HornPlayUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
 import net.mcreator.palworld.procedures.DoubleJumpUpProcedure;
@@ -95,23 +95,23 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		}
 		if (buttonID == 6) {
 
-			HornPlayUpProcedure.execute(entity);
+			ReflectionUpProcedure.execute(entity);
 		}
 		if (buttonID == 7) {
 
-			ReflectionUpProcedure.execute(entity);
+			DoubleJumpUpProcedure.execute(entity);
 		}
 		if (buttonID == 8) {
 
-			HoverUpProcedure.execute(entity);
+			ShieldBoomberUpProcedure.execute(entity);
 		}
 		if (buttonID == 9) {
 
-			DoubleJumpUpProcedure.execute(entity);
+			ScaleUpProcedure.execute(entity);
 		}
 		if (buttonID == 10) {
 
-			ShieldBoomberUpProcedure.execute(entity);
+			ToughnessUpProcedure.execute(entity);
 		}
 	}
 

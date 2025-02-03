@@ -102,6 +102,9 @@ public class PalworldModVariables {
 			clone.shieldBoomberSkillpoint = original.shieldBoomberSkillpoint;
 			clone.Amanomuraku_tick = original.Amanomuraku_tick;
 			clone.AstraBook_tick = original.AstraBook_tick;
+			clone.SpeedUpSkillPoint = original.SpeedUpSkillPoint;
+			clone.ScaleUpSkillPoint = original.ScaleUpSkillPoint;
+			clone.ToughnessSkillPoint = original.ToughnessSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -297,6 +300,9 @@ public class PalworldModVariables {
 		public double shieldBoomberSkillpoint = 0;
 		public double Amanomuraku_tick = 0;
 		public double AstraBook_tick = 0;
+		public double SpeedUpSkillPoint = 0;
+		public double ScaleUpSkillPoint = 0;
+		public double ToughnessSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -346,6 +352,9 @@ public class PalworldModVariables {
 			nbt.putDouble("shieldBoomberSkillpoint", shieldBoomberSkillpoint);
 			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
 			nbt.putDouble("AstraBook_tick", AstraBook_tick);
+			nbt.putDouble("SpeedUpSkillPoint", SpeedUpSkillPoint);
+			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
+			nbt.putDouble("ToughnessSkillPoint", ToughnessSkillPoint);
 			return nbt;
 		}
 
@@ -396,6 +405,9 @@ public class PalworldModVariables {
 			shieldBoomberSkillpoint = nbt.getDouble("shieldBoomberSkillpoint");
 			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
 			AstraBook_tick = nbt.getDouble("AstraBook_tick");
+			SpeedUpSkillPoint = nbt.getDouble("SpeedUpSkillPoint");
+			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
+			ToughnessSkillPoint = nbt.getDouble("ToughnessSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

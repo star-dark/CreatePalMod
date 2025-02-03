@@ -6,11 +6,14 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.palworld.network.PalworldModVariables;
 
-public class FoodFighterUpProcedure {
+public class ToughnessUpProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points > 0 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).FoodFighterSkillPoint < 4 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level >= 15) {
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points > 0 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).ToughnessSkillPoint < 5) {
+			if (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.ARMOR_TOUGHNESS))
+				_livingEntity1.getAttribute(Attributes.ARMOR_TOUGHNESS)
+						.setBaseValue(((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.ARMOR_TOUGHNESS) ? _livingEntity0.getAttribute(Attributes.ARMOR_TOUGHNESS).getBaseValue() : 0) + 0.5));
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.Skill_Points = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points - 1;
@@ -18,11 +21,9 @@ public class FoodFighterUpProcedure {
 			}
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-				_vars.FoodFighterSkillPoint = entity.getData(PalworldModVariables.PLAYER_VARIABLES).FoodFighterSkillPoint + 1;
+				_vars.ToughnessSkillPoint = entity.getData(PalworldModVariables.PLAYER_VARIABLES).ToughnessSkillPoint + 1;
 				_vars.syncPlayerVariables(entity);
 			}
-			if (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.MAX_ABSORPTION))
-				_livingEntity0.getAttribute(Attributes.MAX_ABSORPTION).setBaseValue((entity.getData(PalworldModVariables.PLAYER_VARIABLES).FoodFighterSkillPoint * 2));
 		}
 	}
 }

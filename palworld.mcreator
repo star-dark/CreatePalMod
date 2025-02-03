@@ -1669,44 +1669,6 @@
       "path": "~/GUI/User_Quest/Contents"
     },
     {
-      "name": "Pigentitigajugeosseulddae",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pigentitigajugeosseulddae",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PigentitigajugeosseulddaeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/QuestEntity"
-    },
-    {
-      "name": "Pig",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pig",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/pig_spawn_egg.json",
-          "src/main/java/net/mcreator/palworld/entity/PigEntity.java",
-          "src/main/java/net/mcreator/palworld/client/renderer/PigRenderer.java"
-        ]
-      },
-      "path": "~/QuestEntity"
-    },
-    {
       "name": "Queen",
       "type": "livingentity",
       "compiles": true,
@@ -4824,6 +4786,161 @@
         ]
       },
       "path": "~/Weapon/Heaven"
+    },
+    {
+      "name": "Recover",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "Up",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/UpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "SpeedUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SpeedUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "SpeedPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SpeedPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "ScaleUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scale_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ScaleUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ScalePoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scale_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ScalePointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "ToughnessUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toughness_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ToughnessUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ToghnessPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toghness_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ToghnessPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     }
   ],
   "variable_elements": [
@@ -5102,6 +5219,24 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "SpeedUpSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ScaleUpSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ToughnessSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -5151,10 +5286,11 @@
       "gui.palworld.farmer_skill_tree.label_deobeuljeompeu": "더블점프",
       "gui.palworld.farmer_skill_tree.label_ceryeogjaesaeng": "체력재생",
       "gui.palworld.miner_sell_gui.label_10weon3": "10원",
-      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.sub_quest_complete.label_bosang": "남은시간  :",
+      "item.palworld.ore_emerald": "Ore Emerald",
       "gui.palworld.quest_provide_gui.button_geojeol": "거절",
       "gui.palworld.fisher_skill_tree.label_25lv": "25Lv",
+      "gui.palworld.farmer_skill_tree.label_idongsogdo": "커져라!",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
       "gui.palworld.farmer_sell_gui.label_33weon1": "33원",
       "item.palworld.manwon": "만원",
@@ -5172,8 +5308,8 @@
       "gui.palworld.fisher_sell_gui.button_panmae6": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae3": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae4": "모두판매",
-      "item.palworld.astra_book": "Astra Book",
       "gui.palworld.fisher_sell_gui.button_panmae1": "모두판매",
+      "item.palworld.astra_book": "Astra Book",
       "gui.palworld.fisher_sell_gui.button_panmae2": "모두판매",
       "gui.palworld.user_gui.label_kweseuteu": "퀘스트",
       "gui.palworld.fisher_skill_tree.label_15lv": "15Lv",
@@ -5192,8 +5328,8 @@
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
+      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
@@ -5216,7 +5352,6 @@
       "gui.palworld.fisher_sell_gui.label_50weon": "70원",
       "gui.palworld.money_tap.button_1000": "1000",
       "item.palworld.amanomurakumonotsurugi": "Amanomurakumonotsurugi",
-      "entity.palworld.pig": "Pig",
       "gui.palworld.farmer_sell_gui.label_33weon": "33원",
       "gui.palworld.farmer_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_skill_tree.label_25lv": "25Lv",
@@ -5239,7 +5374,7 @@
       "gui.palworld.farmer_skill_tree.label_51": "/ 4",
       "gui.palworld.farmer_skill_tree.label_5lv": "5Lv",
       "gui.palworld.farmer_skill_tree.label_53": "/ 5",
-      "gui.palworld.farmer_skill_tree.label_52": "/ 5",
+      "gui.palworld.farmer_skill_tree.label_52": "/ 4",
       "gui.palworld.farmer_skill_tree.label_55": "/ 5",
       "item.palworld.fish_blue_gill": "Fish Blue Gill",
       "gui.palworld.farmer_skill_tree.label_54": "/ 5",
@@ -5254,6 +5389,7 @@
       "gui.palworld.job_npc_sell_gui.button_gyohwan2": "교환",
       "gui.palworld.job_npc_sell_gui.button_gyohwan3": "교환",
       "gui.palworld.fisher_sell_gui.label_70weon2": "100원",
+      "gui.palworld.farmer_skill_tree.label_4": "/ 4",
       "gui.palworld.farmer_skill_tree.label_1": "/ 1",
       "item.palworld.heaven": "Heaven",
       "gui.palworld.sub_quest_provide_gui.button_surag": "수락",
@@ -5335,6 +5471,7 @@
       "gui.palworld.farmer_skill_tree.label_nameun_pointeu": "남은 포인트 :",
       "gui.palworld.miner_sell_gui.label_50weon": "5원",
       "item.palworld.fish_synodontis": "Fish Synodontis",
+      "gui.palworld.farmer_skill_tree.label_bangeogangdo": "방어강도",
       "item.palworld.farmer_job_npc_spawn_egg": "Farmer Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_sell_gui.button_modu_panmae1": "모두판매",
@@ -5362,7 +5499,6 @@
       "gui.palworld.miner_sell_gui.label_1weon1": "1원",
       "item.palworld.farmer_root": "Farmer Root",
       "item.palworld.fish_bass": "Fish Bass",
-      "item.palworld.pig_spawn_egg": "Pig Spawn Egg",
       "gui.palworld.fisher_sell_gui.label_10weon2": "10원",
       "gui.palworld.fisher_sell_gui.label_10weon1": "10원",
       "gui.palworld.farmer_skill_tree.label_10lv": "10Lv",
@@ -5392,10 +5528,6 @@
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "QuestEntity",
-        "children": []
-      },
       {
         "name": "Level",
         "children": []

@@ -123,6 +123,27 @@ public class ClearVariableProcedure {
 			_vars.timeBuffer = 0;
 			_vars.syncPlayerVariables(entity);
 		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.SpeedUpSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+			_livingEntity4.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.1);
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ScaleUpSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		if (entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.SCALE))
+			_livingEntity5.getAttribute(Attributes.SCALE).setBaseValue(1);
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ToughnessSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.ARMOR_TOUGHNESS))
+			_livingEntity6.getAttribute(Attributes.ARMOR_TOUGHNESS).setBaseValue(0);
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
 	}
