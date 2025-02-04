@@ -164,12 +164,12 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_4"), 66, 145, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ScalePointProcedure.execute(entity), 55, 144, -1, false);
+				ScalePointProcedure.execute(), 55, 144, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_bangeogangdo"), 103, 163, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_53"), 114, 172, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ToghnessPointProcedure.execute(entity), 101, 170, -1, false);
+				ToghnessPointProcedure.execute(), 101, 170, -1, false);
 	}
 
 	@Override

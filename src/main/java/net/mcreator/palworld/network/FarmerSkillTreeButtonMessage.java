@@ -107,11 +107,11 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		}
 		if (buttonID == 9) {
 
-			ScaleUpProcedure.execute(entity);
+			ScaleUpProcedure.execute();
 		}
 		if (buttonID == 10) {
 
-			ToughnessUpProcedure.execute(entity);
+			ToughnessUpProcedure.execute();
 		}
 	}
 
