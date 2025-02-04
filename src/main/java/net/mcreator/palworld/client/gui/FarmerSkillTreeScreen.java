@@ -14,6 +14,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
 import net.mcreator.palworld.procedures.ToghnessPointProcedure;
+import net.mcreator.palworld.procedures.SweepDamagePointProcedure;
 import net.mcreator.palworld.procedures.ShieldBoomberPointProcedure;
 import net.mcreator.palworld.procedures.ScalePointProcedure;
 import net.mcreator.palworld.procedures.ReflectionPointProcedure;
@@ -21,6 +22,7 @@ import net.mcreator.palworld.procedures.RecoverUpToolTipProcedure;
 import net.mcreator.palworld.procedures.RecoverUpPointProcedure;
 import net.mcreator.palworld.procedures.RangeUpToolTipProcedure;
 import net.mcreator.palworld.procedures.RangeUpPointProcedure;
+import net.mcreator.palworld.procedures.KnockBackResistancePointProcedure;
 import net.mcreator.palworld.procedures.HealthUpPointProcedure;
 import net.mcreator.palworld.procedures.FoodFighterPointProcedure;
 import net.mcreator.palworld.procedures.DoubleJumpToolTipProcedure;
@@ -50,6 +52,8 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 	ImageButton imagebutton_swildeubumbeo;
 	ImageButton imagebutton_keojyeora;
 	ImageButton imagebutton_bangeogangdo;
+	ImageButton imagebutton_neogbaegjeohang;
+	ImageButton imagebutton_hwibsseulgi;
 
 	public FarmerSkillTreeScreen(FarmerSkillTreeMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -169,7 +173,17 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_53"), 114, 172, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ToghnessPointProcedure.execute(), 101, 170, -1, false);
+				ToghnessPointProcedure.execute(entity), 101, 170, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_neogbaegjeohang"), 103, 112, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_56"), 113, 119, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				KnockBackResistancePointProcedure.execute(entity), 102, 118, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_hwibsseulgi"), 106, 60, -1, false);
+		guiGraphics.drawString(this.font,
+
+				SweepDamagePointProcedure.execute(entity), 101, 66, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.farmer_skill_tree.label_57"), 114, 68, -12829636, false);
 	}
 
 	@Override
@@ -326,5 +340,33 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 		};
 		guistate.put("button:imagebutton_bangeogangdo", imagebutton_bangeogangdo);
 		this.addRenderableWidget(imagebutton_bangeogangdo);
+		imagebutton_neogbaegjeohang = new ImageButton(this.leftPos + 101, this.topPos + 88, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/neogbaegjeohang.png"), ResourceLocation.parse("palworld:textures/screens/neogbaegjeohang.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new FarmerSkillTreeButtonMessage(11, x, y, z));
+						FarmerSkillTreeButtonMessage.handleButtonAction(entity, 11, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_neogbaegjeohang", imagebutton_neogbaegjeohang);
+		this.addRenderableWidget(imagebutton_neogbaegjeohang);
+		imagebutton_hwibsseulgi = new ImageButton(this.leftPos + 101, this.topPos + 35, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/hwibsseulgi.png"), ResourceLocation.parse("palworld:textures/screens/hwibsseulgi.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new FarmerSkillTreeButtonMessage(12, x, y, z));
+						FarmerSkillTreeButtonMessage.handleButtonAction(entity, 12, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_hwibsseulgi", imagebutton_hwibsseulgi);
+		this.addRenderableWidget(imagebutton_hwibsseulgi);
 	}
 }

@@ -4853,6 +4853,14 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffectProcedure.java"
+      "name": "SpeedUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SpeedUpProcedure.java"
         ],
         "dependencies": [
           {
@@ -4916,6 +4924,60 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffect2Procedure.java"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "SpeedPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SpeedPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "ScalePoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scale_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ScalePointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "ToughnessUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toughness_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ToughnessUpProcedure.java"
         ],
         "dependencies": [
           {
@@ -4951,6 +5013,20 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffect4Procedure.java"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "Recover",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/RecoverProcedure.java"
         ],
         "dependencies": [
           {
@@ -4964,6 +5040,49 @@
         ]
       },
       "path": "~/Weapon/Nichirin"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ScaleUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scale_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ScaleUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "ToghnessPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toghness_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ToghnessPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "NichirinEffect5",
@@ -4974,41 +5093,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffect5Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/Nichirin"
-    },
-    {
-      "name": "NichirinEffect3",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nichirin_effect_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/NichirinEffect3Procedure.java"
         ],
         "dependencies": [
           {
@@ -5117,6 +5201,123 @@
         ]
       },
       "path": "~/Weapon/Nichirin"
+    },
+    {
+      "name": "KnockBackResistance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knock_back_resistance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KnockBackResistanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "KnockBackResistancePoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knock_back_resistance_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KnockBackResistancePointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "SweapDamageUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweap_damage_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SweapDamageUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+    },
+    {
+      "name": "SweepDamagePoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweep_damage_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SweepDamagePointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
+    },
+    {
+      "name": "Berserker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "berserker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BerserkerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Farmer/Effect"
     }
   ],
   "variable_elements": [
@@ -5340,7 +5541,7 @@
       "name": "aegis_bool",
       "type": "logic",
       "scope": "player_lifetime",
-      "value": "false"
+      "value": "true"
     },
     {
       "name": "DoubleJumpSkillPoint",
@@ -5400,6 +5601,21 @@
       "name": "Nichirin_number",
       "type": "number",
       "scope": "player_lifetime",
+      "name": "ToughnessSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpeedUpSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ScaleUpSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -5412,6 +5628,30 @@
       "name": "Nichirin_cool",
       "type": "number",
       "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "KnockbackResistanceSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SweapDamageSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "StackedDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "BerserkerSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],
@@ -5441,7 +5681,6 @@
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
-      "~CUSTOM:Nichirin",
       "~CUSTOM:Heaven",
       "~CUSTOM:AvalonOfMerlin",
       "~CUSTOM:AstraBook",
@@ -5474,7 +5713,7 @@
       "gui.palworld.farmer_sell_gui.label_33weon2": "33원",
       "item.palworld.skyshatter": "Skyshatter",
       "item.palworld.fish_perch": "Fish Perch",
-      "item.palworld.avalon_of_merlin": "아발론",
+      "item.palworld.avalon_of_merlin": "Avalon Of Merlin",
       "item.palworld.ore_lapis_lazuli": "Ore Lapis Lazuli",
       "gui.palworld.fisher_sell_gui.button_panmae9": "모두판매",
       "gui.palworld.quest_tap.label_kweseuteu": "퀘스트",
@@ -5501,12 +5740,12 @@
       "gui.palworld.quest_tap.label_wanryo": "완료✅",
       "item.palworld.fish_pollock": "Fish Pollock",
       "item.palworld.fish_red_bellied_piranha": "Fish Red Bellied Piranha",
-      "item.palworld.balmung": "발뭉",
+      "item.palworld.balmung": "Balmung",
       "gui.palworld.fisher_sell_gui.label_100weon3": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae18": "모두 판매",
       "gui.palworld.fisher_sell_gui.button_panmae19": "모두 판매",
-      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon1": "100원",
+      "gui.palworld.fisher_sell_gui.button_panmae16": "모두판매",
       "gui.palworld.fisher_sell_gui.label_100weon2": "100원",
       "gui.palworld.fisher_sell_gui.button_panmae17": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
@@ -5528,15 +5767,15 @@
       "gui.palworld.farmer_skill_tree.label_bangeoryeog": "방어력",
       "gui.palworld.fisher_sell_gui.label_50weon": "70원",
       "gui.palworld.money_tap.button_1000": "1000",
-      "item.palworld.amanomurakumonotsurugi": "아마노무라쿠모노츠루기",
-      "entity.palworld.pig": "Pig",
+      "item.palworld.amanomurakumonotsurugi": "Amanomurakumonotsurugi",
       "gui.palworld.farmer_sell_gui.label_33weon": "33원",
       "gui.palworld.farmer_sell_gui.button_cwiso": "취소",
       "gui.palworld.farmer_skill_tree.label_25lv": "25Lv",
-      "item.palworld.mjolnir": "묠니르",
+      "item.palworld.mjolnir": "Mjolnir",
       "gui.palworld.fisher_sell_gui.button_panmae": "모두판매",
       "item.palworld.fish_electric_eel": "Fish Electric Eel",
       "gui.palworld.user_gui.label_wanryo1": "완료✅",
+      "gui.palworld.farmer_skill_tree.label_neogbaegjeohang": "넉백저항",
       "item.palworld.ore_coal": "Ore Coal",
       "gui.palworld.farmer_sell_gui.button_modu_panmae": "모두판매",
       "item.palworld.fish_tuna": "Fish Tuna",
@@ -5545,7 +5784,7 @@
       "gui.palworld.sub_quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
-      "item.palworld.dainsleif": "다인슬레이프",
+      "item.palworld.dainsleif": "Dainsleif",
       "gui.palworld.fisher_sell_gui.label_50weon2": "70원",
       "gui.palworld.fisher_sell_gui.label_50weon1": "70원",
       "gui.palworld.farmer_sell_gui.label_1weon": "개 당 1원",
@@ -5556,6 +5795,8 @@
       "gui.palworld.farmer_skill_tree.label_55": "/ 5",
       "item.palworld.fish_blue_gill": "Fish Blue Gill",
       "gui.palworld.farmer_skill_tree.label_54": "/ 5",
+      "gui.palworld.farmer_skill_tree.label_57": "/ 5",
+      "gui.palworld.farmer_skill_tree.label_56": "/ 5",
       "item.palworld.magic_wand": "Magic Wand",
       "gui.palworld.miner_sell_gui.label_3weon": "개 당 3원",
       "gui.palworld.user_gui.label_wanryo": "완료✅",
@@ -5569,7 +5810,7 @@
       "gui.palworld.fisher_sell_gui.label_70weon2": "100원",
       "gui.palworld.farmer_skill_tree.label_4": "/ 4",
       "gui.palworld.farmer_skill_tree.label_1": "/ 1",
-      "item.palworld.heaven": "천 국",
+      "item.palworld.heaven": "Heaven",
       "gui.palworld.sub_quest_provide_gui.button_surag": "수락",
       "gui.palworld.job_npc_sell_gui.button_gyohwan1": "교환",
       "gui.palworld.miner_sell_gui.label_10weon1": "개 당 10원",
@@ -5581,6 +5822,7 @@
       "gui.palworld.job_npc_gui.button_surag": "수락",
       "gui.palworld.farmer_sell_gui.label_1weon1": "개 당 1원",
       "item.palworld.queen_spawn_egg": "Queen Spawn Egg",
+      "gui.palworld.farmer_skill_tree.label_hwibsseulgi": "휩쓸기",
       "gui.palworld.sub_quest_complete.button_bosanghoegdeug": "보상획득",
       "item.palworld.chunwon": "천원",
       "gui.palworld.fisher_sell_gui.label_100weon": "100원",
@@ -5608,7 +5850,7 @@
       "gui.palworld.miner_sell_gui.label_30weon": "3원",
       "item.palworld.fisher_job_npc_spawn_egg": "Fisher Job NPC Spawn Egg",
       "gui.palworld.miner_sell_gui.label_5weon": "개 당 5원",
-      "item.palworld.aegis": "아이기스",
+      "item.palworld.aegis": "Aegis",
       "gui.palworld.user_gui.label_don": "돈",
       "gui.palworld.fisher_sell_gui.button_cwiso": "취소",
       "gui.palworld.sub_quest_complete.button_surag": "수락",
@@ -5617,7 +5859,7 @@
       "gui.palworld.quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "key.palworld.double_jump_key": "Double Jump",
       "gui.palworld.farmer_skill_tree.label_11": "/ 1",
-      "item.palworld.glory_gold_ghost": "영광금귀신기노",
+      "item.palworld.glory_gold_ghost": "Glory Gold Ghost",
       "gui.palworld.farmer_skill_tree.label_10": "/10",
       "item.palworld.fish_catfish": "Fish Catfish",
       "item.palworld.miner_pick_lv_15": "Miner Pick Lv 1 5",
@@ -5644,7 +5886,7 @@
       "gui.palworld.farmer_skill_tree.label_sageorijeungga": "사거리증가",
       "gui.palworld.job_npc_action.button_panmae": "판매",
       "gui.palworld.job_npc_sell_gui.button_gyohwan": "교환",
-      "item.palworld.bangobu": "반고부",
+      "item.palworld.bangobu": "Bangobu",
       "gui.palworld.farmer_sell_gui.button_panmae": "판매",
       "gui.palworld.farmer_skill_tree.label_bansa": "반사!",
       "gui.palworld.quest_provide_gui.button_surag": "수락",
@@ -5770,10 +6012,6 @@
           },
           {
             "name": "Skyshatter",
-            "children": []
-          },
-          {
-            "name": "Nichirin",
             "children": []
           }
         ]
