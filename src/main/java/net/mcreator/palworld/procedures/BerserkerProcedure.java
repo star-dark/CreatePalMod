@@ -14,6 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 
 import net.mcreator.palworld.network.PalworldModVariables;
@@ -39,30 +40,39 @@ public class BerserkerProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity) {
 		if (damagesource == null || entity == null)
 			return;
-		if (entity instanceof Player && (damagesource.getEntity()) instanceof Monster) {
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).BerserkerSkillPoint > 0 && entity instanceof Player && (damagesource.getEntity()) instanceof Monster) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.StackedDamage = entity.getData(PalworldModVariables.PLAYER_VARIABLES).StackedDamage + 1;
 				_vars.syncPlayerVariables(entity);
 			}
-			if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).StackedDamage >= 3) {
+			if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).StackedDamage >= 8 - entity.getData(PalworldModVariables.PLAYER_VARIABLES).BerserkerSkillPoint) {
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
+						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) entity.getData(PalworldModVariables.PLAYER_VARIABLES).BerserkerSkillPoint);
 						if (!(entityiterator instanceof Player)) {
 							entityiterator.push((entityiterator.getLookAngle().x * (-2)), 1, (entityiterator.getLookAngle().z * (-2)));
 						}
 					}
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,
+							(int) (Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10) * 50),
+							(int) Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10), true, true));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 1, false, false));
+					_entity.addEffect(
+							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) (Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10) * 50),
+									(int) Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10), true, true));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 100, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE,
+							(int) (Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10) * 50),
+							(int) Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10), true, true));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 1, false, false));
+					_entity.addEffect(
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) (Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10) * 50),
+									(int) Math.round(((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) / 10), true, true));
 				{
 					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 					_vars.StackedDamage = 0;

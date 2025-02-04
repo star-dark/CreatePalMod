@@ -397,7 +397,7 @@
             "fixedValue": "체력재생"
           },
           "color": {
-            "value": -1,
+            "value": -16776961,
             "falpha": 0.0
           },
           "x": 266,
@@ -428,7 +428,7 @@
             "name": "RecoverUpPoint"
           },
           "color": {
-            "value": -1,
+            "value": -16776961,
             "falpha": 0.0
           },
           "x": 263,
@@ -452,20 +452,6 @@
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_ceryeog_bangeoryeog_5isang",
-          "text": {
-            "fixedValue": "체력, 방어력 5이상",
-            "name": "RecoverUpToolTip"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 265,
-          "y": 79
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
           "name": "tooltip_gonggyeogryeog_1jeungga",
           "text": {
             "fixedValue": "공격력 1증가"
@@ -481,7 +467,7 @@
         "data": {
           "name": "tooltip_ceryeog_1jeungga",
           "text": {
-            "fixedValue": "체력 1증가"
+            "fixedValue": "체력 1칸증가"
           },
           "width": 24,
           "height": 24,
@@ -512,19 +498,6 @@
             "name": "FoodFighterUp"
           },
           "x": 264,
-          "y": 137
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_eumsigseobcwisi_heubsuhoegdeug",
-          "text": {
-            "fixedValue": "음식섭취시 흡수획득"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 265,
           "y": 137
         }
       },
@@ -583,7 +556,7 @@
           "onClick": {
             "name": "ReflectionUp"
           },
-          "x": 314,
+          "x": 313,
           "y": 111
         }
       },
@@ -610,7 +583,7 @@
             "fixedValue": "반사!"
           },
           "color": {
-            "value": -16776961,
+            "value": -256,
             "falpha": 0.0
           },
           "x": 316,
@@ -626,7 +599,7 @@
             "name": "ReflectionPoint"
           },
           "color": {
-            "value": -16776961,
+            "value": -256,
             "falpha": 0.0
           },
           "x": 312,
@@ -642,20 +615,6 @@
           "onClick": {
             "name": "DoubleJumpUp"
           },
-          "x": 217,
-          "y": 111
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_double_jump_tool_tip",
-          "text": {
-            "fixedValue": "",
-            "name": "DoubleJumpToolTip"
-          },
-          "width": 24,
-          "height": 24,
           "x": 217,
           "y": 111
         }
@@ -715,7 +674,7 @@
           "onClick": {
             "name": "ShieldBoomberUp"
           },
-          "x": 312,
+          "x": 313,
           "y": 58
         }
       },
@@ -727,7 +686,7 @@
             "fixedValue": "쉴드붐버"
           },
           "color": {
-            "value": -13421569,
+            "value": -256,
             "falpha": 0.0
           },
           "x": 313,
@@ -758,7 +717,7 @@
             "name": "ShieldBoomberPoint"
           },
           "color": {
-            "value": -13421569,
+            "value": -256,
             "falpha": 0.0
           },
           "x": 314,
@@ -999,6 +958,196 @@
           },
           "x": 182,
           "y": 91
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_beoseokeo",
+          "image": "beoseokeo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BerserkerUp"
+          },
+          "x": 313,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_beoseokeo",
+          "text": {
+            "fixedValue": "버서커"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 316,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_58",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 324,
+          "y": 194
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_berserker_point",
+          "text": {
+            "fixedValue": "",
+            "name": "BerserkerPoint"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 310,
+          "y": 193
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_scale_up_tool_tip",
+          "text": {
+            "fixedValue": "",
+            "name": "ScaleUpToolTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 124,
+          "y": 137
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_hwibsseulgi_demiji_jeungga",
+          "text": {
+            "fixedValue": "휩쓸기 데미지 증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 170,
+          "y": 59
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_neogbaegjeohang_jeungga",
+          "text": {
+            "fixedValue": "넉백저항 증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 169,
+          "y": 112
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bangeogangdojeungga",
+          "text": {
+            "fixedValue": "방어강도증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 170,
+          "y": 162
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_jeompeusangtaero_hanbeon_deo_jeompeu_ganeung",
+          "text": {
+            "fixedValue": "점프상태로 한번 더 점프 가능"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 218,
+          "y": 111
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ceryeogjaesaeng_beopeubuyeo",
+          "text": {
+            "fixedValue": "체력재생 버프부여"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 79
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_eumsigseobcwisi_heubsuceryeog_hoegdeug",
+          "text": {
+            "fixedValue": "음식섭취시 흡수체력 획득"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 264,
+          "y": 137
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_iljeonghoessu_bangeo_si_jwakeulrigeuro_pogtaneul_nalrinda",
+          "text": {
+            "fixedValue": "일정횟수 방어 시 좌클릭으로 폭탄을 날린다"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 314,
+          "y": 59
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bangeosi_gonggyeogdaesangeul_nalrigo_demijireul_junda",
+          "text": {
+            "fixedValue": "방어시 공격대상을 날리고 데미지를 준다"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 313,
+          "y": 112
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_demijireul_iljeonghoessu_ibeumyeon_juwi_jeog_nalrigo_jasinege_beopeubu",
+          "text": {
+            "fixedValue": "데미지를 일정횟수 입으면 주위  적 날리고 자신에게 버프부여"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 313,
+          "y": 163
         }
       }
     ],

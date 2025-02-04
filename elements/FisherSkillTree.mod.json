@@ -3,28 +3,13 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 269,
-    "height": 166,
+    "width": 292,
+    "height": 194,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
-      {
-        "type": "label",
-        "data": {
-          "name": "label_5lv",
-          "text": {
-            "fixedValue": "5Lv"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 97,
-          "y": 48
-        }
-      },
       {
         "type": "label",
         "data": {
@@ -33,11 +18,11 @@
             "fixedValue": "10Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 133,
-          "y": 48
+          "x": 124,
+          "y": 33
         }
       },
       {
@@ -48,11 +33,11 @@
             "fixedValue": "15Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 177,
-          "y": 48
+          "x": 171,
+          "y": 33
         }
       },
       {
@@ -63,11 +48,11 @@
             "fixedValue": "20Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 223,
-          "y": 48
+          "x": 219,
+          "y": 33
         }
       },
       {
@@ -78,11 +63,11 @@
             "fixedValue": "25Lv"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "x": 267,
-          "y": 48
+          "y": 33
         }
       },
       {
@@ -93,19 +78,1084 @@
             "fixedValue": "30Lv"
           },
           "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 315,
+          "y": 33
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ceryeogjeungga",
+          "image": "ceryeogjeungga.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "HealthUp"
+          },
+          "x": 80,
+          "y": 111
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rangeup",
+          "image": "rangeup.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RangeUp"
+          },
+          "x": 123,
+          "y": 79
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_gonggyeogryeog",
+          "image": "gonggyeogryeog.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "AttackUP"
+          },
+          "x": 80,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gonggyeogryeog_jeungga",
+          "text": {
+            "fixedValue": "공격력"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 85,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_nameun_pointeu",
+          "text": {
+            "fixedValue": "남은 포인트 :"
+          },
+          "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 311,
-          "y": 48
+          "x": 280,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_current_skill_points",
+          "text": {
+            "fixedValue": "",
+            "name": "CurrentSkillPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 329,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_10",
+          "text": {
+            "fixedValue": "/10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 92,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_attack_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "AttackUpPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 78,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_101",
+          "text": {
+            "fixedValue": "/ 10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 93,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_health_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "HealthUpPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 78,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ceryeogjeungga",
+          "text": {
+            "fixedValue": "최대체력"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 82,
+          "y": 137
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bangeoryeog",
+          "text": {
+            "fixedValue": "방어력"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 86,
+          "y": 187
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bangeoryeog",
+          "image": "bangeoryeog.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DefenseUp"
+          },
+          "x": 80,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_102",
+          "text": {
+            "fixedValue": "/ 10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 93,
+          "y": 198
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_defense_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "DefenseUpPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 79,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "seukilteurigui.png",
+          "use1Xscale": false,
+          "x": 55,
+          "y": 23
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sageorijeungga",
+          "text": {
+            "fixedValue": "사거리증가"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 122,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_range_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "RangeUpPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_5",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_103",
+          "text": {
+            "fixedValue": "/ 4"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 114
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ceryeogjaesaeng",
+          "image": "ceryeogjaesaeng.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RecoverUp"
+          },
+          "x": 265,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ceryeogjaesaeng",
+          "text": {
+            "fixedValue": "체력재생"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 266,
+          "y": 103
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_51",
+          "text": {
+            "fixedValue": "/ 4"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 277,
+          "y": 110
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_recover_up_point",
+          "text": {
+            "fixedValue": "",
+            "name": "RecoverUpPoint"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 263,
+          "y": 109
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_gonggyeogryeog_ceryeog_5isang",
+          "text": {
+            "fixedValue": "공격력, 체력 5이상",
+            "name": "RangeUpToolTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 124,
+          "y": 79
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_gonggyeogryeog_1jeungga",
+          "text": {
+            "fixedValue": "공격력 1증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 81,
+          "y": 58
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ceryeog_1jeungga",
+          "text": {
+            "fixedValue": "체력 1칸증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 81,
+          "y": 111
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bangeoryeog_1jeungga",
+          "text": {
+            "fixedValue": "방어력 1증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 81,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_pupa",
+          "image": "pupa.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "FoodFighterUp"
+          },
+          "x": 264,
+          "y": 137
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_pudeupaiteo",
+          "text": {
+            "fixedValue": "푸드파이터"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_52",
+          "text": {
+            "fixedValue": "/ 4"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 278,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_food_fighter_point",
+          "text": {
+            "fixedValue": "",
+            "name": "FoodFighterPoint"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 264,
+          "y": 171
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bansa",
+          "image": "bansa.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ReflectionUp"
+          },
+          "x": 313,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_54",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 324,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bansa",
+          "text": {
+            "fixedValue": "반사!"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 316,
+          "y": 137
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_reflection_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ReflectionPoint"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 312,
+          "y": 143
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_deobeuljeompeu",
+          "image": "deobeuljeompeu.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DoubleJumpUp"
+          },
+          "x": 217,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_deobeuljeompeu",
+          "text": {
+            "fixedValue": "더블점프"
+          },
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "x": 218,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1",
+          "text": {
+            "fixedValue": "/ 1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 229,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_double_jump_point",
+          "text": {
+            "fixedValue": "",
+            "name": "DoubleJumpPoint"
+          },
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "x": 217,
+          "y": 144
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_swildeubumbeo",
+          "image": "swildeubumbeo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ShieldBoomberUp"
+          },
+          "x": 313,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_swildeubumbeo",
+          "text": {
+            "fixedValue": "쉴드붐버"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 313,
+          "y": 83
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_55",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 324,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_shield_boomber_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ShieldBoomberPoint"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 314,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_idongsogdo",
+          "text": {
+            "fixedValue": "커져라!"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 124,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_4",
+          "text": {
+            "fixedValue": "/ 4"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_speed_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ScalePoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 167
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_keojyeora",
+          "image": "keojyeora.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ScaleUp"
+          },
+          "x": 123,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bangeogangdo",
+          "image": "bangeogangdo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ToughnessUp"
+          },
+          "x": 169,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bangeogangdo",
+          "text": {
+            "fixedValue": "방어강도"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_53",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 195
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_toghness_point",
+          "text": {
+            "fixedValue": "",
+            "name": "ToghnessPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 169,
+          "y": 193
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_neogbaegjeohang",
+          "image": "neogbaegjeohang.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "KnockBackResistance"
+          },
+          "x": 169,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_neogbaegjeohang",
+          "text": {
+            "fixedValue": "넉백저항"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_56",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 142
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_knock_back_resistance_point",
+          "text": {
+            "fixedValue": "",
+            "name": "KnockBackResistancePoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 141
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_hwibsseulgi",
+          "image": "hwibsseulgi.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SweapDamageUp"
+          },
+          "x": 169,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hwibsseulgi",
+          "text": {
+            "fixedValue": "휩쓸기"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 174,
+          "y": 83
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_sweep_damage_point",
+          "text": {
+            "fixedValue": "",
+            "name": "SweepDamagePoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 169,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_57",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 91
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_beoseokeo",
+          "image": "beoseokeo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BerserkerUp"
+          },
+          "x": 313,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_beoseokeo",
+          "text": {
+            "fixedValue": "버서커"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 316,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_58",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 324,
+          "y": 194
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_berserker_point",
+          "text": {
+            "fixedValue": "",
+            "name": "BerserkerPoint"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 310,
+          "y": 193
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_scale_up_tool_tip",
+          "text": {
+            "fixedValue": "",
+            "name": "ScaleUpToolTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 124,
+          "y": 137
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_hwibsseulgi_demiji_jeungga",
+          "text": {
+            "fixedValue": "휩쓸기 데미지 증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 170,
+          "y": 59
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_neogbaegjeohang_jeungga",
+          "text": {
+            "fixedValue": "넉백저항 증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 169,
+          "y": 112
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bangeogangdojeungga",
+          "text": {
+            "fixedValue": "방어강도증가"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 170,
+          "y": 162
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_jeompeusangtaero_hanbeon_deo_jeompeu_ganeung",
+          "text": {
+            "fixedValue": "점프상태로 한번 더 점프 가능"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 218,
+          "y": 111
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ceryeogjaesaeng_beopeubuyeo",
+          "text": {
+            "fixedValue": "체력재생 버프부여"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 79
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_eumsigseobcwisi_heubsuceryeog_hoegdeug",
+          "text": {
+            "fixedValue": "음식섭취시 흡수체력 획득"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 264,
+          "y": 137
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_iljeonghoessu_bangeo_si_jwakeulrigeuro_pogtaneul_nalrinda",
+          "text": {
+            "fixedValue": "일정횟수 방어 시 좌클릭으로 폭탄을 날린다"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 314,
+          "y": 59
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bangeosi_gonggyeogdaesangeul_nalrigo_demijireul_junda",
+          "text": {
+            "fixedValue": "방어시 공격대상을 날리고 데미지를 준다"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 313,
+          "y": 112
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_demijireul_iljeonghoessu_ibeumyeon_juwi_jeog_nalrigo_jasinege_beopeubu",
+          "text": {
+            "fixedValue": "데미지를 일정횟수 입으면 주위  적 날리고 자신에게 버프부여"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 313,
+          "y": 163
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
+      "sx": 10,
       "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "ox": 18,
+      "oy": 11,
       "snapOnGrid": false
     }
   }

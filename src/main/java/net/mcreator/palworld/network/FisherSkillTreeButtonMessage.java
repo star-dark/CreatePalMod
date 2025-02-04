@@ -16,7 +16,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
+import net.mcreator.palworld.world.inventory.FisherSkillTreeMenu;
 import net.mcreator.palworld.procedures.ToughnessUpProcedure;
 import net.mcreator.palworld.procedures.SweapDamageUpProcedure;
 import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
@@ -36,21 +36,21 @@ import net.mcreator.palworld.PalworldMod;
 import java.util.HashMap;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+public record FisherSkillTreeButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<FarmerSkillTreeButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "farmer_skill_tree_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, FarmerSkillTreeButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, FarmerSkillTreeButtonMessage message) -> {
+	public static final Type<FisherSkillTreeButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "fisher_skill_tree_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, FisherSkillTreeButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, FisherSkillTreeButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new FarmerSkillTreeButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new FisherSkillTreeButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 	@Override
-	public Type<FarmerSkillTreeButtonMessage> type() {
+	public Type<FisherSkillTreeButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final FarmerSkillTreeButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final FisherSkillTreeButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				Player entity = context.player();
@@ -68,7 +68,7 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = FarmerSkillTreeMenu.guistate;
+		HashMap guistate = FisherSkillTreeMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -132,6 +132,6 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PalworldMod.addNetworkMessage(FarmerSkillTreeButtonMessage.TYPE, FarmerSkillTreeButtonMessage.STREAM_CODEC, FarmerSkillTreeButtonMessage::handleData);
+		PalworldMod.addNetworkMessage(FisherSkillTreeButtonMessage.TYPE, FisherSkillTreeButtonMessage.STREAM_CODEC, FisherSkillTreeButtonMessage::handleData);
 	}
 }

@@ -24,8 +24,11 @@ public class RangeUpProcedure {
 			}
 			if (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE))
 				_livingEntity1.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).setBaseValue(
-						((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity0.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getBaseValue() : 0)
-								+ Math.floor(entity.getData(PalworldModVariables.PLAYER_VARIABLES).RangeUpSkillPoint / 2)));
+						((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity0.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getBaseValue() : 0) + 0.5));
+			if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.ENTITY_INTERACTION_RANGE))
+				_livingEntity3.getAttribute(Attributes.ENTITY_INTERACTION_RANGE).setBaseValue(
+						((entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.ENTITY_INTERACTION_RANGE) ? _livingEntity2.getAttribute(Attributes.ENTITY_INTERACTION_RANGE).getBaseValue() : 0)
+								+ 0.5));
 		}
 	}
 }
