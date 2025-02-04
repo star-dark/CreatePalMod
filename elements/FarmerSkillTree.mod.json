@@ -882,6 +882,124 @@
           "x": 169,
           "y": 193
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_neogbaegjeohang",
+          "image": "neogbaegjeohang.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "KnockBackResistance"
+          },
+          "x": 169,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_neogbaegjeohang",
+          "text": {
+            "fixedValue": "넉백저항"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_56",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 181,
+          "y": 142
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_knock_back_resistance_point",
+          "text": {
+            "fixedValue": "",
+            "name": "KnockBackResistancePoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 141
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_hwibsseulgi",
+          "image": "hwibsseulgi.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SweapDamageUp"
+          },
+          "x": 169,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hwibsseulgi",
+          "text": {
+            "fixedValue": "휩쓸기"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 174,
+          "y": 83
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_sweep_damage_point",
+          "text": {
+            "fixedValue": "",
+            "name": "SweepDamagePoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 169,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_57",
+          "text": {
+            "fixedValue": "/ 5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 91
+        }
       }
     ],
     "gridSettings": {

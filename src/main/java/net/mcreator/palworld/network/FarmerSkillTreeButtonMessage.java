@@ -18,11 +18,13 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.FarmerSkillTreeMenu;
 import net.mcreator.palworld.procedures.ToughnessUpProcedure;
+import net.mcreator.palworld.procedures.SweapDamageUpProcedure;
 import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
 import net.mcreator.palworld.procedures.ScaleUpProcedure;
 import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.RecoverUpProcedure;
 import net.mcreator.palworld.procedures.RangeUpProcedure;
+import net.mcreator.palworld.procedures.KnockBackResistanceProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
 import net.mcreator.palworld.procedures.DoubleJumpUpProcedure;
@@ -112,6 +114,14 @@ public record FarmerSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		if (buttonID == 10) {
 
 			ToughnessUpProcedure.execute(entity);
+		}
+		if (buttonID == 11) {
+
+			KnockBackResistanceProcedure.execute(entity);
+		}
+		if (buttonID == 12) {
+
+			SweapDamageUpProcedure.execute(entity);
 		}
 	}
 
