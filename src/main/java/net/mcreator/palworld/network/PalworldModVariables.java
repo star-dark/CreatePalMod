@@ -100,6 +100,14 @@ public class PalworldModVariables {
 			clone.timeBuffer = original.timeBuffer;
 			clone.HoverSkillPoint = original.HoverSkillPoint;
 			clone.shieldBoomberSkillpoint = original.shieldBoomberSkillpoint;
+			clone.Amanomuraku_tick = original.Amanomuraku_tick;
+			clone.SweapDamageSkillPoint = original.SweapDamageSkillPoint;
+			clone.ToughnessSkillPoint = original.ToughnessSkillPoint;
+			clone.KnockbackResistanceSkillPoint = original.KnockbackResistanceSkillPoint;
+			clone.AstraBook_tick = original.AstraBook_tick;
+			clone.SpeedUpSkillPoint = original.SpeedUpSkillPoint;
+			clone.BerserkerSkillPoint = original.BerserkerSkillPoint;
+			clone.ScaleUpSkillPoint = original.ScaleUpSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -112,6 +120,10 @@ public class PalworldModVariables {
 				clone.aegis_bool = original.aegis_bool;
 				clone.Avalon_number = original.Avalon_number;
 				clone.ProtectionAmount = original.ProtectionAmount;
+				clone.Nichirin_tick = original.Nichirin_tick;
+				clone.StackedDamage = original.StackedDamage;
+				clone.Nichirin_number = original.Nichirin_number;
+				clone.Nichirin_cool = original.Nichirin_cool;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -293,6 +305,18 @@ public class PalworldModVariables {
 		public double Avalon_number = 10.0;
 		public double ProtectionAmount = 0;
 		public double shieldBoomberSkillpoint = 0;
+		public double Amanomuraku_tick = 0;
+		public double SweapDamageSkillPoint = 0;
+		public double ToughnessSkillPoint = 0;
+		public double Nichirin_tick = 0;
+		public double KnockbackResistanceSkillPoint = 0;
+		public double AstraBook_tick = 0;
+		public double SpeedUpSkillPoint = 0;
+		public double StackedDamage = 0;
+		public double Nichirin_number = 0;
+		public double BerserkerSkillPoint = 0;
+		public double ScaleUpSkillPoint = 0;
+		public double Nichirin_cool = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -340,6 +364,18 @@ public class PalworldModVariables {
 			nbt.putDouble("Avalon_number", Avalon_number);
 			nbt.putDouble("ProtectionAmount", ProtectionAmount);
 			nbt.putDouble("shieldBoomberSkillpoint", shieldBoomberSkillpoint);
+			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
+			nbt.putDouble("SweapDamageSkillPoint", SweapDamageSkillPoint);
+			nbt.putDouble("ToughnessSkillPoint", ToughnessSkillPoint);
+			nbt.putDouble("Nichirin_tick", Nichirin_tick);
+			nbt.putDouble("KnockbackResistanceSkillPoint", KnockbackResistanceSkillPoint);
+			nbt.putDouble("AstraBook_tick", AstraBook_tick);
+			nbt.putDouble("SpeedUpSkillPoint", SpeedUpSkillPoint);
+			nbt.putDouble("StackedDamage", StackedDamage);
+			nbt.putDouble("Nichirin_number", Nichirin_number);
+			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
+			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
+			nbt.putDouble("Nichirin_cool", Nichirin_cool);
 			return nbt;
 		}
 
@@ -388,6 +424,18 @@ public class PalworldModVariables {
 			Avalon_number = nbt.getDouble("Avalon_number");
 			ProtectionAmount = nbt.getDouble("ProtectionAmount");
 			shieldBoomberSkillpoint = nbt.getDouble("shieldBoomberSkillpoint");
+			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
+			SweapDamageSkillPoint = nbt.getDouble("SweapDamageSkillPoint");
+			ToughnessSkillPoint = nbt.getDouble("ToughnessSkillPoint");
+			Nichirin_tick = nbt.getDouble("Nichirin_tick");
+			KnockbackResistanceSkillPoint = nbt.getDouble("KnockbackResistanceSkillPoint");
+			AstraBook_tick = nbt.getDouble("AstraBook_tick");
+			SpeedUpSkillPoint = nbt.getDouble("SpeedUpSkillPoint");
+			StackedDamage = nbt.getDouble("StackedDamage");
+			Nichirin_number = nbt.getDouble("Nichirin_number");
+			BerserkerSkillPoint = nbt.getDouble("BerserkerSkillPoint");
+			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
+			Nichirin_cool = nbt.getDouble("Nichirin_cool");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
