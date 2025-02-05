@@ -36,6 +36,8 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.GLORY_GOLD_GHOST.get());
 			tabData.accept(PalworldModItems.HEAVEN.get());
 			tabData.accept(PalworldModItems.NICHIRIN.get());
+			tabData.accept(PalworldModItems.LAEVATEINN.get());
+			tabData.accept(PalworldModItems.ELDER_WAND.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 

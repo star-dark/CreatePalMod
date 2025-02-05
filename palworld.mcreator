@@ -5295,6 +5295,31 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/BerserkerPointProcedure.java"
+      "path": "~/Weapon/Laevateinn"
+    },
+    {
+      "name": "ElderWand",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elder_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/item/ElderWandItem.java",
+          "src/main/resources/assets/palworld/models/item/elder_wand.json"
+        ]
+      },
+      "path": "~/Weapon/ElderWand"
+    },
+    {
+      "name": "ElderWandEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elder_wand_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ElderWandEffectProcedure.java"
         ],
         "dependencies": [
           {
@@ -5315,6 +5340,40 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/ScaleUpToolTipProcedure.java"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapon/ElderWand"
+    },
+    {
+      "name": "ElderWandEffect2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elder_wand_effect_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ElderWandEffect2Procedure.java"
         ],
         "dependencies": [
           {
@@ -5580,6 +5639,14 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/15Lv"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapon/ElderWand"
     }
   ],
   "variable_elements": [
@@ -5955,6 +6022,7 @@
       "~CUSTOM:FishRodLv15"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:ElderWand",
       "~CUSTOM:Heaven",
       "~CUSTOM:AvalonOfMerlin",
       "~CUSTOM:AstraBook",
@@ -5963,6 +6031,7 @@
       "~CUSTOM:MinerPickLv30"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:ElderWand",
       "~CUSTOM:Heaven",
       "~CUSTOM:AvalonOfMerlin",
       "~CUSTOM:AstraBook",
@@ -5970,6 +6039,8 @@
       "~CUSTOM:Mjolnir"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:ElderWand",
+      "~CUSTOM:Laevateinn",
       "~CUSTOM:Nichirin",
       "~CUSTOM:Heaven",
       "~CUSTOM:AvalonOfMerlin",
@@ -6263,6 +6334,7 @@
       "item.palworld.level_wand": "Magic Wand",
       "effect.palworld.thunder_potion": "Thunder Potion",
       "gui.palworld.fisher_skill_tree.label_idongsogdo": "커져라!",
+      "item.palworld.elder_wand": "딱총나무 지팡이",
       "gui.palworld.farmer_skill_tree.label_eodumyi_jasig": "어둠의 자식",
       "item.palworld.fish_herring": "Fish Herring",
       "gui.palworld.farmer_skill_tree.label_20lv": "20Lv",
@@ -6403,6 +6475,14 @@
           },
           {
             "name": "Skyshatter",
+            "children": []
+          },
+          {
+            "name": "Laevateinn",
+            "children": []
+          },
+          {
+            "name": "ElderWand",
             "children": []
           }
         ]
