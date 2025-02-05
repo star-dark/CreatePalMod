@@ -1,13 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-
-import net.mcreator.palworld.network.PalworldModVariables;
+import net.neoforged.bus.api.Event;
 
 public class SkyshatterEffect2Procedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {

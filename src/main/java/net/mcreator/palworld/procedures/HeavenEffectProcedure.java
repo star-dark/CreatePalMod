@@ -1,9 +1,6 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import net.neoforged.bus.api.Event;
 
 public class HeavenEffectProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {

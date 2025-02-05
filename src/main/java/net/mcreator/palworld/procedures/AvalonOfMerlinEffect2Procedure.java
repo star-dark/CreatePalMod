@@ -1,15 +1,9 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.particles.ParticleTypes;
-
-import net.mcreator.palworld.network.PalworldModVariables;
+import net.neoforged.bus.api.Event;
 
 public class AvalonOfMerlinEffect2Procedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double r = 0;
@@ -105,6 +99,5 @@ public class AvalonOfMerlinEffect2Procedure {
 				_vars.syncPlayerVariables(entity);
 			}
 		}
-		AvalonOfMerlinEffect3Procedure.execute(world, x, y, z, entity);
 	}
 }

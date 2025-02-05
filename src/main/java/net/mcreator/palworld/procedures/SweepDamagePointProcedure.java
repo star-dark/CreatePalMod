@@ -1,13 +1,9 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.palworld.network.PalworldModVariables;
+import net.neoforged.bus.api.Event;
 
 public class SweepDamagePointProcedure {
-	public static String execute(Entity entity) {
-		if (entity == null)
-			return "";
-		return new java.text.DecimalFormat("##").format(entity.getData(PalworldModVariables.PLAYER_VARIABLES).SweapDamageSkillPoint);
+	public static String execute() {
+		return new java.text.DecimalFormat("##").format();
 	}
 }
