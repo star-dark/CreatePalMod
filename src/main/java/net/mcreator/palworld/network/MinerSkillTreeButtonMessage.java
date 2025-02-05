@@ -19,11 +19,17 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.palworld.world.inventory.MinerSkillTreeMenu;
 import net.mcreator.palworld.procedures.ToughnessUpProcedure;
 import net.mcreator.palworld.procedures.SweapDamageUpProcedure;
-import net.mcreator.palworld.procedures.StepHeightUpProcedure;
+import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
 import net.mcreator.palworld.procedures.ScaleUpProcedure;
+import net.mcreator.palworld.procedures.ReflectionUpProcedure;
+import net.mcreator.palworld.procedures.RecoverUpProcedure;
+import net.mcreator.palworld.procedures.RangeUpProcedure;
 import net.mcreator.palworld.procedures.KnockBackResistanceProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
+import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
+import net.mcreator.palworld.procedures.DoubleJumpUpProcedure;
 import net.mcreator.palworld.procedures.DefenseUpProcedure;
+import net.mcreator.palworld.procedures.BerserkerUpProcedure;
 import net.mcreator.palworld.procedures.AttackUPProcedure;
 import net.mcreator.palworld.PalworldMod;
 
@@ -72,31 +78,55 @@ public record MinerSkillTreeButtonMessage(int buttonID, int x, int y, int z) imp
 		}
 		if (buttonID == 1) {
 
-			AttackUPProcedure.execute(entity);
+			RangeUpProcedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
-			DefenseUpProcedure.execute(entity);
+			AttackUPProcedure.execute(entity);
 		}
 		if (buttonID == 3) {
 
-			ScaleUpProcedure.execute(entity);
+			DefenseUpProcedure.execute(entity);
 		}
 		if (buttonID == 4) {
 
-			ToughnessUpProcedure.execute(entity);
+			RecoverUpProcedure.execute(entity);
 		}
 		if (buttonID == 5) {
 
-			KnockBackResistanceProcedure.execute(entity);
+			FoodFighterUpProcedure.execute(entity);
 		}
 		if (buttonID == 6) {
 
-			SweapDamageUpProcedure.execute(entity);
+			ReflectionUpProcedure.execute(entity);
 		}
 		if (buttonID == 7) {
 
-			StepHeightUpProcedure.execute(entity);
+			DoubleJumpUpProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			ShieldBoomberUpProcedure.execute(entity);
+		}
+		if (buttonID == 9) {
+
+			ScaleUpProcedure.execute(entity);
+		}
+		if (buttonID == 10) {
+
+			ToughnessUpProcedure.execute(entity);
+		}
+		if (buttonID == 11) {
+
+			KnockBackResistanceProcedure.execute(entity);
+		}
+		if (buttonID == 12) {
+
+			SweapDamageUpProcedure.execute(entity);
+		}
+		if (buttonID == 13) {
+
+			BerserkerUpProcedure.execute(entity);
 		}
 	}
 

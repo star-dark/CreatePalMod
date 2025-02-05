@@ -426,11 +426,8 @@ public class PalworldModVariables {
 			shieldBoomberSkillpoint = nbt.getDouble("shieldBoomberSkillpoint");
 			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
 			AstraBook_tick = nbt.getDouble("AstraBook_tick");
-			ToughnessSkillPoint = nbt.getDouble("ToughnessSkillPoint");
-			SpeedUpSkillPoint = nbt.getDouble("SpeedUpSkillPoint");
-			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
-			Nichirin_tick = nbt.getDouble("Nichirin_tick");
 			Nichirin_number = nbt.getDouble("Nichirin_number");
+			Nichirin_tick = nbt.getDouble("Nichirin_tick");
 			Nichirin_cool = nbt.getDouble("Nichirin_cool");
 			KnockbackResistanceSkillPoint = nbt.getDouble("KnockbackResistanceSkillPoint");
 			SweapDamageSkillPoint = nbt.getDouble("SweapDamageSkillPoint");

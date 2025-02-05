@@ -4778,14 +4778,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/NichirinEffectProcedure.java"
-      "name": "NichirinEffect5",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nichirin_effect_5",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/NichirinEffect5Procedure.java"
         ],
         "dependencies": [
           {
@@ -5064,53 +5056,6 @@
         ]
       },
       "path": "~/Weapon"
-      "name": "FisherSkillTree",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fisher_skill_tree",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/network/FisherSkillTreeButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree"
-    },
-    {
-      "name": "MinerSkillTree",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "miner_skill_tree",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
-          "src/main/java/net/mcreator/palworld/network/MinerSkillTreeButtonMessage.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree"
-    },
-    {
-      "name": "StepHeightUp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "step_height_up",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StepHeightUpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/10Lv"
     },
     {
       "name": "LaevateinnEffect",
@@ -5143,20 +5088,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Weapon"
-    },
-    {
-      "name": "Laevateinn",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laevateinn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/LaevateinnItem.java",
-          "src/main/resources/assets/palworld/models/item/laevateinn.json"
         ]
       },
       "path": "~/Weapon"
@@ -5456,12 +5387,6 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
-    },
-    {
-      "name": "StepHeightUpSkillPoint",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -5605,6 +5530,7 @@
       "gui.palworld.farmer_skill_tree.label_proc_berserker_point": "",
       "gui.palworld.money_tap.button_1000": "1000",
       "item.palworld.amanomurakumonotsurugi": "아마노무라쿠모노츠루기",
+      "entity.palworld.pig": "Pig",
       "gui.palworld.farmer_skill_tree.tooltip_bangeosi_gonggyeogdaesangeul_nalrigo_demijireul_junda": "방어시 공격대상을 날리고 데미지를 준다",
       "gui.palworld.farmer_sell_gui.label_33weon": "33원",
       "gui.palworld.farmer_sell_gui.button_cwiso": "취소",
@@ -6006,15 +5932,6 @@
                   },
                   {
                     "name": "Activation",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Miner",
-                "children": [
-                  {
-                    "name": "10Lv",
                     "children": []
                   }
                 ]
