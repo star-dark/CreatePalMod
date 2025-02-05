@@ -102,12 +102,6 @@ public class PalworldModVariables {
 			clone.shieldBoomberSkillpoint = original.shieldBoomberSkillpoint;
 			clone.Amanomuraku_tick = original.Amanomuraku_tick;
 			clone.AstraBook_tick = original.AstraBook_tick;
-			clone.ToughnessSkillPoint = original.ToughnessSkillPoint;
-			clone.SpeedUpSkillPoint = original.SpeedUpSkillPoint;
-			clone.ScaleUpSkillPoint = original.ScaleUpSkillPoint;
-			clone.KnockbackResistanceSkillPoint = original.KnockbackResistanceSkillPoint;
-			clone.SweapDamageSkillPoint = original.SweapDamageSkillPoint;
-			clone.BerserkerSkillPoint = original.BerserkerSkillPoint;
 			clone.StepHeightUpSkillPoint = original.StepHeightUpSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
@@ -124,7 +118,6 @@ public class PalworldModVariables {
 				clone.Nichirin_tick = original.Nichirin_tick;
 				clone.Nichirin_number = original.Nichirin_number;
 				clone.Nichirin_cool = original.Nichirin_cool;
-				clone.StackedDamage = original.StackedDamage;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -308,16 +301,9 @@ public class PalworldModVariables {
 		public double shieldBoomberSkillpoint = 0;
 		public double Amanomuraku_tick = 0;
 		public double AstraBook_tick = 0;
-		public double ToughnessSkillPoint = 0;
-		public double SpeedUpSkillPoint = 0;
-		public double ScaleUpSkillPoint = 0;
 		public double Nichirin_tick = 0;
 		public double Nichirin_number = 0;
 		public double Nichirin_cool = 0;
-		public double KnockbackResistanceSkillPoint = 0;
-		public double SweapDamageSkillPoint = 0;
-		public double StackedDamage = 0;
-		public double BerserkerSkillPoint = 0;
 		public double StepHeightUpSkillPoint = 0;
 
 		@Override
@@ -368,16 +354,9 @@ public class PalworldModVariables {
 			nbt.putDouble("shieldBoomberSkillpoint", shieldBoomberSkillpoint);
 			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
 			nbt.putDouble("AstraBook_tick", AstraBook_tick);
-			nbt.putDouble("ToughnessSkillPoint", ToughnessSkillPoint);
-			nbt.putDouble("SpeedUpSkillPoint", SpeedUpSkillPoint);
-			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
 			nbt.putDouble("Nichirin_tick", Nichirin_tick);
 			nbt.putDouble("Nichirin_number", Nichirin_number);
 			nbt.putDouble("Nichirin_cool", Nichirin_cool);
-			nbt.putDouble("KnockbackResistanceSkillPoint", KnockbackResistanceSkillPoint);
-			nbt.putDouble("SweapDamageSkillPoint", SweapDamageSkillPoint);
-			nbt.putDouble("StackedDamage", StackedDamage);
-			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
 			nbt.putDouble("StepHeightUpSkillPoint", StepHeightUpSkillPoint);
 			return nbt;
 		}
@@ -429,16 +408,9 @@ public class PalworldModVariables {
 			shieldBoomberSkillpoint = nbt.getDouble("shieldBoomberSkillpoint");
 			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
 			AstraBook_tick = nbt.getDouble("AstraBook_tick");
-			ToughnessSkillPoint = nbt.getDouble("ToughnessSkillPoint");
-			SpeedUpSkillPoint = nbt.getDouble("SpeedUpSkillPoint");
-			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
 			Nichirin_tick = nbt.getDouble("Nichirin_tick");
 			Nichirin_number = nbt.getDouble("Nichirin_number");
 			Nichirin_cool = nbt.getDouble("Nichirin_cool");
-			KnockbackResistanceSkillPoint = nbt.getDouble("KnockbackResistanceSkillPoint");
-			SweapDamageSkillPoint = nbt.getDouble("SweapDamageSkillPoint");
-			StackedDamage = nbt.getDouble("StackedDamage");
-			BerserkerSkillPoint = nbt.getDouble("BerserkerSkillPoint");
 			StepHeightUpSkillPoint = nbt.getDouble("StepHeightUpSkillPoint");
 		}
 
