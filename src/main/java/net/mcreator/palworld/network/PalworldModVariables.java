@@ -108,6 +108,7 @@ public class PalworldModVariables {
 			clone.KnockbackResistanceSkillPoint = original.KnockbackResistanceSkillPoint;
 			clone.SweapDamageSkillPoint = original.SweapDamageSkillPoint;
 			clone.BerserkerSkillPoint = original.BerserkerSkillPoint;
+			clone.StepHeightUpSkillPoint = original.StepHeightUpSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -317,6 +318,7 @@ public class PalworldModVariables {
 		public double SweapDamageSkillPoint = 0;
 		public double StackedDamage = 0;
 		public double BerserkerSkillPoint = 0;
+		public double StepHeightUpSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -376,6 +378,7 @@ public class PalworldModVariables {
 			nbt.putDouble("SweapDamageSkillPoint", SweapDamageSkillPoint);
 			nbt.putDouble("StackedDamage", StackedDamage);
 			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
+			nbt.putDouble("StepHeightUpSkillPoint", StepHeightUpSkillPoint);
 			return nbt;
 		}
 
@@ -436,6 +439,7 @@ public class PalworldModVariables {
 			SweapDamageSkillPoint = nbt.getDouble("SweapDamageSkillPoint");
 			StackedDamage = nbt.getDouble("StackedDamage");
 			BerserkerSkillPoint = nbt.getDouble("BerserkerSkillPoint");
+			StepHeightUpSkillPoint = nbt.getDouble("StepHeightUpSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
