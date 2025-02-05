@@ -1,9 +1,14 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class AvalonOfMerlinEffect4Procedure {
-	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
@@ -15,7 +20,7 @@ public class AvalonOfMerlinEffect4Procedure {
 				_vars.syncPlayerVariables(entity);
 			}
 			AvalonOfMerlinEffect1Procedure.execute(world, entity);
-			AvalonOfMerlinEffect2Procedure.execute(world, entity);
+			AvalonOfMerlinEffect2Procedure.execute(world, x, y, z, entity);
 		}
 	}
 }

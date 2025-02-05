@@ -1,13 +1,27 @@
 
 package net.mcreator.palworld.network;
 
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+
+import net.mcreator.palworld.procedures.ShiftScaleDownkireulnoheulddaeProcedure;
+import net.mcreator.palworld.procedures.ShiftScaleDownOnKeyPressedProcedure;
 import net.mcreator.palworld.PalworldMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record ShiftScaleDownMessage(int eventType, int pressedms) implements CustomPacketPayload {
-
 	public static final Type<ShiftScaleDownMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PalworldMod.MODID, "key_shift_scale_down"));
-
 	public static final StreamCodec<RegistryFriendlyByteBuf, ShiftScaleDownMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, ShiftScaleDownMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
@@ -34,19 +48,16 @@ public record ShiftScaleDownMessage(int eventType, int pressedms) implements Cus
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
-
 		if (type == 0) {
 
 			ShiftScaleDownOnKeyPressedProcedure.execute(entity);
 		}
-
 		if (type == 1) {
 
-			ShiftScaleDownkireulnoheulddaeProcedure.execute();
+			ShiftScaleDownkireulnoheulddaeProcedure.execute(entity);
 		}
 	}
 
@@ -54,5 +65,4 @@ public record ShiftScaleDownMessage(int eventType, int pressedms) implements Cus
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		PalworldMod.addNetworkMessage(ShiftScaleDownMessage.TYPE, ShiftScaleDownMessage.STREAM_CODEC, ShiftScaleDownMessage::handleData);
 	}
-
 }

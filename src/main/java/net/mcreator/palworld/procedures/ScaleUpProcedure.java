@@ -1,6 +1,10 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class ScaleUpProcedure {
 	public static void execute(Entity entity) {
@@ -16,6 +20,11 @@ public class ScaleUpProcedure {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.Skill_Points = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points - 1;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+				_vars.ScaleUpSkillPoint = entity.getData(PalworldModVariables.PLAYER_VARIABLES).ScaleUpSkillPoint + 1;
 				_vars.syncPlayerVariables(entity);
 			}
 		}

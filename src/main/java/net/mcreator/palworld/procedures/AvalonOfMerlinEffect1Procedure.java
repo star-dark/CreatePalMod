@@ -1,6 +1,12 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.particles.ParticleTypes;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class AvalonOfMerlinEffect1Procedure {
 	public static void execute(LevelAccessor world, Entity entity) {
