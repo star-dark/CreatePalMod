@@ -108,6 +108,10 @@ public class PalworldModVariables {
 			clone.SpeedUpSkillPoint = original.SpeedUpSkillPoint;
 			clone.BerserkerSkillPoint = original.BerserkerSkillPoint;
 			clone.ScaleUpSkillPoint = original.ScaleUpSkillPoint;
+			clone.StepHeightSkillPoint = original.StepHeightSkillPoint;
+			clone.SneakingSpeedSkillPoint = original.SneakingSpeedSkillPoint;
+			clone.BreakingSpeedSkillPoint = original.BreakingSpeedSkillPoint;
+			clone.FallingDamageReduceSkillPoint = original.FallingDamageReduceSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -317,6 +321,10 @@ public class PalworldModVariables {
 		public double BerserkerSkillPoint = 0;
 		public double ScaleUpSkillPoint = 0;
 		public double Nichirin_cool = 0;
+		public double StepHeightSkillPoint = 0;
+		public double SneakingSpeedSkillPoint = 0;
+		public double BreakingSpeedSkillPoint = 0;
+		public double FallingDamageReduceSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -376,6 +384,10 @@ public class PalworldModVariables {
 			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
 			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
 			nbt.putDouble("Nichirin_cool", Nichirin_cool);
+			nbt.putDouble("StepHeightSkillPoint", StepHeightSkillPoint);
+			nbt.putDouble("SneakingSpeedSkillPoint", SneakingSpeedSkillPoint);
+			nbt.putDouble("BreakingSpeedSkillPoint", BreakingSpeedSkillPoint);
+			nbt.putDouble("FallingDamageReduceSkillPoint", FallingDamageReduceSkillPoint);
 			return nbt;
 		}
 
@@ -436,6 +448,10 @@ public class PalworldModVariables {
 			BerserkerSkillPoint = nbt.getDouble("BerserkerSkillPoint");
 			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
 			Nichirin_cool = nbt.getDouble("Nichirin_cool");
+			StepHeightSkillPoint = nbt.getDouble("StepHeightSkillPoint");
+			SneakingSpeedSkillPoint = nbt.getDouble("SneakingSpeedSkillPoint");
+			BreakingSpeedSkillPoint = nbt.getDouble("BreakingSpeedSkillPoint");
+			FallingDamageReduceSkillPoint = nbt.getDouble("FallingDamageReduceSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
