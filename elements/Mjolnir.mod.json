@@ -6,7 +6,7 @@
     "renderType": 1,
     "blockingRenderType": 0,
     "texture": "hammer_gravity",
-    "customModelName": "hammer_stormlander:default",
+    "customModelName": "hammer_gravity:default",
     "blockingModelName": "Normal blocking",
     "name": "묠니르",
     "specialInformation": {
