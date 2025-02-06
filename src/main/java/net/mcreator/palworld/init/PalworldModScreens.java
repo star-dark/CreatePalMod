@@ -38,11 +38,11 @@ public class PalworldModScreens {
 		event.register(PalworldModMenus.SUB_QUEST_COMPLETE.get(), SubQuestCompleteScreen::new);
 		event.register(PalworldModMenus.SUB_QUEST_CLEAR.get(), SubQuestClearScreen::new);
 		event.register(PalworldModMenus.FARMER_SKILL_TREE.get(), FarmerSkillTreeScreen::new);
-		event.register(PalworldModMenus.FISHER_SKILL_TREE.get(), FisherSkillTreeScreen::new);
-		event.register(PalworldModMenus.MINER_SKILL_TREE.get(), MinerSkillTreeScreen::new);
 		event.register(PalworldModMenus.JOB_NPC_ACTION.get(), JobNpcActionScreen::new);
 		event.register(PalworldModMenus.FISHER_SELL_GUI.get(), FisherSellGuiScreen::new);
 		event.register(PalworldModMenus.MINER_SELL_GUI.get(), MinerSellGuiScreen::new);
 		event.register(PalworldModMenus.FARMER_SELL_GUI.get(), FarmerSellGuiScreen::new);
+		event.register(PalworldModMenus.FISHER_SKILL_TREE.get(), FisherSkillTreeScreen::new);
+		event.register(PalworldModMenus.MINER_SKILL_TREE.get(), MinerSkillTreeScreen::new);
 	}
 }
