@@ -27,6 +27,7 @@ import net.mcreator.palworld.item.MinerPickLv15Item;
 import net.mcreator.palworld.item.ManwonItem;
 import net.mcreator.palworld.item.MagicWandItem;
 import net.mcreator.palworld.item.LevelWandItem;
+import net.mcreator.palworld.item.LaevateinnItem;
 import net.mcreator.palworld.item.HeavenItem;
 import net.mcreator.palworld.item.GloryGoldGhostItem;
 import net.mcreator.palworld.item.FishTunaItem;
@@ -53,6 +54,7 @@ import net.mcreator.palworld.item.FishAnglerItem;
 import net.mcreator.palworld.item.FarmerSporeItem;
 import net.mcreator.palworld.item.FarmerRootItem;
 import net.mcreator.palworld.item.FarmerDregsItem;
+import net.mcreator.palworld.item.ElderWandItem;
 import net.mcreator.palworld.item.DainsleifItem;
 import net.mcreator.palworld.item.ChunwonItem;
 import net.mcreator.palworld.item.BurfSwordItem;
@@ -120,9 +122,11 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> BURF_SWORD = REGISTRY.register("burf_sword", BurfSwordItem::new);
 	public static final DeferredItem<Item> ASTRA_BOOK = REGISTRY.register("astra_book", AstraBookItem::new);
 	public static final DeferredItem<Item> AVALON_OF_MERLIN = REGISTRY.register("avalon_of_merlin", AvalonOfMerlinItem::new);
-	public static final DeferredItem<Item> GLORY_GOLD_GHOST = REGISTRY.register("glory_gold_ghost", GloryGoldGhostItem::new);
 	public static final DeferredItem<Item> HEAVEN = REGISTRY.register("heaven", HeavenItem::new);
+	public static final DeferredItem<Item> GLORY_GOLD_GHOST = REGISTRY.register("glory_gold_ghost", GloryGoldGhostItem::new);
 	public static final DeferredItem<Item> NICHIRIN = REGISTRY.register("nichirin", NichirinItem::new);
+	public static final DeferredItem<Item> LAEVATEINN = REGISTRY.register("laevateinn", LaevateinnItem::new);
+	public static final DeferredItem<Item> ELDER_WAND = REGISTRY.register("elder_wand", ElderWandItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
