@@ -2,13 +2,13 @@
   "_fv": 69,
   "_type": "tool",
   "definition": {
-    "toolType": "Axe",
-    "renderType": 1,
+    "toolType": "Sword",
+    "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "hammer_gravity",
-    "customModelName": "hammer_gravity:default",
+    "texture": "sword_sinister",
+    "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "묠니르",
+    "name": "레바테인",
     "specialInformation": {
       "fixedValue": []
     },
@@ -17,11 +17,11 @@
         "value": "COMBAT"
       }
     ],
-    "efficiency": 7.0,
+    "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 100,
+    "usageCount": 99999,
     "glowCondition": {
       "fixedValue": false
     },
@@ -32,10 +32,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "MjolnirEffect"
-    },
-    "onRightClickedOnBlock": {
-      "name": "MjolnirEffect"
+      "name": "LaevateinnEffect"
     }
   }
 }

@@ -318,9 +318,9 @@ public class PalworldModVariables {
 		public double ToughnessSkillPoint = 0;
 		public double Nichirin_tick = 0;
 		public double KnockbackResistanceSkillPoint = 0;
-		public double StackedDamage = 0;
 		public double AstraBook_tick = 0;
 		public double SpeedUpSkillPoint = 0;
+		public double StackedDamage = 0;
 		public double Nichirin_number = 0;
 		public double BerserkerSkillPoint = 0;
 		public double ScaleUpSkillPoint = 0;
@@ -381,9 +381,9 @@ public class PalworldModVariables {
 			nbt.putDouble("ToughnessSkillPoint", ToughnessSkillPoint);
 			nbt.putDouble("Nichirin_tick", Nichirin_tick);
 			nbt.putDouble("KnockbackResistanceSkillPoint", KnockbackResistanceSkillPoint);
-			nbt.putDouble("StackedDamage", StackedDamage);
 			nbt.putDouble("AstraBook_tick", AstraBook_tick);
 			nbt.putDouble("SpeedUpSkillPoint", SpeedUpSkillPoint);
+			nbt.putDouble("StackedDamage", StackedDamage);
 			nbt.putDouble("Nichirin_number", Nichirin_number);
 			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
 			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
