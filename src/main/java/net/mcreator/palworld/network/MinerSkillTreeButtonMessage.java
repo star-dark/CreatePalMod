@@ -22,6 +22,7 @@ import net.mcreator.palworld.procedures.SneakingSpeedUpProcedure;
 import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
 import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.RecoverUpProcedure;
+import net.mcreator.palworld.procedures.KnockBackUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
 import net.mcreator.palworld.procedures.FallingDamageReduceProcedure;
@@ -122,6 +123,10 @@ public record MinerSkillTreeButtonMessage(int buttonID, int x, int y, int z) imp
 		if (buttonID == 12) {
 
 			FallingDamageReduceProcedure.execute(entity);
+		}
+		if (buttonID == 13) {
+
+			KnockBackUpProcedure.execute(entity);
 		}
 	}
 

@@ -2025,9 +2025,9 @@
       "registry_name": "fisher_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java",
           "src/main/java/net/mcreator/palworld/network/FisherSkillTreeButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java"
         ]
       },
       "path": "~/GUI/Skill_Tree"
@@ -2059,8 +2059,8 @@
       "registry_name": "miner_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
           "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
           "src/main/java/net/mcreator/palworld/network/MinerSkillTreeButtonMessage.java"
         ]
       },
@@ -4356,8 +4356,8 @@
       "registry_name": "astra_book",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java",
-          "src/main/resources/assets/palworld/models/item/astra_book.json"
+          "src/main/resources/assets/palworld/models/item/astra_book.json",
+          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java"
         ]
       },
       "path": "~/Weapon/AstraBook"
@@ -4978,8 +4978,8 @@
       "registry_name": "nichirin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/nichirin.json",
-          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
+          "src/main/java/net/mcreator/palworld/item/NichirinItem.java",
+          "src/main/resources/assets/palworld/models/item/nichirin.json"
         ]
       },
       "path": "~/Weapon/Nichirin"
@@ -5690,6 +5690,119 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "KnockBackUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knock_back_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KnockBackUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/15Lv"
+    },
+    {
+      "name": "KnockBackPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knock_back_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KnockBackPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "KusanagiProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kusanagi_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect"
+    },
+    {
+      "name": "Kusanagi",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kusanagi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/entity/KusanagiEntity.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect"
+    },
+    {
+      "name": "ThrowKusanagi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "throw_kusanagi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/ThrowKusanagiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect"
+    },
+    {
+      "name": "Kamui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kamui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KamuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect"
     }
   ],
   "variable_elements": [
@@ -6052,6 +6165,42 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "KnockBackSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "KusanagiLocateX",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "KusanagiLocateY",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "KusanagiLocateZ",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "KamuiActivate",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "ThrowKusanagiActivate",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "true"
     }
   ],
   "sound_elements": [],
@@ -6338,7 +6487,7 @@
       "gui.palworld.farmer_sell_gui.button_panmae4": "판매",
       "gui.palworld.farmer_sell_gui.button_panmae3": "판매",
       "gui.palworld.farmer_sell_gui.button_panmae2": "판매",
-      "gui.palworld.miner_skill_tree.label_bangeogangdo": "방어강도",
+      "gui.palworld.miner_skill_tree.label_bangeogangdo": "저리가",
       "gui.palworld.farmer_sell_gui.button_panmae1": "판매",
       "gui.palworld.fisher_skill_tree.tooltip_jeompeusangtaero_hanbeon_deo_jeompeu_ganeung": "점프상태로 한번 더 점프 가능",
       "gui.palworld.money_tap.button_10000": "10000",

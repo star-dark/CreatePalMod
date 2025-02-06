@@ -716,13 +716,13 @@
         "data": {
           "name": "label_bangeogangdo",
           "text": {
-            "fixedValue": "방어강도"
+            "fixedValue": "저리가"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 171,
+          "x": 173,
           "y": 186
         }
       },
@@ -782,8 +782,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 174,
-          "y": 83
+          "x": 171,
+          "y": 81
         }
       },
       {
@@ -1052,6 +1052,35 @@
           },
           "x": 170,
           "y": 142
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_neogbaegjeungga",
+          "image": "neogbaegjeungga.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "KnockBackUp"
+          },
+          "x": 170,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_knock_back_point",
+          "text": {
+            "fixedValue": "",
+            "name": "KnockBackPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 193
         }
       }
     ],

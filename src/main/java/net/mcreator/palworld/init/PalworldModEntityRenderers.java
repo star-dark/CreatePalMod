@@ -9,6 +9,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 import net.mcreator.palworld.client.renderer.QueenRenderer;
 import net.mcreator.palworld.client.renderer.MinerJobNPCRenderer;
 import net.mcreator.palworld.client.renderer.KingRenderer;
@@ -24,5 +26,6 @@ public class PalworldModEntityRenderers {
 		event.registerEntityRenderer(PalworldModEntities.FISHER_JOB_NPC.get(), FisherJobNPCRenderer::new);
 		event.registerEntityRenderer(PalworldModEntities.KING.get(), KingRenderer::new);
 		event.registerEntityRenderer(PalworldModEntities.QUEEN.get(), QueenRenderer::new);
+		event.registerEntityRenderer(PalworldModEntities.KUSANAGI.get(), ThrownItemRenderer::new);
 	}
 }

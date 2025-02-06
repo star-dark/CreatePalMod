@@ -18,6 +18,7 @@ import net.mcreator.palworld.procedures.SneakingSpeedPointProcedure;
 import net.mcreator.palworld.procedures.ShieldBoomberPointProcedure;
 import net.mcreator.palworld.procedures.ReflectionPointProcedure;
 import net.mcreator.palworld.procedures.RecoverUpPointProcedure;
+import net.mcreator.palworld.procedures.KnockBackPointProcedure;
 import net.mcreator.palworld.procedures.HealthUpPointProcedure;
 import net.mcreator.palworld.procedures.FoodFighterPointProcedure;
 import net.mcreator.palworld.procedures.FallingDamageReducePointProcedure;
@@ -51,6 +52,7 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 	ImageButton imagebutton_jagajyeora;
 	ImageButton imagebutton_gongsog;
 	ImageButton imagebutton_nagdemgamso;
+	ImageButton imagebutton_neogbaegjeungga;
 
 	public MinerSkillTreeScreen(MinerSkillTreeMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -164,11 +166,11 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 				ShieldBoomberPointProcedure.execute(entity), 246, 66, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_idongsogdo"), 56, 139, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_4"), 66, 145, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_bangeogangdo"), 103, 163, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_bangeogangdo"), 105, 163, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_53"), 114, 172, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_neogbaegjeohang"), 103, 112, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_56"), 113, 119, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_hwibsseulgi"), 106, 60, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_hwibsseulgi"), 103, 58, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_57"), 114, 68, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_beoseokeo"), 248, 165, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_58"), 256, 171, -12829636, false);
@@ -187,6 +189,9 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		guiGraphics.drawString(this.font,
 
 				FallingDamageReducePointProcedure.execute(entity), 102, 119, -1, false);
+		guiGraphics.drawString(this.font,
+
+				KnockBackPointProcedure.execute(entity), 102, 170, -1, false);
 	}
 
 	@Override
@@ -370,5 +375,19 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		};
 		guistate.put("button:imagebutton_nagdemgamso", imagebutton_nagdemgamso);
 		this.addRenderableWidget(imagebutton_nagdemgamso);
+		imagebutton_neogbaegjeungga = new ImageButton(this.leftPos + 102, this.topPos + 139, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/neogbaegjeungga.png"), ResourceLocation.parse("palworld:textures/screens/neogbaegjeungga.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(13, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 13, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_neogbaegjeungga", imagebutton_neogbaegjeungga);
+		this.addRenderableWidget(imagebutton_neogbaegjeungga);
 	}
 }

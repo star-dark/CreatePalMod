@@ -1,0 +1,24 @@
+{
+  "_fv": 69,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.SPECTRAL_ARROW"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "item.crossbow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 4.6000000000000005,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "KusanagiProjectileHitsBlock"
+    }
+  }
+}

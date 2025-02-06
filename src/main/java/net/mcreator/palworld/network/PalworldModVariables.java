@@ -112,6 +112,7 @@ public class PalworldModVariables {
 			clone.SneakingSpeedSkillPoint = original.SneakingSpeedSkillPoint;
 			clone.BreakingSpeedSkillPoint = original.BreakingSpeedSkillPoint;
 			clone.FallingDamageReduceSkillPoint = original.FallingDamageReduceSkillPoint;
+			clone.KnockBackSkillPoint = original.KnockBackSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -128,6 +129,11 @@ public class PalworldModVariables {
 				clone.StackedDamage = original.StackedDamage;
 				clone.Nichirin_number = original.Nichirin_number;
 				clone.Nichirin_cool = original.Nichirin_cool;
+				clone.KusanagiLocateX = original.KusanagiLocateX;
+				clone.KusanagiLocateY = original.KusanagiLocateY;
+				clone.KusanagiLocateZ = original.KusanagiLocateZ;
+				clone.KamuiActivate = original.KamuiActivate;
+				clone.ThrowKusanagiActivate = original.ThrowKusanagiActivate;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -320,11 +326,17 @@ public class PalworldModVariables {
 		public double Nichirin_number = 0;
 		public double BerserkerSkillPoint = 0;
 		public double ScaleUpSkillPoint = 0;
-		public double Nichirin_cool = 0;
 		public double StepHeightSkillPoint = 0;
+		public double Nichirin_cool = 0;
 		public double SneakingSpeedSkillPoint = 0;
 		public double BreakingSpeedSkillPoint = 0;
 		public double FallingDamageReduceSkillPoint = 0;
+		public double KnockBackSkillPoint = 0;
+		public double KusanagiLocateX = 0;
+		public double KusanagiLocateY = 0;
+		public double KusanagiLocateZ = 0;
+		public boolean KamuiActivate = false;
+		public boolean ThrowKusanagiActivate = true;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -383,11 +395,17 @@ public class PalworldModVariables {
 			nbt.putDouble("Nichirin_number", Nichirin_number);
 			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
 			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
-			nbt.putDouble("Nichirin_cool", Nichirin_cool);
 			nbt.putDouble("StepHeightSkillPoint", StepHeightSkillPoint);
+			nbt.putDouble("Nichirin_cool", Nichirin_cool);
 			nbt.putDouble("SneakingSpeedSkillPoint", SneakingSpeedSkillPoint);
 			nbt.putDouble("BreakingSpeedSkillPoint", BreakingSpeedSkillPoint);
 			nbt.putDouble("FallingDamageReduceSkillPoint", FallingDamageReduceSkillPoint);
+			nbt.putDouble("KnockBackSkillPoint", KnockBackSkillPoint);
+			nbt.putDouble("KusanagiLocateX", KusanagiLocateX);
+			nbt.putDouble("KusanagiLocateY", KusanagiLocateY);
+			nbt.putDouble("KusanagiLocateZ", KusanagiLocateZ);
+			nbt.putBoolean("KamuiActivate", KamuiActivate);
+			nbt.putBoolean("ThrowKusanagiActivate", ThrowKusanagiActivate);
 			return nbt;
 		}
 
@@ -447,11 +465,17 @@ public class PalworldModVariables {
 			Nichirin_number = nbt.getDouble("Nichirin_number");
 			BerserkerSkillPoint = nbt.getDouble("BerserkerSkillPoint");
 			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
-			Nichirin_cool = nbt.getDouble("Nichirin_cool");
 			StepHeightSkillPoint = nbt.getDouble("StepHeightSkillPoint");
+			Nichirin_cool = nbt.getDouble("Nichirin_cool");
 			SneakingSpeedSkillPoint = nbt.getDouble("SneakingSpeedSkillPoint");
 			BreakingSpeedSkillPoint = nbt.getDouble("BreakingSpeedSkillPoint");
 			FallingDamageReduceSkillPoint = nbt.getDouble("FallingDamageReduceSkillPoint");
+			KnockBackSkillPoint = nbt.getDouble("KnockBackSkillPoint");
+			KusanagiLocateX = nbt.getDouble("KusanagiLocateX");
+			KusanagiLocateY = nbt.getDouble("KusanagiLocateY");
+			KusanagiLocateZ = nbt.getDouble("KusanagiLocateZ");
+			KamuiActivate = nbt.getBoolean("KamuiActivate");
+			ThrowKusanagiActivate = nbt.getBoolean("ThrowKusanagiActivate");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
