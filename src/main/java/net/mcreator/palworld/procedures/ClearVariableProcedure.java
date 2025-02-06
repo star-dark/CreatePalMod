@@ -164,34 +164,6 @@ public class ClearVariableProcedure {
 		}
 		if (entity instanceof LivingEntity _livingEntity11 && _livingEntity11.getAttributes().hasAttribute(Attributes.SWEEPING_DAMAGE_RATIO))
 			_livingEntity11.getAttribute(Attributes.SWEEPING_DAMAGE_RATIO).setBaseValue(0);
-		if (entity instanceof LivingEntity _livingEntity12 && _livingEntity12.getAttributes().hasAttribute(Attributes.STEP_HEIGHT))
-			_livingEntity12.getAttribute(Attributes.STEP_HEIGHT).setBaseValue(0.6);
-		if (entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(Attributes.SNEAKING_SPEED))
-			_livingEntity13.getAttribute(Attributes.SNEAKING_SPEED).setBaseValue(0.3);
-		{
-			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.StepHeightSkillPoint = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.SneakingSpeedSkillPoint = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.BreakingSpeedSkillPoint = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		if (entity instanceof LivingEntity _livingEntity14 && _livingEntity14.getAttributes().hasAttribute(Attributes.BLOCK_BREAK_SPEED))
-			_livingEntity14.getAttribute(Attributes.BLOCK_BREAK_SPEED).setBaseValue(0.3);
-		{
-			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-			_vars.FallingDamageReduceSkillPoint = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		if (entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.FALL_DAMAGE_MULTIPLIER))
-			_livingEntity15.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER).setBaseValue(1);
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
 	}

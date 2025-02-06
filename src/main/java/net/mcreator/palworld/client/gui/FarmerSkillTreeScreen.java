@@ -78,7 +78,7 @@ public class FarmerSkillTreeScreen extends AbstractContainerScreen<FarmerSkillTr
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_1jeungga"), mouseX, mouseY);
 		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 88 && mouseY < topPos + 112)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.farmer_skill_tree.tooltip_ceryeog_1jeungga"), mouseX, mouseY);
-		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 140 && mouseY < topPos + 164)
+		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 139 && mouseY < topPos + 163)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.farmer_skill_tree.tooltip_bangeoryeog_1jeungga"), mouseX, mouseY);
 		if (mouseX > leftPos + 56 && mouseX < leftPos + 80 && mouseY > topPos + 114 && mouseY < topPos + 138)
 			guiGraphics.renderTooltip(font, Component.literal(ScaleUpToolTipProcedure.execute(entity)), mouseX, mouseY);
