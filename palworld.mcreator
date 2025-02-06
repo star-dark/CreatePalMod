@@ -5561,6 +5561,25 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "Fuckyou",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuckyou",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FuckyouProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/15Lv"
     }
   ],
   "variable_elements": [
