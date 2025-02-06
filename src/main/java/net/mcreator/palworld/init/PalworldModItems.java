@@ -120,6 +120,7 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> SKYSHATTER = REGISTRY.register("skyshatter", SkyshatterItem::new);
 	public static final DeferredItem<Item> BANGOBU = REGISTRY.register("bangobu", BangobuItem::new);
 	public static final DeferredItem<Item> BURF_SWORD = REGISTRY.register("burf_sword", BurfSwordItem::new);
+	public static final DeferredItem<Item> HEAVEN = REGISTRY.register("heaven", HeavenItem::new);
 	public static final DeferredItem<Item> ASTRA_BOOK = REGISTRY.register("astra_book", AstraBookItem::new);
 	public static final DeferredItem<Item> AVALON_OF_MERLIN = REGISTRY.register("avalon_of_merlin", AvalonOfMerlinItem::new);
 	public static final DeferredItem<Item> HEAVEN = REGISTRY.register("heaven", HeavenItem::new);

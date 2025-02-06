@@ -100,6 +100,10 @@ public class PalworldModVariables {
 			clone.timeBuffer = original.timeBuffer;
 			clone.HoverSkillPoint = original.HoverSkillPoint;
 			clone.shieldBoomberSkillpoint = original.shieldBoomberSkillpoint;
+			clone.BreakingSpeedSkillPoint = original.BreakingSpeedSkillPoint;
+			clone.FallingDamageReduceSkillPoint = original.FallingDamageReduceSkillPoint;
+			clone.StepHeightSkillPoint = original.StepHeightSkillPoint;
+			clone.SneakingSpeedSkillPoint = original.SneakingSpeedSkillPoint;
 			clone.Amanomuraku_tick = original.Amanomuraku_tick;
 			clone.SweapDamageSkillPoint = original.SweapDamageSkillPoint;
 			clone.ToughnessSkillPoint = original.ToughnessSkillPoint;
@@ -305,6 +309,10 @@ public class PalworldModVariables {
 		public double Avalon_number = 10.0;
 		public double ProtectionAmount = 0;
 		public double shieldBoomberSkillpoint = 0;
+		public double BreakingSpeedSkillPoint = 0;
+		public double FallingDamageReduceSkillPoint = 0;
+		public double StepHeightSkillPoint = 0;
+		public double SneakingSpeedSkillPoint = 0;
 		public double Amanomuraku_tick = 0;
 		public double SweapDamageSkillPoint = 0;
 		public double ToughnessSkillPoint = 0;
@@ -364,6 +372,10 @@ public class PalworldModVariables {
 			nbt.putDouble("Avalon_number", Avalon_number);
 			nbt.putDouble("ProtectionAmount", ProtectionAmount);
 			nbt.putDouble("shieldBoomberSkillpoint", shieldBoomberSkillpoint);
+			nbt.putDouble("BreakingSpeedSkillPoint", BreakingSpeedSkillPoint);
+			nbt.putDouble("FallingDamageReduceSkillPoint", FallingDamageReduceSkillPoint);
+			nbt.putDouble("StepHeightSkillPoint", StepHeightSkillPoint);
+			nbt.putDouble("SneakingSpeedSkillPoint", SneakingSpeedSkillPoint);
 			nbt.putDouble("Amanomuraku_tick", Amanomuraku_tick);
 			nbt.putDouble("SweapDamageSkillPoint", SweapDamageSkillPoint);
 			nbt.putDouble("ToughnessSkillPoint", ToughnessSkillPoint);
@@ -424,6 +436,10 @@ public class PalworldModVariables {
 			Avalon_number = nbt.getDouble("Avalon_number");
 			ProtectionAmount = nbt.getDouble("ProtectionAmount");
 			shieldBoomberSkillpoint = nbt.getDouble("shieldBoomberSkillpoint");
+			BreakingSpeedSkillPoint = nbt.getDouble("BreakingSpeedSkillPoint");
+			FallingDamageReduceSkillPoint = nbt.getDouble("FallingDamageReduceSkillPoint");
+			StepHeightSkillPoint = nbt.getDouble("StepHeightSkillPoint");
+			SneakingSpeedSkillPoint = nbt.getDouble("SneakingSpeedSkillPoint");
 			Amanomuraku_tick = nbt.getDouble("Amanomuraku_tick");
 			SweapDamageSkillPoint = nbt.getDouble("SweapDamageSkillPoint");
 			ToughnessSkillPoint = nbt.getDouble("ToughnessSkillPoint");
