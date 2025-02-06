@@ -4398,20 +4398,6 @@
       "path": "~/Weapon/Amanomurakumonotsurugi"
     },
     {
-      "name": "AstraBook",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "astra_book",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/palworld/models/item/astra_book.json",
-          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java"
-        ]
-      },
-      "path": "~/Weapon/AstraBook"
-    },
-    {
       "name": "AstraBookEffect",
       "type": "procedure",
       "compiles": true,
@@ -5196,41 +5182,6 @@
       "path": "~/Weapon/Nichirin"
     },
     {
-      "name": "AstraBookEffect",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "astra_book_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/AstraBookEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Weapon/AstraBook"
-    },
-    {
       "name": "NichirinEffect2",
       "type": "procedure",
       "compiles": true,
@@ -5261,20 +5212,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Weapon/Nichirin"
-    },
-    {
-      "name": "Nichirin",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nichirin",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/item/NichirinItem.java",
-          "src/main/resources/assets/palworld/models/item/nichirin.json"
         ]
       },
       "path": "~/Weapon/Nichirin"
@@ -5546,36 +5483,6 @@
         ]
       },
       "path": "~/Weapon/ElderWand"
-    },
-    {
-      "name": "FisherSkillTree",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fisher_skill_tree",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/network/FisherSkillTreeButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree"
-    },
-    {
-      "name": "MinerSkillTree",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "miner_skill_tree",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
-          "src/main/java/net/mcreator/palworld/network/MinerSkillTreeButtonMessage.java"
-        ]
-      },
-      "path": "~/GUI/Skill_Tree"
     },
     {
       "name": "StepHeightUp",
