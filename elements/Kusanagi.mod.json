@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "Items.SPECTRAL_ARROW"
+      "value": "CUSTOM:Balmung"
     },
     "showParticles": false,
     "actionSound": {
@@ -13,12 +13,18 @@
     "power": 1.0,
     "damage": 4.6000000000000005,
     "knockback": 0,
-    "entityModel": "Default",
-    "customModelTexture": "",
+    "entityModel": "Modelkunai_Converted",
+    "customModelTexture": "kunai.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
     "onHitsBlock": {
       "name": "KusanagiProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "KusanagiProjectileHitsPlayer"
+    },
+    "onHitsEntity": {
+      "name": "KusanagiProjectileHitsLivingEntity"
     }
   }
 }

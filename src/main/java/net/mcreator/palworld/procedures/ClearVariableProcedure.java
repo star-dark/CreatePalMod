@@ -192,6 +192,16 @@ public class ClearVariableProcedure {
 		}
 		if (entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.FALL_DAMAGE_MULTIPLIER))
 			_livingEntity15.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER).setBaseValue(1);
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ThrowKusanagiActivate = true;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.KamuiActivate = false;
+			_vars.syncPlayerVariables(entity);
+		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
 	}

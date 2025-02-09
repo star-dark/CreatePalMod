@@ -5748,10 +5748,14 @@
           {
             "name": "immediatesourceentity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect"
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
     },
     {
       "name": "Kusanagi",
@@ -5761,10 +5765,11 @@
       "registry_name": "kusanagi",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/entity/KusanagiEntity.java"
+          "src/main/java/net/mcreator/palworld/entity/KusanagiEntity.java",
+          "src/main/java/net/mcreator/palworld/client/renderer/KusanagiRenderer.java"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect"
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
     },
     {
       "name": "ThrowKusanagi",
@@ -5780,10 +5785,26 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect"
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
     },
     {
       "name": "Kamui",
@@ -5802,7 +5823,284 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect"
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
+    },
+    {
+      "name": "KusanagiProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kusanagi_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
+    },
+    {
+      "name": "KusanagiProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kusanagi_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
+    },
+    {
+      "name": "KamuiUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kamui_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KamuiUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
+    },
+    {
+      "name": "KamuiPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kamui_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/KamuiPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "FireMan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_man",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FireManProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
+    },
+    {
+      "name": "Ignitohyogwagasijagjeogyongdoeeosseulddae",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignitohyogwagasijagjeogyongdoeeosseulddae",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IgnitohyogwagasijagjeogyongdoeeosseulddaeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
+    },
+    {
+      "name": "Ignito",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignito",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/potion/IgnitoMobEffect.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
+    },
+    {
+      "name": "FiremanUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireman_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FiremanUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
+    },
+    {
+      "name": "FiremanPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireman_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/FiremanPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "Blockbreaker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockbreaker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BlockbreakerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
+    },
+    {
+      "name": "BlockBreakerUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_breaker_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BlockBreakerUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
+    },
+    {
+      "name": "BlockBreakerPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_breaker_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BlockBreakerPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "BlockBreakerToolTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_breaker_tool_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BlockBreakerToolTipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Tooltip"
     }
   ],
   "variable_elements": [
@@ -5828,7 +6126,7 @@
       "name": "MainQuestProgress",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "SubRewardRequest",
@@ -6201,6 +6499,24 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "true"
+    },
+    {
+      "name": "KamuiSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "FireResistanceSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "blockBreakerSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -6263,6 +6579,7 @@
       "gui.palworld.farmer_skill_tree.label_idongsogdo": "커져라!",
       "gui.palworld.quest_tap.label_wanryo1": "완료✅",
       "gui.palworld.fisher_skill_tree.label_bansa": "반사!",
+      "effect.palworld.ignito": "Ignito",
       "gui.palworld.farmer_sell_gui.label_33weon1": "33원",
       "item.palworld.manwon": "만원",
       "gui.palworld.farmer_sell_gui.label_33weon2": "33원",
@@ -6302,7 +6619,7 @@
       "gui.palworld.farmer_skill_tree.label_gonggyeogryeog_jeungga": "공격력",
       "gui.palworld.job_npc_action.button_gumae": "구매",
       "item.palworld.king_spawn_egg": "King Spawn Egg",
-      "gui.palworld.miner_skill_tree.label_ceryeogjaesaeng": "체력재생",
+      "gui.palworld.miner_skill_tree.label_ceryeogjaesaeng": "화염저항",
       "gui.palworld.miner_skill_tree.tooltip_bangeosi_gonggyeogdaesangeul_nalrigo_demijireul_junda": "방어시 공격대상을 날리고 데미지를 준다",
       "gui.palworld.fisher_sell_gui.button_panmae10": "모두판매",
       "gui.palworld.fisher_skill_tree.label_swildeubumbeo": "쉴드붐버",
@@ -6322,7 +6639,7 @@
       "gui.palworld.farmer_skill_tree.tooltip_demijireul_iljeonghoessu_ibeumyeon_juwi_jeog_nalrigo_jasinege_beopeubu": "데미지를 일정횟수 입으면 주위  적 날리고 자신에게 버프부여",
       "gui.palworld.fisher_sell_gui.button_panmae14": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae15": "모두판매",
-      "gui.palworld.miner_skill_tree.label_deobeuljeompeu": "더블점프",
+      "gui.palworld.miner_skill_tree.label_deobeuljeompeu": "금빛섬광",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
       "gui.palworld.fisher_skill_tree.label_sageorijeungga": "사거리증가",
@@ -6361,7 +6678,7 @@
       "gui.palworld.fisher_sell_gui.label_70weon": "100원",
       "gui.palworld.sub_quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
-      "gui.palworld.miner_skill_tree.label_pudeupaiteo": "푸드파이터",
+      "gui.palworld.miner_skill_tree.label_pudeupaiteo": "블록파괴자",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
       "gui.palworld.fisher_skill_tree.label_deobeuljeompeu": "더블점프",
       "item.palworld.dainsleif": "다인슬레이프",
@@ -6766,8 +7083,20 @@
                       {
                         "name": "15Lv",
                         "children": []
+                      },
+                      {
+                        "name": "20Lv",
+                        "children": []
+                      },
+                      {
+                        "name": "25Lv",
+                        "children": []
                       }
                     ]
+                  },
+                  {
+                    "name": "Tooltip",
+                    "children": []
                   }
                 ]
               }

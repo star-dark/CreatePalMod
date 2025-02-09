@@ -12,6 +12,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.palworld.potion.WaterPotionEffectMobEffect;
 import net.mcreator.palworld.potion.ThunderPotionMobEffect;
+import net.mcreator.palworld.potion.IgnitoMobEffect;
 import net.mcreator.palworld.potion.AegisCoolMobEffect;
 import net.mcreator.palworld.PalworldMod;
 
@@ -20,4 +21,5 @@ public class PalworldModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> AEGIS_COOL = REGISTRY.register("aegis_cool", () -> new AegisCoolMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> THUNDER_POTION = REGISTRY.register("thunder_potion", () -> new ThunderPotionMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> WATER_POTION_EFFECT = REGISTRY.register("water_potion_effect", () -> new WaterPotionEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> IGNITO = REGISTRY.register("ignito", () -> new IgnitoMobEffect());
 }

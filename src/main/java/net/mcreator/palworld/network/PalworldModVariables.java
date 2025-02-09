@@ -113,6 +113,9 @@ public class PalworldModVariables {
 			clone.BreakingSpeedSkillPoint = original.BreakingSpeedSkillPoint;
 			clone.FallingDamageReduceSkillPoint = original.FallingDamageReduceSkillPoint;
 			clone.KnockBackSkillPoint = original.KnockBackSkillPoint;
+			clone.KamuiSkillPoint = original.KamuiSkillPoint;
+			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
+			clone.blockBreakerSkillPoint = original.blockBreakerSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -275,7 +278,7 @@ public class PalworldModVariables {
 		public String job_production = "\"\"";
 		public String talk_with = "\"\"";
 		public double MainQuestGoal = 0;
-		public double MainQuestProgress = 0;
+		public double MainQuestProgress = 0.0;
 		public boolean SubRewardRequest = false;
 		public boolean IsSubQuestExist = false;
 		public String quest_buffer = "\"\"";
@@ -337,6 +340,9 @@ public class PalworldModVariables {
 		public double KusanagiLocateZ = 0;
 		public boolean KamuiActivate = false;
 		public boolean ThrowKusanagiActivate = true;
+		public double KamuiSkillPoint = 0;
+		public double FireResistanceSkillPoint = 0;
+		public double blockBreakerSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -406,6 +412,9 @@ public class PalworldModVariables {
 			nbt.putDouble("KusanagiLocateZ", KusanagiLocateZ);
 			nbt.putBoolean("KamuiActivate", KamuiActivate);
 			nbt.putBoolean("ThrowKusanagiActivate", ThrowKusanagiActivate);
+			nbt.putDouble("KamuiSkillPoint", KamuiSkillPoint);
+			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
+			nbt.putDouble("blockBreakerSkillPoint", blockBreakerSkillPoint);
 			return nbt;
 		}
 
@@ -476,6 +485,9 @@ public class PalworldModVariables {
 			KusanagiLocateZ = nbt.getDouble("KusanagiLocateZ");
 			KamuiActivate = nbt.getBoolean("KamuiActivate");
 			ThrowKusanagiActivate = nbt.getBoolean("ThrowKusanagiActivate");
+			KamuiSkillPoint = nbt.getDouble("KamuiSkillPoint");
+			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
+			blockBreakerSkillPoint = nbt.getDouble("blockBreakerSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
