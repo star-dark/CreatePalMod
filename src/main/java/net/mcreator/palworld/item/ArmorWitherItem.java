@@ -32,7 +32,7 @@ public abstract class ArmorWitherItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("entity.wither_skeleton.hurt")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("palworld:wither"))), 0f, 0f);
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("entity.wither.hurt")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("palworld:wither"))), 0f, 0f);
 			registerHelper.register(ResourceLocation.parse("palworld:armor_wither"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

@@ -93,7 +93,7 @@
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "entity.wither_skeleton.hurt"
+      "value": "entity.wither.hurt"
     },
     "repairItems": []
   }
