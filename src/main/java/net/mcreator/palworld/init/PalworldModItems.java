@@ -70,6 +70,7 @@ import net.mcreator.palworld.item.ArmorSlimeItem;
 import net.mcreator.palworld.item.ArmorRobeItem;
 import net.mcreator.palworld.item.ArmorPrismarineItem;
 import net.mcreator.palworld.item.ArmorHeavyItem;
+import net.mcreator.palworld.item.ArmorGoldItem;
 import net.mcreator.palworld.item.ArmorDivineItem;
 import net.mcreator.palworld.item.ArmorBoneItem;
 import net.mcreator.palworld.item.AmanomurakumonotsurugiItem;
@@ -177,6 +178,10 @@ public class PalworldModItems {
 	public static final DeferredItem<Item> ARMOR_WOOD_CHESTPLATE = REGISTRY.register("armor_wood_chestplate", ArmorWoodItem.Chestplate::new);
 	public static final DeferredItem<Item> ARMOR_WOOD_LEGGINGS = REGISTRY.register("armor_wood_leggings", ArmorWoodItem.Leggings::new);
 	public static final DeferredItem<Item> ARMOR_WOOD_BOOTS = REGISTRY.register("armor_wood_boots", ArmorWoodItem.Boots::new);
+	public static final DeferredItem<Item> ARMOR_GOLD_HELMET = REGISTRY.register("armor_gold_helmet", ArmorGoldItem.Helmet::new);
+	public static final DeferredItem<Item> ARMOR_GOLD_CHESTPLATE = REGISTRY.register("armor_gold_chestplate", ArmorGoldItem.Chestplate::new);
+	public static final DeferredItem<Item> ARMOR_GOLD_LEGGINGS = REGISTRY.register("armor_gold_leggings", ArmorGoldItem.Leggings::new);
+	public static final DeferredItem<Item> ARMOR_GOLD_BOOTS = REGISTRY.register("armor_gold_boots", ArmorGoldItem.Boots::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }

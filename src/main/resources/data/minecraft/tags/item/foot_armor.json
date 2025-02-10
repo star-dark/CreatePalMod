@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "palworld:armor_gold_boots",
     "palworld:armor_wood_boots",
     "palworld:armor_wither_boots",
     "palworld:armor_warrior_boots",
