@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "palworld:armor_gold_helmet",
     "palworld:armor_wood_helmet",
     "palworld:armor_wither_helmet",
     "palworld:armor_warrior_helmet",

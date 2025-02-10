@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "palworld:armor_gold_chestplate",
     "palworld:armor_wood_chestplate",
     "palworld:armor_wither_chestplate",
     "palworld:armor_warrior_chestplate",

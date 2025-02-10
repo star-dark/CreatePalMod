@@ -78,6 +78,10 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.ARMOR_WOOD_CHESTPLATE.get());
 			tabData.accept(PalworldModItems.ARMOR_WOOD_LEGGINGS.get());
 			tabData.accept(PalworldModItems.ARMOR_WOOD_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_BOOTS.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
