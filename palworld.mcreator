@@ -6707,6 +6707,10 @@
       {
         "name": "Attribute",
         "children": []
+      },
+      {
+        "name": "Armor",
+        "children": []
       }
     ]
   },
