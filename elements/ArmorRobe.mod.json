@@ -93,7 +93,7 @@
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "entity.phantom.bite"
+      "value": "block.snow.break"
     },
     "repairItems": []
   }
