@@ -320,8 +320,8 @@ public class PalworldModVariables {
 		public double Nichirin_number = 0;
 		public double BerserkerSkillPoint = 0;
 		public double ScaleUpSkillPoint = 0;
-		public double Nichirin_cool = 0;
 		public double StepHeightSkillPoint = 0;
+		public double Nichirin_cool = 0;
 		public double SneakingSpeedSkillPoint = 0;
 		public double BreakingSpeedSkillPoint = 0;
 		public double FallingDamageReduceSkillPoint = 0;
@@ -383,8 +383,8 @@ public class PalworldModVariables {
 			nbt.putDouble("Nichirin_number", Nichirin_number);
 			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
 			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
-			nbt.putDouble("Nichirin_cool", Nichirin_cool);
 			nbt.putDouble("StepHeightSkillPoint", StepHeightSkillPoint);
+			nbt.putDouble("Nichirin_cool", Nichirin_cool);
 			nbt.putDouble("SneakingSpeedSkillPoint", SneakingSpeedSkillPoint);
 			nbt.putDouble("BreakingSpeedSkillPoint", BreakingSpeedSkillPoint);
 			nbt.putDouble("FallingDamageReduceSkillPoint", FallingDamageReduceSkillPoint);
@@ -447,8 +447,8 @@ public class PalworldModVariables {
 			Nichirin_number = nbt.getDouble("Nichirin_number");
 			BerserkerSkillPoint = nbt.getDouble("BerserkerSkillPoint");
 			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
-			Nichirin_cool = nbt.getDouble("Nichirin_cool");
 			StepHeightSkillPoint = nbt.getDouble("StepHeightSkillPoint");
+			Nichirin_cool = nbt.getDouble("Nichirin_cool");
 			SneakingSpeedSkillPoint = nbt.getDouble("SneakingSpeedSkillPoint");
 			BreakingSpeedSkillPoint = nbt.getDouble("BreakingSpeedSkillPoint");
 			FallingDamageReduceSkillPoint = nbt.getDouble("FallingDamageReduceSkillPoint");

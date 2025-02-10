@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "palworld:armor_wither_boots",
+    "palworld:armor_warrior_boots",
+    "palworld:armor_steampunk_boots",
+    "palworld:armor_slime_boots",
+    "palworld:armor_robe_boots",
+    "palworld:armor_prismarine_boots",
+    "palworld:armor_heavy_boots",
+    "palworld:armor_divine_boots",
+    "palworld:armor_bone_boots"
+  ]
+}

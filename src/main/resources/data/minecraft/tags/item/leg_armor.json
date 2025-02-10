@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "palworld:armor_wither_leggings",
+    "palworld:armor_warrior_leggings",
+    "palworld:armor_steampunk_leggings",
+    "palworld:armor_slime_leggings",
+    "palworld:armor_robe_leggings",
+    "palworld:armor_prismarine_leggings",
+    "palworld:armor_heavy_leggings",
+    "palworld:armor_divine_leggings",
+    "palworld:armor_bone_leggings"
+  ]
+}
