@@ -62,6 +62,7 @@ import net.mcreator.palworld.item.BangobuItem;
 import net.mcreator.palworld.item.BalmungItem;
 import net.mcreator.palworld.item.AvalonOfMerlinItem;
 import net.mcreator.palworld.item.AstraBookItem;
+import net.mcreator.palworld.item.ArmorWoodItem;
 import net.mcreator.palworld.item.ArmorWitherItem;
 import net.mcreator.palworld.item.ArmorWarriorItem;
 import net.mcreator.palworld.item.ArmorSteampunkItem;

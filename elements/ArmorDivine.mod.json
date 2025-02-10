@@ -93,7 +93,7 @@
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_chain"
+      "value": "item.armor.equip_gold"
     },
     "repairItems": []
   }
