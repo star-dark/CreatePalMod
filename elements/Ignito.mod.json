@@ -10,13 +10,13 @@
     },
     "isInstant": true,
     "mobEffectCategory": "BENEFICIAL",
-    "renderStatusInInventory": true,
+    "renderStatusInInventory": false,
     "renderStatusInHUD": true,
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
-    "onStarted": {
-      "name": "Ignitohyogwagasijagjeogyongdoeeosseulddae"
+    "onExpired": {
+      "name": "IgnitoEffectExpires"
     }
   }
 }

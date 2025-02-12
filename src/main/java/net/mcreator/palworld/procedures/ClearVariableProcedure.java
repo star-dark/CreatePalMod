@@ -204,5 +204,10 @@ public class ClearVariableProcedure {
 		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.IgnitoSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
 	}
 }

@@ -17,12 +17,12 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.MinerSkillTreeMenu;
+import net.mcreator.palworld.procedures.TransformUpProcedure;
 import net.mcreator.palworld.procedures.StepHeightUpProcedure;
 import net.mcreator.palworld.procedures.SneakingSpeedUpProcedure;
-import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
-import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.KnockBackUpProcedure;
 import net.mcreator.palworld.procedures.KamuiUpProcedure;
+import net.mcreator.palworld.procedures.IgnitoUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.FiremanUpProcedure;
 import net.mcreator.palworld.procedures.FallingDamageReduceProcedure;
@@ -86,47 +86,47 @@ public record MinerSkillTreeButtonMessage(int buttonID, int x, int y, int z) imp
 		}
 		if (buttonID == 3) {
 
-			ReflectionUpProcedure.execute(entity);
+			BerserkerUpProcedure.execute(entity);
 		}
 		if (buttonID == 4) {
 
-			ShieldBoomberUpProcedure.execute(entity);
+			StepHeightUpProcedure.execute(entity);
 		}
 		if (buttonID == 5) {
 
-			BerserkerUpProcedure.execute(entity);
+			SneakingSpeedUpProcedure.execute(entity);
 		}
 		if (buttonID == 6) {
 
-			StepHeightUpProcedure.execute(entity);
+			BreakingSpeedUpProcedure.execute(entity);
 		}
 		if (buttonID == 7) {
 
-			SneakingSpeedUpProcedure.execute(entity);
+			FallingDamageReduceProcedure.execute(entity);
 		}
 		if (buttonID == 8) {
 
-			BreakingSpeedUpProcedure.execute(entity);
+			KnockBackUpProcedure.execute(entity);
 		}
 		if (buttonID == 9) {
 
-			FallingDamageReduceProcedure.execute(entity);
+			KamuiUpProcedure.execute(entity);
 		}
 		if (buttonID == 10) {
 
-			KnockBackUpProcedure.execute(entity);
+			FiremanUpProcedure.execute(entity);
 		}
 		if (buttonID == 11) {
 
-			KamuiUpProcedure.execute(entity);
+			BlockBreakerUpProcedure.execute(entity);
 		}
 		if (buttonID == 12) {
 
-			FiremanUpProcedure.execute(entity);
+			IgnitoUpProcedure.execute(entity);
 		}
 		if (buttonID == 13) {
 
-			BlockBreakerUpProcedure.execute(entity);
+			TransformUpProcedure.execute(entity);
 		}
 	}
 

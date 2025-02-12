@@ -5934,25 +5934,6 @@
       "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
     },
     {
-      "name": "Ignitohyogwagasijagjeogyongdoeeosseulddae",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ignitohyogwagasijagjeogyongdoeeosseulddae",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/IgnitohyogwagasijagjeogyongdoeeosseulddaeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
-    },
-    {
       "name": "Ignito",
       "type": "potioneffect",
       "compiles": true,
@@ -5963,7 +5944,7 @@
           "src/main/java/net/mcreator/palworld/potion/IgnitoMobEffect.java"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
     },
     {
       "name": "FiremanUp",
@@ -6101,6 +6082,252 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Tooltip"
+    },
+    {
+      "name": "IgnitoEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignito_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IgnitoEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "IgnitoActivate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignito_activate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IgnitoActivateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "IgnitoUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignito_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IgnitoUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "IgnitoPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignito_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/IgnitoPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "Transformkireulnoheulddae",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transformkireulnoheulddae",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/TransformkireulnoheulddaeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "Transform",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transform",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/network/TransformMessage.java"
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "BarrierMode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barrier_mode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/BarrierModeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "AttackerMode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attacker_mode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/AttackerModeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "TransformUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transform_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/TransformUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "TransformPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transform_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/TransformPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     }
   ],
   "variable_elements": [
@@ -6517,6 +6744,24 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "IgnitoSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TransformState",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "transformSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -6697,9 +6942,10 @@
       "gui.palworld.farmer_skill_tree.label_54": "/ 5",
       "gui.palworld.farmer_skill_tree.label_57": "/ 5",
       "gui.palworld.farmer_skill_tree.label_56": "/ 5",
-      "gui.palworld.miner_skill_tree.label_bansa": "반사!",
+      "gui.palworld.miner_skill_tree.label_bansa": "태세전환",
       "gui.palworld.farmer_skill_tree.label_58": "/ 5",
       "gui.palworld.farmer_skill_tree.tooltip_bangeogangdojeungga": "방어강도증가",
+      "key.palworld.transform": "Transform",
       "item.palworld.magic_wand": "Magic Wand",
       "gui.palworld.miner_sell_gui.label_3weon": "개 당 3원",
       "gui.palworld.fisher_skill_tree.label_pudeupaiteo": "푸드파이터",
@@ -6770,7 +7016,7 @@
       "item.palworld.aegis": "아이기스",
       "gui.palworld.user_gui.label_don": "돈",
       "gui.palworld.fisher_sell_gui.button_cwiso": "취소",
-      "gui.palworld.miner_skill_tree.label_swildeubumbeo": "쉴드붐버",
+      "gui.palworld.miner_skill_tree.label_swildeubumbeo": "폭발광",
       "gui.palworld.sub_quest_complete.button_surag": "수락",
       "gui.palworld.sub_quest_clear.button_bosanghoegdeug": "보상획득",
       "gui.palworld.farmer_skill_tree.tooltip_hwibsseulgi_demiji_jeungga": "휩쓸기 데미지 증가",
@@ -7090,6 +7336,10 @@
                       },
                       {
                         "name": "25Lv",
+                        "children": []
+                      },
+                      {
+                        "name": "30Lv",
                         "children": []
                       }
                     ]

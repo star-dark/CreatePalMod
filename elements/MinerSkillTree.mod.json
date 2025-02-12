@@ -479,19 +479,6 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_bansa",
-          "image": "bansa.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ReflectionUp"
-          },
-          "x": 313,
-          "y": 111
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_54",
@@ -511,7 +498,7 @@
         "data": {
           "name": "label_bansa",
           "text": {
-            "fixedValue": "반사!"
+            "fixedValue": "태세전환"
           },
           "color": {
             "value": -256,
@@ -527,7 +514,7 @@
           "name": "label_proc_reflection_point",
           "text": {
             "fixedValue": "",
-            "name": "ReflectionPoint"
+            "name": "TransformPoint"
           },
           "color": {
             "value": -256,
@@ -568,30 +555,17 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_swildeubumbeo",
-          "image": "swildeubumbeo.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ShieldBoomberUp"
-          },
-          "x": 313,
-          "y": 58
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_swildeubumbeo",
           "text": {
-            "fixedValue": "쉴드붐버"
+            "fixedValue": "폭발광"
           },
           "color": {
             "value": -256,
             "falpha": 0.0
           },
-          "x": 313,
+          "x": 316,
           "y": 83
         }
       },
@@ -616,7 +590,7 @@
           "name": "label_proc_shield_boomber_point",
           "text": {
             "fixedValue": "",
-            "name": "ShieldBoomberPoint"
+            "name": "IgnitoPoint"
           },
           "color": {
             "value": -256,
@@ -803,32 +777,6 @@
           },
           "x": 310,
           "y": 193
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_iljeonghoessu_bangeo_si_jwakeulrigeuro_pogtaneul_nalrinda",
-          "text": {
-            "fixedValue": "일정횟수 방어 시 좌클릭으로 폭탄을 날린다"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 314,
-          "y": 59
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_bangeosi_gonggyeogdaesangeul_nalrigo_demijireul_junda",
-          "text": {
-            "fixedValue": "방어시 공격대상을 날리고 데미지를 준다"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 313,
-          "y": 112
         }
       },
       {
@@ -1040,7 +988,7 @@
           "onClick": {
             "name": "BlockBreakerUp"
           },
-          "x": 264,
+          "x": 265,
           "y": 137
         }
       },
@@ -1054,8 +1002,34 @@
           },
           "width": 24,
           "height": 24,
-          "x": 264,
-          "y": 138
+          "x": 265,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_pogbalgwang",
+          "image": "pogbalgwang.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "IgnitoUp"
+          },
+          "x": 313,
+          "y": 58
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_teuraenseupomeo",
+          "image": "teuraenseupomeo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "TransformUp"
+          },
+          "x": 313,
+          "y": 111
         }
       }
     ],
