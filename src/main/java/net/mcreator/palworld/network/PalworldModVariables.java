@@ -113,12 +113,12 @@ public class PalworldModVariables {
 			clone.BreakingSpeedSkillPoint = original.BreakingSpeedSkillPoint;
 			clone.FallingDamageReduceSkillPoint = original.FallingDamageReduceSkillPoint;
 			clone.KnockBackSkillPoint = original.KnockBackSkillPoint;
-			clone.KamuiSkillPoint = original.KamuiSkillPoint;
-			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
-			clone.blockBreakerSkillPoint = original.blockBreakerSkillPoint;
 			clone.IgnitoSkillPoint = original.IgnitoSkillPoint;
 			clone.TransformState = original.TransformState;
+			clone.blockBreakerSkillPoint = original.blockBreakerSkillPoint;
 			clone.transformSkillPoint = original.transformSkillPoint;
+			clone.KamuiSkillPoint = original.KamuiSkillPoint;
+			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -135,11 +135,11 @@ public class PalworldModVariables {
 				clone.StackedDamage = original.StackedDamage;
 				clone.Nichirin_number = original.Nichirin_number;
 				clone.Nichirin_cool = original.Nichirin_cool;
-				clone.KusanagiLocateX = original.KusanagiLocateX;
+				clone.ThrowKusanagiActivate = original.ThrowKusanagiActivate;
+				clone.KamuiActivate = original.KamuiActivate;
 				clone.KusanagiLocateY = original.KusanagiLocateY;
 				clone.KusanagiLocateZ = original.KusanagiLocateZ;
-				clone.KamuiActivate = original.KamuiActivate;
-				clone.ThrowKusanagiActivate = original.ThrowKusanagiActivate;
+				clone.KusanagiLocateX = original.KusanagiLocateX;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -281,7 +281,7 @@ public class PalworldModVariables {
 		public String job_production = "\"\"";
 		public String talk_with = "\"\"";
 		public double MainQuestGoal = 0;
-		public double MainQuestProgress = 0.0;
+		public double MainQuestProgress = 0;
 		public boolean SubRewardRequest = false;
 		public boolean IsSubQuestExist = false;
 		public String quest_buffer = "\"\"";
@@ -338,17 +338,17 @@ public class PalworldModVariables {
 		public double BreakingSpeedSkillPoint = 0;
 		public double FallingDamageReduceSkillPoint = 0;
 		public double KnockBackSkillPoint = 0;
-		public double KusanagiLocateX = 0;
-		public double KusanagiLocateY = 0;
-		public double KusanagiLocateZ = 0;
-		public boolean KamuiActivate = false;
-		public boolean ThrowKusanagiActivate = true;
-		public double KamuiSkillPoint = 0;
-		public double FireResistanceSkillPoint = 0;
-		public double blockBreakerSkillPoint = 0;
 		public double IgnitoSkillPoint = 0;
 		public double TransformState = 0;
+		public boolean ThrowKusanagiActivate = true;
+		public boolean KamuiActivate = false;
+		public double blockBreakerSkillPoint = 0;
 		public double transformSkillPoint = 0;
+		public double KusanagiLocateY = 0;
+		public double KusanagiLocateZ = 0;
+		public double KusanagiLocateX = 0;
+		public double KamuiSkillPoint = 0;
+		public double FireResistanceSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -413,17 +413,17 @@ public class PalworldModVariables {
 			nbt.putDouble("BreakingSpeedSkillPoint", BreakingSpeedSkillPoint);
 			nbt.putDouble("FallingDamageReduceSkillPoint", FallingDamageReduceSkillPoint);
 			nbt.putDouble("KnockBackSkillPoint", KnockBackSkillPoint);
-			nbt.putDouble("KusanagiLocateX", KusanagiLocateX);
-			nbt.putDouble("KusanagiLocateY", KusanagiLocateY);
-			nbt.putDouble("KusanagiLocateZ", KusanagiLocateZ);
-			nbt.putBoolean("KamuiActivate", KamuiActivate);
-			nbt.putBoolean("ThrowKusanagiActivate", ThrowKusanagiActivate);
-			nbt.putDouble("KamuiSkillPoint", KamuiSkillPoint);
-			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
-			nbt.putDouble("blockBreakerSkillPoint", blockBreakerSkillPoint);
 			nbt.putDouble("IgnitoSkillPoint", IgnitoSkillPoint);
 			nbt.putDouble("TransformState", TransformState);
+			nbt.putBoolean("ThrowKusanagiActivate", ThrowKusanagiActivate);
+			nbt.putBoolean("KamuiActivate", KamuiActivate);
+			nbt.putDouble("blockBreakerSkillPoint", blockBreakerSkillPoint);
 			nbt.putDouble("transformSkillPoint", transformSkillPoint);
+			nbt.putDouble("KusanagiLocateY", KusanagiLocateY);
+			nbt.putDouble("KusanagiLocateZ", KusanagiLocateZ);
+			nbt.putDouble("KusanagiLocateX", KusanagiLocateX);
+			nbt.putDouble("KamuiSkillPoint", KamuiSkillPoint);
+			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
 			return nbt;
 		}
 
@@ -489,17 +489,17 @@ public class PalworldModVariables {
 			BreakingSpeedSkillPoint = nbt.getDouble("BreakingSpeedSkillPoint");
 			FallingDamageReduceSkillPoint = nbt.getDouble("FallingDamageReduceSkillPoint");
 			KnockBackSkillPoint = nbt.getDouble("KnockBackSkillPoint");
-			KusanagiLocateX = nbt.getDouble("KusanagiLocateX");
-			KusanagiLocateY = nbt.getDouble("KusanagiLocateY");
-			KusanagiLocateZ = nbt.getDouble("KusanagiLocateZ");
-			KamuiActivate = nbt.getBoolean("KamuiActivate");
-			ThrowKusanagiActivate = nbt.getBoolean("ThrowKusanagiActivate");
-			KamuiSkillPoint = nbt.getDouble("KamuiSkillPoint");
-			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
-			blockBreakerSkillPoint = nbt.getDouble("blockBreakerSkillPoint");
 			IgnitoSkillPoint = nbt.getDouble("IgnitoSkillPoint");
 			TransformState = nbt.getDouble("TransformState");
+			ThrowKusanagiActivate = nbt.getBoolean("ThrowKusanagiActivate");
+			KamuiActivate = nbt.getBoolean("KamuiActivate");
+			blockBreakerSkillPoint = nbt.getDouble("blockBreakerSkillPoint");
 			transformSkillPoint = nbt.getDouble("transformSkillPoint");
+			KusanagiLocateY = nbt.getDouble("KusanagiLocateY");
+			KusanagiLocateZ = nbt.getDouble("KusanagiLocateZ");
+			KusanagiLocateX = nbt.getDouble("KusanagiLocateX");
+			KamuiSkillPoint = nbt.getDouble("KamuiSkillPoint");
+			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
