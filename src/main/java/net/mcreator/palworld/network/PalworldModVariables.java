@@ -119,6 +119,8 @@ public class PalworldModVariables {
 			clone.transformSkillPoint = original.transformSkillPoint;
 			clone.KamuiSkillPoint = original.KamuiSkillPoint;
 			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
+			clone.PhoenixSkillPoint = original.PhoenixSkillPoint;
+			clone.PheonixStack = original.PheonixStack;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -349,6 +351,8 @@ public class PalworldModVariables {
 		public double KusanagiLocateX = 0;
 		public double KamuiSkillPoint = 0;
 		public double FireResistanceSkillPoint = 0;
+		public double PhoenixSkillPoint = 0;
+		public double PheonixStack = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -424,6 +428,8 @@ public class PalworldModVariables {
 			nbt.putDouble("KusanagiLocateX", KusanagiLocateX);
 			nbt.putDouble("KamuiSkillPoint", KamuiSkillPoint);
 			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
+			nbt.putDouble("PhoenixSkillPoint", PhoenixSkillPoint);
+			nbt.putDouble("PheonixStack", PheonixStack);
 			return nbt;
 		}
 
@@ -500,6 +506,8 @@ public class PalworldModVariables {
 			KusanagiLocateX = nbt.getDouble("KusanagiLocateX");
 			KamuiSkillPoint = nbt.getDouble("KamuiSkillPoint");
 			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
+			PhoenixSkillPoint = nbt.getDouble("PhoenixSkillPoint");
+			PheonixStack = nbt.getDouble("PheonixStack");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
