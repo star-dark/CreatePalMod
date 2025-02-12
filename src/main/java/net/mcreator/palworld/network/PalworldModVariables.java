@@ -112,15 +112,15 @@ public class PalworldModVariables {
 			clone.SneakingSpeedSkillPoint = original.SneakingSpeedSkillPoint;
 			clone.BreakingSpeedSkillPoint = original.BreakingSpeedSkillPoint;
 			clone.FallingDamageReduceSkillPoint = original.FallingDamageReduceSkillPoint;
-			clone.KnockBackSkillPoint = original.KnockBackSkillPoint;
-			clone.IgnitoSkillPoint = original.IgnitoSkillPoint;
+			clone.PheonixStack = original.PheonixStack;
 			clone.TransformState = original.TransformState;
 			clone.blockBreakerSkillPoint = original.blockBreakerSkillPoint;
-			clone.transformSkillPoint = original.transformSkillPoint;
-			clone.KamuiSkillPoint = original.KamuiSkillPoint;
-			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
 			clone.PhoenixSkillPoint = original.PhoenixSkillPoint;
-			clone.PheonixStack = original.PheonixStack;
+			clone.KamuiSkillPoint = original.KamuiSkillPoint;
+			clone.KnockBackSkillPoint = original.KnockBackSkillPoint;
+			clone.IgnitoSkillPoint = original.IgnitoSkillPoint;
+			clone.transformSkillPoint = original.transformSkillPoint;
+			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -137,11 +137,11 @@ public class PalworldModVariables {
 				clone.StackedDamage = original.StackedDamage;
 				clone.Nichirin_number = original.Nichirin_number;
 				clone.Nichirin_cool = original.Nichirin_cool;
-				clone.ThrowKusanagiActivate = original.ThrowKusanagiActivate;
 				clone.KamuiActivate = original.KamuiActivate;
 				clone.KusanagiLocateY = original.KusanagiLocateY;
 				clone.KusanagiLocateZ = original.KusanagiLocateZ;
 				clone.KusanagiLocateX = original.KusanagiLocateX;
+				clone.ThrowKusanagiActivate = original.ThrowKusanagiActivate;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -339,20 +339,20 @@ public class PalworldModVariables {
 		public double SneakingSpeedSkillPoint = 0;
 		public double BreakingSpeedSkillPoint = 0;
 		public double FallingDamageReduceSkillPoint = 0;
-		public double KnockBackSkillPoint = 0;
-		public double IgnitoSkillPoint = 0;
+		public double PheonixStack = 0;
 		public double TransformState = 0;
-		public boolean ThrowKusanagiActivate = true;
 		public boolean KamuiActivate = false;
 		public double blockBreakerSkillPoint = 0;
-		public double transformSkillPoint = 0;
 		public double KusanagiLocateY = 0;
 		public double KusanagiLocateZ = 0;
 		public double KusanagiLocateX = 0;
-		public double KamuiSkillPoint = 0;
-		public double FireResistanceSkillPoint = 0;
 		public double PhoenixSkillPoint = 0;
-		public double PheonixStack = 0;
+		public double KamuiSkillPoint = 0;
+		public double KnockBackSkillPoint = 0;
+		public double IgnitoSkillPoint = 0;
+		public boolean ThrowKusanagiActivate = true;
+		public double transformSkillPoint = 0;
+		public double FireResistanceSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -416,20 +416,20 @@ public class PalworldModVariables {
 			nbt.putDouble("SneakingSpeedSkillPoint", SneakingSpeedSkillPoint);
 			nbt.putDouble("BreakingSpeedSkillPoint", BreakingSpeedSkillPoint);
 			nbt.putDouble("FallingDamageReduceSkillPoint", FallingDamageReduceSkillPoint);
-			nbt.putDouble("KnockBackSkillPoint", KnockBackSkillPoint);
-			nbt.putDouble("IgnitoSkillPoint", IgnitoSkillPoint);
+			nbt.putDouble("PheonixStack", PheonixStack);
 			nbt.putDouble("TransformState", TransformState);
-			nbt.putBoolean("ThrowKusanagiActivate", ThrowKusanagiActivate);
 			nbt.putBoolean("KamuiActivate", KamuiActivate);
 			nbt.putDouble("blockBreakerSkillPoint", blockBreakerSkillPoint);
-			nbt.putDouble("transformSkillPoint", transformSkillPoint);
 			nbt.putDouble("KusanagiLocateY", KusanagiLocateY);
 			nbt.putDouble("KusanagiLocateZ", KusanagiLocateZ);
 			nbt.putDouble("KusanagiLocateX", KusanagiLocateX);
-			nbt.putDouble("KamuiSkillPoint", KamuiSkillPoint);
-			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
 			nbt.putDouble("PhoenixSkillPoint", PhoenixSkillPoint);
-			nbt.putDouble("PheonixStack", PheonixStack);
+			nbt.putDouble("KamuiSkillPoint", KamuiSkillPoint);
+			nbt.putDouble("KnockBackSkillPoint", KnockBackSkillPoint);
+			nbt.putDouble("IgnitoSkillPoint", IgnitoSkillPoint);
+			nbt.putBoolean("ThrowKusanagiActivate", ThrowKusanagiActivate);
+			nbt.putDouble("transformSkillPoint", transformSkillPoint);
+			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
 			return nbt;
 		}
 
@@ -494,20 +494,20 @@ public class PalworldModVariables {
 			SneakingSpeedSkillPoint = nbt.getDouble("SneakingSpeedSkillPoint");
 			BreakingSpeedSkillPoint = nbt.getDouble("BreakingSpeedSkillPoint");
 			FallingDamageReduceSkillPoint = nbt.getDouble("FallingDamageReduceSkillPoint");
-			KnockBackSkillPoint = nbt.getDouble("KnockBackSkillPoint");
-			IgnitoSkillPoint = nbt.getDouble("IgnitoSkillPoint");
+			PheonixStack = nbt.getDouble("PheonixStack");
 			TransformState = nbt.getDouble("TransformState");
-			ThrowKusanagiActivate = nbt.getBoolean("ThrowKusanagiActivate");
 			KamuiActivate = nbt.getBoolean("KamuiActivate");
 			blockBreakerSkillPoint = nbt.getDouble("blockBreakerSkillPoint");
-			transformSkillPoint = nbt.getDouble("transformSkillPoint");
 			KusanagiLocateY = nbt.getDouble("KusanagiLocateY");
 			KusanagiLocateZ = nbt.getDouble("KusanagiLocateZ");
 			KusanagiLocateX = nbt.getDouble("KusanagiLocateX");
-			KamuiSkillPoint = nbt.getDouble("KamuiSkillPoint");
-			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
 			PhoenixSkillPoint = nbt.getDouble("PhoenixSkillPoint");
-			PheonixStack = nbt.getDouble("PheonixStack");
+			KamuiSkillPoint = nbt.getDouble("KamuiSkillPoint");
+			KnockBackSkillPoint = nbt.getDouble("KnockBackSkillPoint");
+			IgnitoSkillPoint = nbt.getDouble("IgnitoSkillPoint");
+			ThrowKusanagiActivate = nbt.getBoolean("ThrowKusanagiActivate");
+			transformSkillPoint = nbt.getDouble("transformSkillPoint");
+			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

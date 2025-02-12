@@ -1,13 +1,9 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.palworld.network.PalworldModVariables;
+import net.neoforged.bus.api.Event;
 
 public class KnockBackPointProcedure {
-	public static String execute(Entity entity) {
-		if (entity == null)
-			return "";
-		return new java.text.DecimalFormat("##").format(entity.getData(PalworldModVariables.PLAYER_VARIABLES).KnockBackSkillPoint);
+	public static String execute() {
+		return new java.text.DecimalFormat("##").format();
 	}
 }

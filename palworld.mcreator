@@ -2025,9 +2025,9 @@
       "registry_name": "fisher_skill_tree",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java",
           "src/main/java/net/mcreator/palworld/network/FisherSkillTreeButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java",
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java"
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java"
         ]
       },
       "path": "~/GUI/Skill_Tree"
@@ -2059,8 +2059,8 @@
       "registry_name": "miner_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
           "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
+          "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
           "src/main/java/net/mcreator/palworld/network/MinerSkillTreeButtonMessage.java"
         ]
       },
@@ -4356,8 +4356,8 @@
       "registry_name": "astra_book",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/astra_book.json",
-          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java"
+          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java",
+          "src/main/resources/assets/palworld/models/item/astra_book.json"
         ]
       },
       "path": "~/Weapon/AstraBook"
@@ -4978,8 +4978,8 @@
       "registry_name": "nichirin",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/NichirinItem.java",
-          "src/main/resources/assets/palworld/models/item/nichirin.json"
+          "src/main/resources/assets/palworld/models/item/nichirin.json",
+          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
         ]
       },
       "path": "~/Weapon/Nichirin"
@@ -5826,18 +5826,28 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsLivingEntityProcedure.java"
         ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
+    },
+    {
+      "name": "PheonixUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheonix_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PheonixUpProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
     },
     {
       "name": "ThrowKusanagi",
@@ -5899,12 +5909,35 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KamuiPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "PheonixOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheonix_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/client/screens/PheonixOverlayOverlay.java"
         ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "PheonixPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheonix_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PheonixPointProcedure.java"
+        ],
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -5938,12 +5971,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/BlockBreakerToolTipProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/Tooltip"
     },
@@ -5958,10 +5986,6 @@
           "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsBlockProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "immediatesourceentity",
             "type": "entity"
@@ -6012,12 +6036,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/TransformPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6041,6 +6060,21 @@
       "path": "~/GUI/Skill_Tree/Miner/effect/25Lv"
     },
     {
+      "name": "StackAmountFull",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_full",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmountFullProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+    },
+    {
       "name": "IgnitoPoint",
       "type": "procedure",
       "compiles": true,
@@ -6051,12 +6085,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/IgnitoPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6099,6 +6128,36 @@
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
     },
     {
+      "name": "PheonixOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheonix_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PheonixOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "StackAmount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmountProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+    },
+    {
       "name": "FiremanPoint",
       "type": "procedure",
       "compiles": true,
@@ -6109,12 +6168,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/FiremanPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6152,14 +6206,39 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/BlockBreakerPointProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "StackAmount8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmount8Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+    },
+    {
+      "name": "StackAmount9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmount9Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
     {
       "name": "KusanagiProjectileHitsPlayer",
@@ -6171,16 +6250,7 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsPlayerProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
     },
@@ -6195,10 +6265,6 @@
           "src/main/java/net/mcreator/palworld/procedures/IgnitoActivateProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -6243,6 +6309,25 @@
       "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
     },
     {
+      "name": "Pheonix",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheonix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PheonixProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
       "name": "KnockBackPoint",
       "type": "procedure",
       "compiles": true,
@@ -6253,6 +6338,50 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KnockBackPointProcedure.java"
         ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+    },
+    {
+      "name": "StackAmount2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmount2Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+    },
+    {
+      "name": "StackAmount3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmount3Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+    },
+    {
+      "name": "PheonixStackUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pheonix_stack_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/PheonixStackUpProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -6260,7 +6389,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
     },
     {
       "name": "Transform",
@@ -6274,6 +6403,21 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "StackAmount6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmount6Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
     {
       "name": "TransformUp",
@@ -6293,6 +6437,36 @@
         ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+    },
+    {
+      "name": "StackAmount7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmount7Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+    },
+    {
+      "name": "StackAmount4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stack_amount_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/StackAmount4Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
     {
       "name": "Transformkireulnoheulddae",
@@ -6330,167 +6504,6 @@
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
     },
     {
-      "name": "Pheonix",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pheonix",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PheonixProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
-    },
-    {
-      "name": "PheonixUp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pheonix_up",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PheonixUpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
-    },
-    {
-      "name": "PheonixStackUp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pheonix_stack_up",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PheonixStackUpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
-    },
-    {
-      "name": "PheonixOverlayDisplayOverlayIngame",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pheonix_overlay_display_overlay_ingame",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PheonixOverlayDisplayOverlayIngameProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
-    },
-    {
-      "name": "StackAmount",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stack_amount",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmountProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
-    },
-    {
-      "name": "StackAmount2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stack_amount_2",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmount2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
-    },
-    {
-      "name": "StackAmount3",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stack_amount_3",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmount3Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
-    },
-    {
-      "name": "StackAmount4",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stack_amount_4",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmount4Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
-    },
-    {
       "name": "StackAmount5",
       "type": "procedure",
       "compiles": true,
@@ -6501,147 +6514,196 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount5Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
     {
-      "name": "StackAmount6",
-      "type": "procedure",
+      "name": "ArmorGold",
+      "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stack_amount_6",
+      "registry_name": "armor_gold",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmount6Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/palworld/models/item/armor_gold_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_gold_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_gold_chestplate.json",
+          "src/main/resources/assets/palworld/models/item/armor_gold_boots.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorGoldItem.java"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+      "path": "~/Armor"
     },
     {
-      "name": "StackAmount7",
-      "type": "procedure",
+      "name": "ArmorSteampunk",
+      "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stack_amount_7",
+      "registry_name": "armor_steampunk",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmount7Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorSteampunkItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_boots.json"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+      "path": "~/Armor"
     },
     {
-      "name": "StackAmount8",
-      "type": "procedure",
+      "name": "ArmorDivine",
+      "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stack_amount_8",
+      "registry_name": "armor_divine",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmount8Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/palworld/models/item/armor_divine_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_divine_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_divine_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_divine_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorDivineItem.java"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+      "path": "~/Armor"
     },
     {
-      "name": "StackAmount9",
-      "type": "procedure",
+      "name": "ArmorSlime",
+      "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stack_amount_9",
+      "registry_name": "armor_slime",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmount9Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/palworld/models/item/armor_slime_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_slime_boots.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorSlimeItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_slime_chestplate.json",
+          "src/main/resources/assets/palworld/models/item/armor_slime_helmet.json"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+      "path": "~/Armor"
     },
     {
-      "name": "StackAmountFull",
-      "type": "procedure",
+      "name": "ArmorWither",
+      "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stack_amount_full",
+      "registry_name": "armor_wither",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/StackAmountFullProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/palworld/models/item/armor_wither_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_wither_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_wither_leggings.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorWitherItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_wither_chestplate.json"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
+      "path": "~/Armor"
     },
     {
-      "name": "PheonixOverlay",
-      "type": "overlay",
+      "name": "ArmorHeavy",
+      "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pheonix_overlay",
+      "registry_name": "armor_heavy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/client/screens/PheonixOverlayOverlay.java"
+          "src/main/resources/assets/palworld/models/item/armor_heavy_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_heavy_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_heavy_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorHeavyItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_heavy_leggings.json"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
+      "path": "~/Armor"
     },
     {
-      "name": "PheonixPoint",
-      "type": "procedure",
+      "name": "ArmorWarrior",
+      "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pheonix_point",
+      "registry_name": "armor_warrior",
       "metadata": {
-        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/palworld/procedures/PheonixPointProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/palworld/models/item/armor_warrior_chestplate.json",
+          "src/main/resources/assets/palworld/models/item/armor_warrior_leggings.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorWarriorItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_warrior_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_warrior_boots.json"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorRobe",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_robe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_robe_helmet.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorRobeItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_robe_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_robe_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_robe_chestplate.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorWood",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_wood_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_wood_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_wood_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_wood_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorWoodItem.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorBone",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_bone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_bone_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_bone_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_bone_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_bone_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorBoneItem.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorPrismarine",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_prismarine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorPrismarineItem.java"
+        ]
+      },
+      "path": "~/Armor"
     }
   ],
   "variable_elements": [
@@ -7006,13 +7068,7 @@
       "value": "0"
     },
     {
-      "name": "KnockBackSkillPoint",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "IgnitoSkillPoint",
+      "name": "PheonixStack",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -7024,12 +7080,6 @@
       "value": "0"
     },
     {
-      "name": "ThrowKusanagiActivate",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "true"
-    },
-    {
       "name": "KamuiActivate",
       "type": "logic",
       "scope": "player_lifetime",
@@ -7037,12 +7087,6 @@
     },
     {
       "name": "blockBreakerSkillPoint",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "transformSkillPoint",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -7066,25 +7110,43 @@
       "value": "0"
     },
     {
-      "name": "KamuiSkillPoint",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "FireResistanceSkillPoint",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
       "name": "PhoenixSkillPoint",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
     },
     {
-      "name": "PheonixStack",
+      "name": "KamuiSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "KnockBackSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "IgnitoSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ThrowKusanagiActivate",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "true"
+    },
+    {
+      "name": "transformSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "FireResistanceSkillPoint",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
