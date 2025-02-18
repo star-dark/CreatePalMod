@@ -2025,9 +2025,9 @@
       "registry_name": "fisher_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java",
           "src/main/java/net/mcreator/palworld/network/FisherSkillTreeButtonMessage.java",
-          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java"
+          "src/main/java/net/mcreator/palworld/client/gui/FisherSkillTreeScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/FisherSkillTreeMenu.java"
         ]
       },
       "path": "~/GUI/Skill_Tree"
@@ -2059,8 +2059,8 @@
       "registry_name": "miner_skill_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
           "src/main/java/net/mcreator/palworld/client/gui/MinerSkillTreeScreen.java",
+          "src/main/java/net/mcreator/palworld/world/inventory/MinerSkillTreeMenu.java",
           "src/main/java/net/mcreator/palworld/network/MinerSkillTreeButtonMessage.java"
         ]
       },
@@ -3187,7 +3187,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/25Lv"
     },
     {
       "name": "ReflectionToolTip",
@@ -3303,7 +3303,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/25Lv"
     },
     {
       "name": "Reflection",
@@ -3403,7 +3403,7 @@
           "src/main/java/net/mcreator/palworld/client/particle/HoverParticleParticle.java"
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/20Lv"
     },
     {
       "name": "HoverAtivate",
@@ -3426,7 +3426,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/20Lv"
     },
     {
       "name": "HoverState",
@@ -3461,7 +3461,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/20Lv"
     },
     {
       "name": "HoverUp",
@@ -3480,7 +3480,7 @@
           }
         ]
       },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/20Lv"
     },
     {
       "name": "DoubleJumpKey",
@@ -4356,8 +4356,8 @@
       "registry_name": "astra_book",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java",
-          "src/main/resources/assets/palworld/models/item/astra_book.json"
+          "src/main/resources/assets/palworld/models/item/astra_book.json",
+          "src/main/java/net/mcreator/palworld/item/AstraBookItem.java"
         ]
       },
       "path": "~/Weapon/AstraBook"
@@ -4466,26 +4466,6 @@
         ]
       },
       "path": "~/Weapon/AstraBook"
-    },
-    {
-      "name": "SpeedPoint",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "speed_point",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/SpeedPointProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
       "name": "KnockBackResistancePoint",
@@ -4732,25 +4712,6 @@
       "path": "~/GUI/Skill_Tree/Farmer/SkillPoint"
     },
     {
-      "name": "SpeedUp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "speed_up",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/palworld/procedures/SpeedUpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Skill_Tree/Farmer/Effect"
-    },
-    {
       "name": "Heaven",
       "type": "tool",
       "compiles": true,
@@ -4978,8 +4939,8 @@
       "registry_name": "nichirin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/nichirin.json",
-          "src/main/java/net/mcreator/palworld/item/NichirinItem.java"
+          "src/main/java/net/mcreator/palworld/item/NichirinItem.java",
+          "src/main/resources/assets/palworld/models/item/nichirin.json"
         ]
       },
       "path": "~/Weapon/Nichirin"
@@ -5826,7 +5787,16 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsLivingEntityProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
     },
@@ -5909,7 +5879,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KamuiPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -5937,7 +5912,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/PheonixPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -5971,7 +5951,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/BlockBreakerToolTipProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Tooltip"
     },
@@ -5986,6 +5971,10 @@
           "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsBlockProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "immediatesourceentity",
             "type": "entity"
@@ -6036,7 +6025,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/TransformPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6070,7 +6064,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmountFullProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6085,7 +6084,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/IgnitoPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6138,7 +6142,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/PheonixOverlayDisplayOverlayIngameProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv"
     },
@@ -6153,7 +6162,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmountProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6168,7 +6182,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/FiremanPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6206,7 +6225,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/BlockBreakerPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6221,7 +6245,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount8Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6236,7 +6265,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount9Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6250,7 +6284,16 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KusanagiProjectileHitsPlayerProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/20Lv"
     },
@@ -6265,6 +6308,10 @@
           "src/main/java/net/mcreator/palworld/procedures/IgnitoActivateProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -6338,7 +6385,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/KnockBackPointProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
@@ -6353,7 +6405,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount2Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6368,7 +6425,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount3Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6385,6 +6447,10 @@
         "dependencies": [
           {
             "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
             "type": "entity"
           }
         ]
@@ -6415,7 +6481,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount6Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6449,7 +6520,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount7Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6464,7 +6540,12 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount4Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
@@ -6514,196 +6595,322 @@
         "files": [
           "src/main/java/net/mcreator/palworld/procedures/StackAmount5Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/GUI/Skill_Tree/Miner/effect/30Lv/Amount"
     },
     {
-      "name": "ArmorGold",
-      "type": "armor",
+      "name": "FishmanUp",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_gold",
+      "registry_name": "fishman_up",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_gold_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_gold_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_gold_chestplate.json",
-          "src/main/resources/assets/palworld/models/item/armor_gold_boots.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorGoldItem.java"
+          "src/main/java/net/mcreator/palworld/procedures/FishmanUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/15Lv"
     },
     {
-      "name": "ArmorSteampunk",
-      "type": "armor",
+      "name": "InvisibleOnKeyPressed",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_steampunk",
+      "registry_name": "invisible_on_key_pressed",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_steampunk_chestplate.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorSteampunkItem.java",
-          "src/main/resources/assets/palworld/models/item/armor_steampunk_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_steampunk_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_steampunk_boots.json"
+          "src/main/java/net/mcreator/palworld/procedures/InvisibleOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/10Lv"
     },
     {
-      "name": "ArmorDivine",
-      "type": "armor",
+      "name": "Invisiblekireulnoheulddae",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_divine",
+      "registry_name": "invisiblekireulnoheulddae",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_divine_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_divine_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_divine_boots.json",
-          "src/main/resources/assets/palworld/models/item/armor_divine_chestplate.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorDivineItem.java"
+          "src/main/java/net/mcreator/palworld/procedures/InvisiblekireulnoheulddaeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/10Lv"
     },
     {
-      "name": "ArmorSlime",
-      "type": "armor",
+      "name": "Invisible",
+      "type": "keybind",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_slime",
+      "registry_name": "invisible",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_slime_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_slime_boots.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorSlimeItem.java",
-          "src/main/resources/assets/palworld/models/item/armor_slime_chestplate.json",
-          "src/main/resources/assets/palworld/models/item/armor_slime_helmet.json"
+          "src/main/java/net/mcreator/palworld/network/InvisibleMessage.java"
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/10Lv"
     },
     {
-      "name": "ArmorWither",
-      "type": "armor",
+      "name": "InvisibleFrozen",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_wither",
+      "registry_name": "invisible_frozen",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_wither_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_wither_boots.json",
-          "src/main/resources/assets/palworld/models/item/armor_wither_leggings.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorWitherItem.java",
-          "src/main/resources/assets/palworld/models/item/armor_wither_chestplate.json"
+          "src/main/java/net/mcreator/palworld/procedures/InvisibleFrozenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/10Lv"
     },
     {
-      "name": "ArmorHeavy",
-      "type": "armor",
+      "name": "InvisibleUp",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_heavy",
+      "registry_name": "invisible_up",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_heavy_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_heavy_boots.json",
-          "src/main/resources/assets/palworld/models/item/armor_heavy_chestplate.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorHeavyItem.java",
-          "src/main/resources/assets/palworld/models/item/armor_heavy_leggings.json"
+          "src/main/java/net/mcreator/palworld/procedures/InvisibleUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/10Lv"
     },
     {
-      "name": "ArmorWarrior",
-      "type": "armor",
+      "name": "FishmanPoint",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_warrior",
+      "registry_name": "fishman_point",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_warrior_chestplate.json",
-          "src/main/resources/assets/palworld/models/item/armor_warrior_leggings.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorWarriorItem.java",
-          "src/main/resources/assets/palworld/models/item/armor_warrior_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_warrior_boots.json"
+          "src/main/java/net/mcreator/palworld/procedures/FishmanPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/skillpoint"
     },
     {
-      "name": "ArmorRobe",
-      "type": "armor",
+      "name": "InvisiblePoint",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_robe",
+      "registry_name": "invisible_point",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_robe_helmet.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorRobeItem.java",
-          "src/main/resources/assets/palworld/models/item/armor_robe_boots.json",
-          "src/main/resources/assets/palworld/models/item/armor_robe_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_robe_chestplate.json"
+          "src/main/java/net/mcreator/palworld/procedures/InvisiblePointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/skillpoint"
     },
     {
-      "name": "ArmorWood",
-      "type": "armor",
+      "name": "Archer",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_wood",
+      "registry_name": "archer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_wood_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_wood_boots.json",
-          "src/main/resources/assets/palworld/models/item/armor_wood_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_wood_chestplate.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorWoodItem.java"
+          "src/main/java/net/mcreator/palworld/procedures/ArcherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/10Lv"
     },
     {
-      "name": "ArmorBone",
-      "type": "armor",
+      "name": "ArcherUp",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_bone",
+      "registry_name": "archer_up",
       "metadata": {
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_bone_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_bone_boots.json",
-          "src/main/resources/assets/palworld/models/item/armor_bone_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_bone_chestplate.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorBoneItem.java"
+          "src/main/java/net/mcreator/palworld/procedures/ArcherUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/effect/10Lv"
     },
     {
-      "name": "ArmorPrismarine",
-      "type": "armor",
+      "name": "ArcherPoint",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "armor_prismarine",
+      "registry_name": "archer_point",
       "metadata": {
+        "return_type": "string",
         "files": [
-          "src/main/resources/assets/palworld/models/item/armor_prismarine_boots.json",
-          "src/main/resources/assets/palworld/models/item/armor_prismarine_leggings.json",
-          "src/main/resources/assets/palworld/models/item/armor_prismarine_helmet.json",
-          "src/main/resources/assets/palworld/models/item/armor_prismarine_chestplate.json",
-          "src/main/java/net/mcreator/palworld/item/ArmorPrismarineItem.java"
+          "src/main/java/net/mcreator/palworld/procedures/ArcherPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Armor"
+      "path": "~/GUI/Skill_Tree/Fisher/skillpoint"
+    },
+    {
+      "name": "MovementSpeedUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "movement_speed_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/MovementSpeedUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Fisher/effect/15Lv"
+    },
+    {
+      "name": "JumpUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JumpUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Fisher/effect/15Lv"
+    },
+    {
+      "name": "JumpPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/JumpPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Fisher/skillpoint"
+    },
+    {
+      "name": "SpeedPoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_point",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/palworld/procedures/SpeedPointProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Skill_Tree/Fisher/skillpoint"
     }
   ],
   "variable_elements": [
@@ -6916,12 +7123,6 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "100.0"
-    },
-    {
-      "name": "TestValue",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
     },
     {
       "name": "aegis_bool",
@@ -7150,6 +7351,36 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "FishmanSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "InvisibleSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ArcherySkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpeedSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "JumpSkillPoint",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -7264,7 +7495,7 @@
       "gui.palworld.sub_quest_provide_gui.button_bosanghoegdeug": "보상획득",
       "item.palworld.fish_muskellunge": "Fish Muskellunge",
       "entity.palworld.farmer_job_npc": "Farmer Job NPC",
-      "gui.palworld.fisher_skill_tree.label_deobeuljeompeu": "더블점프",
+      "gui.palworld.fisher_skill_tree.label_deobeuljeompeu": "혼령질주",
       "gui.palworld.fisher_skill_tree.tooltip_hwibsseulgi_demiji_jeungga": "휩쓸기 데미지 증가",
       "gui.palworld.fisher_sell_gui.label_50weon2": "70원",
       "gui.palworld.fisher_sell_gui.label_50weon1": "70원",
@@ -7292,6 +7523,7 @@
       "item.palworld.queen_spawn_egg": "Queen Spawn Egg",
       "gui.palworld.farmer_skill_tree.label_hwibsseulgi": "휩쓸기",
       "item.palworld.armor_heavy_boots": "Armor Heavy Boots",
+      "key.palworld.invisible": "Invisible",
       "item.palworld.armor_steampunk_leggings": "Armor Steampunk Leggings",
       "gui.palworld.current_money.label_empty1": "",
       "gui.palworld.money_tap.label_inculganeunggeumaeg": "인출가능금액 :",
@@ -7304,12 +7536,12 @@
       "item.palworld.aegis": "아이기스",
       "gui.palworld.miner_skill_tree.label_swildeubumbeo": "폭발광",
       "gui.palworld.farmer_skill_tree.tooltip_hwibsseulgi_demiji_jeungga": "휩쓸기 데미지 증가",
-      "gui.palworld.fisher_skill_tree.label_neogbaegjeohang": "넉백저항",
+      "gui.palworld.fisher_skill_tree.label_neogbaegjeohang": "어인화",
       "gui.palworld.farmer_skill_tree.label_15lv": "15Lv",
       "item.palworld.glory_gold_ghost": "영광금귀신기노",
       "gui.palworld.farmer_skill_tree.label_beoseokeo": "버서커",
       "item.palworld.armor_warrior_helmet": "Armor Warrior Helmet",
-      "gui.palworld.fisher_skill_tree.label_hwibsseulgi": "휩쓸기",
+      "gui.palworld.fisher_skill_tree.label_hwibsseulgi": "점프강화",
       "item.palworld.ore_diamond": "Ore Diamond",
       "gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_ceryeog_5isang": "공격력, 체력 5이상",
       "item.palworld.fish_hailbut": "Fish Hailbut",
@@ -7409,7 +7641,7 @@
       "gui.palworld.miner_skill_tree.label_deobeuljeompeu": "금빛섬광",
       "gui.palworld.fisher_sell_gui.button_panmae12": "모두판매",
       "gui.palworld.fisher_sell_gui.button_panmae13": "모두판매",
-      "gui.palworld.fisher_skill_tree.label_sageorijeungga": "사거리증가",
+      "gui.palworld.fisher_skill_tree.label_sageorijeungga": "화살폭발",
       "gui.palworld.fisher_skill_tree.tooltip_bangeoryeog_1jeungga": "방어력 1증가",
       "gui.palworld.miner_sell_gui.button_panmae13": "판매",
       "gui.palworld.miner_sell_gui.button_panmae12": "판매",
@@ -7481,7 +7713,7 @@
       "gui.palworld.fisher_sell_gui.label_10weon": "10원",
       "gui.palworld.miner_skill_tree.label_gonggyeogryeog_jeungga": "공격력",
       "gui.palworld.miner_sell_gui.label_10weon": "개 당 10원",
-      "gui.palworld.fisher_skill_tree.label_bangeogangdo": "방어강도",
+      "gui.palworld.fisher_skill_tree.label_bangeogangdo": "이속증가",
       "gui.palworld.farmer_skill_tree.tooltip_gonggyeogryeog_1jeungga": "공격력 1증가",
       "gui.palworld.farmer_skill_tree.label_pudeupaiteo": "푸드파이터",
       "gui.palworld.miner_sell_gui.label_30weon": "3원",
@@ -7540,7 +7772,7 @@
       "key.palworld.open_quest_gui": "Open Quest GUI",
       "gui.palworld.sub_quest_provide_gui.button_dadgi": "닫기",
       "item.palworld.level_wand": "Magic Wand",
-      "gui.palworld.fisher_skill_tree.label_idongsogdo": "커져라!",
+      "gui.palworld.fisher_skill_tree.label_idongsogdo": "얼음!",
       "gui.palworld.farmer_skill_tree.label_20lv": "20Lv",
       "gui.palworld.fisher_skill_tree.label_5": "/ 5",
       "gui.palworld.fisher_skill_tree.label_4": "/ 4",
@@ -7788,6 +8020,36 @@
                         "children": []
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "name": "Fisher",
+                "children": [
+                  {
+                    "name": "effect",
+                    "children": [
+                      {
+                        "name": "10Lv",
+                        "children": []
+                      },
+                      {
+                        "name": "15Lv",
+                        "children": []
+                      },
+                      {
+                        "name": "20Lv",
+                        "children": []
+                      },
+                      {
+                        "name": "25Lv",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "skillpoint",
+                    "children": []
                   }
                 ]
               }

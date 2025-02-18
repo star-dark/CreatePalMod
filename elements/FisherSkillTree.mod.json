@@ -101,19 +101,6 @@
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_rangeup",
-          "image": "rangeup.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "RangeUp"
-          },
-          "x": 123,
-          "y": 79
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
           "name": "imagebutton_gonggyeogryeog",
           "image": "gonggyeogryeog.png",
           "hoveredImage": "",
@@ -320,14 +307,14 @@
         "data": {
           "name": "label_sageorijeungga",
           "text": {
-            "fixedValue": "사거리증가"
+            "fixedValue": "화살폭발"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 122,
-          "y": 105
+          "x": 126,
+          "y": 104
         }
       },
       {
@@ -336,7 +323,7 @@
           "name": "label_proc_range_up_point",
           "text": {
             "fixedValue": "",
-            "name": "RangeUpPoint"
+            "name": "ArcherPoint"
           },
           "color": {
             "value": -1,
@@ -433,20 +420,6 @@
           },
           "x": 263,
           "y": 109
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_gonggyeogryeog_ceryeog_5isang",
-          "text": {
-            "fixedValue": "공격력, 체력 5이상",
-            "name": "RangeUpToolTip"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 124,
-          "y": 79
         }
       },
       {
@@ -607,24 +580,11 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_deobeuljeompeu",
-          "image": "deobeuljeompeu.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "DoubleJumpUp"
-          },
-          "x": 217,
-          "y": 111
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_deobeuljeompeu",
           "text": {
-            "fixedValue": "더블점프"
+            "fixedValue": "혼령질주"
           },
           "color": {
             "value": -10092442,
@@ -655,7 +615,7 @@
           "name": "label_proc_double_jump_point",
           "text": {
             "fixedValue": "",
-            "name": "DoubleJumpPoint"
+            "name": "HoverPoint"
           },
           "color": {
             "value": -10092442,
@@ -729,14 +689,14 @@
         "data": {
           "name": "label_idongsogdo",
           "text": {
-            "fixedValue": "커져라!"
+            "fixedValue": "얼음!"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 124,
-          "y": 162
+          "x": 127,
+          "y": 161
         }
       },
       {
@@ -760,7 +720,7 @@
           "name": "label_proc_speed_point",
           "text": {
             "fixedValue": "",
-            "name": "ScalePoint"
+            "name": "InvisiblePoint"
           },
           "color": {
             "value": -1,
@@ -771,37 +731,11 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_keojyeora",
-          "image": "keojyeora.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ScaleUp"
-          },
-          "x": 123,
-          "y": 137
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_bangeogangdo",
-          "image": "bangeogangdo.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ToughnessUp"
-          },
-          "x": 169,
-          "y": 162
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_bangeogangdo",
           "text": {
-            "fixedValue": "방어강도"
+            "fixedValue": "이속증가"
           },
           "color": {
             "value": -1,
@@ -832,7 +766,7 @@
           "name": "label_proc_toghness_point",
           "text": {
             "fixedValue": "",
-            "name": "ToghnessPoint"
+            "name": "SpeedPoint"
           },
           "color": {
             "value": -1,
@@ -843,24 +777,11 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_neogbaegjeohang",
-          "image": "neogbaegjeohang.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "KnockBackResistance"
-          },
-          "x": 169,
-          "y": 111
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_neogbaegjeohang",
           "text": {
-            "fixedValue": "넉백저항"
+            "fixedValue": "어인화"
           },
           "color": {
             "value": -1,
@@ -891,7 +812,7 @@
           "name": "label_proc_knock_back_resistance_point",
           "text": {
             "fixedValue": "",
-            "name": "KnockBackResistancePoint"
+            "name": "FishmanPoint"
           },
           "color": {
             "value": -1,
@@ -902,30 +823,17 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_hwibsseulgi",
-          "image": "hwibsseulgi.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "SweapDamageUp"
-          },
-          "x": 169,
-          "y": 58
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_hwibsseulgi",
           "text": {
-            "fixedValue": "휩쓸기"
+            "fixedValue": "점프강화"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 174,
+          "x": 173,
           "y": 83
         }
       },
@@ -935,7 +843,7 @@
           "name": "label_proc_sweep_damage_point",
           "text": {
             "fixedValue": "",
-            "name": "SweepDamagePoint"
+            "name": "JumpPoint"
           },
           "color": {
             "value": -1,
@@ -1022,72 +930,6 @@
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_proc_scale_up_tool_tip",
-          "text": {
-            "fixedValue": "",
-            "name": "ScaleUpToolTip"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 124,
-          "y": 137
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_hwibsseulgi_demiji_jeungga",
-          "text": {
-            "fixedValue": "휩쓸기 데미지 증가"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 170,
-          "y": 59
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_neogbaegjeohang_jeungga",
-          "text": {
-            "fixedValue": "넉백저항 증가"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 169,
-          "y": 112
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_bangeogangdojeungga",
-          "text": {
-            "fixedValue": "방어강도증가"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 170,
-          "y": 162
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_jeompeusangtaero_hanbeon_deo_jeompeu_ganeung",
-          "text": {
-            "fixedValue": "점프상태로 한번 더 점프 가능"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 218,
-          "y": 111
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
           "name": "tooltip_ceryeogjaesaeng_beopeubuyeo",
           "text": {
             "fixedValue": "체력재생 버프부여"
@@ -1148,6 +990,84 @@
           "height": 24,
           "x": 313,
           "y": 163
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_eoin",
+          "image": "eoin.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "FishmanUp"
+          },
+          "x": 169,
+          "y": 111
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tumyeonghwa",
+          "image": "tumyeonghwa.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "InvisibleUp"
+          },
+          "x": 123,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_aceo",
+          "image": "aceo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ArcherUp"
+          },
+          "x": 123,
+          "y": 79
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_hover",
+          "image": "hover.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "HoverUp"
+          },
+          "x": 217,
+          "y": 111
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_isog",
+          "image": "isog.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "MovementSpeedUp"
+          },
+          "x": 169,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_jeompeuganghwa",
+          "image": "jeompeuganghwa.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "JumpUp"
+          },
+          "x": 169,
+          "y": 58
         }
       }
     ],

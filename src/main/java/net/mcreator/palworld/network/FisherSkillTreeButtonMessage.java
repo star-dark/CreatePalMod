@@ -17,20 +17,20 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.FisherSkillTreeMenu;
-import net.mcreator.palworld.procedures.ToughnessUpProcedure;
-import net.mcreator.palworld.procedures.SweapDamageUpProcedure;
 import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
-import net.mcreator.palworld.procedures.ScaleUpProcedure;
 import net.mcreator.palworld.procedures.ReflectionUpProcedure;
 import net.mcreator.palworld.procedures.RecoverUpProcedure;
-import net.mcreator.palworld.procedures.RangeUpProcedure;
-import net.mcreator.palworld.procedures.KnockBackResistanceProcedure;
+import net.mcreator.palworld.procedures.MovementSpeedUpProcedure;
+import net.mcreator.palworld.procedures.JumpUpProcedure;
+import net.mcreator.palworld.procedures.InvisibleUpProcedure;
+import net.mcreator.palworld.procedures.HoverUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
 import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
-import net.mcreator.palworld.procedures.DoubleJumpUpProcedure;
+import net.mcreator.palworld.procedures.FishmanUpProcedure;
 import net.mcreator.palworld.procedures.DefenseUpProcedure;
 import net.mcreator.palworld.procedures.BerserkerUpProcedure;
 import net.mcreator.palworld.procedures.AttackUPProcedure;
+import net.mcreator.palworld.procedures.ArcherUpProcedure;
 import net.mcreator.palworld.PalworldMod;
 
 import java.util.HashMap;
@@ -78,55 +78,55 @@ public record FisherSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		}
 		if (buttonID == 1) {
 
-			RangeUpProcedure.execute(entity);
+			AttackUPProcedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
-			AttackUPProcedure.execute(entity);
+			DefenseUpProcedure.execute(entity);
 		}
 		if (buttonID == 3) {
 
-			DefenseUpProcedure.execute(entity);
+			RecoverUpProcedure.execute(entity);
 		}
 		if (buttonID == 4) {
 
-			RecoverUpProcedure.execute(entity);
+			FoodFighterUpProcedure.execute(entity);
 		}
 		if (buttonID == 5) {
 
-			FoodFighterUpProcedure.execute(entity);
+			ReflectionUpProcedure.execute(entity);
 		}
 		if (buttonID == 6) {
 
-			ReflectionUpProcedure.execute(entity);
+			ShieldBoomberUpProcedure.execute(entity);
 		}
 		if (buttonID == 7) {
 
-			DoubleJumpUpProcedure.execute(entity);
+			BerserkerUpProcedure.execute(entity);
 		}
 		if (buttonID == 8) {
 
-			ShieldBoomberUpProcedure.execute(entity);
+			FishmanUpProcedure.execute(entity);
 		}
 		if (buttonID == 9) {
 
-			ScaleUpProcedure.execute(entity);
+			InvisibleUpProcedure.execute(entity);
 		}
 		if (buttonID == 10) {
 
-			ToughnessUpProcedure.execute(entity);
+			ArcherUpProcedure.execute(entity);
 		}
 		if (buttonID == 11) {
 
-			KnockBackResistanceProcedure.execute(entity);
+			HoverUpProcedure.execute(entity);
 		}
 		if (buttonID == 12) {
 
-			SweapDamageUpProcedure.execute(entity);
+			MovementSpeedUpProcedure.execute(entity);
 		}
 		if (buttonID == 13) {
 
-			BerserkerUpProcedure.execute(entity);
+			JumpUpProcedure.execute(entity);
 		}
 	}
 
