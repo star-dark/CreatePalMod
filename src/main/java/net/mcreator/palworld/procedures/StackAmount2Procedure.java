@@ -1,13 +1,11 @@
 package net.mcreator.palworld.procedures;
 
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.palworld.network.PalworldModVariables;
+import net.neoforged.bus.api.Event;
 
 public class StackAmount2Procedure {
-	public static boolean execute(Entity entity) {
-		if (entity == null)
-			return false;
-		return Math.floor(entity.getData(PalworldModVariables.PLAYER_VARIABLES).PheonixStack / 10) == 2;
-	}
+public static boolean execute(
+) {
+return
+Math.floor(/ 10)==2;
+}
 }

@@ -1,34 +1,6 @@
 
 package net.mcreator.palworld.entity;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
-
-import net.mcreator.palworld.procedures.KusanagiProjectileHitsPlayerProcedure;
-import net.mcreator.palworld.procedures.KusanagiProjectileHitsLivingEntityProcedure;
-import net.mcreator.palworld.procedures.KusanagiProjectileHitsBlockProcedure;
-import net.mcreator.palworld.init.PalworldModItems;
-import net.mcreator.palworld.init.PalworldModEntities;
-
-import javax.annotation.Nullable;
-
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class KusanagiEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(PalworldModItems.BALMUNG.get());
@@ -81,19 +53,19 @@ public class KusanagiEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void playerTouch(Player entity) {
 		super.playerTouch(entity);
-		KusanagiProjectileHitsPlayerProcedure.execute(entity, this.getOwner());
+		KusanagiProjectileHitsPlayerProcedure.execute();
 	}
 
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		KusanagiProjectileHitsLivingEntityProcedure.execute(entityHitResult.getEntity(), this.getOwner());
+		KusanagiProjectileHitsLivingEntityProcedure.execute();
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		KusanagiProjectileHitsBlockProcedure.execute(this.level(), this.getOwner(), this);
+		KusanagiProjectileHitsBlockProcedure.execute();
 	}
 
 	@Override

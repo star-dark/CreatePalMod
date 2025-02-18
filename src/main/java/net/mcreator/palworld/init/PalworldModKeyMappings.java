@@ -68,22 +68,6 @@ public class PalworldModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping TRANSFORM = new KeyMapping("key.palworld.transform", GLFW.GLFW_KEY_Y, "key.categories.misc") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				TRANSFORM_LASTPRESS = System.currentTimeMillis();
-			} else if (isDownOld != isDown && !isDown) {
-				int dt = (int) (System.currentTimeMillis() - TRANSFORM_LASTPRESS);
-				PacketDistributor.sendToServer(new TransformMessage(1, dt));
-				TransformMessage.pressAction(Minecraft.getInstance().player, 1, dt);
-			}
-			isDownOld = isDown;
-		}
-	};
 	public static final KeyMapping INVISIBLE = new KeyMapping("key.palworld.invisible", GLFW.GLFW_KEY_LEFT_SHIFT, "key.categories.movement") {
 		private boolean isDownOld = false;
 
@@ -102,17 +86,33 @@ public class PalworldModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping TRANSFORM = new KeyMapping("key.palworld.transform", GLFW.GLFW_KEY_Y, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				TRANSFORM_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - TRANSFORM_LASTPRESS);
+				PacketDistributor.sendToServer(new TransformMessage(1, dt));
+				TransformMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long SHIFT_SCALE_DOWN_LASTPRESS = 0;
-	private static long TRANSFORM_LASTPRESS = 0;
 	private static long INVISIBLE_LASTPRESS = 0;
+	private static long TRANSFORM_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(OPEN_QUEST_GUI);
 		event.register(DOUBLE_JUMP_KEY);
 		event.register(SHIFT_SCALE_DOWN);
-		event.register(TRANSFORM);
 		event.register(INVISIBLE);
+		event.register(TRANSFORM);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -123,8 +123,8 @@ public class PalworldModKeyMappings {
 				OPEN_QUEST_GUI.consumeClick();
 				DOUBLE_JUMP_KEY.consumeClick();
 				SHIFT_SCALE_DOWN.consumeClick();
-				TRANSFORM.consumeClick();
 				INVISIBLE.consumeClick();
+				TRANSFORM.consumeClick();
 			}
 		}
 	}
