@@ -110,20 +110,20 @@ public class PalworldModVariables {
 			clone.TransformState = original.TransformState;
 			clone.InvisibleSkillPoint = original.InvisibleSkillPoint;
 			clone.blockBreakerSkillPoint = original.blockBreakerSkillPoint;
+			clone.NuclearPunchSkillPoint = original.NuclearPunchSkillPoint;
+			clone.InvincivilitySkillPoint = original.InvincivilitySkillPoint;
 			clone.ArcherySkillPoint = original.ArcherySkillPoint;
 			clone.PhoenixSkillPoint = original.PhoenixSkillPoint;
 			clone.KamuiSkillPoint = original.KamuiSkillPoint;
 			clone.SpeedSkillPoint = original.SpeedSkillPoint;
 			clone.JumpSkillPoint = original.JumpSkillPoint;
+			clone.SnowmanSkillPoint = original.SnowmanSkillPoint;
 			clone.KnockBackSkillPoint = original.KnockBackSkillPoint;
 			clone.IgnitoSkillPoint = original.IgnitoSkillPoint;
 			clone.transformSkillPoint = original.transformSkillPoint;
+			clone.TridentSkillPoint = original.TridentSkillPoint;
 			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
 			clone.FishmanSkillPoint = original.FishmanSkillPoint;
-			clone.TridentSkillPoint = original.TridentSkillPoint;
-			clone.SnowmanSkillPoint = original.SnowmanSkillPoint;
-			clone.InvincivilitySkillPoint = original.InvincivilitySkillPoint;
-			clone.NuclearPunchSkillPoint = original.NuclearPunchSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -216,6 +216,8 @@ public class PalworldModVariables {
 		public double InvisibleSkillPoint = 0;
 		public boolean KamuiActivate = false;
 		public double blockBreakerSkillPoint = 0;
+		public double NuclearPunchSkillPoint = 0;
+		public double InvincivilitySkillPoint = 0;
 		public double KusanagiLocateY = 0;
 		public double ArcherySkillPoint = 0;
 		public double KusanagiLocateZ = 0;
@@ -224,17 +226,15 @@ public class PalworldModVariables {
 		public double KamuiSkillPoint = 0;
 		public double SpeedSkillPoint = 0;
 		public double JumpSkillPoint = 0;
+		public double SnowmanSkillPoint = 0;
 		public double KnockBackSkillPoint = 0;
 		public double IgnitoSkillPoint = 0;
 		public boolean ThrowKusanagiActivate = true;
 		public double transformSkillPoint = 0;
+		public double TridentSkillPoint = 0;
+		public double ChargeTime = 0;
 		public double FireResistanceSkillPoint = 0;
 		public double FishmanSkillPoint = 0;
-		public double TridentSkillPoint = 0;
-		public double SnowmanSkillPoint = 0;
-		public double InvincivilitySkillPoint = 0;
-		public double ChargeTime = 0;
-		public double NuclearPunchSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -303,6 +303,8 @@ public class PalworldModVariables {
 			nbt.putDouble("InvisibleSkillPoint", InvisibleSkillPoint);
 			nbt.putBoolean("KamuiActivate", KamuiActivate);
 			nbt.putDouble("blockBreakerSkillPoint", blockBreakerSkillPoint);
+			nbt.putDouble("NuclearPunchSkillPoint", NuclearPunchSkillPoint);
+			nbt.putDouble("InvincivilitySkillPoint", InvincivilitySkillPoint);
 			nbt.putDouble("KusanagiLocateY", KusanagiLocateY);
 			nbt.putDouble("ArcherySkillPoint", ArcherySkillPoint);
 			nbt.putDouble("KusanagiLocateZ", KusanagiLocateZ);
@@ -311,17 +313,15 @@ public class PalworldModVariables {
 			nbt.putDouble("KamuiSkillPoint", KamuiSkillPoint);
 			nbt.putDouble("SpeedSkillPoint", SpeedSkillPoint);
 			nbt.putDouble("JumpSkillPoint", JumpSkillPoint);
+			nbt.putDouble("SnowmanSkillPoint", SnowmanSkillPoint);
 			nbt.putDouble("KnockBackSkillPoint", KnockBackSkillPoint);
 			nbt.putDouble("IgnitoSkillPoint", IgnitoSkillPoint);
 			nbt.putBoolean("ThrowKusanagiActivate", ThrowKusanagiActivate);
 			nbt.putDouble("transformSkillPoint", transformSkillPoint);
+			nbt.putDouble("TridentSkillPoint", TridentSkillPoint);
+			nbt.putDouble("ChargeTime", ChargeTime);
 			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
 			nbt.putDouble("FishmanSkillPoint", FishmanSkillPoint);
-			nbt.putDouble("TridentSkillPoint", TridentSkillPoint);
-			nbt.putDouble("SnowmanSkillPoint", SnowmanSkillPoint);
-			nbt.putDouble("InvincivilitySkillPoint", InvincivilitySkillPoint);
-			nbt.putDouble("ChargeTime", ChargeTime);
-			nbt.putDouble("NuclearPunchSkillPoint", NuclearPunchSkillPoint);
 			return nbt;
 		}
 
@@ -391,6 +391,8 @@ public class PalworldModVariables {
 			InvisibleSkillPoint = nbt.getDouble("InvisibleSkillPoint");
 			KamuiActivate = nbt.getBoolean("KamuiActivate");
 			blockBreakerSkillPoint = nbt.getDouble("blockBreakerSkillPoint");
+			NuclearPunchSkillPoint = nbt.getDouble("NuclearPunchSkillPoint");
+			InvincivilitySkillPoint = nbt.getDouble("InvincivilitySkillPoint");
 			KusanagiLocateY = nbt.getDouble("KusanagiLocateY");
 			ArcherySkillPoint = nbt.getDouble("ArcherySkillPoint");
 			KusanagiLocateZ = nbt.getDouble("KusanagiLocateZ");
@@ -399,17 +401,15 @@ public class PalworldModVariables {
 			KamuiSkillPoint = nbt.getDouble("KamuiSkillPoint");
 			SpeedSkillPoint = nbt.getDouble("SpeedSkillPoint");
 			JumpSkillPoint = nbt.getDouble("JumpSkillPoint");
+			SnowmanSkillPoint = nbt.getDouble("SnowmanSkillPoint");
 			KnockBackSkillPoint = nbt.getDouble("KnockBackSkillPoint");
 			IgnitoSkillPoint = nbt.getDouble("IgnitoSkillPoint");
 			ThrowKusanagiActivate = nbt.getBoolean("ThrowKusanagiActivate");
 			transformSkillPoint = nbt.getDouble("transformSkillPoint");
+			TridentSkillPoint = nbt.getDouble("TridentSkillPoint");
+			ChargeTime = nbt.getDouble("ChargeTime");
 			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
 			FishmanSkillPoint = nbt.getDouble("FishmanSkillPoint");
-			TridentSkillPoint = nbt.getDouble("TridentSkillPoint");
-			SnowmanSkillPoint = nbt.getDouble("SnowmanSkillPoint");
-			InvincivilitySkillPoint = nbt.getDouble("InvincivilitySkillPoint");
-			ChargeTime = nbt.getDouble("ChargeTime");
-			NuclearPunchSkillPoint = nbt.getDouble("NuclearPunchSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
