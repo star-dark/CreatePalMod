@@ -8109,19 +8109,6 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:minecraft:chest_armor": [
-      "~CUSTOM:ArmorGold.body",
-      "~CUSTOM:ArmorWood.body",
-      "~CUSTOM:ArmorWither.body",
-      "~CUSTOM:ArmorWarrior.body",
-      "~CUSTOM:ArmorSteampunk.body",
-      "~CUSTOM:ArmorSlime.body",
-      "~CUSTOM:ArmorRobe.body",
-      "~CUSTOM:ArmorPrismarine.body",
-      "~CUSTOM:ArmorHeavy.body",
-      "~CUSTOM:ArmorDivine.body",
-      "~CUSTOM:ArmorBone.body"
-    ],
     "ITEMS:minecraft:enchantable/durability": [
       "~CUSTOM:GloryGoldGhost"
     ],
