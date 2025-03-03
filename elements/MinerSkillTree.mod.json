@@ -348,24 +348,11 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_ceryeogjaesaeng",
-          "image": "ceryeogjaesaeng.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "RecoverUp"
-          },
-          "x": 265,
-          "y": 79
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_ceryeogjaesaeng",
           "text": {
-            "fixedValue": "체력재생"
+            "fixedValue": "화염저항"
           },
           "color": {
             "value": -16776961,
@@ -396,7 +383,7 @@
           "name": "label_proc_recover_up_point",
           "text": {
             "fixedValue": "",
-            "name": "RecoverUpPoint"
+            "name": "FiremanPoint"
           },
           "color": {
             "value": -16776961,
@@ -446,24 +433,11 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_pupa",
-          "image": "pupa.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "FoodFighterUp"
-          },
-          "x": 264,
-          "y": 137
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_pudeupaiteo",
           "text": {
-            "fixedValue": "푸드파이터"
+            "fixedValue": "블록파괴자"
           },
           "color": {
             "value": -16776961,
@@ -494,7 +468,7 @@
           "name": "label_proc_food_fighter_point",
           "text": {
             "fixedValue": "",
-            "name": "FoodFighterPoint"
+            "name": "BlockBreakerPoint"
           },
           "color": {
             "value": -16776961,
@@ -502,19 +476,6 @@
           },
           "x": 264,
           "y": 171
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_bansa",
-          "image": "bansa.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ReflectionUp"
-          },
-          "x": 313,
-          "y": 111
         }
       },
       {
@@ -537,7 +498,7 @@
         "data": {
           "name": "label_bansa",
           "text": {
-            "fixedValue": "반사!"
+            "fixedValue": "태세전환"
           },
           "color": {
             "value": -256,
@@ -553,7 +514,7 @@
           "name": "label_proc_reflection_point",
           "text": {
             "fixedValue": "",
-            "name": "ReflectionPoint"
+            "name": "TransformPoint"
           },
           "color": {
             "value": -256,
@@ -564,24 +525,11 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_deobeuljeompeu",
-          "image": "deobeuljeompeu.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "DoubleJumpUp"
-          },
-          "x": 217,
-          "y": 111
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_deobeuljeompeu",
           "text": {
-            "fixedValue": "더블점프"
+            "fixedValue": "금빛섬광"
           },
           "color": {
             "value": -10092442,
@@ -609,44 +557,15 @@
       {
         "type": "label",
         "data": {
-          "name": "label_proc_double_jump_point",
-          "text": {
-            "fixedValue": "",
-            "name": "DoubleJumpPoint"
-          },
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "x": 217,
-          "y": 144
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_swildeubumbeo",
-          "image": "swildeubumbeo.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ShieldBoomberUp"
-          },
-          "x": 313,
-          "y": 58
-        }
-      },
-      {
-        "type": "label",
-        "data": {
           "name": "label_swildeubumbeo",
           "text": {
-            "fixedValue": "쉴드붐버"
+            "fixedValue": "폭발광"
           },
           "color": {
             "value": -256,
             "falpha": 0.0
           },
-          "x": 313,
+          "x": 316,
           "y": 83
         }
       },
@@ -671,7 +590,7 @@
           "name": "label_proc_shield_boomber_point",
           "text": {
             "fixedValue": "",
-            "name": "ShieldBoomberPoint"
+            "name": "IgnitoPoint"
           },
           "color": {
             "value": -256,
@@ -716,13 +635,13 @@
         "data": {
           "name": "label_bangeogangdo",
           "text": {
-            "fixedValue": "방어강도"
+            "fixedValue": "저리가"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 171,
+          "x": 173,
           "y": 186
         }
       },
@@ -782,8 +701,8 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 174,
-          "y": 83
+          "x": 171,
+          "y": 81
         }
       },
       {
@@ -802,24 +721,11 @@
         }
       },
       {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_beoseokeo",
-          "image": "beoseokeo.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "BerserkerUp"
-          },
-          "x": 313,
-          "y": 162
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_beoseokeo",
           "text": {
-            "fixedValue": "버서커"
+            "fixedValue": "불사조"
           },
           "color": {
             "value": -256,
@@ -850,7 +756,7 @@
           "name": "label_proc_berserker_point",
           "text": {
             "fixedValue": "",
-            "name": "BerserkerPoint"
+            "name": "PheonixPoint"
           },
           "color": {
             "value": -256,
@@ -858,84 +764,6 @@
           },
           "x": 310,
           "y": 193
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_jeompeusangtaero_hanbeon_deo_jeompeu_ganeung",
-          "text": {
-            "fixedValue": "점프상태로 한번 더 점프 가능"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 218,
-          "y": 111
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_ceryeogjaesaeng_beopeubuyeo",
-          "text": {
-            "fixedValue": "체력재생 버프부여"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 265,
-          "y": 79
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_eumsigseobcwisi_heubsuceryeog_hoegdeug",
-          "text": {
-            "fixedValue": "음식섭취시 흡수체력 획득"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 264,
-          "y": 137
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_iljeonghoessu_bangeo_si_jwakeulrigeuro_pogtaneul_nalrinda",
-          "text": {
-            "fixedValue": "일정횟수 방어 시 좌클릭으로 폭탄을 날린다"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 314,
-          "y": 59
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_bangeosi_gonggyeogdaesangeul_nalrigo_demijireul_junda",
-          "text": {
-            "fixedValue": "방어시 공격대상을 날리고 데미지를 준다"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 313,
-          "y": 112
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_demijireul_iljeonghoessu_ibeumyeon_juwi_jeog_nalrigo_jasinege_beopeubu",
-          "text": {
-            "fixedValue": "데미지를 일정횟수 입으면 주위  적 날리고 자신에게 버프부여"
-          },
-          "width": 24,
-          "height": 24,
-          "x": 313,
-          "y": 163
         }
       },
       {
@@ -1052,6 +880,143 @@
           },
           "x": 170,
           "y": 142
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_neogbaegjeungga",
+          "image": "neogbaegjeungga.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "KnockBackUp"
+          },
+          "x": 170,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_knock_back_point",
+          "text": {
+            "fixedValue": "",
+            "name": "KnockBackPoint"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 193
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_geumbicseomgwang",
+          "image": "geumbicseomgwang.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "KamuiUp"
+          },
+          "x": 217,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_kamui_point",
+          "text": {
+            "fixedValue": "",
+            "name": "KamuiPoint"
+          },
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "x": 217,
+          "y": 143
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_hwayeomjeohang",
+          "image": "hwayeomjeohang.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "FiremanUp"
+          },
+          "x": 265,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_beulrogpagoeja",
+          "image": "beulrogpagoeja.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BlockBreakerUp"
+          },
+          "x": 265,
+          "y": 137
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_block_breaker_tool_tip",
+          "text": {
+            "fixedValue": "",
+            "name": "BlockBreakerToolTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_pogbalgwang",
+          "image": "pogbalgwang.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "IgnitoUp"
+          },
+          "x": 313,
+          "y": 58
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_teuraenseupomeo",
+          "image": "teuraenseupomeo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "TransformUp"
+          },
+          "x": 313,
+          "y": 111
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_bulsajo",
+          "image": "bulsajo.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "PheonixUp"
+          },
+          "x": 313,
+          "y": 162
         }
       }
     ],

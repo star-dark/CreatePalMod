@@ -25,6 +25,7 @@ import net.mcreator.palworld.init.PalworldModMobEffects;
 import net.mcreator.palworld.init.PalworldModMenus;
 import net.mcreator.palworld.init.PalworldModItems;
 import net.mcreator.palworld.init.PalworldModEntities;
+import net.mcreator.palworld.init.PalworldModAttributes;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -53,6 +54,7 @@ public class PalworldMod {
 		PalworldModMenus.REGISTRY.register(modEventBus);
 		PalworldModParticleTypes.REGISTRY.register(modEventBus);
 
+		PalworldModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

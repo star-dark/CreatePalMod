@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Y",
+    "keyBindingName": "Transform",
+    "keyBindingCategoryKey": "misc",
+    "onKeyReleased": {
+      "name": "Transformkireulnoheulddae"
+    }
+  }
+}

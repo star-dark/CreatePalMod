@@ -1,0 +1,30 @@
+{
+  "_fv": 69,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Balmung"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "item.crossbow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 4.6000000000000005,
+    "knockback": 0,
+    "entityModel": "Modelkunai_Converted",
+    "customModelTexture": "kunai.png",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "KusanagiProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "KusanagiProjectileHitsPlayer"
+    },
+    "onHitsEntity": {
+      "name": "KusanagiProjectileHitsLivingEntity"
+    }
+  }
+}

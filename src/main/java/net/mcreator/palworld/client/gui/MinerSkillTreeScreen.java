@@ -13,19 +13,21 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.palworld.world.inventory.MinerSkillTreeMenu;
+import net.mcreator.palworld.procedures.TransformPointProcedure;
 import net.mcreator.palworld.procedures.StepHightPointProcedure;
 import net.mcreator.palworld.procedures.SneakingSpeedPointProcedure;
-import net.mcreator.palworld.procedures.ShieldBoomberPointProcedure;
-import net.mcreator.palworld.procedures.ReflectionPointProcedure;
-import net.mcreator.palworld.procedures.RecoverUpPointProcedure;
+import net.mcreator.palworld.procedures.PheonixPointProcedure;
+import net.mcreator.palworld.procedures.KnockBackPointProcedure;
+import net.mcreator.palworld.procedures.KamuiPointProcedure;
+import net.mcreator.palworld.procedures.IgnitoPointProcedure;
 import net.mcreator.palworld.procedures.HealthUpPointProcedure;
-import net.mcreator.palworld.procedures.FoodFighterPointProcedure;
+import net.mcreator.palworld.procedures.FiremanPointProcedure;
 import net.mcreator.palworld.procedures.FallingDamageReducePointProcedure;
-import net.mcreator.palworld.procedures.DoubleJumpPointProcedure;
 import net.mcreator.palworld.procedures.DefenseUpPointProcedure;
 import net.mcreator.palworld.procedures.CurrentSkillPointsProcedure;
 import net.mcreator.palworld.procedures.BreakingSpeedPointProcedure;
-import net.mcreator.palworld.procedures.BerserkerPointProcedure;
+import net.mcreator.palworld.procedures.BlockBreakerToolTipProcedure;
+import net.mcreator.palworld.procedures.BlockBreakerPointProcedure;
 import net.mcreator.palworld.procedures.AttackUpPointProcedure;
 import net.mcreator.palworld.network.MinerSkillTreeButtonMessage;
 
@@ -41,16 +43,17 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 	ImageButton imagebutton_ceryeogjeungga;
 	ImageButton imagebutton_gonggyeogryeog;
 	ImageButton imagebutton_bangeoryeog;
-	ImageButton imagebutton_ceryeogjaesaeng;
-	ImageButton imagebutton_pupa;
-	ImageButton imagebutton_bansa;
-	ImageButton imagebutton_deobeuljeompeu;
-	ImageButton imagebutton_swildeubumbeo;
-	ImageButton imagebutton_beoseokeo;
 	ImageButton imagebutton_pakureu;
 	ImageButton imagebutton_jagajyeora;
 	ImageButton imagebutton_gongsog;
 	ImageButton imagebutton_nagdemgamso;
+	ImageButton imagebutton_neogbaegjeungga;
+	ImageButton imagebutton_geumbicseomgwang;
+	ImageButton imagebutton_hwayeomjeohang;
+	ImageButton imagebutton_beulrogpagoeja;
+	ImageButton imagebutton_pogbalgwang;
+	ImageButton imagebutton_teuraenseupomeo;
+	ImageButton imagebutton_bulsajo;
 
 	public MinerSkillTreeScreen(MinerSkillTreeMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -74,18 +77,8 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_ceryeog_1jeungga"), mouseX, mouseY);
 		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 139 && mouseY < topPos + 163)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_bangeoryeog_1jeungga"), mouseX, mouseY);
-		if (mouseX > leftPos + 150 && mouseX < leftPos + 174 && mouseY > topPos + 88 && mouseY < topPos + 112)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_jeompeusangtaero_hanbeon_deo_jeompeu_ganeung"), mouseX, mouseY);
-		if (mouseX > leftPos + 197 && mouseX < leftPos + 221 && mouseY > topPos + 56 && mouseY < topPos + 80)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_ceryeogjaesaeng_beopeubuyeo"), mouseX, mouseY);
-		if (mouseX > leftPos + 196 && mouseX < leftPos + 220 && mouseY > topPos + 114 && mouseY < topPos + 138)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_eumsigseobcwisi_heubsuceryeog_hoegdeug"), mouseX, mouseY);
-		if (mouseX > leftPos + 246 && mouseX < leftPos + 270 && mouseY > topPos + 36 && mouseY < topPos + 60)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_iljeonghoessu_bangeo_si_jwakeulrigeuro_pogtaneul_nalrinda"), mouseX, mouseY);
-		if (mouseX > leftPos + 245 && mouseX < leftPos + 269 && mouseY > topPos + 89 && mouseY < topPos + 113)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_bangeosi_gonggyeogdaesangeul_nalrigo_demijireul_junda"), mouseX, mouseY);
-		if (mouseX > leftPos + 245 && mouseX < leftPos + 269 && mouseY > topPos + 140 && mouseY < topPos + 164)
-			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_demijireul_iljeonghoessu_ibeumyeon_juwi_jeog_nalrigo_jasinege_beopeubu"), mouseX, mouseY);
+		if (mouseX > leftPos + 197 && mouseX < leftPos + 221 && mouseY > topPos + 114 && mouseY < topPos + 138)
+			guiGraphics.renderTooltip(font, Component.literal(BlockBreakerToolTipProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override
@@ -141,40 +134,37 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_51"), 209, 87, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				RecoverUpPointProcedure.execute(entity), 195, 86, -16776961, false);
+				FiremanPointProcedure.execute(entity), 195, 86, -16776961, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_pudeupaiteo"), 196, 139, -16776961, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_52"), 210, 148, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				FoodFighterPointProcedure.execute(entity), 196, 148, -16776961, false);
+				BlockBreakerPointProcedure.execute(entity), 196, 148, -16776961, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_54"), 256, 121, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_bansa"), 248, 114, -256, false);
 		guiGraphics.drawString(this.font,
 
-				ReflectionPointProcedure.execute(entity), 244, 120, -256, false);
+				TransformPointProcedure.execute(entity), 244, 120, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_deobeuljeompeu"), 150, 112, -10092442, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_1"), 161, 121, -12829636, false);
-		guiGraphics.drawString(this.font,
-
-				DoubleJumpPointProcedure.execute(entity), 149, 121, -10092442, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_swildeubumbeo"), 245, 60, -256, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_swildeubumbeo"), 248, 60, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_55"), 256, 67, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ShieldBoomberPointProcedure.execute(entity), 246, 66, -256, false);
+				IgnitoPointProcedure.execute(entity), 246, 66, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_idongsogdo"), 56, 139, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_4"), 66, 145, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_bangeogangdo"), 103, 163, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_bangeogangdo"), 105, 163, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_53"), 114, 172, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_neogbaegjeohang"), 103, 112, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_56"), 113, 119, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_hwibsseulgi"), 106, 60, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_hwibsseulgi"), 103, 58, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_57"), 114, 68, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_beoseokeo"), 248, 165, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_58"), 256, 171, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				BerserkerPointProcedure.execute(entity), 242, 170, -256, false);
+				PheonixPointProcedure.execute(entity), 242, 170, -256, false);
 		guiGraphics.drawString(this.font,
 
 				StepHightPointProcedure.execute(entity), 55, 90, -1, false);
@@ -187,6 +177,12 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		guiGraphics.drawString(this.font,
 
 				FallingDamageReducePointProcedure.execute(entity), 102, 119, -1, false);
+		guiGraphics.drawString(this.font,
+
+				KnockBackPointProcedure.execute(entity), 102, 170, -1, false);
+		guiGraphics.drawString(this.font,
+
+				KamuiPointProcedure.execute(entity), 149, 120, -10092442, false);
 	}
 
 	@Override
@@ -234,92 +230,10 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		};
 		guistate.put("button:imagebutton_bangeoryeog", imagebutton_bangeoryeog);
 		this.addRenderableWidget(imagebutton_bangeoryeog);
-		imagebutton_ceryeogjaesaeng = new ImageButton(this.leftPos + 197, this.topPos + 56, 25, 25,
-				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/ceryeogjaesaeng.png"), ResourceLocation.parse("palworld:textures/screens/ceryeogjaesaeng.png")), e -> {
-					if (true) {
-						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(3, x, y, z));
-						MinerSkillTreeButtonMessage.handleButtonAction(entity, 3, x, y, z);
-					}
-				}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_ceryeogjaesaeng", imagebutton_ceryeogjaesaeng);
-		this.addRenderableWidget(imagebutton_ceryeogjaesaeng);
-		imagebutton_pupa = new ImageButton(this.leftPos + 196, this.topPos + 114, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/pupa.png"), ResourceLocation.parse("palworld:textures/screens/pupa.png")), e -> {
-			if (true) {
-				PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(4, x, y, z));
-				MinerSkillTreeButtonMessage.handleButtonAction(entity, 4, x, y, z);
-			}
-		}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_pupa", imagebutton_pupa);
-		this.addRenderableWidget(imagebutton_pupa);
-		imagebutton_bansa = new ImageButton(this.leftPos + 245, this.topPos + 88, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/bansa.png"), ResourceLocation.parse("palworld:textures/screens/bansa.png")), e -> {
-			if (true) {
-				PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(5, x, y, z));
-				MinerSkillTreeButtonMessage.handleButtonAction(entity, 5, x, y, z);
-			}
-		}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_bansa", imagebutton_bansa);
-		this.addRenderableWidget(imagebutton_bansa);
-		imagebutton_deobeuljeompeu = new ImageButton(this.leftPos + 149, this.topPos + 88, 25, 25,
-				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/deobeuljeompeu.png"), ResourceLocation.parse("palworld:textures/screens/deobeuljeompeu.png")), e -> {
-					if (true) {
-						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(6, x, y, z));
-						MinerSkillTreeButtonMessage.handleButtonAction(entity, 6, x, y, z);
-					}
-				}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_deobeuljeompeu", imagebutton_deobeuljeompeu);
-		this.addRenderableWidget(imagebutton_deobeuljeompeu);
-		imagebutton_swildeubumbeo = new ImageButton(this.leftPos + 245, this.topPos + 35, 25, 25,
-				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/swildeubumbeo.png"), ResourceLocation.parse("palworld:textures/screens/swildeubumbeo.png")), e -> {
-					if (true) {
-						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(7, x, y, z));
-						MinerSkillTreeButtonMessage.handleButtonAction(entity, 7, x, y, z);
-					}
-				}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_swildeubumbeo", imagebutton_swildeubumbeo);
-		this.addRenderableWidget(imagebutton_swildeubumbeo);
-		imagebutton_beoseokeo = new ImageButton(this.leftPos + 245, this.topPos + 139, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/beoseokeo.png"), ResourceLocation.parse("palworld:textures/screens/beoseokeo.png")),
-				e -> {
-					if (true) {
-						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(8, x, y, z));
-						MinerSkillTreeButtonMessage.handleButtonAction(entity, 8, x, y, z);
-					}
-				}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
-				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
-			}
-		};
-		guistate.put("button:imagebutton_beoseokeo", imagebutton_beoseokeo);
-		this.addRenderableWidget(imagebutton_beoseokeo);
 		imagebutton_pakureu = new ImageButton(this.leftPos + 55, this.topPos + 57, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/pakureu.png"), ResourceLocation.parse("palworld:textures/screens/pakureu.png")), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(9, x, y, z));
-				MinerSkillTreeButtonMessage.handleButtonAction(entity, 9, x, y, z);
+				PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(3, x, y, z));
+				MinerSkillTreeButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}) {
 			@Override
@@ -332,8 +246,8 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		imagebutton_jagajyeora = new ImageButton(this.leftPos + 55, this.topPos + 114, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/jagajyeora.png"), ResourceLocation.parse("palworld:textures/screens/jagajyeora.png")),
 				e -> {
 					if (true) {
-						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(10, x, y, z));
-						MinerSkillTreeButtonMessage.handleButtonAction(entity, 10, x, y, z);
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(4, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 4, x, y, z);
 					}
 				}) {
 			@Override
@@ -345,8 +259,8 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		this.addRenderableWidget(imagebutton_jagajyeora);
 		imagebutton_gongsog = new ImageButton(this.leftPos + 102, this.topPos + 34, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/gongsog.png"), ResourceLocation.parse("palworld:textures/screens/gongsog.png")), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(11, x, y, z));
-				MinerSkillTreeButtonMessage.handleButtonAction(entity, 11, x, y, z);
+				PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(5, x, y, z));
+				MinerSkillTreeButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
 		}) {
 			@Override
@@ -359,8 +273,8 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		imagebutton_nagdemgamso = new ImageButton(this.leftPos + 102, this.topPos + 88, 25, 25,
 				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/nagdemgamso.png"), ResourceLocation.parse("palworld:textures/screens/nagdemgamso.png")), e -> {
 					if (true) {
-						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(12, x, y, z));
-						MinerSkillTreeButtonMessage.handleButtonAction(entity, 12, x, y, z);
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(6, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 6, x, y, z);
 					}
 				}) {
 			@Override
@@ -370,5 +284,102 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		};
 		guistate.put("button:imagebutton_nagdemgamso", imagebutton_nagdemgamso);
 		this.addRenderableWidget(imagebutton_nagdemgamso);
+		imagebutton_neogbaegjeungga = new ImageButton(this.leftPos + 102, this.topPos + 139, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/neogbaegjeungga.png"), ResourceLocation.parse("palworld:textures/screens/neogbaegjeungga.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(7, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 7, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_neogbaegjeungga", imagebutton_neogbaegjeungga);
+		this.addRenderableWidget(imagebutton_neogbaegjeungga);
+		imagebutton_geumbicseomgwang = new ImageButton(this.leftPos + 149, this.topPos + 88, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/geumbicseomgwang.png"), ResourceLocation.parse("palworld:textures/screens/geumbicseomgwang.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(8, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 8, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_geumbicseomgwang", imagebutton_geumbicseomgwang);
+		this.addRenderableWidget(imagebutton_geumbicseomgwang);
+		imagebutton_hwayeomjeohang = new ImageButton(this.leftPos + 197, this.topPos + 57, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/hwayeomjeohang.png"), ResourceLocation.parse("palworld:textures/screens/hwayeomjeohang.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(9, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 9, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_hwayeomjeohang", imagebutton_hwayeomjeohang);
+		this.addRenderableWidget(imagebutton_hwayeomjeohang);
+		imagebutton_beulrogpagoeja = new ImageButton(this.leftPos + 197, this.topPos + 114, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/beulrogpagoeja.png"), ResourceLocation.parse("palworld:textures/screens/beulrogpagoeja.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(10, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 10, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_beulrogpagoeja", imagebutton_beulrogpagoeja);
+		this.addRenderableWidget(imagebutton_beulrogpagoeja);
+		imagebutton_pogbalgwang = new ImageButton(this.leftPos + 245, this.topPos + 35, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/pogbalgwang.png"), ResourceLocation.parse("palworld:textures/screens/pogbalgwang.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(11, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 11, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_pogbalgwang", imagebutton_pogbalgwang);
+		this.addRenderableWidget(imagebutton_pogbalgwang);
+		imagebutton_teuraenseupomeo = new ImageButton(this.leftPos + 245, this.topPos + 88, 25, 25,
+				new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/teuraenseupomeo.png"), ResourceLocation.parse("palworld:textures/screens/teuraenseupomeo.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(12, x, y, z));
+						MinerSkillTreeButtonMessage.handleButtonAction(entity, 12, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_teuraenseupomeo", imagebutton_teuraenseupomeo);
+		this.addRenderableWidget(imagebutton_teuraenseupomeo);
+		imagebutton_bulsajo = new ImageButton(this.leftPos + 245, this.topPos + 139, 25, 25, new WidgetSprites(ResourceLocation.parse("palworld:textures/screens/bulsajo.png"), ResourceLocation.parse("palworld:textures/screens/bulsajo.png")), e -> {
+			if (true) {
+				PacketDistributor.sendToServer(new MinerSkillTreeButtonMessage(13, x, y, z));
+				MinerSkillTreeButtonMessage.handleButtonAction(entity, 13, x, y, z);
+			}
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		guistate.put("button:imagebutton_bulsajo", imagebutton_bulsajo);
+		this.addRenderableWidget(imagebutton_bulsajo);
 	}
 }

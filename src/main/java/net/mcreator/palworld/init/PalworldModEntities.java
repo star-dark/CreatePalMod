@@ -18,6 +18,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.palworld.entity.QueenEntity;
 import net.mcreator.palworld.entity.MinerJobNPCEntity;
+import net.mcreator.palworld.entity.KusanagiEntity;
 import net.mcreator.palworld.entity.KingEntity;
 import net.mcreator.palworld.entity.FisherJobNPCEntity;
 import net.mcreator.palworld.entity.FarmerJobNPCEntity;
@@ -40,6 +41,8 @@ public class PalworldModEntities {
 			EntityType.Builder.<QueenEntity>of(QueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<KusanagiEntity>> KUSANAGI = register("kusanagi",
+			EntityType.Builder.<KusanagiEntity>of(KusanagiEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

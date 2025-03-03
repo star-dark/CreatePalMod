@@ -1,0 +1,151 @@
+{
+  "_fv": 69,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOWEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount2"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount3"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount4"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount5"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount6"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount7"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount8"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pheonix9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmount9"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pinigseu.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StackAmountFull"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 321,
+          "y": 134
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PheonixOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

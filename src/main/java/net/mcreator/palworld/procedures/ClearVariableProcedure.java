@@ -1,5 +1,7 @@
 package net.mcreator.palworld.procedures;
 
+import net.neoforged.neoforge.common.NeoForgeMod;
+
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -43,6 +45,11 @@ public class ClearVariableProcedure {
 		{
 			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 			_vars.Player_EXP = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ExpGoal = 7;
 			_vars.syncPlayerVariables(entity);
 		}
 		{
@@ -192,7 +199,101 @@ public class ClearVariableProcedure {
 		}
 		if (entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.FALL_DAMAGE_MULTIPLIER))
 			_livingEntity15.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER).setBaseValue(1);
+		if (entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(NeoForgeMod.SWIM_SPEED))
+			_livingEntity16.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(1);
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ThrowKusanagiActivate = true;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.KamuiActivate = false;
+			_vars.syncPlayerVariables(entity);
+		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.IgnitoSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.transformSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.FireResistanceSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.PhoenixSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		if (entity instanceof LivingEntity _livingEntity18 && _livingEntity18.getAttributes().hasAttribute(NeoForgeMod.SWIM_SPEED))
+			_livingEntity18.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(1);
+		if (entity instanceof LivingEntity _livingEntity19 && _livingEntity19.getAttributes().hasAttribute(Attributes.WATER_MOVEMENT_EFFICIENCY))
+			_livingEntity19.getAttribute(Attributes.WATER_MOVEMENT_EFFICIENCY).setBaseValue(0);
+		if (entity instanceof LivingEntity _livingEntity20 && _livingEntity20.getAttributes().hasAttribute(Attributes.SUBMERGED_MINING_SPEED))
+			_livingEntity20.getAttribute(Attributes.SUBMERGED_MINING_SPEED).setBaseValue(0.2);
+		if (entity instanceof LivingEntity _livingEntity21 && _livingEntity21.getAttributes().hasAttribute(Attributes.OXYGEN_BONUS))
+			_livingEntity21.getAttribute(Attributes.OXYGEN_BONUS).setBaseValue(1);
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.FishmanSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.InvisibleSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ArcherySkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.SpeedSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.JumpSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		if (entity instanceof LivingEntity _livingEntity22 && _livingEntity22.getAttributes().hasAttribute(Attributes.JUMP_STRENGTH))
+			_livingEntity22.getAttribute(Attributes.JUMP_STRENGTH).setBaseValue(0.41999998688697815);
+		if (entity instanceof LivingEntity _livingEntity23 && _livingEntity23.getAttributes().hasAttribute(Attributes.GRAVITY))
+			_livingEntity23.getAttribute(Attributes.GRAVITY).setBaseValue(0.08);
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.TridentSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.SnowmanSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.InvincivilitySkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ChargeTime = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.NuclearPunchSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
 	}
 }

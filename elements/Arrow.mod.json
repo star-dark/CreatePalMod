@@ -1,0 +1,57 @@
+{
+  "_fv": 69,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "hwasal.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow1"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 303,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hwasal.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow2"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 339,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hwasal.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow3"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 375,
+          "y": 179
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

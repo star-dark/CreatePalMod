@@ -8,6 +8,6 @@ public class SpeedPointProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return new java.text.DecimalFormat("##").format(entity.getData(PalworldModVariables.PLAYER_VARIABLES).SpeedUpSkillPoint);
+		return new java.text.DecimalFormat("##").format(entity.getData(PalworldModVariables.PLAYER_VARIABLES).SpeedSkillPoint);
 	}
 }
