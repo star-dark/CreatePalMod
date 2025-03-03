@@ -1,5 +1,5 @@
 # Gradle build system ignores
-.gradle/
+# .gradle/
 build/
 
 # Other IDE related folders
@@ -10,7 +10,7 @@ build/
 .project
 
 # MCreator workspace
-#.mcreator/
+.mcreator/
 
 # Minecraft client/server files
 run/
