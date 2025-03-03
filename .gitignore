@@ -10,7 +10,7 @@ build/
 .project
 
 # MCreator workspace
-.mcreator/
+#.mcreator/
 
 # Minecraft client/server files
 run/

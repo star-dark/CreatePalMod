@@ -5673,6 +5673,191 @@
       "path": "~/GUI/Skill_Tree/Miner/Skillpoint"
     },
     {
+      "name": "ArmorBone",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_bone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_bone_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_bone_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_bone_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_bone_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorBoneItem.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorDivine",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_divine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_divine_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_divine_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_divine_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_divine_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorDivineItem.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorHeavy",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_heavy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_heavy_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_heavy_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_heavy_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorHeavyItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_heavy_leggings.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorPrismarine",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_prismarine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_prismarine_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorPrismarineItem.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorRobe",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_robe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_robe_helmet.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorRobeItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_robe_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_robe_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_robe_chestplate.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorSlime",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_slime",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_slime_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_slime_boots.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorSlimeItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_slime_chestplate.json",
+          "src/main/resources/assets/palworld/models/item/armor_slime_helmet.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorSteampunk",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_steampunk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorSteampunkItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_steampunk_boots.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorWarrior",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_warrior",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_warrior_chestplate.json",
+          "src/main/resources/assets/palworld/models/item/armor_warrior_leggings.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorWarriorItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_warrior_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_warrior_boots.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorWither",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_wither",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_wither_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_wither_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_wither_leggings.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorWitherItem.java",
+          "src/main/resources/assets/palworld/models/item/armor_wither_chestplate.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorWood",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_wood_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_wood_boots.json",
+          "src/main/resources/assets/palworld/models/item/armor_wood_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_wood_chestplate.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorWoodItem.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "ArmorGold",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_gold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/palworld/models/item/armor_gold_leggings.json",
+          "src/main/resources/assets/palworld/models/item/armor_gold_helmet.json",
+          "src/main/resources/assets/palworld/models/item/armor_gold_chestplate.json",
+          "src/main/resources/assets/palworld/models/item/armor_gold_boots.json",
+          "src/main/java/net/mcreator/palworld/item/ArmorGoldItem.java"
+        ]
+      },
+      "path": "~/Armor"
       "name": "IgnitoEffectExpires",
       "type": "procedure",
       "compiles": true,
@@ -7961,6 +8146,45 @@
       "~CUSTOM:Dainsleif",
       "~CUSTOM:Balmung",
       "~CUSTOM:Amanomurakumonotsurugi"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:ArmorGold.helmet",
+      "~CUSTOM:ArmorWood.helmet",
+      "~CUSTOM:ArmorWither.helmet",
+      "~CUSTOM:ArmorWarrior.helmet",
+      "~CUSTOM:ArmorSteampunk.helmet",
+      "~CUSTOM:ArmorSlime.helmet",
+      "~CUSTOM:ArmorRobe.helmet",
+      "~CUSTOM:ArmorPrismarine.helmet",
+      "~CUSTOM:ArmorHeavy.helmet",
+      "~CUSTOM:ArmorDivine.helmet",
+      "~CUSTOM:ArmorBone.helmet"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:ArmorGold.boots",
+      "~CUSTOM:ArmorWood.boots",
+      "~CUSTOM:ArmorWither.boots",
+      "~CUSTOM:ArmorWarrior.boots",
+      "~CUSTOM:ArmorSteampunk.boots",
+      "~CUSTOM:ArmorSlime.boots",
+      "~CUSTOM:ArmorRobe.boots",
+      "~CUSTOM:ArmorPrismarine.boots",
+      "~CUSTOM:ArmorHeavy.boots",
+      "~CUSTOM:ArmorDivine.boots",
+      "~CUSTOM:ArmorBone.boots"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:ArmorGold.legs",
+      "~CUSTOM:ArmorWood.legs",
+      "~CUSTOM:ArmorWither.legs",
+      "~CUSTOM:ArmorWarrior.legs",
+      "~CUSTOM:ArmorSteampunk.legs",
+      "~CUSTOM:ArmorSlime.legs",
+      "~CUSTOM:ArmorRobe.legs",
+      "~CUSTOM:ArmorPrismarine.legs",
+      "~CUSTOM:ArmorHeavy.legs",
+      "~CUSTOM:ArmorDivine.legs",
+      "~CUSTOM:ArmorBone.legs"
     ]
   },
   "tab_element_order": {},
@@ -8683,6 +8907,10 @@
       },
       {
         "name": "Attribute",
+        "children": []
+      },
+      {
+        "name": "Armor",
         "children": []
       }
     ]
