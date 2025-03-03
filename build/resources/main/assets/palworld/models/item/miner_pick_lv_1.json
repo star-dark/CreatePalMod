@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "palworld:item/glow_stone_pickaxe"
+  }
+}

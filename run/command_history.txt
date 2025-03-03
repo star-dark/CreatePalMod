@@ -1,0 +1,50 @@
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/gamemode creative @a
+/kill @e
+/time set day
+/gamemode survival @a
+/gamemode creative @a
+/time set day
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/gamemode creative @a
+/time set day
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/gamemode creative @a
+/time set day
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/title
+/time set day
+/gamemode survival @a
+/time set night
+/time set day
+/gamemode survival @a
+/kill @a
+/kill @e
+/time set day
+/gamemode creative @a
+/gamemode survival @a
+/gamemode creative @a
+/time set day
+/gamemode survival @a
+/gamemode creative @a
+/gamemode survival @a
+/time set day
+/summon minecraft:spider -37.63 -60.00 -44.50
+/gamemode creative @a
+/time set day
+/gamemode survival @a
+/gamemode creative @a
