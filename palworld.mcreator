@@ -7914,6 +7914,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "ExpGoal",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "7.0"
     }
   ],
   "sound_elements": [],

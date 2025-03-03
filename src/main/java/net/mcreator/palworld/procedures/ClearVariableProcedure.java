@@ -49,6 +49,11 @@ public class ClearVariableProcedure {
 		}
 		{
 			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ExpGoal = 7;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 			_vars.Player_Level = 1;
 			_vars.syncPlayerVariables(entity);
 		}

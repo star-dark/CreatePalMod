@@ -93,7 +93,7 @@ public class KusanagiEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		KusanagiProjectileHitsBlockProcedure.execute(this.level(), this);
+		KusanagiProjectileHitsBlockProcedure.execute(this.level(), this.getOwner(), this);
 	}
 
 	@Override

@@ -78,7 +78,7 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		if (mouseX > leftPos + 13 && mouseX < leftPos + 37 && mouseY > topPos + 139 && mouseY < topPos + 163)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.palworld.miner_skill_tree.tooltip_bangeoryeog_1jeungga"), mouseX, mouseY);
 		if (mouseX > leftPos + 197 && mouseX < leftPos + 221 && mouseY > topPos + 114 && mouseY < topPos + 138)
-			guiGraphics.renderTooltip(font, Component.literal(BlockBreakerToolTipProcedure.execute()), mouseX, mouseY);
+			guiGraphics.renderTooltip(font, Component.literal(BlockBreakerToolTipProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override
@@ -134,24 +134,24 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_51"), 209, 87, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				FiremanPointProcedure.execute(), 195, 86, -16776961, false);
+				FiremanPointProcedure.execute(entity), 195, 86, -16776961, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_pudeupaiteo"), 196, 139, -16776961, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_52"), 210, 148, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				BlockBreakerPointProcedure.execute(), 196, 148, -16776961, false);
+				BlockBreakerPointProcedure.execute(entity), 196, 148, -16776961, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_54"), 256, 121, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_bansa"), 248, 114, -256, false);
 		guiGraphics.drawString(this.font,
 
-				TransformPointProcedure.execute(), 244, 120, -256, false);
+				TransformPointProcedure.execute(entity), 244, 120, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_deobeuljeompeu"), 150, 112, -10092442, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_1"), 161, 121, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_swildeubumbeo"), 248, 60, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_55"), 256, 67, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				IgnitoPointProcedure.execute(), 246, 66, -256, false);
+				IgnitoPointProcedure.execute(entity), 246, 66, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_idongsogdo"), 56, 139, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_4"), 66, 145, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_bangeogangdo"), 105, 163, -1, false);
@@ -164,7 +164,7 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.miner_skill_tree.label_58"), 256, 171, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				PheonixPointProcedure.execute(), 242, 170, -256, false);
+				PheonixPointProcedure.execute(entity), 242, 170, -256, false);
 		guiGraphics.drawString(this.font,
 
 				StepHightPointProcedure.execute(entity), 55, 90, -1, false);
@@ -179,10 +179,10 @@ public class MinerSkillTreeScreen extends AbstractContainerScreen<MinerSkillTree
 				FallingDamageReducePointProcedure.execute(entity), 102, 119, -1, false);
 		guiGraphics.drawString(this.font,
 
-				KnockBackPointProcedure.execute(), 102, 170, -1, false);
+				KnockBackPointProcedure.execute(entity), 102, 170, -1, false);
 		guiGraphics.drawString(this.font,
 
-				KamuiPointProcedure.execute(), 149, 120, -10092442, false);
+				KamuiPointProcedure.execute(entity), 149, 120, -10092442, false);
 	}
 
 	@Override

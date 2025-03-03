@@ -27,9 +27,7 @@ public class LevelUpProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		double expGoal = 0;
-		expGoal = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * Math.pow(1.1, entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level) * 100;
-		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_EXP >= expGoal) {
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_EXP >= entity.getData(PalworldModVariables.PLAYER_VARIABLES).ExpGoal) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.Player_Level = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level + 1;
@@ -37,7 +35,7 @@ public class LevelUpProcedure {
 			}
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
-				_vars.Player_EXP = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_EXP - expGoal;
+				_vars.Player_EXP = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_EXP - entity.getData(PalworldModVariables.PLAYER_VARIABLES).ExpGoal;
 				_vars.syncPlayerVariables(entity);
 			}
 			{
@@ -45,8 +43,27 @@ public class LevelUpProcedure {
 				_vars.Skill_Points = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points + 1;
 				_vars.syncPlayerVariables(entity);
 			}
+			if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level <= 15) {
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.ExpGoal = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level + 6);
+					_vars.syncPlayerVariables(entity);
+				}
+			} else if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level <= 30) {
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.ExpGoal = Math.pow(entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level, 2) * 2.5 - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * 40.5 + 360;
+					_vars.syncPlayerVariables(entity);
+				}
+			} else {
+				{
+					PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+					_vars.ExpGoal = Math.pow(entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level, 2) * 4.5 - entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level * 162.5 + 2220;
+					_vars.syncPlayerVariables(entity);
+				}
+			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\uB808\uBCA8\uC5C5!"), false);
+				_player.displayClientMessage(Component.literal("\uB808\uBCA8\uC5C5!"), true);
 		}
 	}
 }

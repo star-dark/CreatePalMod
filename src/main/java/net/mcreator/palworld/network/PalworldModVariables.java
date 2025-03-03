@@ -124,6 +124,7 @@ public class PalworldModVariables {
 			clone.TridentSkillPoint = original.TridentSkillPoint;
 			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
 			clone.FishmanSkillPoint = original.FishmanSkillPoint;
+			clone.ExpGoal = original.ExpGoal;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -235,6 +236,7 @@ public class PalworldModVariables {
 		public double ChargeTime = 0;
 		public double FireResistanceSkillPoint = 0;
 		public double FishmanSkillPoint = 0;
+		public double ExpGoal = 7.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -322,6 +324,7 @@ public class PalworldModVariables {
 			nbt.putDouble("ChargeTime", ChargeTime);
 			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
 			nbt.putDouble("FishmanSkillPoint", FishmanSkillPoint);
+			nbt.putDouble("ExpGoal", ExpGoal);
 			return nbt;
 		}
 
@@ -410,6 +413,7 @@ public class PalworldModVariables {
 			ChargeTime = nbt.getDouble("ChargeTime");
 			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
 			FishmanSkillPoint = nbt.getDouble("FishmanSkillPoint");
+			ExpGoal = nbt.getDouble("ExpGoal");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

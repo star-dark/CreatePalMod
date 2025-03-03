@@ -127,7 +127,7 @@ public class FisherSkillTreeScreen extends AbstractContainerScreen<FisherSkillTr
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_sageorijeungga"), 58, 81, -1, false);
 		guiGraphics.drawString(this.font,
 
-				ArcherPointProcedure.execute(), 55, 90, -1, false);
+				ArcherPointProcedure.execute(entity), 55, 90, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_5"), -68, -23, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_103"), 65, 91, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_ceryeogjaesaeng"), 198, 80, -16776961, false);
@@ -139,12 +139,12 @@ public class FisherSkillTreeScreen extends AbstractContainerScreen<FisherSkillTr
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_52"), 210, 148, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				TridentPointProcedure.execute(), 196, 148, -16776961, false);
+				TridentPointProcedure.execute(entity), 196, 148, -16776961, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_54"), 256, 121, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_bansa"), 249, 114, -256, false);
 		guiGraphics.drawString(this.font,
 
-				InvincivilityPointProcedure.execute(), 244, 120, -256, false);
+				InvincivilityPointProcedure.execute(entity), 244, 120, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_deobeuljeompeu"), 150, 112, -10092442, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_1"), 161, 121, -12829636, false);
 		guiGraphics.drawString(this.font,
@@ -154,12 +154,12 @@ public class FisherSkillTreeScreen extends AbstractContainerScreen<FisherSkillTr
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_55"), 256, 67, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				NuclearPunchPointProcedure.execute(), 246, 66, -256, false);
+				NuclearPunchPointProcedure.execute(entity), 246, 66, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_idongsogdo"), 59, 138, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_4"), 66, 145, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				InvisiblePointProcedure.execute(), 55, 144, -1, false);
+				InvisiblePointProcedure.execute(entity), 55, 144, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_bangeogangdo"), 103, 163, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_53"), 114, 172, -12829636, false);
 		guiGraphics.drawString(this.font,
@@ -169,17 +169,17 @@ public class FisherSkillTreeScreen extends AbstractContainerScreen<FisherSkillTr
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_56"), 113, 119, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				FishmanPointProcedure.execute(), 102, 118, -1, false);
+				FishmanPointProcedure.execute(entity), 102, 118, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_hwibsseulgi"), 105, 60, -1, false);
 		guiGraphics.drawString(this.font,
 
-				JumpPointProcedure.execute(), 101, 66, -1, false);
+				JumpPointProcedure.execute(entity), 101, 66, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_57"), 114, 68, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_beoseokeo"), 248, 165, -256, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.palworld.fisher_skill_tree.label_58"), 256, 171, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				SnowmanPointProcedure.execute(), 242, 170, -256, false);
+				SnowmanPointProcedure.execute(entity), 242, 170, -256, false);
 	}
 
 	@Override
