@@ -28,6 +28,12 @@ ordering="AFTER"
 side="BOTH"
 
 
+[[dependencies.palworld]]
+modId="geckolib"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 
 
 # Start of user code block dependencies configuration

@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Invincivility",
+    "icon": "sasin",
+    "color": {
+      "value": -10066330,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "onStarted": {
+      "name": "Invincivilityhyogwagasijagjeogyongdoeeosseulddae"
+    },
+    "onActiveTick": {
+      "name": "InvincivilityOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "InvincivilityEffectExpires"
+    }
+  }
+}

@@ -1,13 +1,15 @@
 package net.mcreator.palworld.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.palworld.network.PalworldModVariables;
 
 public class InvisiblekireulnoheulddaeProcedure {
-public static void execute(
-Entity entity ) {
-if (
-entity == null ) return ;
-if (>0) {entity.setInvisible(false);
-}
-}
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).InvisibleSkillPoint > 0) {
+			entity.setInvisible(false);
+		}
+	}
 }

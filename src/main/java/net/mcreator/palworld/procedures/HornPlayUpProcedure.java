@@ -8,7 +8,7 @@ public class HornPlayUpProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points > 0 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint < 5 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level >= 15) {
+		if (entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points > 0 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).HornPlayerSkillPoint < 4 && entity.getData(PalworldModVariables.PLAYER_VARIABLES).Player_Level >= 25) {
 			{
 				PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
 				_vars.Skill_Points = entity.getData(PalworldModVariables.PLAYER_VARIABLES).Skill_Points - 1;

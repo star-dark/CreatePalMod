@@ -120,6 +120,10 @@ public class PalworldModVariables {
 			clone.transformSkillPoint = original.transformSkillPoint;
 			clone.FireResistanceSkillPoint = original.FireResistanceSkillPoint;
 			clone.FishmanSkillPoint = original.FishmanSkillPoint;
+			clone.TridentSkillPoint = original.TridentSkillPoint;
+			clone.SnowmanSkillPoint = original.SnowmanSkillPoint;
+			clone.InvincivilitySkillPoint = original.InvincivilitySkillPoint;
+			clone.NuclearPunchSkillPoint = original.NuclearPunchSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -141,6 +145,7 @@ public class PalworldModVariables {
 				clone.KusanagiLocateZ = original.KusanagiLocateZ;
 				clone.KusanagiLocateX = original.KusanagiLocateX;
 				clone.ThrowKusanagiActivate = original.ThrowKusanagiActivate;
+				clone.ChargeTime = original.ChargeTime;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -225,6 +230,11 @@ public class PalworldModVariables {
 		public double transformSkillPoint = 0;
 		public double FireResistanceSkillPoint = 0;
 		public double FishmanSkillPoint = 0;
+		public double TridentSkillPoint = 0;
+		public double SnowmanSkillPoint = 0;
+		public double InvincivilitySkillPoint = 0;
+		public double ChargeTime = 0;
+		public double NuclearPunchSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -307,6 +317,11 @@ public class PalworldModVariables {
 			nbt.putDouble("transformSkillPoint", transformSkillPoint);
 			nbt.putDouble("FireResistanceSkillPoint", FireResistanceSkillPoint);
 			nbt.putDouble("FishmanSkillPoint", FishmanSkillPoint);
+			nbt.putDouble("TridentSkillPoint", TridentSkillPoint);
+			nbt.putDouble("SnowmanSkillPoint", SnowmanSkillPoint);
+			nbt.putDouble("InvincivilitySkillPoint", InvincivilitySkillPoint);
+			nbt.putDouble("ChargeTime", ChargeTime);
+			nbt.putDouble("NuclearPunchSkillPoint", NuclearPunchSkillPoint);
 			return nbt;
 		}
 
@@ -390,6 +405,11 @@ public class PalworldModVariables {
 			transformSkillPoint = nbt.getDouble("transformSkillPoint");
 			FireResistanceSkillPoint = nbt.getDouble("FireResistanceSkillPoint");
 			FishmanSkillPoint = nbt.getDouble("FishmanSkillPoint");
+			TridentSkillPoint = nbt.getDouble("TridentSkillPoint");
+			SnowmanSkillPoint = nbt.getDouble("SnowmanSkillPoint");
+			InvincivilitySkillPoint = nbt.getDouble("InvincivilitySkillPoint");
+			ChargeTime = nbt.getDouble("ChargeTime");
+			NuclearPunchSkillPoint = nbt.getDouble("NuclearPunchSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

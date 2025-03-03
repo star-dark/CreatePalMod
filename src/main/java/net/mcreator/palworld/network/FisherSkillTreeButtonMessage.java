@@ -17,18 +17,18 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.palworld.world.inventory.FisherSkillTreeMenu;
-import net.mcreator.palworld.procedures.ShieldBoomberUpProcedure;
-import net.mcreator.palworld.procedures.ReflectionUpProcedure;
-import net.mcreator.palworld.procedures.RecoverUpProcedure;
+import net.mcreator.palworld.procedures.TridentUpProcedure;
+import net.mcreator.palworld.procedures.SnowmanUpProcedure;
+import net.mcreator.palworld.procedures.NuclearPunchUpProcedure;
 import net.mcreator.palworld.procedures.MovementSpeedUpProcedure;
 import net.mcreator.palworld.procedures.JumpUpProcedure;
 import net.mcreator.palworld.procedures.InvisibleUpProcedure;
+import net.mcreator.palworld.procedures.InvincivilityUpProcedure;
 import net.mcreator.palworld.procedures.HoverUpProcedure;
+import net.mcreator.palworld.procedures.HornPlayUpProcedure;
 import net.mcreator.palworld.procedures.HealthUpProcedure;
-import net.mcreator.palworld.procedures.FoodFighterUpProcedure;
 import net.mcreator.palworld.procedures.FishmanUpProcedure;
 import net.mcreator.palworld.procedures.DefenseUpProcedure;
-import net.mcreator.palworld.procedures.BerserkerUpProcedure;
 import net.mcreator.palworld.procedures.AttackUPProcedure;
 import net.mcreator.palworld.procedures.ArcherUpProcedure;
 import net.mcreator.palworld.PalworldMod;
@@ -86,47 +86,47 @@ public record FisherSkillTreeButtonMessage(int buttonID, int x, int y, int z) im
 		}
 		if (buttonID == 3) {
 
-			RecoverUpProcedure.execute(entity);
+			FishmanUpProcedure.execute(entity);
 		}
 		if (buttonID == 4) {
 
-			FoodFighterUpProcedure.execute(entity);
+			InvisibleUpProcedure.execute(entity);
 		}
 		if (buttonID == 5) {
 
-			ReflectionUpProcedure.execute(entity);
+			ArcherUpProcedure.execute(entity);
 		}
 		if (buttonID == 6) {
 
-			ShieldBoomberUpProcedure.execute(entity);
+			HoverUpProcedure.execute(entity);
 		}
 		if (buttonID == 7) {
 
-			BerserkerUpProcedure.execute(entity);
+			MovementSpeedUpProcedure.execute(entity);
 		}
 		if (buttonID == 8) {
 
-			FishmanUpProcedure.execute(entity);
+			JumpUpProcedure.execute(entity);
 		}
 		if (buttonID == 9) {
 
-			InvisibleUpProcedure.execute(entity);
+			HornPlayUpProcedure.execute(entity);
 		}
 		if (buttonID == 10) {
 
-			ArcherUpProcedure.execute(entity);
+			TridentUpProcedure.execute(entity);
 		}
 		if (buttonID == 11) {
 
-			HoverUpProcedure.execute(entity);
+			SnowmanUpProcedure.execute(entity);
 		}
 		if (buttonID == 12) {
 
-			MovementSpeedUpProcedure.execute(entity);
+			InvincivilityUpProcedure.execute(entity);
 		}
 		if (buttonID == 13) {
 
-			JumpUpProcedure.execute(entity);
+			NuclearPunchUpProcedure.execute(entity);
 		}
 	}
 

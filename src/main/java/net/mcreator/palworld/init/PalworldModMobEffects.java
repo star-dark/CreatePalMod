@@ -15,9 +15,11 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.palworld.procedures.InvincivilityEffectExpiresProcedure;
 import net.mcreator.palworld.procedures.IgnitoEffectExpiresProcedure;
 import net.mcreator.palworld.potion.WaterPotionEffectMobEffect;
 import net.mcreator.palworld.potion.ThunderPotionMobEffect;
+import net.mcreator.palworld.potion.InvincivilityMobEffect;
 import net.mcreator.palworld.potion.IgnitoMobEffect;
 import net.mcreator.palworld.potion.AegisCoolMobEffect;
 import net.mcreator.palworld.PalworldMod;
@@ -29,6 +31,7 @@ public class PalworldModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> THUNDER_POTION = REGISTRY.register("thunder_potion", () -> new ThunderPotionMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> WATER_POTION_EFFECT = REGISTRY.register("water_potion_effect", () -> new WaterPotionEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> IGNITO = REGISTRY.register("ignito", () -> new IgnitoMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> INVINCIVILITY = REGISTRY.register("invincivility", () -> new InvincivilityMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -49,6 +52,8 @@ public class PalworldModMobEffects {
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(IGNITO)) {
 			IgnitoEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		} else if (effectInstance.getEffect().is(INVINCIVILITY)) {
+			InvincivilityEffectExpiresProcedure.execute(entity);
 		}
 	}
 }

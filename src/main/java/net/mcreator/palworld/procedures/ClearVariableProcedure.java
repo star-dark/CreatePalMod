@@ -265,5 +265,30 @@ public class ClearVariableProcedure {
 			_livingEntity22.getAttribute(Attributes.JUMP_STRENGTH).setBaseValue(0.41999998688697815);
 		if (entity instanceof LivingEntity _livingEntity23 && _livingEntity23.getAttributes().hasAttribute(Attributes.GRAVITY))
 			_livingEntity23.getAttribute(Attributes.GRAVITY).setBaseValue(0.08);
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.TridentSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.SnowmanSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.InvincivilitySkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.ChargeTime = 0;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PalworldModVariables.PlayerVariables _vars = entity.getData(PalworldModVariables.PLAYER_VARIABLES);
+			_vars.NuclearPunchSkillPoint = 0;
+			_vars.syncPlayerVariables(entity);
+		}
 	}
 }
