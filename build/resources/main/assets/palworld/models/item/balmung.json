@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "palworld:item/dagger_swift_striker"
+  }
+}

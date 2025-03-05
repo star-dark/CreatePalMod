@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "palworld:armor_gold_chestplate",
+    "palworld:armor_wood_chestplate",
+    "palworld:armor_wither_chestplate",
+    "palworld:armor_warrior_chestplate",
+    "palworld:armor_steampunk_chestplate",
+    "palworld:armor_slime_chestplate",
+    "palworld:armor_robe_chestplate",
+    "palworld:armor_prismarine_chestplate",
+    "palworld:armor_heavy_chestplate",
+    "palworld:armor_divine_chestplate",
+    "palworld:armor_bone_chestplate"
+  ]
+}

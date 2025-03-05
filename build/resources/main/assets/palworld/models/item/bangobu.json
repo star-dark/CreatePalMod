@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "palworld:item/axe_encrusted_anchor"
+  }
+}
