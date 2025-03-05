@@ -108,6 +108,10 @@ public class PalworldModVariables {
 			clone.SpeedUpSkillPoint = original.SpeedUpSkillPoint;
 			clone.BerserkerSkillPoint = original.BerserkerSkillPoint;
 			clone.ScaleUpSkillPoint = original.ScaleUpSkillPoint;
+			clone.StepHeightSkillPoint = original.StepHeightSkillPoint;
+			clone.SneakingSpeedSkillPoint = original.SneakingSpeedSkillPoint;
+			clone.BreakingSpeedSkillPoint = original.BreakingSpeedSkillPoint;
+			clone.FallingDamageReduceSkillPoint = original.FallingDamageReduceSkillPoint;
 			if (!event.isWasDeath()) {
 				clone.talk_with = original.talk_with;
 				clone.SubRewardRequest = original.SubRewardRequest;
@@ -152,7 +156,8 @@ public class PalworldModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "palworld_worldvars";
-		public double TestValue = 0;
+		public double set_lock_X = 0;
+		public double set_lock_Z = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -161,12 +166,14 @@ public class PalworldModVariables {
 		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			TestValue = nbt.getDouble("TestValue");
+			set_lock_X = nbt.getDouble("set_lock_X");
+			set_lock_Z = nbt.getDouble("set_lock_Z");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			nbt.putDouble("TestValue", TestValue);
+			nbt.putDouble("set_lock_X", set_lock_X);
+			nbt.putDouble("set_lock_Z", set_lock_Z);
 			return nbt;
 		}
 
@@ -316,7 +323,11 @@ public class PalworldModVariables {
 		public double Nichirin_number = 0;
 		public double BerserkerSkillPoint = 0;
 		public double ScaleUpSkillPoint = 0;
+		public double StepHeightSkillPoint = 0;
 		public double Nichirin_cool = 0;
+		public double SneakingSpeedSkillPoint = 0;
+		public double BreakingSpeedSkillPoint = 0;
+		public double FallingDamageReduceSkillPoint = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -375,7 +386,11 @@ public class PalworldModVariables {
 			nbt.putDouble("Nichirin_number", Nichirin_number);
 			nbt.putDouble("BerserkerSkillPoint", BerserkerSkillPoint);
 			nbt.putDouble("ScaleUpSkillPoint", ScaleUpSkillPoint);
+			nbt.putDouble("StepHeightSkillPoint", StepHeightSkillPoint);
 			nbt.putDouble("Nichirin_cool", Nichirin_cool);
+			nbt.putDouble("SneakingSpeedSkillPoint", SneakingSpeedSkillPoint);
+			nbt.putDouble("BreakingSpeedSkillPoint", BreakingSpeedSkillPoint);
+			nbt.putDouble("FallingDamageReduceSkillPoint", FallingDamageReduceSkillPoint);
 			return nbt;
 		}
 
@@ -435,7 +450,11 @@ public class PalworldModVariables {
 			Nichirin_number = nbt.getDouble("Nichirin_number");
 			BerserkerSkillPoint = nbt.getDouble("BerserkerSkillPoint");
 			ScaleUpSkillPoint = nbt.getDouble("ScaleUpSkillPoint");
+			StepHeightSkillPoint = nbt.getDouble("StepHeightSkillPoint");
 			Nichirin_cool = nbt.getDouble("Nichirin_cool");
+			SneakingSpeedSkillPoint = nbt.getDouble("SneakingSpeedSkillPoint");
+			BreakingSpeedSkillPoint = nbt.getDouble("BreakingSpeedSkillPoint");
+			FallingDamageReduceSkillPoint = nbt.getDouble("FallingDamageReduceSkillPoint");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

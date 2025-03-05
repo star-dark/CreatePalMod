@@ -22,5 +22,6 @@ public class PalworldModParticles {
 		event.registerSpriteSet(PalworldModParticleTypes.HOVER_PARTICLE.get(), HoverParticleParticle::provider);
 		event.registerSpriteSet(PalworldModParticleTypes.AEGIS_PARTICLE.get(), AegisParticleParticle::provider);
 		event.registerSpriteSet(PalworldModParticleTypes.THUNDER_PARTICLE.get(), ThunderParticleParticle::provider);
+		event.registerSpriteSet(PalworldModParticleTypes.WATER_PARTICLE.get(), WaterParticleParticle::provider);
 	}
 }

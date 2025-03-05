@@ -31,6 +31,57 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.SKYSHATTER.get());
 			tabData.accept(PalworldModItems.BANGOBU.get());
 			tabData.accept(PalworldModItems.BURF_SWORD.get());
+			tabData.accept(PalworldModItems.ASTRA_BOOK.get());
+			tabData.accept(PalworldModItems.AVALON_OF_MERLIN.get());
+			tabData.accept(PalworldModItems.HEAVEN.get());
+			tabData.accept(PalworldModItems.GLORY_GOLD_GHOST.get());
+			tabData.accept(PalworldModItems.NICHIRIN.get());
+			tabData.accept(PalworldModItems.LAEVATEINN.get());
+			tabData.accept(PalworldModItems.ELDER_WAND.get());
+			tabData.accept(PalworldModItems.ARMOR_BONE_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_BONE_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_BONE_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_BONE_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_DIVINE_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_DIVINE_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_DIVINE_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_DIVINE_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_HEAVY_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_HEAVY_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_HEAVY_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_HEAVY_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_PRISMARINE_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_PRISMARINE_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_PRISMARINE_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_PRISMARINE_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_ROBE_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_ROBE_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_ROBE_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_ROBE_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_SLIME_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_SLIME_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_SLIME_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_SLIME_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_STEAMPUNK_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_STEAMPUNK_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_STEAMPUNK_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_STEAMPUNK_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_WARRIOR_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_WARRIOR_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_WARRIOR_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_WARRIOR_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_WITHER_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_WITHER_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_WITHER_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_WITHER_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_WOOD_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_WOOD_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_WOOD_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_WOOD_BOOTS.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_HELMET.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_CHESTPLATE.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_LEGGINGS.get());
+			tabData.accept(PalworldModItems.ARMOR_GOLD_BOOTS.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
@@ -66,6 +117,7 @@ public class PalworldModTabs {
 			tabData.accept(PalworldModItems.FISH_ROD_LV_30.get());
 			tabData.accept(PalworldModItems.MAGIC_WAND.get());
 			tabData.accept(PalworldModItems.LEVEL_WAND.get());
+			tabData.accept(PalworldModItems.SET_LOCK_ITEM.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 

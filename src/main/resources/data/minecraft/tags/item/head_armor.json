@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "palworld:armor_gold_helmet",
+    "palworld:armor_wood_helmet",
+    "palworld:armor_wither_helmet",
+    "palworld:armor_warrior_helmet",
+    "palworld:armor_steampunk_helmet",
+    "palworld:armor_slime_helmet",
+    "palworld:armor_robe_helmet",
+    "palworld:armor_prismarine_helmet",
+    "palworld:armor_heavy_helmet",
+    "palworld:armor_divine_helmet",
+    "palworld:armor_bone_helmet"
+  ]
+}
